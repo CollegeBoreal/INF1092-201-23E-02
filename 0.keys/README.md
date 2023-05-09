@@ -1,5 +1,6 @@
 # :zero: Github
 
+[:tada: Participation](.scripts/Participation.md)
 
 https://github.com
 
