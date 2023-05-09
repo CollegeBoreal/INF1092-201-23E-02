@@ -39,7 +39,7 @@ Find your local number: https://collegeboreal.zoom.us/u/kb8NDpx4Kr
 |-------|--------|:---------------------------|:------------------------------------|:--------------------------------------------------------------|
 
 
-## Resultats d'Apprentissage du Cours
+## :two: Resultats d'Apprentissage du Cours
 
 |No|L'etudiant(e) aura demontre, de facon fiable, sa capacite a:      |          Elements de performance                               | 
 |--|------------------------------------------------------------------|:---------------------------------------------------------------| 
@@ -57,7 +57,7 @@ Find your local number: https://collegeboreal.zoom.us/u/kb8NDpx4Kr
 en respectant les normes standards de l’industrie.
 
 
-## Déroulement de cours:
+## :three: Déroulement de cours:
 
 |# | Semaine|                                          |     Commentaires                                                   |
 |--|:------:|:-----------------------------------------|:-------------------------------------------------------------------|
