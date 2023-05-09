@@ -43,13 +43,15 @@ Find your local number: https://collegeboreal.zoom.us/u/kb8NDpx4Kr
 
 |No|L'etudiant(e) aura demontre, de facon fiable, sa capacite a:      |          Elements de performance                               | 
 |--|------------------------------------------------------------------|:---------------------------------------------------------------| 
-| 1| Administrer un système d’exploitation Windows Server dans des    | Savoir:                                                        | 
-|  | environnements hôtes                                             | Savoir Faire:                                                  | 
-|  |                                                                  | Savoir Etre:                                                   | 
-| 2| Administrer des solutions infonuagiques privées avec             | Savoir:                                                        | 
-|  | Hyper-V dans le but d’exécuter des systèmes                      | Savoir Faire:                                                  | 
-|  | d’exploitation en tant qu’ordinateurs virtuels sur Windows       | Savoir Etre:                                                   | 
-
+| 1| planifier, installer, configurer et gérer des systèmes d’exploitation sur des postes de travail en fonction des besoins identifiés en utilisant les méthodes, composants, matériels, logiciels conformément aux paramètres documentés.    | Savoir:                                                        | 
+| | |  installer un système d’exploitation en fonction d’un plan de déploiement approprié (RAFP 2 et 4 – GINQ et INFG) |
+| | |  installer un système d’exploitation en utilisant les paramètres appropriées à l’aide d’une méthode : manuelle, sans surveillance et à distance et selon les délais prescrits (RAFP 2 et 4 – GINQ et INFG) (RARE 12) |
+| | |  installer les pilotes appropriés en fonction des composants d’entrée et de sortie de l’ordinateur, p. ex. : l’imprimante, le clavier, une carte réseau, etc. (RAFP 2 et 4 – GINQ et INFG) |
+| | |  modifier le processus de démarrage de l’ordinateur afin de réparer la configuration en fonction du problème à résoudre (RAFP 1 et 3 – GINQ et INFG) |
+| | |  créer des comptes d’utilisateurs appropriés (RAFP 3 et 7 – GINQ et INFG) |
+| | |  sécuriser les ressources disponibles à l’aide du système de permissions et de divers outils de protections (RAFP 3 et 7 – GINQ et INFG) |
+| | |  effectuer des copies de sécurité et restaurer le poste de travail à un état fonctionnel dans un délai raisonnable (RAFP 7 – GINQ et INFG) (RARE 12) |
+| | |  utiliser les divers outils de gestion et de vérification en fonction du problème manifesté afin d’assurer l’opération à long terme du matériel et des logiciels (RAFP 3 et 7 – GINQ et INFG) |
 
 
 
