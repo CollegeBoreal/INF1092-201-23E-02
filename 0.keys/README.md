@@ -13,6 +13,7 @@
 # :b: Azure Education
 
 - [ ] [Portail Azure](https://portal.azure.com)
+- [ ] [Le Menu Education](https://portal.azure.com/#view/Microsoft_Azure_Education/EducationMenuBlade)
 
 # References
 
