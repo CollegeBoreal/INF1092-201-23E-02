@@ -1,6 +1,6 @@
 [:tada: Participation](.scripts/Participation.md)
 
-# :a: Github
+## :a: Github
 
 :round_pushpin: Creer un compte sur [:octocat: Github](https://github.com)
 
@@ -10,10 +10,14 @@
 
 - [ ] [Tutoriel sur GIT](https://github.com/CollegeBoreal/Tutoriels/tree/main/0.GIT)
 
-# :b: Azure Education
+## :b: Azure Education
 
 - [ ] [Portail Azure](https://portal.azure.com)
 - [ ] [Le Menu Education](https://portal.azure.com/#view/Microsoft_Azure_Education/EducationMenuBlade)
+
+## :ab: VPN
+
+- [ ] - [VPN: Demande d'accès ](https://services.collegeboreal.ca)
 
 # References
 
