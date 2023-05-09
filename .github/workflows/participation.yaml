@@ -15,7 +15,7 @@ jobs:
           ## Evaluating chapter 0.Keys Student Participation
           ## 
           echo "Evaluating chapter 0.Keys Student Participation"
-          cd 0.Keys
+          cd 0.keys
           bash .scripts/run.sh
 
       - name: Commit files
