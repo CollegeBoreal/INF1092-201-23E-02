@@ -65,7 +65,7 @@ Find your local number: https://collegeboreal.zoom.us/u/kb8NDpx4Kr
 |05|06-06-23| | |
 |06|13-06-23| | |
 |07|20-06-23| | |
-|08|27-06-23| Bloc :two:                         | Pas de cours                                                       |
+|08|27-06-23| Bloc :two:                         |                                                        |
 |09|04-07-23| | |
 |10|11-07-23| | |
 |11|18-07-23| | |
