@@ -1,10 +1,13 @@
-# :zero: Github
-
 [:tada: Participation](.scripts/Participation.md)
 
-https://github.com
+# :zero: Github
 
-https://education.github.com/
+
+:round_pushpin: Creer un compte sur [:octocat: Github](https://github.com)
+
+- [ ] Explorer [Github Education](https://education.github.com)
+
+:round_pushpin: Créer une page :id: avec son fichier `README.md`
 
 
 ## :ab: GIT
