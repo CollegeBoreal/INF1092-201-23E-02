@@ -17,7 +17,7 @@
 
 ## :ab: VPN
 
-- [ ] - [VPN: Demande d'accès ](https://services.collegeboreal.ca)
+- [ ] [VPN: Demande d'accès ](https://services.collegeboreal.ca)
 
 # References
 
