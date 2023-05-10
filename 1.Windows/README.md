@@ -8,6 +8,6 @@ Pour ce laboratoire:
 
   - Windows Server 2022 Datacenter  
   
-  https://github.com/CollegeBoreal/Tutoriels/tree/main/O.OS/2.Windows/servers
+[:pushpin: Guide d'Install Windows Server 2019](https://github.com/CollegeBoreal/Tutoriels/tree/main/O.OS/2.Windows/servers)
 
 ## [Participation](Participation.md)
