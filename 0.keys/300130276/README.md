@@ -1,2 +1,2 @@
-`rgb(9, 105, 218)`
+`rgb(R,G,B)`
 ***Water is good for your health***
