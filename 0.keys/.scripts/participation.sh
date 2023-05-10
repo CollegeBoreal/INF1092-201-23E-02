@@ -37,12 +37,12 @@ i=0
 
 for id in "${ETUDIANTS[@]}"
 do
-   URL=[${IDS[${i}]} <image src='https://avatars0.githubusercontent.com/u/${AVATARS[$i]}?s=460&v=4' width=20 height=20></image>](https://github.com/${IDS[${i}]})
+   URL=[${IDS[${i}]}](https://github.com/${IDS[${i}]})
    FILE=${id}/README.md
 #   OK="| ${i} || [${id}](../${FILE}) - [${IDS[${i}]}]()<image src='https://avatars0.githubusercontent.com/u/${AVATARS[$i]}?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: |"
 #   KO="| ${i} | [${id}](../${FILE}) - [${IDS[${i}]}]<image src='https://avatars0.githubusercontent.com/u/${AVATARS[$i]}?s=460&v=4' width=20 height=20></image> | :x: |"
-    OK="| ${i} | [${id}](../${FILE}) - ${URL} | :heavy_check_mark: |"
-    KO="| ${i} | [${id}](../${FILE}) - ${URL} | :x: |"
+    OK="| ${i} | [${id}](../${FILE}) - ${URL} <image src='https://avatars0.githubusercontent.com/u/${AVATARS[$i]}?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: |"
+    KO="| ${i} | [${id}](../${FILE}) - ${URL}  <image src='https://avatars0.githubusercontent.com/u/${AVATARS[$i]}?s=460&v=4' width=20 height=20></image>| :x: |"
    if [ -f "$FILE" ]; then
           echo ${OK}
    else
