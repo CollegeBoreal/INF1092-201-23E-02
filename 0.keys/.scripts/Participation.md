@@ -1,4 +1,4 @@
-# Participation au 10-05-2023 20:31
+# Participation au 10-05-2023 20:35
 
 | Table des matières            | Description                                             |
 |-------------------------------|---------------------------------------------------------|
@@ -22,7 +22,7 @@
 | 3 | [300130347](../300130347/README.md) :point_right: [Bagasta14](https://github.com/Bagasta14) <image src='https://avatars0.githubusercontent.com/u/122647527?s=460&v=4' width=20 height=20></image> | :x: | :x: |
 | 4 | [300131438](../300131438/README.md) :point_right: [Hemansighano](https://github.com/Hemansighano) <image src='https://avatars0.githubusercontent.com/u/130868298?s=460&v=4' width=20 height=20></image> | :x: | :x: |
 | 5 | [300132628](../300132628/README.md) :point_right: [AbdoulHakim03](https://github.com/AbdoulHakim03) <image src='https://avatars0.githubusercontent.com/u/133056557?s=460&v=4' width=20 height=20></image> | :x: | :x: |
-| 6 | [300133791](../300133791/README.md) :point_right: [andrejosue](https://github.com/andrejosue) <image src='https://avatars0.githubusercontent.com/u/133054512?s=460&v=4' width=20 height=20></image> | :x: | :x: |
+| 6 | [300133791](../300133791/README.md) :point_right: [andrejosue](https://github.com/andrejosue) <image src='https://avatars0.githubusercontent.com/u/133054512?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: | :x: |
 | 7 | [300133826](../300133826/README.md) :point_right: [OthmanBistarine](https://github.com/OthmanBistarine) <image src='https://avatars0.githubusercontent.com/u/133056364?s=460&v=4' width=20 height=20></image> | :x: | :x: |
 | 8 | [300133896](../300133896/README.md) :point_right: [octocat](https://github.com/octocat) <image src='https://avatars0.githubusercontent.com/u/583231?s=460&v=4' width=20 height=20></image> | :x: | :x: |
 | 9 | [300134493](../300134493/README.md) :point_right: [therafousseyni](https://github.com/therafousseyni) <image src='https://avatars0.githubusercontent.com/u/133056541?s=460&v=4' width=20 height=20></image> | :x: | :x: |
