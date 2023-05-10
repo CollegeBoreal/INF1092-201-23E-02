@@ -1,2 +1,2 @@
-`rgb(R,G,B)`
+'#000000'
 ***Water is good for your health***
