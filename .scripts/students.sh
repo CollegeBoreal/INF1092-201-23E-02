@@ -31,7 +31,7 @@ andrejosue
 OthmanBistarine
 octocat
 therafousseyni
-octocat
+Abdramane80
 Davelionel
 TIEMTORE14
 riadcherix
@@ -51,6 +51,7 @@ AVATARS=(
 133056364
 583231
 133056541
+133164401
 133054332
 133057032
 133053723
