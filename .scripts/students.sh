@@ -24,12 +24,12 @@ AbdoulHakim03
 andrejosue
 OthmanBistarine
 octocat
-octocat
-octocat
-octocat
-octocat
-octocat
-octocat
+therafousseyni
+Davelionel
+riadcherix
+LassiDemb
+RedaYousfi
+Macille
 )
 
 AVATARS=(
@@ -40,12 +40,12 @@ AVATARS=(
 133054512
 133056364
 583231
-583231
-583231
-583231
-583231
-583231
-583231
+133056541
+133054332
+133053723
+131210227
+133056385
+133053743
 )
 
 SERVERS=(
