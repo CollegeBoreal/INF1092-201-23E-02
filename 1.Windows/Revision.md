@@ -74,7 +74,7 @@ Actually, Your External USB keys were set to disable, its very simple to fix: re
 
 ## :two: Installation de Windows 
 
-https://github.com/CollegeBoreal/Tutoriels/tree/master/7.Microsoft/servers/core
+:round_pushpin: [Installation Windows Server 2019 (Datacenter Core)](https://github.com/CollegeBoreal/Tutoriels/tree/main/O.OS/2.Windows/servers/core)
    
    
       * Passe d'un écran à un autre
@@ -119,7 +119,7 @@ https://github.com/CollegeBoreal/Tutoriels/tree/master/7.Microsoft/servers/core
 
 ### :o: Remote Desktop
 
-https://github.com/CollegeBoreal/Tutoriels/tree/master/7.Microsoft/servers/core#utilisation-a-distance
+- [ ] [Utilisation a distance](https://github.com/CollegeBoreal/Tutoriels/tree/main/O.OS/2.Windows/servers/RDP)
 
  * Accès coté client
  
