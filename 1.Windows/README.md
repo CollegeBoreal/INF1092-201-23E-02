@@ -1,5 +1,7 @@
 # :one:. Windows
 
+:tada: [Participation](.scripts/Participation.md)
+
 Pour ce laboratoire:
   
   Installer un serveur Windows avec la distribution de votre choix
@@ -12,4 +14,3 @@ Pour ce laboratoire:
 
    Assurer vous de créer un page :id:/README.md et documenter l'installation
 
-## [Participation](Participation.md)
