@@ -1,4 +1,4 @@
-# 1. Windows
+# :one:. Windows
 
 Pour ce laboratoire:
   
@@ -9,5 +9,7 @@ Pour ce laboratoire:
   - Windows Server 2022 Datacenter  
   
 [:pushpin: Guide d'Install Windows Server 2019](https://github.com/CollegeBoreal/Tutoriels/tree/main/O.OS/2.Windows/servers)
+
+   Assurer vous de créer un page :id:/README.md et documenter l'installation
 
 ## [Participation](Participation.md)
