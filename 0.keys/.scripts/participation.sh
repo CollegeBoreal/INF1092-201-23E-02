@@ -37,7 +37,7 @@ i=0
 
 for id in "${ETUDIANTS[@]}"
 do
-   URL=[${IDS[${i}]}](https://github.com/${IDS[${i}]})
+   URL=[${IDS[${i}]}]\(https://github.com/${IDS[${i}]}\)
    FILE=${id}/README.md
 #   OK="| ${i} || [${id}](../${FILE}) - [${IDS[${i}]}]()<image src='https://avatars0.githubusercontent.com/u/${AVATARS[$i]}?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: |"
 #   KO="| ${i} | [${id}](../${FILE}) - [${IDS[${i}]}]<image src='https://avatars0.githubusercontent.com/u/${AVATARS[$i]}?s=460&v=4' width=20 height=20></image> | :x: |"
