@@ -2,7 +2,12 @@
 
 :tada: [Participation](.scripts/Participation.md)
 
-Pour ce laboratoire:
+## :a: Prérequis
+
+:round_pushpin: Gestion du [Metal](https://github.com/CollegeBoreal/Tutoriels/tree/main/O.OS/0.Metal)
+
+
+##  :b: Pour ce laboratoire:
   
   Installer un serveur Windows avec la distribution de votre choix
   
