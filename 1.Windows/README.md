@@ -4,7 +4,7 @@
 
 ## :a: Prérequis
 
-:round_pushpin: Gestion du [Metal](https://github.com/CollegeBoreal/Tutoriels/tree/main/O.OS/0.Metal)
+:round_pushpin: Gestion des composants du [Metal](https://github.com/CollegeBoreal/Tutoriels/tree/main/O.OS/0.Metal)
 
 
 ##  :b: Pour ce laboratoire:
