@@ -1,1 +1,1 @@
-![image](images/5.1.1 - Modals.png)
+![image](Images/5.1.1 - Modals.png)
