@@ -130,7 +130,10 @@ Actually, Your External USB keys were set to disable, its very simple to fix: re
     * Nom
     
     * Mot de passe
-          
+
+## VPN
+
+[Installation du VPN](https://github.com/CollegeBoreal/Tutoriels/tree/main/V.VPN)
           
           
 # References
