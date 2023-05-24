@@ -32,8 +32,8 @@ OthmanBistarine
 octocat
 Abdramane80
 therafousseyni
-Davelionel
 TIEMTORE14
+Davelionel
 riadcherix
 LassiDemb
 RedaYousfi
@@ -52,8 +52,8 @@ AVATARS=(
 583231
 133164401
 133056541
-133054332
 133057032
+133054332
 133053723
 131210227
 133056385
