@@ -131,3 +131,4 @@ HyperVRequirementVMMonitorModeExtensions          : True
 # Références
 
 https://pureinfotech.com/create-new-user-account-powershell-windows-10/
+- [ ] [Contain your excitement: Updates on Windows Server 2022 and Containerd](https://techcommunity.microsoft.com/t5/containers/contain-your-excitement-updates-on-windows-server-2022-and/ba-p/2820015)
