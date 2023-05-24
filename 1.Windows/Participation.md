@@ -4,6 +4,10 @@
 |------|-----------|-------------------------|------------------------------------------------|----------|--------------|
 | 01   | 300104524 | Brice@10.13.237.19      |:heavy_check_mark: Datacenter                   |:keyboard:|:heavy_check_mark:|
 | 10   | 300112017 | Brice@10.13.237.60      |:heavy_check_mark: Datacenter         |  :desktop_computer:|:heavy_check_mark:|
+
+
+|:hash:| :id:      | Utilisateur à remplacer | Windows Product Name (Windows Server 2019)  | :key: OS Level | :whale: (opt)| 
+|------|-----------|-------------------------|------------------------------------------------|----------|--------------|
 | 0 | [300125413](../300125413/README.md)<image src='https://avatars0.githubusercontent.com/u/583231?s=460&v=4' width=20 height=20></image> | 
 | 1 | [300130487](../300130487/README.md)<image src='https://avatars0.githubusercontent.com/u/133054165?s=460&v=4' width=20 height=20></image> |
 | 2 | [300131438](../300131438/README.md)<image src='https://avatars0.githubusercontent.com/u/133056510?s=460&v=4' width=20 height=20></image> |
