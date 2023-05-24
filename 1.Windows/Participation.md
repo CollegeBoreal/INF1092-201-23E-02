@@ -25,7 +25,7 @@
 
 # Vérification Prof
 
-Sous @PowerShell
+Sous [@PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.3)
 
 #### :one: Entrer la commande ci-dessous, 
 
@@ -37,34 +37,37 @@ $Password = Read-Host -AsSecureString
 
 #### :two: Créer l'utilisateur
 
-```
-PS > New-LocalUser "Brice" -Password $Password -FullName "Brice" -Description "Prof. "
+```powershell
+New-LocalUser "Brice" -Password $Password -FullName "Brice" -Description "Prof. "
 ```
 
 
 #### :three: Donner les droits administrateurs à l'utilisateur
 
-```
-PS > Add-LocalGroupMember -Group "Administrators" -Member "Brice"
+```powershell
+Add-LocalGroupMember -Group "Administrators" -Member "Brice"
 ```
 
 #### :four: Ne jamais faire expirer le mot de passe
 
-```
-PS> Set-LocalUser "Brice" -AccountNeverExpires
+```powershell
+Set-LocalUser "Brice" -AccountNeverExpires
 ```
 
 #### :x: Donner un autre mot de passe
 
-```
-PS > Set-LocalUser "Brice" -Password (ConvertTo-SecureString -AsPlainText "B0r34l$" -Force)
+```powershell
+Set-LocalUser "Brice" -Password (ConvertTo-SecureString -AsPlainText "B0r34l$" -Force)
 ```
 
 #### :o: Verification
 
 
+```powershell
+Get-LocalGroupMember -Group "Administrators"
 ```
-PS > Get-LocalGroupMember -Group "Administrators"
+> Retourne :
+```yaml
 
 ObjectClass Name                   PrincipalSource
 ----------- ----                   ---------------
@@ -78,25 +81,33 @@ User        <SERVEUR>\Brice         Local
 
 #### :keyboard: ServerCore 
 
+```powershell
+Get-ComputerInfo -Property WindowsProductName, OsServerLevel
 ```
-PS > Get-ComputerInfo -Property WindowsProductName, OsServerLevel
+> Retourne :
+```yaml
 WindowsProductName             OsServerLevel
 ------------------             -------------
 Windows Server 2019 Datacenter    ServerCore
 ```
 #### :desktop_computer: FullServer 
 
+```powershell
+Get-ComputerInfo -Property WindowsProductName, OsServerLevel
 ```
-PS > Get-ComputerInfo -Property WindowsProductName, OsServerLevel
+> Retourne :
+```yaml
 
 WindowsProductName             OsServerLevel
 ------------------             -------------
 Windows Server 2019 Datacenter    FullServer
 ```
 
+```powershell
+Get-ComputerInfo -Property Windows*, Hyper*
 ```
-PS C:\> Get-ComputerInfo -Property Windows*, Hyper*
-
+> Retourne :
+```yaml
 
 WindowsBuildLabEx                                 : 17763.1.amd64fre.rs5_release.180914-1434
 WindowsCurrentVersion                             : 6.3
@@ -115,8 +126,6 @@ HyperVRequirementSecondLevelAddressTranslation    : True
 HyperVRequirementVirtualizationFirmwareEnabled    : True
 HyperVRequirementVMMonitorModeExtensions          : True
 ```
-
-### :whale: Docker Engine
 
 
 # Références
