@@ -17,6 +17,8 @@ jobs:
           echo "Evaluating chapter 0.Keys Student Participation"
           cd 0.keys
           bash .scripts/run.sh
+          cd ../1.Windows
+          bash .scripts/run.sh
 
       - name: Commit files
         run: |
