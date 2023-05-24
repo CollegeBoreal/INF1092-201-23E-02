@@ -17,6 +17,9 @@
   
 Assurer vous de créer une page :id:/README.md et documenter l'installation comme indiqué dans le [:pushpin: Guide d'Install Windows Server 2019](https://github.com/CollegeBoreal/Tutoriels/tree/main/O.OS/2.Windows/servers)
 
+## :ab: Documentation pour Windows (Revision)
+
+[W.Windows](../W.Windows)
 
 # References
 
