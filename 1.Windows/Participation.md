@@ -1,6 +1,5 @@
 # Serveurs Windows
 
-<img src="images/LaboratoireWindows.png" width="302" height="319"></img>
 |:hash:| :id:      | Utilisateur à remplacer | Windows Product Name (Windows Server 2019)  | :key: OS Level | :whale: (opt)| 
 |------|-----------|-------------------------|------------------------------------------------|----------|--------------|
 | 01   | 300104524 | Brice@10.13.237.19      |:heavy_check_mark: Datacenter                   |:keyboard:|:heavy_check_mark:|
