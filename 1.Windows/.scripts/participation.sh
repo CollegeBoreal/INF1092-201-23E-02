@@ -37,12 +37,12 @@ i=0
 
 for id in "${ETUDIANTS[@]}"
 do
-   URL="[${IDS[${i}]}](https://github.com/${IDS[${i}]}) <image src='https://avatars0.githubusercontent.com/u/${AVATARS[$i]}?s=460&v=4' width=20 height=20></image>"
+   URL="<image src='https://avatars0.githubusercontent.com/u/${AVATARS[$i]}?s=460&v=4' width=20 height=20></image>"
    FILE=${id}/README.md
    FOLDER=${id}/images
-   OK="| ${i} | [${id}](../${FILE}) :point_right: ${URL} | :heavy_check_mark: | :x: |"
-   FULL_OK="| ${i} | [${id}](../${FILE}) :point_right: ${URL} | :heavy_check_mark: | :heavy_check_mark: | "
-   KO="| ${i} | [${id}](../${FILE}) :point_right: ${URL} | :x: | :x: |"
+   OK="| ${i} | [${id}](../${FILE}) ${URL} | :heavy_check_mark: | :x: |"
+   FULL_OK="| ${i} | [${id}](../${FILE}) ${URL} | :heavy_check_mark: | :heavy_check_mark: | "
+   KO="| ${i} | [${id}](../${FILE}) ${URL} | :x: | :x: |"
    if [ -f "$FILE" ]; then
         if [ -d "$FOLDER" ]; then
                 echo ${FULL_OK}
