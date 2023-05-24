@@ -31,8 +31,8 @@ Sous @PowerShell
 
 * Taper Enter et Donner `B0r34l$` comme mot de passe
 
-```
-PS > $Password = Read-Host -AsSecureString 
+```powershell
+$Password = Read-Host -AsSecureString 
 ```
 
 #### :two: Créer l'utilisateur
