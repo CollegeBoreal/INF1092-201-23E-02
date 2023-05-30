@@ -17,3 +17,8 @@ Pour générer une image Windows Server, vous pouvez utiliser des outils tels qu
 6. Déployer l'image : Utilisez l'outil de déploiement de votre choix, tel que WDS ou SCCM, pour déployer l'image Windows Server sur les systèmes cibles. Ces outils offrent des mécanismes de déploiement via le réseau, d'installations automatisées et de personnalisation lors du déploiement.
 
 Veuillez noter que les étapes spécifiques et les outils peuvent varier en fonction de la version de Windows Server que vous utilisez et de votre environnement de déploiement. Il est recommandé de consulter la documentation et les guides de Microsoft pour des instructions détaillées sur l'utilisation des outils et technologies mentionnés ci-dessus.
+
+
+# References
+
+- [ ] [Installing and Configuring WDS for PXE Boot on Windows Server 2016 2019 2022](https://knowledgebase.macrium.com/display/KNOW80/Installing+and+Configuring+WDS+for+PXE+Boot+on+Windows+Server+2016+2019+2022)
