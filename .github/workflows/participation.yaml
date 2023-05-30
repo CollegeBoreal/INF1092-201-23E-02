@@ -19,6 +19,8 @@ jobs:
           bash .scripts/run.sh
           cd ../1.Windows
           bash .scripts/run.sh
+          cd ../2.Connexion
+          bash .scripts/run.sh
 
       - name: Commit files
         run: |
