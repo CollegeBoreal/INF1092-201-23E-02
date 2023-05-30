@@ -30,8 +30,8 @@ echo "| :x:                | Projet inexistant             |"
 echo ""
 echo "## :a: Présence"
 echo ""
-echo "|:hash:| :id:      | Utilisateur à remplacer | Windows Product Name (Windows Server :question_mark:)  | :key: OS Level |"
-echo "|------|-----------|-------------------------|---------------------------------------------|----------------|"
+echo "|:hash:| :id:      | Utilisateur à remplacer | Windows Product Name (Windows Server :grey_question:)  | :key: OS Level |"
+echo "|------|-----------|-------------------------|--------------------------------------------------------|----------------|"
 
 i=0
 NONE="NONE"
