@@ -1,3 +1,3 @@
 
 
-<img src="Image/image finale.jpg" width='' height='' > </img>
+<img src="Image/image final.jpg" width='' height='' > </img>
