@@ -1,1 +1,1 @@
-<img src="images/imagefinale.jpg" width='' height=''>
+<img src="images/image.jpg" width='' height=''>
