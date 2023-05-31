@@ -11,5 +11,7 @@ Bonjour Maiga
 - [ ] debut d' installation du serveur
 
 </img> <img src="images/pho1.jpg" width='' height='' > </img>
+
 - [ ] installation du serveur 2
+
 </img> <img src="images/pho2.jpg" width='' height='' > </img>
