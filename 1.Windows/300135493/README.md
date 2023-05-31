@@ -3,3 +3,4 @@
 :pushpin: `Configuration du serveur` 1er Etapes
 
 <img src=images/IMG_20230517_170811.jpg width='' height='' > </img>
+<img src=images/IMG_20230517_182410.jpg width='' height='' > </img>
