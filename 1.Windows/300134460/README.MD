@@ -8,3 +8,6 @@ Bonjour Maiga
 
 </img> <img src="images/photo.jpg" width='' height='' > </img>
 
+- [ ] debut d' installation du serveur
+
+</img> <img src="images/pho1.jpg" width='' height='' > </img>
