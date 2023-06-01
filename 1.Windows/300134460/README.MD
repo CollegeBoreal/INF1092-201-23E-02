@@ -28,7 +28,7 @@ Bonjour Maiga
 
 </img> <img src="images/pho5.jpg" width='' height='' > </img>
 
-- [ ] installation du serveur
+- [ ] installation windows
 
 </img> <img src="images/pho6.jpg" width='' height='' > </img>
 
