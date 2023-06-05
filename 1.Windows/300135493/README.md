@@ -1,6 +1,8 @@
 # Lassine Dembele(300135493)
 
 :pushpin: `Configuration du serveur` 1er Etapes
+<img src=images/IMG-20230509-WA0000.jpg width='' height='' > </img>
+
 
 <img src=images/IMG_20230517_170811.jpg width='' height='' > </img>
 <img src=images/IMG_20230517_195730.jpg width='' height='' > </img>
