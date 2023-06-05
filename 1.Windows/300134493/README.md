@@ -1,9 +1,9 @@
 # installation de windows 2019 sur server
-<img src=images/20230523_175014.jpg width='' height='' > </img>
+<img src=images/c14c542c-3396-4fab-8f34-4a7b7169cead.jpeg width='' height='' > </img>
 
 
 
-
+1.Windows/300134493/images/c14c542c-3396-4fab-8f34-4a7b7169cead.jpeg
 
 <img src=images/pronunciation-of-ed-in-english.gif width='' heigth='' > </img>
 
