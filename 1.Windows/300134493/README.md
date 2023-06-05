@@ -6,7 +6,7 @@
 <img src=images/c5160e42-3dee-4c22-b520-c17f9146aa92.jpeg width='' height='' > </img>
 <img src=images/dd03f1b9-87ca-4a45-900c-bc7f0cc81252.jpeg width='' height='' > </img>
 <img src=images/dd03f1b9-87ca-4a45-900c-bc7f0cc81252.jpeg width='' height='' > </img>
-<img src=images/IMG_1844.jpeg width='' height='' ></img> <img src=images/IMG_1875.jpeg width='' height='' > </img>
+</img> <img src=images/IMG_1875.jpeg width='' height='' > </img>
 
 
 
