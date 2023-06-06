@@ -44,14 +44,6 @@
 <img src="images/44.jpg" width="253" height="337" > </img>
 <img src="images/45.jpg" width="253" height="337" > </img>
 <img src="images/46.jpg" width="253" height="337" > </img>
-<img src="images/47.jpg" width="253" height="337" > </img>
-<img src="images/48.jpg" width="253" height="337" > </img>
-<img src="images/49.jpg" width="253" height="337" > </img>
-<img src="images/50.jpg" width="253" height="337" > </img>
-<img src="images/51.jpg" width="253" height="337" > </img>
-<img src="images/52.jpg" width="253" height="337" > </img>
-<img src="images/53.jpg" width="253" height="337" > </img>
-<img src="images/54.jpg" width="253" height="337" > </img>
 <img src="images/55.jpg" width="253" height="337" > </img>
 <img src="images/56.jpg" width="253" height="337" > </img>
 <img src="images/57.jpg" width="253" height="337" > </img>
