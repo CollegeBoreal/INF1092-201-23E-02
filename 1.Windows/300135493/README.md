@@ -1,7 +1,7 @@
 ### Lassine Dembele(300135493)
 
 # :pushpin: Configuration du Stockage
-[one] Demarage du Computer 🖥️
+- [one] Demarage du Computer 🖥️
 <img src=images/IMG_20230517_170811.jpg width='' height='' > </img>
 [two] Appuyer plusieur fois sur F8 pour pouvoire acceder au parmètre de Stockage
 <img src=images/IMG_20230517_195730.jpg width='' height='' > </img>
