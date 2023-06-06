@@ -17,7 +17,6 @@
 <img src="images/17.jpg" width="253" height="337" > </img>
 <img src="images/18.jpg" width="253" height="337" > </img>
 <img src="images/19.jpg" width="253" height="337" > </img>
-<img src="images/20.jpg" width="253" height="337" > </img>
 <img src="images/21.jpg" width="253" height="337" > </img>
 <img src="images/22.jpg" width="253" height="337" > </img>
 <img src="images/23.jpg" width="253" height="337" > </img>
