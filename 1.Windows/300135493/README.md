@@ -2,15 +2,15 @@
 
 ## :pushpin: Installation de Window server 19(Vrsion Standart)
 # Configuration du Stockage
-- [x] 1️⃣ Demarage du Computer 🖥️
+1️⃣ Demarage du Computer 🖥️
 <img src=images/IMG_20230517_170811.jpg width='' height='' > </img>
 2️⃣ Appuyer plusieur fois sur F8 pour pouvoire acceder au parmètre de Stockage
 <img src=images/IMG_20230517_195730.jpg width='' height='' > </img>
-3️⃣ :three: Acceder au parametre Delete Logical Driver pour pouvoire renitialiser le disque dure
+3️⃣ Acceder au parametre Delete Logical Driver pour pouvoire renitialiser le disque dure
 <img src=images/IMG_20230517_182335.jpg width='' height='' > </img>
-- [x] Appuyer sur F8 affin d'initier la renitialisation du disque dure 
+- [x] Appuyer sur F8 afin d'initier la renitialisation du disque dure 
 <img src=images/IMG_20230517_182355.jpg width='' height='' > </img>
-- [x] Appuyer sur F8 puis F3 pour confirmer la Renitialisation du disque
+- [x] Appuyer sur F3 pour confirmer la Renitialisation du disque
 <img src=images/IMG_20230517_182410.jpg width='' height='' > </img>
 - [x] Confirmation de l Renitialisation du disque
 <img src=images/IMG_20230517_182448.jpg width='' height='' > </img>
