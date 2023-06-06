@@ -119,3 +119,7 @@ Bonjour Maiga
 - [ ] installation du serveur
 
 </img> <img src="images/pho30.jpg" width='' height='' > </img>
+
+- [ ] installation du serveur
+
+</img> <img src="images/pho31.jpg" width='' height='' > </img>
