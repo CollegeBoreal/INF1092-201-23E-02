@@ -12,7 +12,7 @@
 </img> <img src=images/IMG_1875.jpeg width='' height='' > </img>
 </img> <img src=images/IMG_1844.jpeg width='' height='' > </img>
 
-[1] Préparation
+[1]  Préparation
 * Configuration Language, Clavier et FormatTemps et Devises
  
 </img> <img src=images/IMG_1854.jpeg width='' height='' > </img>
@@ -26,19 +26,19 @@
 * Choisir la distribution
 </img> <img src=images/IMG_1863.jpeg width='' height='' > </img>
 
-[2] Installation et Reboot
+[2]  Installation et Reboot
 
 </img> <img src=images/IMG_1886.jpeg width='' height='' > </img>
 </img> <img src=images/IMG_1885.jpeg width='' height='' > </img>
 </img> <img src=images/IMG_1888.jpeg width='' height='' > </img>
-</img> <img src=images/IMG_1897.jpeg width='' height='' > </img>
 
-[3] Configuration
+[3]  Configuration
 
 Du mot de passe de l'Administrateur Administrator
 
 </img> <img src=images/IMG_1893.jpeg width='' height='' > </img>
 </img> <img src=images/IMG_1894.jpeg width='' height='' > </img>
+</img> <img src=images/IMG_1897.jpeg width='' height='' > </img>
 
 
 
