@@ -7,7 +7,7 @@
 <img src=images/IMG_20230517_170811.jpg width='' height='' > </img>
 2️⃣ Appuyer plusieur fois sur F8 pour pouvoire acceder au parmètre de Stockage
 <img src=images/IMG_20230517_195730.jpg width='' height='' > </img>
-3️⃣ Acceder au parametre Delete Logical Driver pour pouvoire renitialiser le disque dure
+- [x] Acceder au parametre Delete Logical Driver pour pouvoire renitialiser le disque dure
 <img src=images/IMG_20230517_182335.jpg width='' height='' > </img>
 - [x] Appuyer sur F8 afin d'initier la renitialisation du disque dure 
 <img src=images/IMG_20230517_182355.jpg width='' height='' > </img>
@@ -21,10 +21,11 @@
 <img src=images/IMG_20230517_182439.jpg width='' height='' > </img>
 - [x] Confirmer et sauveguarder ses parametres avec la touche Enter
 <img src=images/IMG_20230517_182448.jpg width='' height='' > </img>
-4️⃣ Commencer l'intallation du server à artir de la clé sur le disque en appuyant sur la touche echap 
+3️⃣ Commencer l'intallation du server à partir de la clé sur le disque en appuyant sur la touche echap puis F1 pusieur fois
 <img src=images/IMG_20230517_182837.jpg width='' height='' > </img>
-
+- [x] Reglage de langue et version puis next
 <img src=images/IMG_20230517_184323.jpg width='' height='' > </img>
+- [x]
 <img src=images/IMG_20230517_184428.jpg width='' height='' > </img>
 <img src=images/IMG_20230517_184629.jpg width='' height='' > </img>
 <img src=images/IMG_20230517_184702.jpg width='' height='' > </img>
