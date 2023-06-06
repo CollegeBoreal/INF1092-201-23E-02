@@ -39,3 +39,6 @@ Enfin nous venous de configurer le systeme, et nous entamons a l'installation du
  <img src="images/IMG-20230523-WA0024.jpg" width='' height=''>
  
  <img src="images/IMG-20230523-WA0023.jpg" width='' height=''>
+ 
+ <img src="images/IMG-20230523-WA0027.jpg" width='' height=''>
+ 
