@@ -15,7 +15,13 @@ Ensuite inserer le disque d'installation sur le serveur. Redemarrer ensuite le s
 
 
 
+De prime a bord , nous allons suivre les instructions pour une desinstallation reussi
+
+
 <img src="images/IMG-20230606-WA0009.jpg" width='' height=''>
+
+
+
 
 
 
