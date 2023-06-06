@@ -8,14 +8,12 @@
 <img src=images/dd03f1b9-87ca-4a45-900c-bc7f0cc81252.jpeg width='' height='' > </img>
 </img> <img src=images/IMG_1875.jpeg width='' height='' > </img>
 </img> <img src=images/IMG_1844.jpeg width='' height='' > </img>
-1 Préparation
-
--Configuration Language, Clavier et FormatTemps et Devises
+# 1 Préparation
+.Configuration Language, Clavier et FormatTemps et Devises
 </img> <img src=images/IMG_1854.jpeg width='' height='' > </img>
+</img> <img src=images/IMG_1855.jpeg width='' height='' > </img>
 
 
-
-1.Windows/300134493/images/IMG_1854.jpeg
 
 
 
