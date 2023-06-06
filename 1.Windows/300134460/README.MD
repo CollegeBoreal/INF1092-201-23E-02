@@ -112,14 +112,18 @@ Bonjour Maiga
 
 </img> <img src="images/pho28.jpg" width='' height='' > </img>
 
-- [ ] installation du serveur
+- [ ] configuration du serveur
 
 </img> <img src="images/pho29.jpg" width='' height='' > </img>
 
-- [ ] installation du serveur
+- [ ] configuration du serveur
 
 </img> <img src="images/pho30.jpg" width='' height='' > </img>
 
-- [ ] installation du serveur
+- [ ] configuration  du serveur
 
 </img> <img src="images/pho31.jpg" width='' height='' > </img>
+
+- [ ] configuration  du serveur
+
+</img> <img src="images/pho32.jpg" width='' height='' > </img>
