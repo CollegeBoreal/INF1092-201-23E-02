@@ -23,11 +23,13 @@
 <img src=images/IMG_20230517_182448.jpg width='' height='' > </img>
 3️⃣ Commencer l'intallation du server à partir de la clé sur le disque en appuyant sur la touche echap puis F1 pusieur fois
 <img src=images/IMG_20230517_182837.jpg width='' height='' > </img>
-- [x] Reglage de langue et version puis next
+- [x] Regler la langue le Fuseau horaire et le clavier au choix puis cliquer sur next pour procederà la prochaine étapes
 <img src=images/IMG_20230517_184323.jpg width='' height='' > </img>
-- [x]
+- [x] Entrez la clé d'activation xxxxx puis cliquer sur next
 <img src=images/IMG_20230517_184428.jpg width='' height='' > </img>
+- [x] Cochez le contrat et cliquer sur next
 <img src=images/IMG_20230517_184629.jpg width='' height='' > </img>
+- [x]
 <img src=images/IMG_20230517_184702.jpg width='' height='' > </img>
 <img src=images/IMG_20230517_194035.jpg width='' height='' > </img>
 <img src=images/IMG_20230517_194113.jpg width='' height='' > </img>
