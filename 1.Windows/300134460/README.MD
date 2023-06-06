@@ -55,3 +55,7 @@ Bonjour Maiga
 - [ ] configuration  du serveur
 
 </img> <img src="images/pho14.jpg" width='' height='' > </img>
+
+- [ ] configuration  du serveur
+
+</img> <img src="images/pho15.jpg" width='' height='' > </img>
