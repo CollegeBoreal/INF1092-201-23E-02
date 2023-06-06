@@ -1,13 +1,16 @@
 
-#BIENVENUE A LA CONFIGURATION D'UN SERVEUR
+BIENVENUE A LA CONFIGURATION D'UN SERVEUR
 
 LES PROCEDURES A SUIVRE
 
 
-1-Desinstallation du systeme dans le serveur
+1-Desinstallation du systeme existant dans le serveur 
 
 
-#Pour ce faire, il faudra suivre les demarches afin de bien permettre la configuration
+Pour ce faire, il faudra suivre les demarches afin de bien permettre la configuration
 
 <img src="images/IMG-20230523-WA0012.jpg" width='' height=''>
+
+
+
 
