@@ -79,3 +79,7 @@ Bonjour Maiga
 - [ ] configuration  du serveur
 
 </img> <img src="images/pho20.jpg" width='' height='' > </img>
+
+- [ ] configuration  du serveur
+
+</img> <img src="images/pho21.jpg" width='' height='' > </img>
