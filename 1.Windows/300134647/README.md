@@ -11,7 +11,12 @@ Pour ce faire,nous devons prepare le nouvel environnenment, c'est-a-dire que nou
 Ensuite inserer le disque d'installation sur le serveur. Redemarrer ensuite le serveur et assurons-nous qu'il demarre a partir du support d'installation.  
 
 
+<img src="images/IMG-20230606-WA0005.jpg" width='' height=''>
+
+
+
 <img src="images/IMG-20230606-WA0008.jpg" width='' height=''>
+
 
 
 
