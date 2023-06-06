@@ -15,8 +15,8 @@
 </img> <img src=images/IMG_1858.jpeg width='' height='' > </img>
 * Choisir Upgrade ou custom
 </img> <img src=images/IMG_1859.jpeg width='' height='' > </img>
-
-
+* Choisir la distribution
+</img> <img src=images/IMG_1863.jpeg width='' height='' > </img>
 
 
 
