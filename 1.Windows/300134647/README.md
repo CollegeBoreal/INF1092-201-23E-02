@@ -2,6 +2,8 @@
 #BIENVENUE A LA CONFIGURATION D'UN SERVEUR
 
 LES PROCEDURES A SUIVRE
+
+
 1-Desinstallation du systeme dans le serveur
 
 
