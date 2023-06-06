@@ -2,7 +2,7 @@
 
 <img src=images/c14c542c-3396-4fab-8f34-4a7b7169cead.jpeg width='' height='' > </img>
 
-#formatage des disques durs du server
+## formatage des disques durs du server
 
 <img src=images/7aaa7646-e6fd-4fbc-9f44-2a92051947c7.jpeg width='' height='' > </img>
 <img src=images/db08feb8-725d-43d9-95b6-97e591cd2d7d.jpeg width='' height='' > </img>
