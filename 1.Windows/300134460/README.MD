@@ -36,3 +36,7 @@ Bonjour Maiga
 
 </img> <img src="images/pho7.jpg" width='' height='' > </img>
 
+- [ ] installation windows
+
+</img> <img src="images/pho9.jpg" width='' height='' > </img>
+
