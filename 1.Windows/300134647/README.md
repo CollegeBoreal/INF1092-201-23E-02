@@ -20,10 +20,10 @@ De prime a bord , nous allons suivre les instructions pour une desinstallation r
 
 <img src="images/IMG-20230606-WA0009.jpg" width='' height=''>
 
+Dans le  Main Menu, nous allons creer Logical Drive puis on tape <Entrer>
 
 
-
-
+<img src="images/IMG-20230606-WA0010.jpg" width='' height=''>
 
 
 
