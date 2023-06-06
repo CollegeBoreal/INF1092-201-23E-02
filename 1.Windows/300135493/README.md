@@ -27,11 +27,13 @@
 <img src=images/IMG_20230517_184323.jpg width='' height='' > </img>
 - [x] Entrez la clé d'activation xxxxx puis cliquer sur next
 <img src=images/IMG_20230517_184428.jpg width='' height='' > </img>
-- [x] Cochez le contrat et cliquer sur next
+- [x] Choisissez la version window severstandart 2019(ien que Deskopt Experience soit la meilleur option dans notre cas)
 <img src=images/IMG_20230517_184629.jpg width='' height='' > </img>
-- [x]
+- [x] Cochez le contrat et cliquer sur next
 <img src=images/IMG_20230517_184702.jpg width='' height='' > </img>
+- [x] Choiser le disque de Stokage precedenment configurer puis cliquer sur la touche next
 <img src=images/IMG_20230517_194035.jpg width='' height='' > </img>
+- [x]
 <img src=images/IMG_20230517_194113.jpg width='' height='' > </img>
 <img src=images/IMG_20230517_195730.jpg width='' height='' > </img>
 <img src=images/IMG_20230517_201505.jpg width='' height='' > </img>
