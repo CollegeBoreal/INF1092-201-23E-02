@@ -26,7 +26,7 @@ Ceci va nous montrer une option de configuration par Arrays, mais nous allons se
 <img src="images/IMG-20230523-WA0012.jpg" width='' height=''>
  
 Enfin nous venous de configurer le systeme, et nous entamons a l'installation du nouveau systeme  
-
- <img src="images/IMG-20230523-WA0013.jpg" width='' height=''>
   
 <img src="images/IMG-20230606-WA0008.jpg" width='' height=''>
+ 
+ <img src="images/IMG-20230523-WA0013.jpg" width='' height=''>
