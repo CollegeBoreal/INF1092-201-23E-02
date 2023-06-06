@@ -4,7 +4,7 @@
 
 ## :one: formatage des disques durs du server
 
-- [ ] Reinitialiser le disque
+- [x] Reinitialiser le disque
 
 <img src=images/7aaa7646-e6fd-4fbc-9f44-2a92051947c7.jpeg width='' height='' > </img>
 <img src=images/db08feb8-725d-43d9-95b6-97e591cd2d7d.jpeg width='' height='' > </img>
