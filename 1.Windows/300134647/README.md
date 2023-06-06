@@ -27,4 +27,5 @@ Dans le  Main Menu, nous allons creer Logical Drive puis on tape <Entrer>
 Ceci va nous montrer une option de configuration par Arrays, mais nous allons selectionner <Bay 1> de la partie Physical Drives et <RAID 5> de la partie RAID Configurations  
 
 <img src="images/IMG-20230523-WA0012.jpg" width='' height=''>
+  
 
