@@ -110,5 +110,8 @@ Bonjour Maiga
 
 - [ ] configuration  du serveur
 
-
 </img> <img src="images/pho28.jpg" width='' height='' > </img>
+
+- [ ] installation du serveur
+
+</img> <img src="images/pho29.jpg" width='' height='' > </img>
