@@ -12,6 +12,7 @@
 .Configuration Language, Clavier et FormatTemps et Devises
 </img> <img src=images/IMG_1854.jpeg width='' height='' > </img>
 </img> <img src=images/IMG_1855.jpeg width='' height='' > </img>
+</img> <img src=images/IMG_1858.jpeg width='' height='' > </img>
 
 
 
