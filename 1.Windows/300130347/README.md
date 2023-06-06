@@ -1,5 +1,5 @@
-ETAPE CREATION DE LA CLE WINDOW SERVER ET INSTALLATION DE WINDOWS SERVER 2022 SUR UN SERVEUR
+#DembelesHeman sighano(300130347)
 
-<img src="images/documentaion.jpg" width='' height=''>
+:pushpin: `Configuration du serveur` 1er Etapes
 
-<img src="Objects 3D/1.jpg" width='' height=''>
+<img src=images/documentation.jpg width='' height='' > </img>
