@@ -21,11 +21,10 @@ De prime a bord , nous allons suivre les instructions pour une desinstallation r
 <img src="images/IMG-20230606-WA0009.jpg" width='' height=''>
 
 Dans le  Main Menu, nous allons creer Logical Drive puis on tape <Entrer>
-
-
-<img src="images/IMG-20230606-WA8.jpg" width='' height=''>
 Ceci va nous montrer une option de configuration par Arrays, mais nous allons selectionner <Bay 1> de la partie Physical Drives et <RAID 5> de la partie RAID Configurations  
 
 <img src="images/IMG-20230523-WA0012.jpg" width='' height=''>
+ 
+Enfin nous venous de configurer le systeme, et nous entamons a l'installation du nouveau systeme  
   
-
+<img src="images/IMG-20230606-WA0008.jpg" width='' height=''>
