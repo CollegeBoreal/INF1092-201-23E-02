@@ -2,16 +2,23 @@
 
 ## :pushpin: Installation de Window server 19(Vrsion Standart)
 # Configuration du Stockage
-- [x] :one: Demarage du Computer 🖥️
+- [x] 1️⃣ Demarage du Computer 🖥️
 <img src=images/IMG_20230517_170811.jpg width='' height='' > </img>
-- [x] :two: Appuyer plusieur fois sur F8 pour pouvoire acceder au parmètre de Stockage
+2️⃣ Appuyer plusieur fois sur F8 pour pouvoire acceder au parmètre de Stockage
 <img src=images/IMG_20230517_195730.jpg width='' height='' > </img>
+3️⃣ :three: Acceder au parametre Delete Logical Driver pour pouvoire renitialiser le disque dure
 <img src=images/IMG_20230517_182335.jpg width='' height='' > </img>
+- [x] Appuyer sur F8 affin d'initier la renitialisation du disque dure 
 <img src=images/IMG_20230517_182355.jpg width='' height='' > </img>
+- [x] Appuyer sur F8 puis F3 pour confirmer la Renitialisation du disque
 <img src=images/IMG_20230517_182410.jpg width='' height='' > </img>
+- [x] Confirmation de l Renitialisation du disque
 <img src=images/IMG_20230517_182448.jpg width='' height='' > </img>
+- [x] Revenir en arrière avec la touche echap et puis acceder au parametre Create Logical Driver
 <img src=images/IMG_20230517_182430.jpg width='' height='' > </img>
+- [x] Appuyer sur la touche F8 pour choire pour designer le disque de Stockage pour l'instalation de notre server
 <img src=images/IMG_20230517_182439.jpg width='' height='' > </img>
+
 <img src=images/IMG_20230517_182448.jpg width='' height='' > </img>
 <img src=images/IMG_20230517_182837.jpg width='' height='' > </img>
 <img src=images/IMG_20230517_182837.jpg width='' height='' > </img>
