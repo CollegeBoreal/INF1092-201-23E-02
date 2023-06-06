@@ -15,7 +15,7 @@ Ensuite inserer le disque d'installation sur le serveur. Redemarrer ensuite le s
 
 
 
-<img src="images/IMG-20230606-WA0008.jpg" width='' height=''>
+<img src="images/IMG-20230606-WA0009.jpg" width='' height=''>
 
 
 
