@@ -46,6 +46,11 @@ Du mot de passe de l'Administrateur Administrator
 </img> <img src=images/IMG_1900.jpeg width='' height='' > </img>
 </img> <img src=images/IMG_1901.jpeg width='' height='' > </img>
 </img> <img src=images/IMG_1902.jpeg width='' height='' > </img>
+</img> <img src=images/IMG_1903.jpeg width='' height='' > </img>
+
+Configuration du réseau avec Sconfig.cmd
+
+
 
 
 
