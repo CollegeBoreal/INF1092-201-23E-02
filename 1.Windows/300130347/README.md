@@ -1,1 +1,2 @@
+ETAPE CREATION DE LA CLE WINDOW SERVER ET INSTALLATION DE WINDOWS SERVER 2022 SUR UN SERVEUR
 <img src="images/documentaion.jpg" width='' height=''> <img src="images/photo.jpg" width='' height=''>
