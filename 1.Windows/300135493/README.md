@@ -2,9 +2,9 @@
 
 ## :pushpin: Installation de Window server 19(Vrsion Standart)
 # Configuration du Stockage
-[x] :one: Demarage du Computer 🖥️
+- [x] :one: Demarage du Computer 🖥️
 <img src=images/IMG_20230517_170811.jpg width='' height='' > </img>
-[x] :two: Appuyer plusieur fois sur F8 pour pouvoire acceder au parmètre de Stockage
+- [x] :two: Appuyer plusieur fois sur F8 pour pouvoire acceder au parmètre de Stockage
 <img src=images/IMG_20230517_195730.jpg width='' height='' > </img>
 <img src=images/IMG_20230517_182335.jpg width='' height='' > </img>
 <img src=images/IMG_20230517_182355.jpg width='' height='' > </img>
