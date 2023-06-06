@@ -40,6 +40,15 @@ Du mot de passe de l'Administrateur Administrator
 </img> <img src=images/IMG_1894.jpeg width='' height='' > </img>
 </img> <img src=images/IMG_1897.jpeg width='' height='' > </img>
 
+* Du mot de passe 
+
+</img> <img src=images/IMG_1899.jpeg width='' height='' > </img>
+
+
+
+
+
+
 
 
 
