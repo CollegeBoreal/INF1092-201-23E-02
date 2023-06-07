@@ -52,3 +52,4 @@ Veuillez noter que les étapes spécifiques et les outils peuvent varier en fonc
 
 - [ ] [Installing and Configuring WDS for PXE Boot on Windows Server 2016 2019 2022](https://knowledgebase.macrium.com/display/KNOW80/Installing+and+Configuring+WDS+for+PXE+Boot+on+Windows+Server+2016+2019+2022)
 - [ ] [Windows Deployment Services: How to setup and install WDS role](https://techdirectarchive.com/2020/05/09/what-is-windows-deployment-services-how-to-setup-and-install-wds)
+- [ ] [Configure Windows Deployment Services Using PowerShell](https://mcpmag.com/articles/2018/12/13/configure-wds-using-powershell.aspx)
