@@ -1,1 +1,2 @@
-1.Windows/300135134/images/1.jpg
+
+<img src=images/1.jpg width='' height='' > </img>
