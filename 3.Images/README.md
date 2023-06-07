@@ -1,5 +1,32 @@
 # :two: Images
 
+
+> Faire l’installation automatisée de Windows 
+
+L'installation automatisée de Windows peut être réalisée en utilisant divers outils et méthodes. L'une des approches couramment utilisées est l'utilisation de Windows Deployment Services (WDS) et de l'outil Windows Automated Installation Kit (AIK) ou Windows Assessment and Deployment Kit (ADK). Voici une procédure générale pour effectuer une installation automatisée de Windows à l'aide de ces outils :
+
+Préparation de l'environnement :
+
+Configurez un serveur Windows avec le rôle WDS installé.
+Téléchargez et installez l'outil Windows AIK ou Windows ADK sur le serveur.
+Création d'une image de référence :
+
+Installez manuellement Windows sur une machine de référence et personnalisez-la selon vos besoins.
+Capturez l'image de référence à l'aide de l'outil de capture d'image fourni par Windows AIK ou Windows ADK.
+Configuration de WDS :
+
+Lancez l'Assistant Configuration de WDS et configurez les paramètres réseau et de stockage.
+Importez l'image de référence capturée dans WDS.
+Création d'un fichier de réponse (unattend.xml) :
+
+Utilisez l'outil Windows System Image Manager (SIM) fourni par Windows AIK ou Windows ADK pour créer un fichier de réponse XML personnalisé.
+Le fichier de réponse spécifie les réponses automatisées aux questions posées pendant l'installation.
+Déploiement automatisé :
+
+Configurez les paramètres de déploiement dans WDS pour utiliser le fichier de réponse.
+Déployez l'image de référence sur les machines cibles à l'aide de WDS.
+Il est important de noter que les détails et les étapes précises peuvent varier en fonction de votre environnement et de la version spécifique de Windows que vous souhaitez installer. Je recommande de vous référer à la documentation officielle de Microsoft, aux guides de déploiement et aux tutoriels en ligne pour obtenir des instructions détaillées et à jour sur l'installation automatisée de Windows.
+
 > comment générer une image Windows Server?
 
 Pour générer une image Windows Server, vous pouvez utiliser des outils tels que Windows Deployment Services (WDS) ou System Center Configuration Manager (SCCM) fournis par Microsoft. Voici un aperçu général du processus :
