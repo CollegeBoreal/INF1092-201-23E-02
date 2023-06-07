@@ -7,4 +7,5 @@
 <img src=images/IMG-20230606-WA0018.jpg width='' height='' > </img>
 <img src=images/IMG-20230606-WA0031.jpg width='' height='' > </img>
 # 🕛 Installation window server 2022 ⏲️
-<img src=images/IMG-20230606-WA0020.jpg width='' height='' > </img>
+<img src=images/IMG-20230606-WA0020.jpg width='' height='' > 
+<img src=images/IMG-20230606-WA0006.jpg width='' height='' > 
