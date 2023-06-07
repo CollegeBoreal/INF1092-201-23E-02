@@ -1,4 +1,4 @@
-# :two: Images
+# :three: Automatisation
 
 
 > Faire l’installation automatisée de Windows 
