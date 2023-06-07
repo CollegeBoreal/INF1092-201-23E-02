@@ -14,8 +14,8 @@
 #  👨‍🏫 SCONFIG
 1.Windows/300131438/images/
 <img src=images/1.jpg width='' height='' > 
-<img src=images/IMG-20230606-WA0006.jpg width='' height='' >
-<img src=images/IMG-20230606-WA0011.jpg width='' height='' >
-<img src=images/IMG-20230606-WA0040.jpg width='' height='' >
+<img src=images/2 I.jpg width='' height='' >
+<img src=images/3.jpg width='' height='' >
+<img src=images/4.jpg width='' height='' >
 
 1.Windows/300131438/images/1.jpg
