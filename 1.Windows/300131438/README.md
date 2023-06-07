@@ -10,4 +10,5 @@
 <img src=images/IMG-20230606-WA0020.jpg width='' height='' > 
 <img src=images/IMG-20230606-WA0006.jpg width='' height='' >
 <img src=images/IMG-20230606-WA0011.jpg width='' height='' >
+<img src=images/IMG-20230606-WA0040.jpg width='' height='' >
 
