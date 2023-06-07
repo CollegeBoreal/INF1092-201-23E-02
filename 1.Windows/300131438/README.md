@@ -14,11 +14,11 @@
 #  👨‍🏫 SCONFIG
 1.Windows/300131438/images/
 <img src=images/1.jpg width='' height='' > 
-<img src=images/7 I.jpg width='' height='' >
+<img src=images/7.jpg width='' height='' >
 <img src=images/3.jpg width='' height='' >
 <img src=images/4.jpg width='' height='' >
 <img src=images/5.jpg width='' height='' > 
 <img src=images/6.jpg width='' height='' >
-<img src=images/2.jpg width='' height='' >
+<img src=images/2.Ijpg width='' height='' >
 <img src=images/10.jpg width='' height='' >
 
