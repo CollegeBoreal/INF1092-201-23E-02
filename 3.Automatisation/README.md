@@ -13,6 +13,7 @@ Création d'une image de référence :
 
 Installez manuellement Windows sur une machine de référence et personnalisez-la selon vos besoins.
 Capturez l'image de référence à l'aide de l'outil de capture d'image fourni par Windows AIK ou Windows ADK.
+
 Configuration de WDS :
 
 Lancez l'Assistant Configuration de WDS et configurez les paramètres réseau et de stockage.
@@ -21,6 +22,7 @@ Création d'un fichier de réponse (unattend.xml) :
 
 Utilisez l'outil Windows System Image Manager (SIM) fourni par Windows AIK ou Windows ADK pour créer un fichier de réponse XML personnalisé.
 Le fichier de réponse spécifie les réponses automatisées aux questions posées pendant l'installation.
+
 Déploiement automatisé :
 
 Configurez les paramètres de déploiement dans WDS pour utiliser le fichier de réponse.
