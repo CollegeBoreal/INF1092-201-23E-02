@@ -1,7 +1,10 @@
 #installation de window 2019
+
+1.Windows/300130487/images/IMG_0584.jpg
+
 <img src=images/IMG_0584.jpg width='237' height='238' > </img>
 <img src=images/IMG_0585.jpg width='237' height='237' > </img>
-1.Windows/300130487/images/IMG_0584.jpg
+
 
 <img src=images/IMG_0586.jpg width='237' height='237' > </img>
 <img src=images/IMG_0587.jpg width='237' height='237' > </img>
