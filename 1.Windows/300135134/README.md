@@ -1,5 +1,5 @@
 
-
+# creation de la cle windows server 2022
 <img src=images/1.jpg width='' height='' > </img>
 <img src=images/2.jpg width='' height='' > </img>
 <img src=images/3.jpg width='' height='' > </img>
@@ -24,6 +24,7 @@
 <img src=images/22.jpg width='' height='' > </img>
 <img src=images/23.jpg width='' height='' > </img>
 <img src=images/24.jpg width='' height='' > </img>
+# sconfig
 <img src=images/25.jpg width='' height='' > </img>
 <img src=images/26.jpg width='' height='' > </img>
 <img src=images/27.jpg width='' height='' > </img>
