@@ -1,9 +1,9 @@
 
-# creation de la cle windows server 2022
+# 🔑creation de la cle windows server 2022
 <img src=images/1.jpg width='' height='' > </img>
-# formatage du serveur
+# 🪛 formatage du serveur
 <img src=images/2.jpg width='' height='' > </img>
-# creation du logical drive
+# 🗞️creation du logical drive
 <img src=images/3.jpg width='' height='' > </img>
 <img src=images/4.jpg width='' height='' > </img>
 <img src=images/5.jpg width='' height='' > </img>
@@ -11,6 +11,7 @@
 <img src=images/7.jpg width='' height='' > </img>
 <img src=images/8.jpg width='' height='' > </img>
 <img src=images/9.jpg width='' height='' > </img>
+# 💿 installation de windows serveur 2022 
 <img src=images/10.jpg width='' height='' > </img>
 <img src=images/11.jpg width='' height='' > </img>
 <img src=images/12.jpg width='' height='' > </img>
@@ -21,12 +22,13 @@
 <img src=images/17.jpg width='' height='' > </img>
 <img src=images/18.jpg width='' height='' > </img>
 <img src=images/19.jpg width='' height='' > </img>
+# 🖥️ configuration du bureau a distance
 <img src=images/20.jpg width='' height='' > </img>
 <img src=images/21.jpg width='' height='' > </img>
 <img src=images/22.jpg width='' height='' > </img>
 <img src=images/23.jpg width='' height='' > </img>
 <img src=images/24.jpg width='' height='' > </img>
-# sconfig
+#  ⌨️commande sconfig
 <img src=images/25.jpg width='' height='' > </img>
 <img src=images/26.jpg width='' height='' > </img>
 <img src=images/27.jpg width='' height='' > </img>
