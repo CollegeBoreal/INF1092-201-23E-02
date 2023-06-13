@@ -17,7 +17,7 @@
 
 🔚 Fin de cration de la clé bootable prés a etre utiliser 💾
 
-<img src=images/IMG-20230607-WA0004.jpg width='' height='' > </img>
+<img src=images/ width='' height='' > </img>
 
 
 2-INSTALLATION DE WINDOWS SERVER 2022 SUR UN SERVEUR 🌗
