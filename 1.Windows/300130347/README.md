@@ -8,11 +8,12 @@
 
 
 ⬆️ Debut de cration de la clé bootable 💾
-<img src=images/IMG-20230607-WA0001.jpg width='' height='' > </img>
 
-<img src=images/IMG-20230607-WA0002.jpg width='' height='' > </img>
+<img src=images/ width='' height='' > </img>
 
-<img src=images/IMG-20230607-WA0003.jpg width='' height='' > </img>
+<img src=images/ width='' height='' > </img>
+
+<img src=images/ width='' height='' > </img>
 
 🔚 Fin de cration de la clé bootable prés a etre utiliser 💾
 
