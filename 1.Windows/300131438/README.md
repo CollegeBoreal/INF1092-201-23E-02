@@ -6,6 +6,9 @@
   
 <img src=images/20230525_105051.jpg width='' height='' > </img>
 # 🌧️ formatage des disques dur
+cette operation est executer lorsqu'un systeme est deja present sur le server sur lequel vous voulez travailler.
+pour pouvoir le formater afin d'y installer un nouveau vous devez lors lors de lallumage de votre server appuyer la touche "F8"
+
 <img src=images/IMG-20230606-WA0036.jpg width='' height='' > </img>
 # selection et formatage du disque logique
 <img src=images/IMG-20230606-WA0002.jpg width='' height='' > </img>
