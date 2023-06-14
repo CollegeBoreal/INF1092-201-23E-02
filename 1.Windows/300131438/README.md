@@ -11,6 +11,8 @@ pour pouvoir le formater afin d'y installer un nouveau vous devez lors lors de l
 
 <img src=images/IMG-20230606-WA0036.jpg width='' height='' > </img>
 # selection et formatage du disque logique
+Apres avoir identifie les logical drives ou disques logiques present sur votre serveur .il vous faudra selectionne le logical drive
+sur lequel vous voulez installer votre systeme ( nous choisirons celui de type RAID)
 <img src=images/IMG-20230606-WA0002.jpg width='' height='' > </img>
 <img src=images/IMG-20230606-WA0018.jpg width='' height='' > </img>
 <img src=images/IMG-20230606-WA0031.jpg width='' height='' > </img>
