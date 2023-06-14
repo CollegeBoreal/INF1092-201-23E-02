@@ -19,4 +19,4 @@
 | 14 | [300135175](../300135175/README.md) <image src='https://avatars0.githubusercontent.com/u/133053723?s=460&v=4' width=20 height=20></image> | Brice@10.13.237.33 |
 | 15 | [300135493](../300135493/README.md) <image src='https://avatars0.githubusercontent.com/u/131210227?s=460&v=4' width=20 height=20></image> | Brice@10.13.237.39 |
 | 16 | [300135538](../300135538/README.md) <image src='https://avatars0.githubusercontent.com/u/133056385?s=460&v=4' width=20 height=20></image> | :x: |
-| 17 | [300135688](../300135688/README.md) <image src='https://avatars0.githubusercontent.com/u/133053743?s=460&v=4' width=20 height=20></image> | Brice@10.13.237.30 |
+| 17 | [300135688](../300135688/README.md) <image src='https://avatars0.githubusercontent.com/u/133053743?s=460&v=4' width=20 height=20></image> | Brice@10.13.237.30 | :heavy_check_mark: |
