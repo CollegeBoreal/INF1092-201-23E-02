@@ -1,7 +1,7 @@
 
 # 🔑creation de la cle windows server 2022
 <img src=images/1.jpg width='' height='' > </img>
-# 🪛 formatage du serveur
+# 🪛 formatage des disques dur du serveur
 <img src=images/2.jpg width='' height='' > </img>
 # 🗞️creation du logical drive
 <img src=images/3.jpg width='' height='' > </img>
