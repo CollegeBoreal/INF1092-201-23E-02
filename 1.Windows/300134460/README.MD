@@ -1,3 +1,7 @@
+- [ ] installation du cle
+
+<img src="images/phto MBR.jpg" width='' height='' >
+
 Bonjour Maiga
 
 :whale: Installer windows
