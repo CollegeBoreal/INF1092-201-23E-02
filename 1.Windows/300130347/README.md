@@ -32,10 +32,10 @@
 <img src=images/IMG-20230607-WA00010.jpg width='' height='' > </img>
 <img src=images/IMG-20230607-WA00011.jpg width='' height='' > </img>
 
-<img src=images/IMG-20230607-WA00012.jpg width='' height='' > </img>
+<img src=images/IMG-20230607-WA0012.jpg width='' height='' > </img>
 <img src=images/IMG-20230607-WA00013.jpg width='' height='' > </img>
 <img src=images/IMG-20230607-WA00014.jpg width='' height='' > </img>
-<img src=images/IMG-20230607-WA00016.jpg width='' height='' > </img>
+<img src=images/IMG-20230607-WA0016.jpg width='' height='' > </img>
 <img src=images/IMG-20230607-WA00017.jpg width='' height='' > </img>
 <img src=images/IMG-20230607-WA00018.jpg width='' height='' > </img>
 <img src=images/IMG-20230607-WA00019.jpg width='' height='' > </img>
