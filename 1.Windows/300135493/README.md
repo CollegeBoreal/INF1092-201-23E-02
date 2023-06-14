@@ -6,7 +6,7 @@
 - [ ] A cause d'une erreur d'installation sur la clé bootable, j'ai du recommencer en MBR
 <img src=images/IMG_20230517_170811.jpg width='' height='' > </img>
 - [X] Reconfiguration de la clé Bootable en ' MBR '
-<img src=images/Capture d’écran (111).jpg width='' height='' > </img>
+<img src=images/Capture d’écran (111).png width='' height='' > </img>
 2️⃣ Appuyer plusieur fois sur F8 pour pouvoire acceder au parmètre de Stockage
 <img src=images/IMG_20230517_195730.jpg width='' height='' > </img>
 - [x] Acceder au parametre Delete Logical Driver pour pouvoire renitialiser le disque dure
