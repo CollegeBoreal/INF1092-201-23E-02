@@ -21,4 +21,5 @@
 <img src=images/IMG_0703.jpg width='237' height='237' > </img>
 <img src=images/IMG_0704.jpg width='237' height='237' > </img>
 <img src=images/IMG_0705.jpg width='237' height='237' > </img>
+<img src=images/IMG_0706.jpg width='237' height='237' > </img>
 
