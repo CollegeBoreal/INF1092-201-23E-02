@@ -1,6 +1,6 @@
 - [ ] installation du cle
 
-<img src="images/phto MBR.jpg" width='' height='' >
+</img> <img src="images/photoMBR.jpg" width='' height='' > </img>
 
 Bonjour Maiga
 
