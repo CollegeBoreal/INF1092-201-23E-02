@@ -40,6 +40,6 @@
 <img src=images/IMG-20230607-WA00018.jpg width='' height='' > </img>
 <img src=images/IMG-20230607-WA00019.jpg width='' height='' > </img>
 <img src=images/IMG-20230607-WA00020.jpg width='' height='' > </img>
-<img src=images/IMG-20230607-WA00023.jpg width='' height='' > </img>
+<img src=images/IMG-20230607-WA0023.jpg width='' height='' > </img>
 
 
