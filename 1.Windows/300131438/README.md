@@ -1,4 +1,8 @@
 # 🔑 Creation de ma cle 'window server 2022'
+#  pour se faire il vous fauut:
+- telecharger l'iso de la version de windows desire.
+- avoir un logiciel permettant de creer une clee bootable tels que: Rufus, belenaETCHER,UNetbooting,WINToBootic...
+- il vous faudra biensur dispose d'une clee USB pouvant contenir le fichier iso telecharge (minimum 32 G0 pour plus de securite)
 <img src=images/20230525_105051.jpg width='' height='' > </img>
 # 🌧️ formatage des disques dur
 <img src=images/IMG-20230606-WA0036.jpg width='' height='' > </img>
