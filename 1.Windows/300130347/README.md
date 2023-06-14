@@ -5,7 +5,7 @@
 1-Creation De La clé Bootable Windows server 2022 Avec L'application Refus...🌓
 
 🧐 <img src=images/Rufus-4.0.webp width='' height='' > </img>
-1.Windows/300130347/images/WA0001.jpg
+
 
 ⬆️ Debut de cration de la clé bootable 💾
 
@@ -23,3 +23,11 @@
 2-INSTALLATION DE WINDOWS SERVER 2022 SUR UN SERVEUR 🌗
 
 <img src=images/maxresdefault.jpg width='' height='' > </img>
+
+
+
+
+
+
+
+
