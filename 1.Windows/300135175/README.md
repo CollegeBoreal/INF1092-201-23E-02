@@ -16,8 +16,7 @@
 :pushpin:Une fois l'installation terminée, l'ordinateur redémarrera automatiquement.
 redémarrage
 :pushpin:"sconfig"
-:pushpin:la dernier etape il ne faut surtt pas oublier de mettre le serveur en mode enable remote desktop pour pouvoir lexploite en mode remote
-vous pouvez le mettre en mode enable en suivant les etapes suivants par sellectionner la commande :7
+:pushpin:La dernière étape importante consiste à ne pas oublier d'activer le bureau à distance (Remote Desktop) sur le serveur pour pouvoir l'exploiter à distance. Vous pouvez activer cette fonctionnalité en suivant les étapes suivantes :
 <img src=images/en%20rdt%201.jpg width='' height='' > </img>
 <img src=images/en%20rdt%202.jpg width='' height='' > </img>
 <img src=images/en%20rdt%203.jpg width='' height='' > </img>
