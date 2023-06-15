@@ -7,6 +7,7 @@
 :pushpin:Démarrez votre ordinateur et accédez au menu de démarrage en appuyant sur la touche F11 démarrage .
 :pushpin:Dans le menu de démarrage, choisissez la clé USB contenant l'installation de Windows Server 2019 comme périphérique de démarrage.
 :pushpin:L'ordinateur va maintenant démarrer à partir de la clé USB.
+<img src=images/20230517_185555.jpg width='' height='' > </img>
 :pushpin:Acceptez les termes du contrat de licence.
 :pushpin:Sur l'écran de type d'installation, choisissez l'option "Personnalisée Windows Server Datacenter est une édition de Windows Server axée sur les fonctionnalités avancées de serveur, tandis que Datacenter Desktop Experience comprend une interface utilisateur graphique pour une gestion plus conviviale du serveur, en plus des fonctionnalités avancées du serveur Installer uniquement Windows (avancé)".
 <img src=images/20230517_183832%20(1).jpg?raw=true width='' height='' > </img>
