@@ -12,7 +12,7 @@
 :pushpin:Sur l'écran de type d'installation, choisissez l'option "Personnalisée Windows Server Datacenter est une édition de Windows Server axée sur les fonctionnalités avancées de serveur, tandis que Datacenter Desktop Experience comprend une interface utilisateur graphique pour une gestion plus conviviale du serveur, en plus des fonctionnalités avancées du serveur Installer uniquement Windows (avancé)".
 <img src=images/20230517_183832%20(1).jpg?raw=true width='' height='' > </img>
 :pushpin:Vous verrez maintenant une liste des disques durs disponibles. Sélectionnez le disque dur que vous avez précédemment formaté.et :pushpin:en cas ou sont charge vous pouvez les formate pour assurer un bon foncionnment de system
-:pushpin:Cliquez sur "Suivant" pour lancer le processus d'installation de Windows Server 2019 sur le disque dur sélectionné.(sa prend un peu de temps &#8986;</p>)
+:pushpin:Cliquez sur "Suivant" pour lancer le processus d'installation de Windows Server 2019 sur le disque dur sélectionné.(cela prend un peu de temps &#8986;</p>)
 :pushpin:Suivez les instructions supplémentaires à l'écran pour configurer les paramètres de base, tels que le nom d'utilisateur, le mot de passe et les options de réseau.le mdp doit etre compose au min de 6 combinaison de chiffres, de lettres majuscules et de caractères spéciaux
 :pushpin:Une fois l'installation terminée, le serveur redémarrera automatiquement.
 redémarrage
