@@ -1,7 +1,7 @@
 # 300135175
 :pushpin::pushpin::pushpin: utiliser 'rufus' Il permet de créer des clés USB bootables pour l'installation de systèmes d'exploitation tels que Windows, Linux, etc. Vous pouvez utiliser Rufus en sélectionnant l'image ISO du système d'exploitation souhaité, en choisissant le périphérique USB approprié et table de partition mbr ou gpt en lançant le processus de création du support d'installation bootable.
 <img src=images/20230517_182725%20(1).jpg width='' height='' > </img>
- cet fenetre ca veux dire L'UEFI BIOS prend en charge à la fois les tables de partition GUID (GPT) et les tables de partition Master Boot Record (MBR)
+:pushpin:cet fenetre ca veux dire L'UEFI BIOS prend en charge à la fois les tables de partition GUID (GPT) et les tables de partition Master Boot Record (MBR)
 <img src=images/20230517_181628.jpg width='' height='' > </img> 
 :pushpin:Assurez-vous que la clé USB contenant l'installation de Windows Server 2019 est insérée dans un port USB de l'ordinateur.
 :pushpin:Démarrez votre ordinateur et accédez au menu de démarrage en appuyant sur la touche F11 démarrage .
