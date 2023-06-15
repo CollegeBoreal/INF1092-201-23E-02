@@ -1,4 +1,4 @@
-# 300135175
+# 300135175 &#129409;</p> windows server 2019 installation
 :pushpin::pushpin::pushpin: 
  rufus Il permet de créer des clés USB bootables pour l'installation de systèmes d'exploitation tels que Windows, Linux, etc. Vous pouvez utiliser Rufus en sélectionnant l'image ISO du système d'exploitation souhaité, en choisissant le périphérique USB approprié et table de partition mbr ou gpt en lançant le processus de création du support d'installation bootable.<p>
 <img src=images/20230517_182725%20(1).jpg width='' height='' > </img>
