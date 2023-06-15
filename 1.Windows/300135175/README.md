@@ -19,7 +19,7 @@ Une fois l'installation terminée, l'ordinateur redémarrera automatiquement.
 redémarrage
 la dernier etape il ne faut surtt pas oublier de mettre le serveur en mode enable remote desktop pour pouvoir lexploite en mode remote
 vous pouvez le mettre en mode enable en suivant les etapes suivants par sellectionner la commande :7
-<img src=https:images/en%20rdt%201.jpg width='' height='' > </img>
+<img src=images/en%20rdt%201.jpg width='' height='' > </img>
 <img src=images/en%20rdt%202.jpg width='' height='' > </img>
 <img src=images/en%20rdt%203.jpg width='' height='' > </img>
 <img src=images/en%20rdt%204.jpg width='' height='' > </img>
