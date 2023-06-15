@@ -1,5 +1,5 @@
 # 300135175
-:pushpin: utiliser 'rufus' Il permet de créer des clés USB bootables pour l'installation de systèmes d'exploitation tels que Windows, Linux, etc. Vous pouvez utiliser Rufus en sélectionnant l'image ISO du système d'exploitation souhaité, en choisissant le périphérique USB approprié et en lançant le processus de création du support d'installation bootable.
+:pushpin: utiliser 'rufus' Il permet de créer des clés USB bootables pour l'installation de systèmes d'exploitation tels que Windows, Linux, etc. Vous pouvez utiliser Rufus en sélectionnant l'image ISO du système d'exploitation souhaité, en choisissant le périphérique USB approprié et table de partition mbr ou gpt en lançant le processus de création du support d'installation bootable.
 <img src=images/20230517_182725%20(1).jpg width='' height='' > </img>
 :pushpin: `sconfig` configuration du réseau 
 <img src= width='' height='' > </img>
