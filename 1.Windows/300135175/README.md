@@ -28,9 +28,10 @@ redémarrage
 <img src=images/IMG_20230517_195730%20(1).jpg width='' height='' > </img>
 vous devez creer un nouveu mot de passe il doit etre daumoins un chifre un majiscul et 6 caracter
 <img src=images/IMG_20230517_201505.jpg width='' height='' > </img>
-:pushpin:"sconfig"
-<img src= width='' height='' > </img>
-<img src= width='' height='' > </img>
+:pushpin: tappez la commande "sconfig" pour configurer le reseau de votre serveur
+<img src=images/IMG_20230517_201851.jpg width='' height='' > </img>
+<img src=images/20230523_175014.jpg width='' height='' > </img>
+<img src=images/20230523_174837.jpg width='' height='' > </img>
 <img src= width='' height='' > </img>
 :pushpin:La dernière étape importante consiste à ne pas oublier d'activer le bureau à distance (Remote Desktop) sur le serveur pour pouvoir l'exploiter à distance. Vous pouvez activer cette fonctionnalité en suivant les étapes suivantes :
 <img src=images/en%20rdt%201.jpg width='' height='' > </img>
