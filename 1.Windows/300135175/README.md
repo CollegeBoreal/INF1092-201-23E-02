@@ -19,7 +19,7 @@
 <img src=images/20230517_183832%20(1).jpg width='' height='' > </img>
 :pushpin:Vous verrez maintenant une liste des disques durs disponibles. Sélectionnez le disque dur que vous avez précédemment formaté.et :pushpin:en cas ou vous navez pas utilise raid5 pour le formatage de disque dur et sont encore sature vous pouvez les formate pour assurer un bon foncionnment de system en sellectionnant format ou delete 
 images
-<img src=IMG_20230517_194035.jpg width='' height='' > </img>
+<img src=images/IMG_20230517_194035.jpg width='' height='' > </img>
 :pushpin:Cliquez sur "Suivant" pour lancer le processus d'installation de Windows Server 2019 sur le disque dur sélectionné.(cela prend un peu de temps &#8986;</p>)
 <img src=images/IMG_20230517_194113.jpg width='' height='' > </img>
 :pushpin:Suivez les instructions supplémentaires à l'écran pour configurer les paramètres de base, tels que le nom d'utilisateur, le mot de passe et les options de réseau.le mdp doit etre compose au min de 6 combinaison de chiffres, de lettres majuscules et de caractères spéciaux
