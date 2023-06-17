@@ -5,12 +5,17 @@
 :pushpin:cet fenetre ca veux dire L'UEFI BIOS prend en charge à la fois les tables de partition GUID (GPT) et les tables de partition Master Boot Record (MBR)
 <img src=images/20230517_181628.jpg width='' height='' > </img> 
 :pushpin:Assurez-vous que la clé USB contenant l'installation de Windows Server 2019 est insérée dans un port USB de serveur.
+<img src= width='' height='' > </img>
 :pushpin:Démarrez votre serveur et accédez au menu de démarrage en appuyant sur la touche F11 démarrage .
+<img src= width='' height='' > </img>
 :pushpin:Dans le menu de démarrage, choisissez la clé USB contenant l'installation de Windows Server 2019 comme périphérique de démarrage.
-:pushpin:Le serveur va maintenant démarrer à partir de la clé USB.
+:pushpin:Le serveur va maintenant booter à partir de la clé USB.
+<img src=images
+/IMG_20230517_182837.jpg width='' height='' > </img>
 <img src=images/20230517_185555.jpg width='' height='' > </img>
 :pushpin:Acceptez les termes du contrat de licence.
-:pushpin:Sur l'écran de type d'installation, choisissez l'option "Personnalisée Windows Server Datacenter est une édition de Windows Server axée sur les fonctionnalités avancées de serveur, tandis que Datacenter Desktop Experience comprend une interface utilisateur graphique pour une gestion plus conviviale du serveur, en plus des fonctionnalités avancées du serveur Installer uniquement Windows (avancé)".
+<img src=images/IMG_20230517_184702.jpg width='' height='' > </img>
+:pushpin:Sur l'écran de type d'installation, choisissez l'option "Personnalisée Windows Server Datacenter est une édition de Windows Server axée sur les fonctionnalités avancées de serveur, tandis que Datacenter Desktop Experience comprend une interface utilisateur graphique pour une gestion plus conviviale du serveur, en plus des fonctionnalités avancées du serveur Installer uniquement Windows (avancé)".<img src=images/IMG_20230517_184629.jpg width='' height='' > </img>
 <img src=images/20230517_183832%20(1).jpg?raw=true width='' height='' > </img>
 :pushpin:Vous verrez maintenant une liste des disques durs disponibles. Sélectionnez le disque dur que vous avez précédemment formaté.et :pushpin:en cas ou sont charge vous pouvez les formate pour assurer un bon foncionnment de system
 :pushpin:Cliquez sur "Suivant" pour lancer le processus d'installation de Windows Server 2019 sur le disque dur sélectionné.(cela prend un peu de temps &#8986;</p>)
