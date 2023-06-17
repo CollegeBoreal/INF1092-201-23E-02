@@ -25,8 +25,9 @@ images
 :pushpin:Suivez les instructions supplémentaires à l'écran pour configurer les paramètres de base, tels que le nom d'utilisateur, le mot de passe et les options de réseau.le mdp doit etre compose au min de 6 combinaison de chiffres, de lettres majuscules et de caractères spéciaux
 :pushpin:Une fois l'installation terminée, le serveur redémarrera automatiquement.
 redémarrage
+<img src=images/IMG_20230517_201505.jpg width='' height='' > </img>
+le mdp doit etre compose au min de 6 combinaison de chiffres, de lettres majuscules et de caractères spéciaux
 <img src=images/IMG_20230517_195730%20(1).jpg width='' height='' > </img>
-vous devez creer un nouveu mot de passe il doit etre daumoins un chifre un majiscul et 6 caracter
 <img src=images/IMG_20230517_201505.jpg width='' height='' > </img>
 :pushpin: tappez la commande "sconfig" pour configurer le reseau de votre serveur
 <img src=images/IMG_20230517_201851.jpg width='' height='' > </img>
