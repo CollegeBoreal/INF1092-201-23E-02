@@ -15,7 +15,7 @@
 <img src=images/20230517_185555.jpg width='' height='' > </img>
 :pushpin:Acceptez les termes du contrat de licence.
 <img src=images/IMG_20230517_184702.jpg width='' height='' > </img>
-:pushpin:Sur l'écran de type d'installation, choisissez l'option "Personnalisée Windows Server Datacenter est une édition de Windows Server axée sur les fonctionnalités avancées de serveur, tandis que Datacenter Desktop Experience comprend une interface utilisateur graphique pour une gestion plus conviviale du serveur, en plus des fonctionnalités avancées du serveur Installer uniquement Windows (avancé)".<img src=images/IMG_20230517_184629.jpg width='' height='' > </img>
+:pushpin:Sur l'écran de type d'installation, choisissez l'option "Personnalisée Windows Server Datacenter est une édition de Windows Server axée sur les fonctionnalités avancées de serveur, tandis que Datacenter Desktop Experience comprend une interface utilisateur graphique pour une gestion plus conviviale du serveur, en plus des fonctionnalités avancées du serveur Installer uniquement Windows <img <img src=images/IMG_20230517_184629.jpg width='' height='' > </img>
 <img src=images/20230517_183832%20(1).jpg width='' height='' > </img>
 :pushpin:Vous verrez maintenant une liste des disques durs disponibles. Sélectionnez le disque dur que vous avez précédemment formaté.et :pushpin:en cas ou vous navez pas utilise raid5 pour le formatage de disque dur et sont encore sature vous pouvez les formate pour assurer un bon foncionnment de system en sellectionnant format ou delete 
 images
