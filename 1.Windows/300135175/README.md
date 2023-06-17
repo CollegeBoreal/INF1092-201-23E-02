@@ -4,14 +4,11 @@
 <img src=images/20230517_182725%20(1).jpg width='' height='' > </img>
 :pushpin:cet fenetre ca veux dire L'UEFI BIOS prend en charge à la fois les tables de partition GUID (GPT) et les tables de partition Master Boot Record (MBR)
 <img src=images/20230517_181628.jpg width='' height='' > </img> 
-:pushpin:Assurez-vous que la clé USB contenant l'installation de Windows Server 2019 est insérée dans un port USB de serveur.
-<img src= width='' height='' > </img>
+:pushpin:Assurez-vous que la clé USB contenant l'installation de Windows Server 2019 est insérée dans un port USB de serveur.>
 :pushpin:Démarrez votre serveur et accédez au menu de démarrage en appuyant sur la touche F11 démarrage .
-<img src= width='' height='' > </img>
 :pushpin:Dans le menu de démarrage, choisissez la clé USB contenant l'installation de Windows Server 2019 comme périphérique de démarrage.
 :pushpin:Le serveur va maintenant booter à partir de la clé USB.
-<img src=images
-/IMG_20230517_182837.jpg width='' height='' > </img>
+<img src=IMG_20230517_182837.jpg width='' height='' > </img>
 <img src=images/20230517_185555.jpg width='' height='' > </img>
 :pushpin:Acceptez les termes du contrat de licence.
 <img src=images/IMG_20230517_184702.jpg width='' height='' > </img>
