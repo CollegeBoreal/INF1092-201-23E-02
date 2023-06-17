@@ -16,13 +16,22 @@
 :pushpin:Acceptez les termes du contrat de licence.
 <img src=images/IMG_20230517_184702.jpg width='' height='' > </img>
 :pushpin:Sur l'écran de type d'installation, choisissez l'option "Personnalisée Windows Server Datacenter est une édition de Windows Server axée sur les fonctionnalités avancées de serveur, tandis que Datacenter Desktop Experience comprend une interface utilisateur graphique pour une gestion plus conviviale du serveur, en plus des fonctionnalités avancées du serveur Installer uniquement Windows (avancé)".<img src=images/IMG_20230517_184629.jpg width='' height='' > </img>
-<img src=images/20230517_183832%20(1).jpg?raw=true width='' height='' > </img>
-:pushpin:Vous verrez maintenant une liste des disques durs disponibles. Sélectionnez le disque dur que vous avez précédemment formaté.et :pushpin:en cas ou sont charge vous pouvez les formate pour assurer un bon foncionnment de system
+<img src=images/20230517_183832%20(1).jpg width='' height='' > </img>
+:pushpin:Vous verrez maintenant une liste des disques durs disponibles. Sélectionnez le disque dur que vous avez précédemment formaté.et :pushpin:en cas ou vous navez pas utilise raid5 pour le formatage de disque dur et sont encore sature vous pouvez les formate pour assurer un bon foncionnment de system en sellectionnant format ou delete 
+images
+<img src=IMG_20230517_194035.jpg width='' height='' > </img>
 :pushpin:Cliquez sur "Suivant" pour lancer le processus d'installation de Windows Server 2019 sur le disque dur sélectionné.(cela prend un peu de temps &#8986;</p>)
+<img src=images/IMG_20230517_194113.jpg width='' height='' > </img>
 :pushpin:Suivez les instructions supplémentaires à l'écran pour configurer les paramètres de base, tels que le nom d'utilisateur, le mot de passe et les options de réseau.le mdp doit etre compose au min de 6 combinaison de chiffres, de lettres majuscules et de caractères spéciaux
 :pushpin:Une fois l'installation terminée, le serveur redémarrera automatiquement.
 redémarrage
+<img src=images/IMG_20230517_195730%20(1).jpg width='' height='' > </img>
+vous devez creer un nouveu mot de passe il doit etre daumoins un chifre un majiscul et 6 caracter
+<img src=images/IMG_20230517_201505.jpg width='' height='' > </img>
 :pushpin:"sconfig"
+<img src= width='' height='' > </img>
+<img src= width='' height='' > </img>
+<img src= width='' height='' > </img>
 :pushpin:La dernière étape importante consiste à ne pas oublier d'activer le bureau à distance (Remote Desktop) sur le serveur pour pouvoir l'exploiter à distance. Vous pouvez activer cette fonctionnalité en suivant les étapes suivantes :
 <img src=images/en%20rdt%201.jpg width='' height='' > </img>
 <img src=images/en%20rdt%202.jpg width='' height='' > </img>
