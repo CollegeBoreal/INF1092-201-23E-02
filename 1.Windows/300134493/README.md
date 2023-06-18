@@ -1,3 +1,6 @@
+1.Windows/300134493/images/WhatsApp Image 2023-06-14 at 16.04.21.jpeg
+
+</img> <img src=images/WhatsApp Image 2023-06-14 at 16.04.21.jpeg width='' height='' > </img>
 # :desktop_computer: installation de windows 2019 sur server
 Installation de windows 2019 avec la memoire flash usb à l'aide du rufus nous permettra d'installer windows 2019 sur un server.
 </img> <img src=images/whatsApp Image 2023-06-14 at 16.04.21.jpeg width='' height='' > </img>
