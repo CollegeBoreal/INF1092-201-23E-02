@@ -49,6 +49,8 @@ pour cella il faudrai revenir sur les parametres de sconfig et entrer "2"
 on prendra dans notre cas l'adresse 1.1.1.1
 
 <img src=images/5.jpg width='' height='' > 
-<img src=images/2.jpg width='' height='' >
+
+# 👩‍🏫 surtout il est primordial a la fin des configurations de ne pas oublier de "sign out" en entrant les touche "Ctrl/ Alt/Delete" et selectionner l'option "sign out" ou cas contraire quelqu'un pourrai avoir acces a votre serveur et changer vos configurations
+
 <img src=images/10.jpg width='' height='' >
 
