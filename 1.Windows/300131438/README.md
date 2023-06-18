@@ -49,7 +49,6 @@ pour cella il faudrai revenir sur les parametres de sconfig et entrer "2"
 on prendra dans notre cas l'adresse 1.1.1.1
 
 <img src=images/5.jpg width='' height='' > 
-<img src=images/6.jpg width='' height='' >
 <img src=images/2.Ijpg width='' height='' >
 <img src=images/10.jpg width='' height='' >
 
