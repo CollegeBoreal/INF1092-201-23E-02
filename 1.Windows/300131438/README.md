@@ -28,6 +28,9 @@ il vous sera egalement demade d'entre une "cle" celle qui vous a ete fournis lor
 <img src=images/IMG-20230606-WA0040.jpg width='' height='' >
 #  👨‍🏫 SCONFIG : il s'agit ici de configurer vos parametres reseau (pour se faire entrez "1")
 <img src=images/1.jpg width='' height='' > 
+
+# ATTRIBUTION D'UNE ADRESSE IP 
+IL s'agit ici de 10.13.237.34
 <img src=images/7.jpg width='' height='' >
 <img src=images/3.jpg width='' height='' >
 <img src=images/4.jpg width='' height='' >
