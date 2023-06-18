@@ -21,6 +21,7 @@ Installation de windows 2019 avec la memoire flash usb à l'aide du rufus nous p
  
 </img> <img src=images/IMG_1854.jpeg width='' height='' > </img>
 </img> <img src=images/IMG_1855.jpeg width='' height='' > </img>
+* Accepter la license
 </img> <img src=images/IMG_1858.jpeg width='' height='' > </img>
 
 * Choisir Upgrade ou custom
