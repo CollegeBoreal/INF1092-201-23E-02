@@ -18,7 +18,10 @@ sur lequel vous voulez installer votre systeme ( nous choisirons celui de type R
 <img src=images/IMG-20230606-WA0031.jpg width='' height='' > </img>
 # 🕛 Installation window server 2022 ⏲️
 il suffit juste de suivre les etapes qui vont etre affiche a votre ecran au fure et a mesure
+
 <img src=images/IMG-20230606-WA0020.jpg width='' height='' > 
+# seclectionner le type d'installation que vous desirez. vous pouvez soit utiliser les partitions par defaut (option 1) soit les  personnaliser vous meme (option 2)
+
 <img src=images/IMG-20230606-WA0006.jpg width='' height='' >
 <img src=images/IMG-20230606-WA0011.jpg width='' height='' >
 <img src=images/IMG-20230606-WA0040.jpg width='' height='' >
