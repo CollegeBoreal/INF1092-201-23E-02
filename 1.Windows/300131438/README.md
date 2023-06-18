@@ -26,8 +26,7 @@ il vous sera egalement demade d'entre une "cle" celle qui vous a ete fournis lor
 <img src=images/IMG-20230606-WA0006.jpg width='' height='' >
 <img src=images/IMG-20230606-WA0011.jpg width='' height='' >
 <img src=images/IMG-20230606-WA0040.jpg width='' height='' >
-#  👨‍🏫 SCONFIG
-1.Windows/300131438/images/
+#  👨‍🏫 SCONFIG : il s'agit ici de configurer vos parametres reseau
 <img src=images/1.jpg width='' height='' > 
 <img src=images/7.jpg width='' height='' >
 <img src=images/3.jpg width='' height='' >
