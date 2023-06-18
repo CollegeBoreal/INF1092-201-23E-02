@@ -21,6 +21,7 @@ il suffit juste de suivre les etapes qui vont etre affiche a votre ecran au fure
 
 <img src=images/IMG-20230606-WA0020.jpg width='' height='' > 
 # seclectionner le type d'installation que vous desirez. vous pouvez soit utiliser les partitions par defaut (option 1) soit les  personnaliser vous meme (option 2)
+il vous sera egalement demade d'entre une "cle" celle qui vous a ete fournis lors de la creation de votre cle windows serveur 
 
 <img src=images/IMG-20230606-WA0006.jpg width='' height='' >
 <img src=images/IMG-20230606-WA0011.jpg width='' height='' >
