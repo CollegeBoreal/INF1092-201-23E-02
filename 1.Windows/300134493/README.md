@@ -1,4 +1,5 @@
 # :desktop_computer: installation de windows 2019 sur server
+Installation de windows 2019 avec la memoire flash usb nous permettra d'installer windows 2019 sur un server.
 
 <img src=images/c14c542c-3396-4fab-8f34-4a7b7169cead.jpeg width='' height='' > </img>
 
