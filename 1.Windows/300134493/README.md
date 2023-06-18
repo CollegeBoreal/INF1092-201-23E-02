@@ -59,6 +59,7 @@ ceci empechera d'accès à de nombreux utlisateurs d'utiliser.
 * Choisir option 7 pour REMOTE DESKTOP
 
 Remote desktop est l'outil d'accès distant présent au sein du système d'exploitation windows.
+
 </img> <img src=images/IMG_1902.jpeg width='' height='' > </img>
 </img> <img src=images/IMG_1903.jpeg width='' height='' > </img>
 
