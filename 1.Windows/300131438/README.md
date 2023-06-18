@@ -39,7 +39,15 @@ IL s'agit ici de 10.13.237.34
 on prendra comme subnet-mask 255.255.255.0
 
 <img src=images/3.jpg width='' height='' >
+
+# ✍️CONFIGURATION DE L'ADRESSE DU DNS SERVER
+pour cella il faudrai revenir sur les parametres de sconfig et entrer "2"
+
 <img src=images/4.jpg width='' height='' >
+
+# ✍️ ATTRIBUTION DE L'ADRESSE DU DNS SERVEUR
+on prendra dans notre cas l'adresse 1.1.1.1
+
 <img src=images/5.jpg width='' height='' > 
 <img src=images/6.jpg width='' height='' >
 <img src=images/2.Ijpg width='' height='' >
