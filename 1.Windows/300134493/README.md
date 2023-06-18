@@ -25,6 +25,7 @@ Installation de windows 2019 avec la memoire flash usb à l'aide du rufus nous p
 </img> <img src=images/IMG_1858.jpeg width='' height='' > </img>
 
 * Choisir custom
+  
 Dans l'installation personnalisée, vous avez la possibilité d'installer le packet dont vous avez besoin
 
 </img> <img src=images/IMG_1859.jpeg width='' height='' > </img>
