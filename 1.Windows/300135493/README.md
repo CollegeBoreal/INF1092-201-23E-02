@@ -40,12 +40,20 @@
 <img src=images/IMG_20230517_195730.jpg width='' height='' > </img>
 <img src=images/IMG_20230517_201505.jpg width='' height='' > </img>
 <img src=images/IMG_20230517_201851.jpg width='' height='' > </img>
-4️⃣ Installation de PowerShell 🛡️
+4️⃣ Configuration de l'addressage IP
+
+5️⃣ Installation de PowerShell 🛡️
+[X] Ouverure de la fênete 'Tas Manager'
 <img src=images/IMG-20230524-WA0008.jpg width='' height='' > </img>
-<img src=images/IMG-20230524-WA0001.jpg width='' height='' > </img>
-<img src=images/IMG-20230524-WA0007.jpg width='' height='' > </img>
+Naviguer avec la souris ou avec la touche ALT+F(Astuce) pour rentrer dans la colone 'File' puis 'New-Task'
 <img src=images/IMG-20230524-WA0006.jpg width='' height='' > </img>
+[X] Entrez la commande 'powerShell' 
+<img src=images/IMG-20230524-WA0001.jpg width='' height='' > </img>
+[X] Ouverture de la commande PowerShell
 <img src=images/IMG-20230524-WA0005.jpg width='' height='' > </img>
+[X] Entrez la commande '' pour lancer l'installation
 <img src=images/IMG-20230524-WA0004.jpg width='' height='' > </img>
+[X] Progression de l'installation
 <img src=images/IMG-20230524-WA0003.jpg width='' height='' > </img>
+[X] Message affichant le succès de l'instalation
 <img src=images/IMG-20230524-WA0002.jpg width='' height='' > </img>
