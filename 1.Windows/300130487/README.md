@@ -1,12 +1,12 @@
 ## installation de windows 2019
 
 1.Windows/300130487/images/IMG_0584.jpg
-## Téléchargement et installion de Windows server
+## 🇨🇩 Téléchargement et installion de Windows server
 <img src=images/IMG_0584.jpg width='237' height='237' > </img>
 <img src=images/IMG_0585.jpg width='237' height='237' > </img>
 <img src=images/IMG_0586.jpg width='237' height='237' > </img>
 <img src=images/IMG_0587.jpg width='237' height='237' > </img>
-## téléchargement du fichier Windows server
+## 🔥téléchargement du fichier Windows server
 <img src=images/IMG_0590.jpg width='237' height='237' > </img>
 ## Interface du Bios
 <img src=images/IMG_0588.jpg width='237' height='237' > </img>
