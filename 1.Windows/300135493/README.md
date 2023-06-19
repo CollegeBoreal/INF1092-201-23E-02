@@ -25,15 +25,15 @@
 <img src=images/IMG_20230517_182448.jpg width='' height='' > </img>
 3️⃣ Commencer l'intallation du server🖥️ à partir de la clé sur le disque en appuyant sur la touche echap puis F1 pusieur fois
 <img src=images/IMG_20230517_182837.jpg width='' height='' > </img>
-- [x] Regler la langue le Fuseau horaire et le clavier au choix puis cliquer sur next pour procederà la prochaine étapes
+- [x] Regler la langue le Fuseau horaire🕐 et le clavier⌨️ au choix puis cliquer sur next pour procederà la prochaine étapes
 <img src=images/IMG_20230517_184323.jpg width='' height='' > </img>
-- [x] Entrez la clé d'activation xxxxx puis cliquer sur next
+- [x] Entrez la clé d'activation🔑 xxxxx puis cliquer sur next
 <img src=images/IMG_20230517_184428.jpg width='' height='' > </img>
 - [x] Choisissez la version window severstandart 2019(ien que Deskopt Experience soit la meilleur option dans notre cas)
 <img src=images/IMG_20230517_184629.jpg width='' height='' > </img>
-- [x] Cochez le contrat et cliquer sur next
+- [x] Cochez le contrat et cliquer sur next🖱️
 <img src=images/IMG_20230517_184702.jpg width='' height='' > </img>
-- [x] Choiser le disque de Stokage precedenment configurer puis cliquer sur la touche next
+- [x] Choiser le disque de Stokage precedenment configurer puis cliquer🖱️ sur la touche next
 <img src=images/IMG_20230517_194035.jpg width='' height='' > </img>
 - [x]
 <img src=images/IMG_20230517_194113.jpg width='' height='' > </img>
@@ -43,9 +43,9 @@
 4️⃣ Configuration de l'addressage IP
 
 5️⃣ Installation de PowerShell 🛡️
-[X] Ouverure de la fênete 'Tas Manager'
+- [X] Ouverure de la fênete 'Task Manager'
 <img src=images/IMG-20230524-WA0008.jpg width='' height='' > </img>
-Naviguer avec la souris ou avec la touche ALT+F(Astuce) pour rentrer dans la colone 'File' puis 'New-Task'
+Naviguer avec la souris🖱️ ou avec la touche ALT+F(Astuce)⌨️ pour rentrer dans la colone 'File' puis 'New-Task'
 <img src=images/IMG-20230524-WA0006.jpg width='' height='' > </img>
 [X] Entrez la commande 'powerShell' 
 <img src=images/IMG-20230524-WA0001.jpg width='' height='' > </img>
@@ -53,7 +53,7 @@ Naviguer avec la souris ou avec la touche ALT+F(Astuce) pour rentrer dans la col
 <img src=images/IMG-20230524-WA0005.jpg width='' height='' > </img>
 [X] Entrez la commande '' pour lancer l'installation
 <img src=images/IMG-20230524-WA0004.jpg width='' height='' > </img>
-[X] Progression de l'installation
+[X] Progression de l'installation⏩
 <img src=images/IMG-20230524-WA0003.jpg width='' height='' > </img>
-[X] Message affichant le succès de l'instalation
+[X] Message affichant le succès de l'instalation👌
 <img src=images/IMG-20230524-WA0002.jpg width='' height='' > </img>
