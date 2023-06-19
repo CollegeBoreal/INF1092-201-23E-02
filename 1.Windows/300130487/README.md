@@ -14,16 +14,15 @@
 <img src=images/IMG_0591.jpg width='237' height='237' > </img>
 ## 🏴 Supression de l'ancien Disk
 <img src=images/IMG_0592.jpg width='237' height='237' > </img>
-## Emplacement du fichier dans le disk
+## ✈️ Emplacement du fichier dans le disk
 <img src=images/IMG_0593.jpg width='237' height='237' > </img>
 ## 🗝️ Attente du téléchargement 
 <img src=images/IMG_0596.jpg width='237' height='237' > </img>
 ## 🎱 Création du compte Administrateur 
 <img src=images/IMG_0597.jpg width='237' height='237' > </img>
 <img src=images/IMG_0598.jpg width='237' height='237' > </img>
-
-
 <img src=images/IMG_0704.jpg width='237' height='237' > </img>
+
 ## 👍 Sconfig et Configuration Administrateur
 <img src=images/IMG_0705.jpg width='237' height='237' > </img>
 <img src=images/IMG_0706.jpg width='237' height='237' > </img>
