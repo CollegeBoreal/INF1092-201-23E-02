@@ -9,11 +9,14 @@
 ## téléchargement du fichier Windows server
 <img src=images/IMG_0590.jpg width='237' height='237' > </img>
 ## Interface du Bios
-
 <img src=images/IMG_0588.jpg width='237' height='237' > </img>
+## Création du nouveau Disk
 <img src=images/IMG_0591.jpg width='237' height='237' > </img>
+## Supression de l'ancien Disk
 <img src=images/IMG_0592.jpg width='237' height='237' > </img>
+## Emplacement du fichier dans le disk
 <img src=images/IMG_0593.jpg width='237' height='237' > </img>
+
 <img src=images/IMG_0596.jpg width='237' height='237' > </img>
 <img src=images/IMG_0597.jpg width='237' height='237' > </img>
 <img src=images/IMG_0598.jpg width='237' height='237' > </img>
