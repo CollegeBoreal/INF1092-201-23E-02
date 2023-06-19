@@ -23,7 +23,6 @@
 <img src=images/IMG_0598.jpg width='237' height='237' > </img>
 
 <img src=images/IMG_0702.jpg width='237' height='237' > </img>
-<img src=images/IMG_0703.jpg width='237' height='237' > </img>
 <img src=images/IMG_0704.jpg width='237' height='237' > </img>
 ## 👍 Sconfig et Configuration Administrateur
 <img src=images/IMG_0705.jpg width='237' height='237' > </img>
