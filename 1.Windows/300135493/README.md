@@ -47,13 +47,13 @@
 <img src=images/IMG-20230524-WA0008.jpg width='' height='' > </img>
 Naviguer avec la souris🖱️ ou avec la touche ALT+F(Astuce)⌨️ pour rentrer dans la colone 'File' puis 'New-Task'
 <img src=images/IMG-20230524-WA0006.jpg width='' height='' > </img>
-[X] Entrez la commande 'powerShell' 
+- [X] Entrez la commande 'powerShell' 
 <img src=images/IMG-20230524-WA0001.jpg width='' height='' > </img>
-[X] Ouverture de la commande PowerShell
+- [X] Ouverture de la commande PowerShell
 <img src=images/IMG-20230524-WA0005.jpg width='' height='' > </img>
-[X] Entrez la commande '' pour lancer l'installation
+- [X] Entrez la commande '' pour lancer l'installation
 <img src=images/IMG-20230524-WA0004.jpg width='' height='' > </img>
-[X] Progression de l'installation⏩
+- [X] Progression de l'installation⏩
 <img src=images/IMG-20230524-WA0003.jpg width='' height='' > </img>
-[X] Message affichant le succès de l'instalation👌
+- [X] Message affichant le succès de l'instalation👌
 <img src=images/IMG-20230524-WA0002.jpg width='' height='' > </img>
