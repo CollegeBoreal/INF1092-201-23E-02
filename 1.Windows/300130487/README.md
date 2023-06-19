@@ -6,11 +6,11 @@
 <img src=images/IMG_0585.jpg width='237' height='237' > </img>
 <img src=images/IMG_0586.jpg width='237' height='237' > </img>
 <img src=images/IMG_0587.jpg width='237' height='237' > </img>
-## Interface du Setup
-<img src=images/IMG_0588.jpg width='237' height='237' > </img>
 ## téléchargement du fichier Windows server
 <img src=images/IMG_0590.jpg width='237' height='237' > </img>
+## Interface du Bios
 
+<img src=images/IMG_0588.jpg width='237' height='237' > </img>
 <img src=images/IMG_0591.jpg width='237' height='237' > </img>
 <img src=images/IMG_0592.jpg width='237' height='237' > </img>
 <img src=images/IMG_0593.jpg width='237' height='237' > </img>
