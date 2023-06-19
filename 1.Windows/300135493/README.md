@@ -23,7 +23,7 @@
 <img src=images/IMG_20230517_182439.jpg width='' height='' > </img>
 - [x] Confirmer et sauveguarder ses parametres avec la touche Enter
 <img src=images/IMG_20230517_182448.jpg width='' height='' > </img>
-3️⃣ Commencer l'intallation du server à partir de la clé sur le disque en appuyant sur la touche echap puis F1 pusieur fois
+3️⃣ Commencer l'intallation du server🖥️ à partir de la clé sur le disque en appuyant sur la touche echap puis F1 pusieur fois
 <img src=images/IMG_20230517_182837.jpg width='' height='' > </img>
 - [x] Regler la langue le Fuseau horaire et le clavier au choix puis cliquer sur next pour procederà la prochaine étapes
 <img src=images/IMG_20230517_184323.jpg width='' height='' > </img>
@@ -40,4 +40,5 @@
 <img src=images/IMG_20230517_195730.jpg width='' height='' > </img>
 <img src=images/IMG_20230517_201505.jpg width='' height='' > </img>
 <img src=images/IMG_20230517_201851.jpg width='' height='' > </img>
-
+4️⃣ Installation de PowerShell 🛡️
+<img src=images/IMG-20230524-WA0008.jpg width='' height='' > </img>
