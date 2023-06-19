@@ -42,6 +42,9 @@
 <img src=images/IMG_20230517_201851.jpg width='' height='' > </img>
 4️⃣ Configuration de l'addressage IP
 
+- [X] Test Ping
+<img src=images/IMG_20230524_163623 (2).jpg width='' height='' > </img>
+
 5️⃣ Installation de PowerShell 🛡️
 - [X] Ouverure de la fênete 'Task Manager'
 <img src=images/IMG-20230524-WA0008.jpg width='' height='' > </img>
