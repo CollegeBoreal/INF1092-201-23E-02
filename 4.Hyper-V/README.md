@@ -62,6 +62,7 @@ PS> Get-Command -Module Hyper-V
 
 # References
 
-https://www.altaro.com/hyper-v/install-hyper-v-powershell-module/
+- [ ] [How to Install the Hyper-V PowerShell Module (updated for Windows Server 2019)](https://www.altaro.com/hyper-v/install-hyper-v-powershell-module/)
 
-https://techthoughts.info/home-lab-setup/
+
+- [ ] [Hyper-V](https://learn.microsoft.com/en-us/powershell/module/hyper-v/?view=windowsserver2022-ps)
