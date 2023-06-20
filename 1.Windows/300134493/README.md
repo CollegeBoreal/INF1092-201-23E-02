@@ -40,7 +40,13 @@ Dans l'installation personnalisée, vous avez la possibilité d'installer le pac
 ## 2️⃣  Installation et Reboot
 
 </img> <img src=images/IMG_1886.jpeg width='' height='' > </img>
+
+*Installation windows
+
 </img> <img src=images/IMG_1885.jpeg width='' height='' > </img>
+
+*Installation windows
+
 </img> <img src=images/IMG_1888.jpeg width='' height='' > </img>
 
 ## 3️⃣  Configuration
