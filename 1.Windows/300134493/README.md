@@ -1,7 +1,7 @@
-🔑🔑  Installation de la cle windows 2019 
+📌 Unetbootin
 </img> <img src=images/IMG_2473.jpeg width='' height='' > </img>
+🔑🔑 Installation de windows 2019 sur la clé 
 </img> <img src=images/IMG_2480.jpeg width='' height='' > </img>
-</img> <img src=images/5e61e1f5-1cce-4db7-804c-d894c67dae9c.jpeg width='' height='' > </img>
 1.Windows/300134493/images/5e61e1f5-1cce-4db7-804c-d894c67dae9c.jpeg
 # :desktop_computer: installation de windows 2019 sur server
 windows server est une plateforme bien connue et largement utilisée, ce qui signifie qu'elle est facilement accessibles pour les administrateurs.En intallant windows sur un un server, il peut plus facile pour les administrateurs système de gestions, soutenir,concevoir et assurer du serveur et des apllications qui y sont excut.
