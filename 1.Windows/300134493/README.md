@@ -17,7 +17,7 @@ Installation de windows 2019 avec la memoire flash usb à l'aide du rufus nous p
 
 ## :one: formatage des disques durs du server
 
-- [x] Reinitialiser le disque
+:[]pour formater les disques durs, la touche F8 est necessaire pour formater
 </img> <img src=images/IMG_1875.jpeg width='' height='' > </img>
 
 <img src=images/7aaa7646-e6fd-4fbc-9f44-2a92051947c7.jpeg width='' height='' > </img>
