@@ -104,9 +104,9 @@ Remote desktop est l'outil d'accès distant présent au sein du système d'explo
 
 </img> <img src=images/IMG_2068.jpeg width='237' height='237' > </img>
 
-</img> <img src=images/IMG_2069.jpeg width='237' height='237' > </img>
-
 * Option 4 pour configurer remote management qui permet un administrateur de controller a distance des serveurs.
+
+</img> <img src=images/IMG_2069.jpeg width='237' height='237' > </img>
 
 </img> <img src=images/IMG_2070.jpeg width='237' height='237' > </img>
 
