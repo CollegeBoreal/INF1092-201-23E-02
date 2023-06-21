@@ -60,6 +60,9 @@ Binary     1.1        Hyper-V                             {Add-VMDvdDrive, Add-V
 PS> Get-Command -Module Hyper-V
 ```
 
+## Créer sa machine virtuelle
+
+[:point_right: Installer sa machine virtuelle](VM.md)
 
 
 # References
