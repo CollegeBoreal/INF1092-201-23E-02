@@ -80,6 +80,9 @@ Configuration du réseau avec Sconfig.cmd
 </img> <img src=images/IMG_2069.jpeg width='' height='' > </img>
 </img> <img src=images/IMG_2070.jpeg width='' height='' > </img>
 </img> <img src=images/IMG_2071.jpeg width='' height='' > </img>
+
+📌 option 15 permet de quitter en ligne de commande
+
 </img> <img src=images/IMG_2072.jpeg width='' height='' > </img>
 </img> <img src=images/IMG_2073.jpeg width='' height='' > </img>
 
