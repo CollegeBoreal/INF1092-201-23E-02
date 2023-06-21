@@ -7,10 +7,12 @@ Unetbootin est un logiciel libre et open source qui permet de créer la cle USB 
 🔑🔑 Installation de windows 2019 sur la clé USB
 
 </img> <img src=images/IMG_2480.jpeg width='237' height='237' > </img>
+
 1.Windows/300134493/images/5e61e1f5-1cce-4db7-804c-d894c67dae9c.jpeg
 # :desktop_computer: installation de windows 2019 sur server
 windows server est une plateforme bien connue et largement utilisée, ce qui signifie qu'elle est facilement accessibles pour les administrateurs.En intallant windows sur un un server, il peut plus facile pour les administrateurs système de gestions, soutenir,concevoir et assurer du serveur et des apllications qui y sont excut.
 Installation de windows 2019 avec la memoire flash usb à l'aide du rufus nous permettra d'installer windows 2019 sur un server.
+
 </img> <img src=images/whatsApp Image 2023-06-14 at 16.04.21.jpeg width='237' height='237' > </img>
 
 <img src=images/c14c542c-3396-4fab-8f34-4a7b7169cead.jpeg width='237' height='237' > </img>
@@ -24,7 +26,8 @@ Tapez F10 pour confirmer
 * Appuyez entrez pour continuer
 
 <img src=images/7aaa7646-e6fd-4fbc-9f44-2a92051947c7.jpeg width='237' height='237' > </img>
-[-] Creer un lecteur logique
+
+📌 Creer un lecteur logique
 
 <img src=images/db08feb8-725d-43d9-95b6-97e591cd2d7d.jpeg width='237' height='237' > </img>
 
