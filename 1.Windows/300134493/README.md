@@ -74,7 +74,6 @@ ceci empechera d'accès à de nombreux utlisateurs d'utiliser.
 Remote desktop est l'outil d'accès distant présent au sein du système d'exploitation windows.
 
 </img> <img src=images/IMG_1902.jpeg width='' height='' > </img>
-</img> <img src=images/IMG_1903.jpeg width='' height='' > </img>
 
 📌  Configuration du réseau avec Sconfig.cmd
  A ce niveau la configuration du reseau est faite par l'addresse ip 10.13.237.26 , du reseau masque 255.255.255.0 et un gateway qu'on applelle passerelle 10.13.237.1
