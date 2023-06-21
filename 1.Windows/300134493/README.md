@@ -27,7 +27,9 @@ Tapez F10 pour confirmer
 
 <img src=images/7aaa7646-e6fd-4fbc-9f44-2a92051947c7.jpeg width='237' height='237' > </img>
 
-📌 Creer un lecteur logique
+📌 Créer lecteur logique 
+
+* Ça permettre de mieux organiser les fichiers, d'installer un système d'exploitation sur une partition
 
 <img src=images/db08feb8-725d-43d9-95b6-97e591cd2d7d.jpeg width='237' height='237' > </img>
 
