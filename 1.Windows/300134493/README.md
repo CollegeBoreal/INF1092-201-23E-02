@@ -19,7 +19,7 @@ Installation de windows 2019 avec la memoire flash usb à l'aide du rufus nous p
 
 - [x] Reinitialiser le disque
 </img> <img src=images/IMG_1875.jpeg width='' height='' > </img>
-</img> <img src=images/IMG_1844.jpeg width='' height='' > </img>
+
 <img src=images/7aaa7646-e6fd-4fbc-9f44-2a92051947c7.jpeg width='' height='' > </img>
 [-] Creer un lecteur logique
 <img src=images/db08feb8-725d-43d9-95b6-97e591cd2d7d.jpeg width='' height='' > </img>
