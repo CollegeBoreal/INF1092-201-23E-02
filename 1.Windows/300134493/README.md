@@ -54,7 +54,7 @@ Dans l'installation personnalisée, vous avez la possibilité d'installer le pac
 
 ## 3️⃣  Configuration
 
-Du mot de passe de l'Administrateur Administrator
+Du mot de passe de l'Administrateur 
 
 </img> <img src=images/IMG_1893.jpeg width='' height='' > </img>
 
