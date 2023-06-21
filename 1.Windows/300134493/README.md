@@ -44,11 +44,11 @@ Dans l'installation personnalisée, vous avez la possibilité d'installer le pac
 
 </img> <img src=images/IMG_1886.jpeg width='' height='' > </img>
 
-*Installation windows
+📌 Installation windows en cours de chargement
 
 </img> <img src=images/IMG_1885.jpeg width='' height='' > </img>
 
-*Installation windows
+📌  Installation windows en cours de chargement
 
 </img> <img src=images/IMG_1888.jpeg width='' height='' > </img>
 
