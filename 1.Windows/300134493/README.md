@@ -76,9 +76,12 @@ Remote desktop est l'outil d'accès distant présent au sein du système d'explo
 </img> <img src=images/IMG_1902.jpeg width='' height='' > </img>
 </img> <img src=images/IMG_1903.jpeg width='' height='' > </img>
 
-Configuration du réseau avec Sconfig.cmd
+📌  Configuration du réseau avec Sconfig.cmd
+
+ A ce niveau la configuration du reseau est faite par l'addresse ip 10.13.237.26 , du reseau masque 255.255.255.0 et un gateway qu'on applelle passerelle 10.13.237.1
 
 </img> <img src=images/IMG_2067.jpeg width='' height='' > </img>
+
 </img> <img src=images/IMG_2068.jpeg width='' height='' > </img>
 </img> <img src=images/IMG_2069.jpeg width='' height='' > </img>
 </img> <img src=images/IMG_2070.jpeg width='' height='' > </img>
