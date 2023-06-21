@@ -33,7 +33,7 @@ Tapez F10 pour confirmer
 
 📌 Pour formater les disques durs, la touche F8 est necessaire pour formater
 
-<img src=images/c5160e42-3dee-4c22-b520-c17f9146aa92.jpeg width='' height='' > </img>
+<img src=images/c5160e42-3dee-4c22-b520-c17f9146aa92.jpeg width='237' height='237' > </img>
 
 <img src=images/dd03f1b9-87ca-4a45-900c-bc7f0cc81252.jpeg width='237' height='237' > </img>
 
