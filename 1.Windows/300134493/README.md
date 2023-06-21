@@ -83,7 +83,6 @@ Remote desktop est l'outil d'accès distant présent au sein du système d'explo
 </img> <img src=images/IMG_2068.jpeg width='' height='' > </img>
 </img> <img src=images/IMG_2069.jpeg width='' height='' > </img>
 </img> <img src=images/IMG_2070.jpeg width='' height='' > </img>
-</img> <img src=images/IMG_2071.jpeg width='' height='' > </img>
 
 📌 option 15 permet de quitter en ligne de commande
 
