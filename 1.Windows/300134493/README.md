@@ -82,6 +82,9 @@ Configuration du réseau avec Sconfig.cmd
 </img> <img src=images/IMG_2071.jpeg width='' height='' > </img>
 </img> <img src=images/IMG_2072.jpeg width='' height='' > </img>
 </img> <img src=images/IMG_2073.jpeg width='' height='' > </img>
+
+📌 Ctrl-ALt-del permettant d'acceder à notre server
+
 </img> <img src=images/IMG_2074.jpeg width='' height='' > </img>
 
 
