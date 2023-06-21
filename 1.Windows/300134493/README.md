@@ -59,17 +59,11 @@ Du mot de passe de l'Administrateur Administrator
 </img> <img src=images/IMG_1893.jpeg width='' height='' > </img>
 
 📌 Creer un mot de passe 
-
 ceci empechera d'accès à de nombreux utlisateurs d'utiliser.
+
 </img> <img src=images/IMG_1894.jpeg width='' height='' > </img>
 
-
-* Du mot de passe 
-
-</img> <img src=images/IMG_1899.jpeg width='' height='' > </img> 
-</img> <img src=images/IMG_1900.jpeg width='' height='' > </img>
-</img> <img src=images/IMG_1901.jpeg width='' height='' > </img
-* Choisir option 7 pour REMOTE DESKTOP
+📌 Choisir option 7 pour REMOTE DESKTOP
 
 Remote desktop est l'outil d'accès distant présent au sein du système d'exploitation windows.
 
