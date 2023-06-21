@@ -24,6 +24,9 @@ Installation de windows 2019 avec la memoire flash usb à l'aide du rufus nous p
 * Configuration Language, Clavier et FormatTemps et Devises
  
 </img> <img src=images/IMG_1854.jpeg width='' height='' > </img>
+
+* Installation du window
+
 </img> <img src=images/IMG_1855.jpeg width='' height='' > </img>
 * Accepter la license
 </img> <img src=images/IMG_1858.jpeg width='' height='' > </img>
