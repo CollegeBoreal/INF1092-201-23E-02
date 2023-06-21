@@ -5,23 +5,23 @@
 
 Si vous souhaitez créer une machine virtuelle (VM) à partir d'un fichier ISO avec Hyper-V en utilisant PowerShell, voici les étapes à suivre :
 
-Lancez PowerShell : Ouvrez la console PowerShell ou PowerShell ISE en tant qu'administrateur.
+1. Lancez PowerShell : Ouvrez la console PowerShell ou PowerShell ISE en tant qu'administrateur.
 
-> Vérifiez les configurations requises : Assurez-vous que votre système dispose de la configuration matérielle nécessaire pour exécuter des machines virtuelles avec Hyper-V. Vérifiez que la virtualisation matérielle est activée dans le BIOS de votre ordinateur.
+2. Vérifiez les configurations requises : Assurez-vous que votre système dispose de la configuration matérielle nécessaire pour exécuter des machines virtuelles avec Hyper-V. Vérifiez que la virtualisation matérielle est activée dans le BIOS de votre ordinateur.
 
-1. Créez un nouveau disque dur virtuel : Utilisez la commande New-VHD pour créer un disque dur virtuel (VHD) qui servira de disque dur de la VM. Spécifiez le chemin de destination, la taille du disque et d'autres paramètres. Par exemple :
+3. Créez un nouveau disque dur virtuel : Utilisez la commande New-VHD pour créer un disque dur virtuel (VHD) qui servira de disque dur de la VM. Spécifiez le chemin de destination, la taille du disque et d'autres paramètres. Par exemple :
 
 ```powershell
 New-VHD -Path "C:\VMs\MyVM.vhdx" -SizeBytes 50GB -Dynamic
 ```
 
-1. Montez l'ISO : Utilisez la commande Mount-DiskImage pour monter le fichier ISO sur un lecteur virtuel. Spécifiez le chemin du fichier ISO. Par exemple :
+4. Montez l'ISO : Utilisez la commande Mount-DiskImage pour monter le fichier ISO sur un lecteur virtuel. Spécifiez le chemin du fichier ISO. Par exemple :
 
 ```powershell
 Mount-DiskImage -ImagePath "C:\ISOs\MyISO.iso"
 ```
 
-1. Créez une nouvelle VM : Utilisez la commande New-VM pour créer une nouvelle machine virtuelle. Spécifiez le nom de la VM, le chemin du disque dur virtuel créé précédemment, le chemin du lecteur virtuel monté à partir de l'ISO et d'autres paramètres. Par exemple :
+5. Créez une nouvelle VM : Utilisez la commande New-VM pour créer une nouvelle machine virtuelle. Spécifiez le nom de la VM, le chemin du disque dur virtuel créé précédemment, le chemin du lecteur virtuel monté à partir de l'ISO et d'autres paramètres. Par exemple :
 
 ```powershell
 New-VM -Name "MyVM" -Path "C:\VMs" -MemoryStartupBytes 4GB -Generation 2 -VHDPath "C:\VMs\MyVM.vhdx" -DVDDrivePath "D:"
@@ -29,13 +29,13 @@ New-VM -Name "MyVM" -Path "C:\VMs" -MemoryStartupBytes 4GB -Generation 2 -VHDPat
 
 > Assurez-vous de spécifier le chemin approprié pour le dossier de destination des VM, le chemin du disque dur virtuel et le lecteur virtuel monté à partir de l'ISO.
 
-1. Configurez les options de démarrage : Utilisez la commande Set-VM pour configurer les options de démarrage de la VM, telles que l'ordre de démarrage des périphériques. Par exemple, pour démarrer la VM à partir du lecteur DVD en premier :
+6. Configurez les options de démarrage : Utilisez la commande Set-VM pour configurer les options de démarrage de la VM, telles que l'ordre de démarrage des périphériques. Par exemple, pour démarrer la VM à partir du lecteur DVD en premier :
 
 ```powershell
 Set-VM -Name "MyVM" -BootOrder "CD"
 ```
 
-1. Démarrez la VM : Utilisez la commande Start-VM pour démarrer la VM que vous avez créée. Par exemple :
+7. Démarrez la VM : Utilisez la commande Start-VM pour démarrer la VM que vous avez créée. Par exemple :
 
 ```powershell
 Start-VM -Name "MyVM"
