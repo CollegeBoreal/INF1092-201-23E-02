@@ -25,7 +25,9 @@ Tapez F10 pour confirmer
 
 <img src=images/7aaa7646-e6fd-4fbc-9f44-2a92051947c7.jpeg width='237' height='237' > </img>
 [-] Creer un lecteur logique
+
 <img src=images/db08feb8-725d-43d9-95b6-97e591cd2d7d.jpeg width='237' height='237' > </img>
+
 <img src=images/c5160e42-3dee-4c22-b520-c17f9146aa92.jpeg width='' height='' > </img>
 
 📌 Pour formater les disques durs, la touche F8 est necessaire pour formater
@@ -39,7 +41,9 @@ Tapez F10 pour confirmer
 * Installation du window
 
 </img> <img src=images/IMG_1855.jpeg width='237' height='237' > </img>
+
 * Accepter la license
+
 </img> <img src=images/IMG_1858.jpeg width='237' height='237' > </img>
 
 * Choisir custom
@@ -87,7 +91,9 @@ Remote desktop est l'outil d'accès distant présent au sein du système d'explo
 📌 option 2 pour la configurstion  8.8.8.8 qui est une addresse IP qui correspond au serveur DNS public de google et 1.1.1.1 est une addresse IP qui correspond au serveur DNS public appartement la cloudflare.
 
 </img> <img src=images/IMG_2068.jpeg width='237' height='237' > </img>
+
 </img> <img src=images/IMG_2069.jpeg width='237' height='237' > </img>
+
 </img> <img src=images/IMG_2070.jpeg width='237' height='237' > </img>
 
 📌 option 15 permet de quitter en ligne de commande
