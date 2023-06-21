@@ -59,6 +59,7 @@ Dans l'installation personnalisée, vous avez la possibilité d'installer le pac
 </img> <img src=images/IMG_1859.jpeg width='237' height='237' > </img>
 
 * Choisir la distribution
+  
 </img> <img src=images/IMG_1863.jpeg width='237' height='237' > </img>
 
 ## 2️⃣  Installation et Reboot
@@ -80,7 +81,8 @@ Du mot de passe de l'Administrateur
 </img> <img src=images/IMG_1893.jpeg width='237' height='237' > </img>
 
 📌 Creer un mot de passe 
-ceci empechera d'accès à de nombreux utlisateurs d'utiliser.
+
+ceci empechera d'accès à de nombreux utlisateurs d'utiliser.  Ce mot de passe comporte au minimun 6 caractères au moins une lettre majuscule et une letrre miniscule
 
 </img> <img src=images/IMG_1894.jpeg width='237' height='237' > </img>
 
@@ -91,7 +93,9 @@ Remote desktop est l'outil d'accès distant présent au sein du système d'explo
 </img> <img src=images/IMG_1902.jpeg width='237' height='237' > </img>
 
 📌  Configuration du réseau avec Sconfig.cmd
+
  A ce niveau la configuration du reseau est faite par l'addresse ip 10.13.237.26 , du reseau masque 255.255.255.0 et un gateway qu'on applelle passerelle 10.13.237.1
+ 
 </img> <img src=images/IMG_2067.jpeg width='237' height='237' > </img>
 
 📌 option 2 pour la configurstion  8.8.8.8 qui est une addresse IP qui correspond au serveur DNS public de google et 1.1.1.1 est une addresse IP qui correspond au serveur DNS public appartement la cloudflare.
