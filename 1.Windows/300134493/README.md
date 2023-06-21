@@ -80,6 +80,8 @@ Remote desktop est l'outil d'accès distant présent au sein du système d'explo
  A ce niveau la configuration du reseau est faite par l'addresse ip 10.13.237.26 , du reseau masque 255.255.255.0 et un gateway qu'on applelle passerelle 10.13.237.1
 </img> <img src=images/IMG_2067.jpeg width='' height='' > </img>
 
+📌 option 2 pour la configurstion  8.8.8.8 qui est une addresse IP qui correspond au serveur DNS public de google et 1.1.1.1 est une addresse IP qui correspond au serveur DNS public appartement la cloudflare.
+
 </img> <img src=images/IMG_2068.jpeg width='' height='' > </img>
 </img> <img src=images/IMG_2069.jpeg width='' height='' > </img>
 </img> <img src=images/IMG_2070.jpeg width='' height='' > </img>
