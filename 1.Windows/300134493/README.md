@@ -84,9 +84,12 @@ Configuration du réseau avec Sconfig.cmd
 📌 option 15 permet de quitter en ligne de commande
 
 </img> <img src=images/IMG_2072.jpeg width='' height='' > </img>
+
+📌 option sign out permet de fermer notre serveur tout en  securisant les données
+
 </img> <img src=images/IMG_2073.jpeg width='' height='' > </img>
 
-📌 Ctrl-ALt-del permettant d'acceder à notre server
+📌 Ctrl-ALt-del permettant d'acceder à notre serveur
 
 </img> <img src=images/IMG_2074.jpeg width='' height='' > </img>
 
