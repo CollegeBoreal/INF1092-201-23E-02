@@ -4,7 +4,7 @@ Unetbootin est un logiciel libre et open source qui permet de créer la cle USB 
 
 </img> <img src=images/IMG_2473.jpeg width='' height='' > </img>
 
-🔑🔑 Installation de windows 2019 sur la clé 
+🔑🔑 Installation de windows 2019 sur la clé USB
 
 </img> <img src=images/IMG_2480.jpeg width='' height='' > </img>
 1.Windows/300134493/images/5e61e1f5-1cce-4db7-804c-d894c67dae9c.jpeg
