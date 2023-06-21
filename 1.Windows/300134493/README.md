@@ -1,4 +1,5 @@
-🔑🔑  Installation de la cle windows 2019 avec "MBR"
+🔑🔑  Installation de la cle windows 2019 
+
 </img> <img src=images/5e61e1f5-1cce-4db7-804c-d894c67dae9c.jpeg width='' height='' > </img>
 1.Windows/300134493/images/5e61e1f5-1cce-4db7-804c-d894c67dae9c.jpeg
 # :desktop_computer: installation de windows 2019 sur server
