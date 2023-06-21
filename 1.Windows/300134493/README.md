@@ -2,7 +2,7 @@
 
 Unetbootin est un logiciel libre et open source qui permet de créer la cle USB bootable a partir d'images disque ISO. il est utile pour installer un systèmes d'exploitation sur un ordinateur qui n'a pas de lecteur CD/DVD.
 
-</img> <img src=images/IMG_2473.jpeg width='' height='' > </img>
+</img> <img src=images/IMG_2473.jpeg width='237' height='237' > </img>
 
 🔑🔑 Installation de windows 2019 sur la clé USB
 
