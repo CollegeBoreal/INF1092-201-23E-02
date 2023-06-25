@@ -50,11 +50,14 @@
 
 <img src="images/WhatsApp Image 2023-05-27 at 7.23.06 PM.jpeg" width="253" height="337" > </img>
 
+🖥️ Configuration de Remote Desktop
+<img src="images/WhatsApp Image 2023-05-27 at 7.23.10 PM.jpeg" width="253" height="337" > </img>
+
 <img src="images/WhatsApp Image 2023-05-27 at 7.23.09 PM.jpeg" width="253" height="337" > </img>
 
 <img src="images/WhatsApp Image 2023-05-27 at 7.23.10 PM (1).jpeg" width="253" height="337" > </img>
 
-<img src="images/WhatsApp Image 2023-05-27 at 7.23.10 PM.jpeg" width="253" height="337" > </img>
+
 
 
 
