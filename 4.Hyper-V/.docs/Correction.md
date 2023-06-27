@@ -27,7 +27,10 @@ Number                  :
 ```
 
 ```powershell
-New-VM -Name "VM-Brice" -Path "C:\Users\Brice\Documents" -MemoryStartupBytes 4GB -Generation 2 -VHDPath "C:\Users\Brice\Documents\MyVM.vhdx"
+New-VM -Name "VM-Brice" -Path "C:\Users\Brice\Documents" `
+                        -MemoryStartupBytes 4GB `
+                        -Generation 2 `
+                        -VHDPath "C:\Users\Brice\Documents\MyVM.vhdx"
 ```
 > Response :
 ```python
