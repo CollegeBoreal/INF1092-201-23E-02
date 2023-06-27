@@ -77,3 +77,24 @@ PS> Get-Command -Module Hyper-V
 
 
 - [ ] [Hyper-V](https://learn.microsoft.com/en-us/powershell/module/hyper-v/?view=windowsserver2022-ps)
+
+PS C:\Users\Administrator> Install-Module -Name Hyper-V -Force
+PackageManagement\Install-Package : No match was found for the specified search criteria and module name 'Hyper-V'.
+Try Get-PSRepository to see all available registered module repositories.
+At C:\Program Files\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\PSModule.psm1:1809 char:21
++ ...          $null = PackageManagement\Install-Package @PSBoundParameters
++                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Microsoft.Power....InstallPackage:InstallPackage) [Install-Package], Ex
+   ception
+    + FullyQualifiedErrorId : NoMatchFoundForCriteria,Microsoft.PowerShell.PackageManagement.Cmdlets.InstallPackage
+
+```powershell
+PS > Get-WindowsFeature *Hyper*
+
+Display Name                                            Name                       Install State
+------------                                            ----                       -------------
+[ ] Hyper-V                                             Hyper-V                        Available
+        [ ] Hyper-V Management Tools                    RSAT-Hyper-V-Tools             Available
+            [ ] Hyper-V GUI Management Tools            Hyper-V-Tools                  Available
+            [ ] Hyper-V Module for Windows PowerShell   Hyper-V-PowerShell             Available
+```
