@@ -1,5 +1,5 @@
 ```powershell
- New-VHD -Path "C:\USers\Brice\Documents\MyVM.vhdx" -SizeBytes 5GB -Dynamic
+ New-VHD -Path "C:\Users\Brice\Documents\MyVM.vhdx" -SizeBytes 5GB -Dynamic
 ```
 > Reponse :
 ```python
@@ -26,6 +26,12 @@ AddressAbstractionType  : None
 Number                  :
 ```
 
+```powershell
+New-VM -Name "MyVM" -Path "C:\Users\Brice\Documents" -MemoryStartupBytes 4GB -Generation 2 -VHDPath "C:\Users\Brice\Documents\MyVM.vhdx"
 ```
-New-VM -Name "MyVM" -Path "C:\VMs" -MemoryStartupBytes 4GB -Generation 2 -VHDPath "C:\VMs\MyVM.vhdx" -DVDDrivePath "D:"
+> Response :
+```python
+Name State CPUUsage(%) MemoryAssigned(M) Uptime   Status             Version
+---- ----- ----------- ----------------- ------   ------             -------
+MyVM Off   0           0                 00:00:00 Operating normally 9.0
 ```
