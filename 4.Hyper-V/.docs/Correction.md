@@ -4,9 +4,8 @@
 > Reponse :
 ```python
 
-
 ComputerName            : WIN-BDAG7LU7LU7
-Path                    : C:\USers\Brice\Documents\MyVM.vhdx
+Path                    : C:\Users\Brice\Documents\VM-Brice.vhdx
 VhdFormat               : VHDX
 VhdType                 : Dynamic
 FileSize                : 4194304
@@ -16,7 +15,7 @@ LogicalSectorSize       : 512
 PhysicalSectorSize      : 4096
 BlockSize               : 33554432
 ParentPath              :
-DiskIdentifier          : D33F0385-E398-491E-9E30-5C4B338D7A89
+DiskIdentifier          : FDA68B1B-7EB4-4BF7-B03F-5F6C32E9DD5C
 FragmentationPercentage : 0
 Alignment               : 1
 Attached                : False
