@@ -29,7 +29,7 @@ Number                  :
 New-VM -Name "VM-Brice" -Path "C:\Users\Brice\Documents" `
                         -MemoryStartupBytes 4GB `
                         -Generation 2 `
-                        -VHDPath "C:\Users\Brice\Documents\MyVM.vhdx"
+                        -VHDPath "C:\Users\Brice\Documents\VM-Brice.vhdx"
 ```
 > Response :
 ```python
