@@ -79,3 +79,8 @@ At line:1 char:1
     + CategoryInfo          : InvalidOperation: (:) [Enter-PSSession], PSRemotingDataStructureException
     + FullyQualifiedErrorId : CreateRemoteRunspaceForVMFailed,Microsoft.PowerShell.Commands.EnterPSSessionCommand
 ```
+
+# References
+
+
+- [Managing Hyper-V VMs using PowerShell Direct](https://www.red-gate.com/simple-talk/sysadmin/powershell/managing-hyper-v-vms-using-powershell-direct/)
