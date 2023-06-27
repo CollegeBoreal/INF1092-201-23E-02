@@ -27,11 +27,19 @@ Number                  :
 ```
 
 ```powershell
-New-VM -Name "MyVM" -Path "C:\Users\Brice\Documents" -MemoryStartupBytes 4GB -Generation 2 -VHDPath "C:\Users\Brice\Documents\MyVM.vhdx"
+New-VM -Name "VM-Brice" -Path "C:\Users\Brice\Documents" -MemoryStartupBytes 4GB -Generation 2 -VHDPath "C:\Users\Brice\Documents\MyVM.vhdx"
 ```
 > Response :
 ```python
-Name State CPUUsage(%) MemoryAssigned(M) Uptime   Status             Version
----- ----- ----------- ----------------- ------   ------             -------
-MyVM Off   0           0                 00:00:00 Operating normally 9.0
+Name     State CPUUsage(%) MemoryAssigned(M) Uptime   Status             Version
+----     ----- ----------- ----------------- ------   ------             -------
+VM-Brice Off   0           0                 00:00:00 Operating normally 9.0
+```
+
+```powershell
+Remove-VM -Name "VM-Brice"-Force
+```
+
+```powershell
+Remove-Item -Path "C:\Users\Brice\Documents\VM-Brice.vhdx" -Force
 ```
