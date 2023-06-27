@@ -55,3 +55,27 @@ Name     State   CPUUsage(%) MemoryAssigned(M) Uptime           Status          
 ----     -----   ----------- ----------------- ------           ------             -------
 VM-Brice Running 0           4096              00:00:10.2960000 Operating normally 9.0
 ```
+
+```powershell
+$cred = Get-Credential
+```
+> Response:
+```python
+
+cmdlet Get-Credential at command pipeline position 1
+Supply values for the following parameters:
+Credential
+```
+
+```
+PS > Enter-PSSession -VMName "VM-Brice" -Credential $cred
+```
+> Response :
+```python
+Enter-PSSession : An error has occurred which Windows PowerShell cannot handle. A remote session might have ended.
+At line:1 char:1
++ Enter-PSSession -VMName "VM-Brice" -Credential $cred
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Enter-PSSession], PSRemotingDataStructureException
+    + FullyQualifiedErrorId : CreateRemoteRunspaceForVMFailed,Microsoft.PowerShell.Commands.EnterPSSessionCommand
+```
