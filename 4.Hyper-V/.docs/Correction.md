@@ -29,7 +29,7 @@ Number                  :
 ```
 
 ```powershell
-New-VM -Name "VM-Brice" -Path "$ENV:USERPROFILE\Documents" `
+New-VM -Name VM-Brice -Path "$ENV:USERPROFILE\Documents" `
                         -MemoryStartupBytes 4GB `
                         -Generation 2 `
                         -VHDPath "$ENV:USERPROFILE\Documents\VM-Brice.vhdx"
@@ -41,8 +41,12 @@ Name     State CPUUsage(%) MemoryAssigned(M) Uptime   Status             Version
 VM-Brice Off   0           0                 00:00:00 Operating normally 10.0
 ```
 
+```
+Stop-VM -Name VM-Brice -Force
+```
+
 ```powershell
-Remove-VM -Name "VM-Brice"-Force
+Remove-VM -Name VM-Brice -Force
 ```
 
 ```powershell
