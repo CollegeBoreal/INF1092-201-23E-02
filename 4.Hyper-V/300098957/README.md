@@ -1,7 +1,7 @@
--Dynamic 
+
 
 ```powershell
- New-VHD -Path "$ENV:USERPROFILE\Documents\VM-Brice.vhdx" -SizeBytes 5GB
+ New-VHD -Path "$ENV:USERPROFILE\Documents\VM-Brice.vhdx" -SizeBytes 5GB -Dynamic 
 ```
 > Reponse :
 ```python
