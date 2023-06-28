@@ -210,3 +210,21 @@ E              177874.43      60526.59 FileSystem    \\TSClIENT\Downloads
 
 - [Managing Hyper-V VMs using PowerShell Direct](https://www.red-gate.com/simple-talk/sysadmin/powershell/managing-hyper-v-vms-using-powershell-direct/)
 - [How to map network drive using PowerShell on Windows 10](https://pureinfotech.com/map-network-drive-powershell-windows-10/)
+
+- [PowerShell Hyper-V VM creation and boot](https://stackoverflow.com/questions/61144238/powershell-hyper-v-vm-creation-and-boot)
+
+```powershell
+$vmName = "vm" + (Get-Date -Format "yyyy-MM-dd-HH-mm")
+New-VM -Name $vmName -NewVHDPath "$vmName.vhdx" -NewVHDSizeBytes 64GB -MemoryStartupBytes 8GB -Path $vmName -Generation 2
+
+# Attach the Windows 10 ISO as a DVD drive to the VM
+Add-VMDvdDrive -VMName $vmName -Path win.iso
+
+# Set correct boot order (DVD drive first)
+$dvd = Get-VMDVDDrive -VMName $vmName
+Set-VMFirmware -VMName $vmName -FirstBootDevice $dvd
+
+# Start the VM and connect to it
+Start-VM -Name $vmName
+vmconnect $env:COMPUTERNAME $vmName
+```
