@@ -36,7 +36,7 @@ New-VM -Name "VM-Brice" -Path "C:\Users\Brice\Documents" `
 ```python
 Name     State CPUUsage(%) MemoryAssigned(M) Uptime   Status             Version
 ----     ----- ----------- ----------------- ------   ------             -------
-VM-Brice Off   0           0                 00:00:00 Operating normally 9.0
+VM-Brice Off   0           0                 00:00:00 Operating normally 10.0
 ```
 
 ```powershell
