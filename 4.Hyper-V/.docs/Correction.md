@@ -79,6 +79,11 @@ F                   0.56          0.00 FileSystem    F:\
 
 
 ```powershell
+$DVD = Add-VMDvdDrive -VMName VM-Brice -Path "$ENV:USERPROFILE\Documents\en_machine_learning_server_9.4.7_for_windows_x64_e46c29f6.iso" -Passthru
+Set-VMFirmware -VM VM-Brice -FirstBootDevice $DVD
+```
+
+```powershell
 New-VM -Name VM-Brice -Path "$ENV:USERPROFILE\Documents" `
                         -MemoryStartupBytes 4GB `
                         -Generation 2 `
