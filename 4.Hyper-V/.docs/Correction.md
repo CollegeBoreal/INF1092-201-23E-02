@@ -28,6 +28,12 @@ Number                  :
 
 ```
 
+- [ ] Copy ISO File
+
+```powershell
+Copy-Item -Path "E:\en-us_windows_server_2022_x64_dvd_620d7eac.iso" -Destination "$ENV:USERPROFILE\Documents"
+```
+
 ```powershell
 New-VM -Name VM-Brice -Path "$ENV:USERPROFILE\Documents" `
                         -MemoryStartupBytes 4GB `
