@@ -69,3 +69,4 @@ Copy-Item -Path "E:\en_machine_learning_server_9.4.7_for_windows_x64_e46c29f6.is
 
 - [Nano Server](https://www.microsoft.com/en-us/download/details.aspx?id=54065)
 - [Managing Hyper-V VMs using PowerShell Direct](https://www.red-gate.com/simple-talk/sysadmin/powershell/managing-hyper-v-vms-using-powershell-direct/)
+- [What Is Windows Nano Server, and What Are Its Applications?](https://www.parallels.com/blogs/ras/windows-nano-server/)
