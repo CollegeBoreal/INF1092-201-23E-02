@@ -77,14 +77,8 @@ E              179336.02      59065.01 FileSystem    \\TSCLIENT\Downloads
 F                   0.56          0.00 FileSystem    F:\
 ```
 
-
 ```powershell
-$DVD = Add-VMDvdDrive -VMName VM-Brice -Path "$ENV:USERPROFILE\Documents\en_machine_learning_server_9.4.7_for_windows_x64_e46c29f6.iso" -Passthru `
-Set-VMFirmware -VM VM-Brice -FirstBootDevice $DVD
-```
-
-```powershell
-New-VM -Name VM-Brice -Path "$ENV:USERPROFILE\Documents" `
+$VM = New-VM -Name VM-Brice -Path "$ENV:USERPROFILE\Documents" `
                         -MemoryStartupBytes 4GB `
                         -Generation 2 `
                         -VHDPath "$ENV:USERPROFILE\Documents\VM-Brice.vhdx"
@@ -95,6 +89,14 @@ Name     State CPUUsage(%) MemoryAssigned(M) Uptime   Status             Version
 ----     ----- ----------- ----------------- ------   ------             -------
 VM-Brice Off   0           0                 00:00:00 Operating normally 10.0
 ```
+
+```powershell
+$DVD = Add-VMDvdDrive -VMName "VM-Brice" -Path "$ENV:USERPROFILE\Documents\en_machine_learning_server_9.4.7_for_windows_x64_e46c29f6.iso" -Passthru `
+
+```
+
+
+:x: Set-VMFirmware -VM $VM -FirstBootDevice $DVD
 
 ```
 Stop-VM -Name VM-Brice -Force
