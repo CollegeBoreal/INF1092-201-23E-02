@@ -99,6 +99,34 @@ At line:1 char:1
     + FullyQualifiedErrorId : CreateRemoteRunspaceForVMFailed,Microsoft.PowerShell.Commands.EnterPSSessionCommand
 ```
 
+
+## Remote Desktop Connection
+
+```powershell
+net use
+```
+> Response :
+```python
+New connections will be remembered.
+
+
+Status       Local     Remote                    Network
+
+-------------------------------------------------------------------------------
+                       \\TSCLIENT\Downloads      Microsoft Terminal Services
+The command completed successfully.
+```
+
+```powershell
+New-PSDrive -Name "E" -PSProvider "FileSystem" -Root "\\TSClIENT\Downloads" -Persist
+```
+> Response:
+```
+Name           Used (GB)     Free (GB) Provider      Root                                               CurrentLocation
+----           ---------     --------- --------      ----                                               ---------------
+E              177865.97      60533.16 FileSystem    \\TSClIENT\Downloads
+```
+
 # References
 
 
