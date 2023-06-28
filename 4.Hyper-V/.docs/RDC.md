@@ -17,3 +17,50 @@ Pour partager un disque en utilisant l'application Remote Desktop Connection, vo
 Une fois connecté à l'ordinateur distant, le disque partagé apparaîtra dans l'Explorateur de fichiers de l'ordinateur distant, généralement sous la forme d'un lecteur réseau avec une lettre de lecteur assignée.
 
 Veuillez noter que la possibilité de partager des disques locaux avec l'ordinateur distant dépend de la configuration et des politiques de l'ordinateur distant. Assurez-vous d'avoir les autorisations nécessaires pour partager le disque et que les stratégies de sécurité de l'ordinateur distant le permettent.
+
+## Remote Desktop Connection
+
+<img src=../300098957/images/rdp-export-folder.png width='50%' height='50%' > </img>
+
+```powershell
+net use
+```
+> Response :
+```python
+New connections will be remembered.
+
+
+Status       Local     Remote                    Network
+
+-------------------------------------------------------------------------------
+                       \\TSCLIENT\Downloads      Microsoft Terminal Services
+The command completed successfully.
+```
+
+```powershell
+New-PSDrive -Name "E" -PSProvider "FileSystem" -Root "\\TSClIENT\Downloads" -Persist
+```
+> Response:
+```
+Name           Used (GB)     Free (GB) Provider      Root                                               CurrentLocation
+----           ---------     --------- --------      ----                                               ---------------
+E              177865.97      60533.16 FileSystem    \\TSClIENT\Downloads
+```
+
+```powershell
+Get-PSDrive -PSProvider FileSystem
+```
+> Response:
+```
+Name           Used (GB)     Free (GB) Provider      Root                                               CurrentLocation
+----           ---------     --------- --------      ----                                               ---------------
+C                  21.18        251.61 FileSystem    C:\                                  Users\Administrator\Documents
+D                                      FileSystem    D:\
+E              177874.43      60526.59 FileSystem    \\TSClIENT\Downloads
+```
+
+
+```powershell
+Copy-Item -Path "E:\en_machine_learning_server_9.4.7_for_windows_x64_e46c29f6.iso" -Destination "$ENV:USERPROFILE\Documents"
+```
+
