@@ -207,6 +207,11 @@ D                                      FileSystem    D:\
 E              177874.43      60526.59 FileSystem    \\TSClIENT\Downloads
 ```
 
+
+```powershell
+Copy-Item -Path "E:\en_machine_learning_server_9.4.7_for_windows_x64_e46c29f6.iso" -Destination "$ENV:USERPROFILE\Documents"
+```
+
 # References
 
 
