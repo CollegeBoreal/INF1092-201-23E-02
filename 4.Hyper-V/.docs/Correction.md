@@ -127,6 +127,18 @@ Name           Used (GB)     Free (GB) Provider      Root                       
 E              177865.97      60533.16 FileSystem    \\TSClIENT\Downloads
 ```
 
+```powershell
+Get-PSDrive -PSProvider FileSystem
+```
+> Response:
+```
+Name           Used (GB)     Free (GB) Provider      Root                                               CurrentLocation
+----           ---------     --------- --------      ----                                               ---------------
+C                  21.18        251.61 FileSystem    C:\                                  Users\Administrator\Documents
+D                                      FileSystem    D:\
+E              177874.43      60526.59 FileSystem    \\TSClIENT\Downloads
+```
+
 # References
 
 
