@@ -50,7 +50,12 @@ Remove-VM -Name VM-Brice -Force
 ```
 
 ```powershell
-Remove-Item -Path "C:\Users\Brice\Documents\VM-Brice.vhdx" -Force
+Remove-Item -Path "$ENV:USERPROFILE\Documents\VM-Brice.vhdx" -Force
+```
+
+
+```powershell
+Remove-Item -Path "$ENV:USERPROFILE\Documents\VM-Brice"  -Force 
 ```
 
 
