@@ -143,3 +143,4 @@ E              177874.43      60526.59 FileSystem    \\TSClIENT\Downloads
 
 
 - [Managing Hyper-V VMs using PowerShell Direct](https://www.red-gate.com/simple-talk/sysadmin/powershell/managing-hyper-v-vms-using-powershell-direct/)
+- [How to map network drive using PowerShell on Windows 10](https://pureinfotech.com/map-network-drive-powershell-windows-10/)
