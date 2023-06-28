@@ -46,7 +46,22 @@ Copy-Item -Path "E:\en_machine_learning_server_9.4.7_for_windows_x64_e46c29f6.is
 ```powershell
 Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\en_machine_learning_server_9.4.7_for_windows_x64_e46c29f6.iso"
 ```
+> Response:
+```python
 
+
+Attached          : True
+BlockSize         : 0
+DevicePath        : \\.\CDROM1
+FileSize          : 603045888
+ImagePath         : C:\Users\Brice\Documents\en_machine_learning_server_9.4.7_for_windows_
+                    x64_e46c29f6.iso
+LogicalSectorSize : 2048
+Number            : 1
+Size              : 603045888
+StorageType       : 1
+PSComputerName    :
+```
 
 
 
