@@ -49,7 +49,7 @@ Remove-Item -Path "C:\Users\Brice\Documents\VM-Brice.vhdx" -Force
 
 
 ```powershell
-Start-VM -Name "VM-Brice"
+Start-VM -Name VM-Brice
 ```
 
 ```powershell
