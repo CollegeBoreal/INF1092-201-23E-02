@@ -47,6 +47,22 @@ Remove-VM -Name "VM-Brice"-Force
 Remove-Item -Path "C:\Users\Brice\Documents\VM-Brice.vhdx" -Force
 ```
 
+
+```powershell
+Start-VM -Name "VM-Brice"
+```
+
+```powershell
+Get-VM
+```
+> Response:
+```python
+
+Name     State   CPUUsage(%) MemoryAssigned(M) Uptime           Status             Version
+----     -----   ----------- ----------------- ------           ------             -------
+VM-Brice Running 0           4096              00:00:08.5860000 Operating normally 10.0
+```
+
 ```powershell
 Get-VM
 ```
