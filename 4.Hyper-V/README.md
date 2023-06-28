@@ -66,6 +66,10 @@ PS> Get-Command -Module Hyper-V
 
 [:point_right: Installer sa machine virtuelle](.docs/VM.md)
 
+:pushpin: RDC
+
+[:point_right: Remote Desktop Connection](.docs/RDC.md)
+
 :pushpin: Paramêtres
 
 [:point_right: Paramètres de sa machine virtuelle](.docs/IP.md)
