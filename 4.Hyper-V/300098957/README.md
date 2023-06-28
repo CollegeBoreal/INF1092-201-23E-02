@@ -91,14 +91,28 @@ VM-Brice Off   0           0                 00:00:00 Operating normally 10.0
 ```
 
 ```powershell
-$DVD = Add-VMDvdDrive -VMName "VM-Brice" -Path "$ENV:USERPROFILE\Documents\en_machine_learning_server_9.4.7_for_windows_x64_e46c29f6.iso" -Passthru `
-
+Add-VMDvdDrive -VMName $VM.VMName -Path "$ENV:USERPROFILE\Documents\en_machine_learning_server_9.4.7_for_windows_x64_e46c29f6.iso"
 ```
 
-
-:x: Set-VMFirmware -VM $VM -FirstBootDevice $DVD
-
+```powershell
+Get-VMDVDDrive -VMName $VM.VMName
 ```
+> Response :
+```python
+VMName   ControllerType ControllerNumber ControllerLocation DvdMediaType Path
+------   -------------- ---------------- ------------------ ------------ ----
+VM-Brice SCSI           0                1                  ISO          C:\Users\Brice\Documents\en_machine_learning_server_9.4.7...
+```
+
+```powershell
+Set-VMFirmware $VM.VMName -FirstBootDevice $DVD
+```
+
+```powershell
+Start-VM VM-Brice
+```
+
+```powershell
 Stop-VM -Name VM-Brice -Force
 ```
 
