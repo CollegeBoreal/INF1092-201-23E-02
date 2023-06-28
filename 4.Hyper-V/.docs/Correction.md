@@ -35,16 +35,21 @@ Copy-Item -Path "E:\en-us_windows_server_2022_x64_dvd_620d7eac.iso" -Destination
 ```
 
 ```powershell
-Copy-Item -Path "E:\en_machine_learning_server_9.4.7_for_windows_x64_e46c29f6.iso" -Destination "$ENV:USERPROFILE\Documents"
+Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\en-us_windows_server_2022_x64_dvd_620d7eac.iso"
 ```
-
-
-
 
 
 ```powershell
-Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\en-us_windows_server_2022_x64_dvd_620d7eac.iso"
+Copy-Item -Path "E:\en_machine_learning_server_9.4.7_for_windows_x64_e46c29f6.iso" -Destination "$ENV:USERPROFILE\Documents"
 ```
+
+```powershell
+Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\en_machine_learning_server_9.4.7_for_windows_x64_e46c29f6.iso"
+```
+
+
+
+
 
 ```powershell
 New-VM -Name VM-Brice -Path "$ENV:USERPROFILE\Documents" `
