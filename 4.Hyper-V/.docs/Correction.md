@@ -63,7 +63,19 @@ StorageType       : 1
 PSComputerName    :
 ```
 
+```powershell
+Get-PSDrive -PSProvider FileSystem
+```
+> Response:
+```python
 
+Name           Used (GB)     Free (GB) Provider      Root                                                             CurrentLocation
+----           ---------     --------- --------      ----                                                             ---------------
+C                  26.90        245.89 FileSystem    C:\                                                             Windows\system32
+D                                      FileSystem    D:\
+E              179336.02      59065.01 FileSystem    \\TSCLIENT\Downloads
+F                   0.56          0.00 FileSystem    F:\
+```
 
 
 ```powershell
