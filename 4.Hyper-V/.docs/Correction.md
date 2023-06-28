@@ -4,7 +4,7 @@
 > Reponse :
 ```python
 
-ComputerName            : WIN-BDAG7LU7LU7
+ComputerName            : WIN-77KAV1BUA4O
 Path                    : C:\Users\Brice\Documents\VM-Brice.vhdx
 VhdFormat               : VHDX
 VhdType                 : Dynamic
@@ -15,7 +15,7 @@ LogicalSectorSize       : 512
 PhysicalSectorSize      : 4096
 BlockSize               : 33554432
 ParentPath              :
-DiskIdentifier          : FDA68B1B-7EB4-4BF7-B03F-5F6C32E9DD5C
+DiskIdentifier          : A5A20510-8125-41DA-82C5-15A727DC1B0B
 FragmentationPercentage : 0
 Alignment               : 1
 Attached                : False
@@ -23,6 +23,7 @@ DiskNumber              :
 IsPMEMCompatible        : False
 AddressAbstractionType  : None
 Number                  :
+
 ```
 
 ```powershell
