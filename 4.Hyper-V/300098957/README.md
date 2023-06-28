@@ -1,4 +1,11 @@
 
+```python
+import numpy as np
+
+def imprime():
+   println("Hello")
+```
+
 
 ```powershell
  New-VHD -Path "$ENV:USERPROFILE\Documents\VM-Brice.vhdx" -SizeBytes 5GB -Dynamic 
