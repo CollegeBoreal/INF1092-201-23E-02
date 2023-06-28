@@ -168,6 +168,8 @@ At line:1 char:1
 
 ## Remote Desktop Connection
 
+<img src=images/rdp-export-folder.png width='50%' height='50%' > </img>
+
 ```powershell
 net use
 ```
