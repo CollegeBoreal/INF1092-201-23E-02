@@ -18,13 +18,13 @@ Path                    : C:\Users\Brice\Documents\VM-Brice.vhdx
 VhdFormat               : VHDX
 VhdType                 : Dynamic
 FileSize                : 4194304
-Size                    : 5368709120
+Size                    : 34359738368
 MinimumSize             :
 LogicalSectorSize       : 512
 PhysicalSectorSize      : 4096
 BlockSize               : 33554432
 ParentPath              :
-DiskIdentifier          : A5A20510-8125-41DA-82C5-15A727DC1B0B
+DiskIdentifier          : 7BD42720-AE1F-4B93-8EBD-B93A4DD71DED
 FragmentationPercentage : 0
 Alignment               : 1
 Attached                : False
