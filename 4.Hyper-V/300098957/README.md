@@ -81,7 +81,7 @@ VM-Brice Off   0           0                 00:00:00 Operating normally 10.0
 ```
 
 ```powershell
-Add-VMDvdDrive -VMName $VM.VMName -Path "$ENV:USERPROFILE\Documents\en_machine_learning_server_9.4.7_for_windows_x64_e46c29f6.iso"
+Add-VMDvdDrive -VMName $VM.VMName -Path "$ENV:USERPROFILE\Documents\en-us_windows_server_2022_x64_dvd_620d7eac.iso"
 ```
 
 ```powershell
