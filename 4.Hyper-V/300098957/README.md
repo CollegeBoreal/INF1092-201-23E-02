@@ -71,7 +71,6 @@ F                   0.56          0.00 FileSystem    F:\
 ```powershell
 $VM = New-VM -Name VM-Brice -Path "$ENV:USERPROFILE\Documents" `
                         -MemoryStartupBytes 4GB `
-                        -Generation 2 `
                         -VHDPath "$ENV:USERPROFILE\Documents\VM-Brice.vhdx"
 ```
 > Response :
