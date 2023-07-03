@@ -46,14 +46,15 @@ Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.
 
 Attached          : True
 BlockSize         : 0
-DevicePath        : \\.\CDROM1
-FileSize          : 603045888
+DevicePath        : \\.\CDROM3
+FileSize          : 6140975104
 ImagePath         : C:\Users\Brice\Documents\Win10_22H2_English_x64v1.iso
 LogicalSectorSize : 2048
-Number            : 1
-Size              : 603045888
+Number            : 3
+Size              : 6140975104
 StorageType       : 1
 PSComputerName    :
+
 ```
 
 ```powershell
