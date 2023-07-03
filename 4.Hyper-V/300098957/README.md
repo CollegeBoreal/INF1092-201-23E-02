@@ -176,14 +176,14 @@ At line:1 char:1
 # References
 
 
-- [Managing Hyper-V VMs using PowerShell Direct](https://www.red-gate.com/simple-talk/sysadmin/powershell/managing-hyper-v-vms-using-powershell-direct/)
-- [How to map network drive using PowerShell on Windows 10](https://pureinfotech.com/map-network-drive-powershell-windows-10/)
-
-- [PowerShell Hyper-V VM creation and boot](https://stackoverflow.com/questions/61144238/powershell-hyper-v-vm-creation-and-boot)
+- [ ] [Managing Hyper-V VMs using PowerShell Direct](https://www.red-gate.com/simple-talk/sysadmin/powershell/managing-hyper-v-vms-using-powershell-direct/)
+- [ ] [How to map network drive using PowerShell on Windows 10](https://pureinfotech.com/map-network-drive-powershell-windows-10/)
+- [ ] [PowerShell Hyper-V VM creation and boot](https://stackoverflow.com/questions/61144238/powershell-hyper-v-vm-creation-and-boot)
+- [ ] [How To Easily Create a Hyper-V VM Using Powershell](https://www.danielengberg.com/create-hyper-v-vm-powershell/)
 
 ```powershell
 $vmName = "vm" + (Get-Date -Format "yyyy-MM-dd-HH-mm")
-New-VM -Name $vmName -NewVHDPath "$vmName.vhdx" -NewVHDSizeBytes 64GB -MemoryStartupBytes 8GB -Path $vmName -Generation 2
+New-VM -Name $vmName -NewVHDPath "$vmName.vhdx" -NewVHDSizeBytes 64GB -MemoryStartupBytes 8GB -Path $vmName -Generation 1
 
 # Attach the Windows 10 ISO as a DVD drive to the VM
 Add-VMDvdDrive -VMName $vmName -Path win.iso
