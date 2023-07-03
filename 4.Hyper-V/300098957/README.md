@@ -1,7 +1,7 @@
 
 
 ```PowerShell
- New-VHD -Path "$ENV:USERPROFILE\Documents\VM-Brice.vhdx" -SizeBytes 5GB -Dynamic 
+ New-VHD -Path "$ENV:USERPROFILE\Documents\VM-Brice.vhdx" -SizeBytes 32GB -Dynamic 
 ```
 > Reponse :
 ```python
@@ -31,11 +31,11 @@ Number                  :
 - [ ] Copy ISO File
 
 ```powershell
-Copy-Item -Path "E:\en_machine_learning_server_9.4.7_for_windows_x64_e46c29f6.iso" -Destination "$ENV:USERPROFILE\Documents"
+Copy-Item -Path "E:\Win10_22H2_English_x64v1.iso" -Destination "$ENV:USERPROFILE\Documents"
 ```
 
 ```powershell
-Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\en_machine_learning_server_9.4.7_for_windows_x64_e46c29f6.iso"
+Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
 ```
 > Response:
 ```python
@@ -45,8 +45,7 @@ Attached          : True
 BlockSize         : 0
 DevicePath        : \\.\CDROM1
 FileSize          : 603045888
-ImagePath         : C:\Users\Brice\Documents\en_machine_learning_server_9.4.7_for_windows_
-                    x64_e46c29f6.iso
+ImagePath         : C:\Users\Brice\Documents\Win10_22H2_English_x64v1.iso
 LogicalSectorSize : 2048
 Number            : 1
 Size              : 603045888
@@ -81,7 +80,7 @@ VM-Brice Off   0           0                 00:00:00 Operating normally 10.0
 ```
 
 ```powershell
-Add-VMDvdDrive -VMName $VM.VMName -Path "$ENV:USERPROFILE\Documents\en-us_windows_server_2022_x64_dvd_620d7eac.iso"
+Add-VMDvdDrive -VMName $VM.VMName -Path "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
 ```
 
 ```powershell
@@ -92,7 +91,7 @@ Get-VMDVDDrive -VMName $VM.VMName
 
 VMName   ControllerType ControllerNumber ControllerLocation DvdMediaType Path
 ------   -------------- ---------------- ------------------ ------------ ----
-VM-Brice IDE            0                1                  ISO          C:\Users\Brice\Documents\en-us_windows_server_2022_x64_dvd_620d7eac.iso
+VM-Brice IDE            0                1                  ISO          C:\Users\Brice\Documents\Win10_22H2_English_x64v1.iso
 VM-Brice IDE            1                0                  None
 
 ```
@@ -180,19 +179,3 @@ At line:1 char:1
 - [ ] [How to map network drive using PowerShell on Windows 10](https://pureinfotech.com/map-network-drive-powershell-windows-10/)
 - [ ] [PowerShell Hyper-V VM creation and boot](https://stackoverflow.com/questions/61144238/powershell-hyper-v-vm-creation-and-boot)
 - [ ] [How To Easily Create a Hyper-V VM Using Powershell](https://www.danielengberg.com/create-hyper-v-vm-powershell/)
-
-```powershell
-$vmName = "vm" + (Get-Date -Format "yyyy-MM-dd-HH-mm")
-New-VM -Name $vmName -NewVHDPath "$vmName.vhdx" -NewVHDSizeBytes 64GB -MemoryStartupBytes 8GB -Path $vmName -Generation 1
-
-# Attach the Windows 10 ISO as a DVD drive to the VM
-Add-VMDvdDrive -VMName $vmName -Path win.iso
-
-# Set correct boot order (DVD drive first)
-$dvd = Get-VMDVDDrive -VMName $vmName
-Set-VMFirmware -VMName $vmName -FirstBootDevice $dvd
-
-# Start the VM and connect to it
-Start-VM -Name $vmName
-vmconnect $env:COMPUTERNAME $vmName
-```
