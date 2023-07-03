@@ -89,9 +89,12 @@ Get-VMDVDDrive -VMName $VM.VMName
 ```
 > Response :
 ```python
+
 VMName   ControllerType ControllerNumber ControllerLocation DvdMediaType Path
 ------   -------------- ---------------- ------------------ ------------ ----
-VM-Brice SCSI           0                1                  ISO          C:\Users\Brice\Documents\en_machine_learning_server_9.4.7...
+VM-Brice IDE            0                1                  ISO          C:\Users\Brice\Documents\en-us_windows_server_2022_x64_dvd_620d7eac.iso
+VM-Brice IDE            1                0                  None
+
 ```
 
 ```powershell
