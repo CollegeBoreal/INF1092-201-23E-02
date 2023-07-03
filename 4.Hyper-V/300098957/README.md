@@ -1,4 +1,11 @@
 
+- [ ] Copy ISO File
+
+```powershell
+Copy-Item -Path "E:\Win10_22H2_English_x64v1.iso" -Destination "$ENV:USERPROFILE\Documents"
+```
+
+- [ ] Créer le disque virtuel pour la machine virtuelle
 
 ```PowerShell
  New-VHD -Path "$ENV:USERPROFILE\Documents\VM-Brice.vhdx" -SizeBytes 32GB -Dynamic 
@@ -28,11 +35,7 @@ Number                  :
 
 ```
 
-- [ ] Copy ISO File
-
-```powershell
-Copy-Item -Path "E:\Win10_22H2_English_x64v1.iso" -Destination "$ENV:USERPROFILE\Documents"
-```
+- [ ] Monter l'image dique en DVD
 
 ```powershell
 Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
@@ -66,6 +69,8 @@ D                                      FileSystem    D:\
 E              179336.02      59065.01 FileSystem    \\TSCLIENT\Downloads
 F                   0.56          0.00 FileSystem    F:\
 ```
+
+- [ ] Créer la machine virtuelle
 
 ```powershell
 $VM = New-VM -Name VM-Brice -Path "$ENV:USERPROFILE\Documents" `
