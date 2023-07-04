@@ -7,15 +7,18 @@
 
 ## :one: Installer le role [Hyper V](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server) sur Windows Server
 
-```
-PS> Install-WindowsFeature -Name Hyper-V -IncludeManagementTools -Restart
+```powershell
+Install-WindowsFeature -Name Hyper-V -IncludeManagementTools -Restart
 ```
 
 
 ### :pushpin: Tester le role Hyper V et les outils de gestion `RSAT`
 
+```powershell
+Get-WindowsFeature *Hyper*
 ```
-PS> Get-WindowsFeature *Hyper*
+> Response:
+```python
 
 Display Name                                            Name                       Install State
 ------------                                            ----                       -------------
