@@ -47,43 +47,7 @@ Display Name                                            Name                    
 ```
 
 
-### :pushpin: Installer les modules individuellement (Si non installé par la commande globale)
-
-```
-PS> Install-WindowsFeature -Name Hyper-V-PowerShell
- 
-PS> # Install Hyper-V Manager and the PowerShell module (HVM only available on GUI systems)
-PS> Install-WindowsFeature -Name RSAT-Hyper-V-Tools
- 
-PS> # Install the Hyper-V hypervisor and all tools (method #1)
-PS> Install-WindowsFeature -Name Hyper-V -IncludeManagementTools
- 
-PS> # Install the Hyper-V hypervisor and all tools (method #2)
-PS> Install-WindowsFeature -Name Hyper-V, RSAT-Hyper-V-Tools
-```
-
-
-```
-PS> Get-Module -ListAvailable *Hyper*
-
-
-    Directory: C:\Windows\system32\WindowsPowerShell\v1.0\Modules
-
-
-ModuleType Version    Name                                ExportedCommands
----------- -------    ----                                ----------------
-Binary     2.0.0.0    Hyper-V                             {Add-VMAssignableDevice, Add-VMDvdDrive, Add-VMFibreChan...
-Binary     1.1        Hyper-V                             {Add-VMDvdDrive, Add-VMFibreChannelHba, Add-VMHardDiskDr...
-
-```
-
-## Voir les commandes Powershell pour le role Hyper V
-
-```
-PS> Get-Command -Module Hyper-V
-```
-
-## Utilisation de sa machine virtuelle
+## :ab: Utilisation de sa machine virtuelle
 
 :pushpin: Création
 
@@ -122,3 +86,41 @@ ModuleType Version    Name                                ExportedCommands
 Script     2.0.0.0    ServerManager                       {Get-WindowsFeature, Install-WindowsFeature, Uninstall-Win...
 
 ```
+
+### :pushpin: Installer les modules individuellement (Si non installé par la commande globale)
+
+```
+PS> Install-WindowsFeature -Name Hyper-V-PowerShell
+ 
+PS> # Install Hyper-V Manager and the PowerShell module (HVM only available on GUI systems)
+PS> Install-WindowsFeature -Name RSAT-Hyper-V-Tools
+ 
+PS> # Install the Hyper-V hypervisor and all tools (method #1)
+PS> Install-WindowsFeature -Name Hyper-V -IncludeManagementTools
+ 
+PS> # Install the Hyper-V hypervisor and all tools (method #2)
+PS> Install-WindowsFeature -Name Hyper-V, RSAT-Hyper-V-Tools
+```
+
+
+```
+PS> Get-Module -ListAvailable *Hyper*
+
+
+    Directory: C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+
+
+ModuleType Version    Name                                ExportedCommands
+---------- -------    ----                                ----------------
+Binary     2.0.0.0    Hyper-V                             {Add-VMAssignableDevice, Add-VMDvdDrive, Add-VMFibreChan...
+Binary     1.1        Hyper-V                             {Add-VMDvdDrive, Add-VMFibreChannelHba, Add-VMHardDiskDr...
+
+```
+
+- [ ]  Voir les commandes Powershell pour le role Hyper V
+
+```
+PS> Get-Command -Module Hyper-V
+```
+
+
