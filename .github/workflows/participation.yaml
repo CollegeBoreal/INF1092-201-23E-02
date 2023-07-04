@@ -21,6 +21,8 @@ jobs:
           bash .scripts/run.sh
           cd ../2.Connexion
           bash .scripts/run.sh
+          cd ../4.Hyper-V
+          bash .scripts/run.sh
 
       - name: Commit files
         run: |
