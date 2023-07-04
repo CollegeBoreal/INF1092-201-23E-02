@@ -81,11 +81,28 @@ $VM = New-VM -Name VM-Brice -Path "$ENV:USERPROFILE\Documents" `
                         -MemoryStartupBytes 4GB `
                         -VHDPath "$ENV:USERPROFILE\Documents\VM-Brice.vhdx"
 ```
+
+```powershell
+Get-VM
+```
 > Response :
 ```python
 Name     State CPUUsage(%) MemoryAssigned(M) Uptime   Status             Version
 ----     ----- ----------- ----------------- ------   ------             -------
 VM-Brice Off   0           0                 00:00:00 Operating normally 10.0
+```
+
+- [ ] Ajouter le disque de démarrage
+
+```powershell
+Get-VMDVDDrive -VMName $VM.VMName
+> Response :
+```python
+
+VMName   ControllerType ControllerNumber ControllerLocation DvdMediaType Path
+------   -------------- ---------------- ------------------ ------------ ----
+VM-Brice IDE            1                0                  None
+
 ```
 
 ```powershell
