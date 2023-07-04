@@ -8,22 +8,22 @@ Dans PowerShell, la classe "WindowsFeature" est utilisée pour gérer les foncti
 La classe "WindowsFeature" est utilisée en conjonction avec la cmdlet "Install-WindowsFeature" pour installer une fonctionnalité sur un serveur Windows. Par exemple :
 
 ```powershell
-Install-WindowsFeature -Name "Web-Server" -IncludeManagementTools
+Install-WindowsFeature -Name "Hyper-V" -IncludeManagementTools
 ```
 
-Cet exemple installe la fonctionnalité "Web Server" sur le serveur avec les outils d'administration associés. La classe "WindowsFeature" permet également d'accéder à des propriétés et à des méthodes pour vérifier l'état d'une fonctionnalité, la désinstaller, la configurer, etc.
+Cet exemple installe la fonctionnalité "Hyper-V" sur le serveur avec les outils d'administration associés. La classe "WindowsFeature" permet également d'accéder à des propriétés et à des méthodes pour vérifier l'état d'une fonctionnalité, la désinstaller, la configurer, etc.
 
 Voici quelques exemples d'utilisation de la classe "WindowsFeature" en PowerShell :
 
 - Vérifier l'état d'une fonctionnalité :
   ```powershell
-  $feature = Get-WindowsFeature -Name "Web-Server"
+  $feature = Get-WindowsFeature -Name "Hyper-V"
   $feature.Installed
   ```
 
 - Désinstaller une fonctionnalité :
   ```powershell
-  $feature = Get-WindowsFeature -Name "Web-Server"
+  $feature = Get-WindowsFeature -Name "Hyper-V"
   $feature.Uninstall()
   ```
 
