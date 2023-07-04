@@ -47,20 +47,29 @@ Display Name                                            Name                    
 ```
 
 
-## :ab: Utilisation de sa machine virtuelle
+## :ab: Implémentation de sa machine virtuelle
 
-:pushpin: Création
+:pushpin: Créer la machine virtuelle en suivant le modèle suivant
 
 [:point_right: Installer sa machine virtuelle](.docs/VM.md)
 
-:pushpin: RDC
+:pushpin: Pour se connecter à sa machine virtuelle utiliser:
 
 [:point_right: Remote Desktop Connection](.docs/RDC.md)
 
-:pushpin: Paramêtres
+:pushpin: Le page suivante permet le changement des:
 
 [:point_right: Paramètres de sa machine virtuelle](.docs/IP.md)
 
+## :cl: Créer votre propre page
+
+- [ ] Page :id:/`README.md`
+
+Créer votre page permettant la documentation de la création de votre propre machine virtuelle
+
+- [ ] Un exemple de page se trouve dans le lien ci-dessous:
+
+[:point_right: Example](300098957)
 
 # References
 
