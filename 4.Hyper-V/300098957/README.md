@@ -132,7 +132,7 @@ Start-VM VM-Brice
 - [ ] Installer la machine virtuelle avec `vmconnect`
 
 ```powershell
-$HostName = [System.Net.DNS]::GetHostByName($Null).HostName; `
+$HostName = [System.Net.DNS]::GetHostByName($Null).HostName
 ```
 
 ```powershell
