@@ -79,6 +79,7 @@ PS> Get-Command -Module Hyper-V
 
 - [ ] [How to Install the Hyper-V PowerShell Module (updated for Windows Server 2019)](https://www.altaro.com/hyper-v/install-hyper-v-powershell-module/)
 
+- [ ] [Microsoft wants to move Windows fully to the cloud](https://www.theverge.com/2023/6/27/23775117/microsoft-windows-11-cloud-consumer-strategy)
 
 - [ ] [Hyper-V](https://learn.microsoft.com/en-us/powershell/module/hyper-v/?view=windowsserver2022-ps)
 
