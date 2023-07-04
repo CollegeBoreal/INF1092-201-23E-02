@@ -96,6 +96,7 @@ VM-Brice Off   0           0                 00:00:00 Operating normally 10.0
 
 ```powershell
 Get-VMDVDDrive -VMName $VM.VMName
+```
 > Response :
 ```python
 
