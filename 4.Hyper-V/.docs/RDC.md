@@ -63,6 +63,8 @@ F                                      FileSystem    F:\
 Copy-Item -Path "E:\Win10_22H2_English_x64v1.iso" -Destination "$ENV:USERPROFILE\Documents"
 ```
 
+:warning: La copie dépendra de la vitesse de connexion du réseau. Ça peux prendre beaucoup de temps. 
+
 ## :x: Forcer la connexion à un autre disque (si non établit)
 
 ```powershell
