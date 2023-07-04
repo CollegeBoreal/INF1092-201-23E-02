@@ -20,7 +20,9 @@ Une fois connecté à l'ordinateur distant, le disque partagé apparaîtra dans 
 
 Veuillez noter que la possibilité de partager des disques locaux avec l'ordinateur distant dépend de la configuration et des politiques de l'ordinateur distant. Assurez-vous d'avoir les autorisations nécessaires pour partager le disque et que les stratégies de sécurité de l'ordinateur distant le permettent.
 
-## Connection Manuelle sur le serveur
+## :a: Connection Manuelle sur le serveur (Équivalent `net use`)
+
+- [ ] Sans connexion `Samba`
 
 ```powershell
 Get-PSDrive -PSProvider FileSystem
@@ -35,29 +37,42 @@ D                                      FileSystem    D:\
 F                                      FileSystem    F:\
 ```
 
+- [ ] Avec connexion `Samba`
+
+Note: le lien `\\TSCLIENT\Downloads` 
+
 ```powershell
-net use
+Get-PSDrive -PSProvider FileSystem 
 ```
 > Response :
 ```python
-New connections will be remembered.
 
-
-Status       Local     Remote                    Network
-
--------------------------------------------------------------------------------
-                       \\TSCLIENT\Downloads      Microsoft Terminal Services
-The command completed successfully.
+Name           Used (GB)     Free (GB) Provider      Root                                               CurrentLocation
+----           ---------     --------- --------      ----                                               ---------------
+C                  58.13        214.66 FileSystem    C:\                                            Users\Administrator
+D                                      FileSystem    D:\
+E              179318.16      59082.86 FileSystem    \\TSCLIENT\Downloads
+F                                      FileSystem    F:\
 ```
 
+## :b: Faire la copie à distance
+
+- [ ] Se connecter au serveur avec RDC et faire la copie du fichier désiré (example)
+
 ```powershell
-New-PSDrive -Name "E" -PSProvider "FileSystem" -Root "\\TSClIENT\Downloads" -Persist
+Copy-Item -Path "E:\Win10_22H2_English_x64v1.iso" -Destination "$ENV:USERPROFILE\Documents"
+```
+
+## :x: Forcer la connexion à un autre disque (si non établit)
+
+```powershell
+New-PSDrive -Name "Z" -PSProvider "FileSystem" -Root "\\TSClIENT\Downloads" -Persist
 ```
 > Response:
 ```
 Name           Used (GB)     Free (GB) Provider      Root                                               CurrentLocation
 ----           ---------     --------- --------      ----                                               ---------------
-E              177865.97      60533.16 FileSystem    \\TSClIENT\Downloads
+Z              177865.97      60533.16 FileSystem    \\TSClIENT\Downloads
 ```
 
 ```powershell
@@ -67,15 +82,12 @@ Get-PSDrive -PSProvider FileSystem
 ```
 Name           Used (GB)     Free (GB) Provider      Root                                               CurrentLocation
 ----           ---------     --------- --------      ----                                               ---------------
-C                  21.18        251.61 FileSystem    C:\                                  Users\Administrator\Documents
+C                  58.13        214.66 FileSystem    C:\                                            Users\Administrator
 D                                      FileSystem    D:\
-E              177874.43      60526.59 FileSystem    \\TSClIENT\Downloads
+F                                      FileSystem    F:\
+Z              179319.13      59081.58 FileSystem    \\TSClIENT\Downloads
 ```
 
-
-```powershell
-Copy-Item -Path "E:\Win10_22H2_English_x64v1.iso" -Destination "$ENV:USERPROFILE\Documents"
-```
 
 # References 
 
