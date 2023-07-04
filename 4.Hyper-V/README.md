@@ -5,7 +5,9 @@
 ## Qu'est-ce que Hyper V
 
 
-## :one: Installer le role [Hyper V](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server) sur Windows Server
+## :one: Installer le role [Hyper V](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server) sur Windows Server 
+
+À l'aide du Module `ServerManager`, utiliser ses commandes [`WindowsFeature`](.docs/WF.md) pour installer le Service `Hyper-V`
 
 ```powershell
 Install-WindowsFeature -Name Hyper-V -IncludeManagementTools -Restart
