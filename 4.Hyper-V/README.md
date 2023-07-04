@@ -12,7 +12,7 @@ Install-WindowsFeature -Name Hyper-V -IncludeManagementTools -Restart
 ```
 
 
-### :pushpin: Tester le role Hyper V et les outils de gestion `RSAT`
+### :pushpin: Tester le role Hyper V et les outils de gestion `RSAT - Remote Server Administration Tools`
 
 ```powershell
 Get-WindowsFeature *Hyper*
@@ -26,6 +26,23 @@ Display Name                                            Name                    
         [X] Hyper-V Management Tools                    RSAT-Hyper-V-Tools             Installed
             [X] Hyper-V Module for Windows PowerShell   Hyper-V-PowerShell             Installed
 ```
+
+Uniquement avec `Desktop Experience` (Hyper-V GUI Management Tools)
+
+```powershell
+Get-WindowsFeature *Hyper*
+```
+> Response :
+```python
+
+Display Name                                            Name                       Install State
+------------                                            ----                       -------------
+[ ] Hyper-V                                             Hyper-V                        Available
+        [ ] Hyper-V Management Tools                    RSAT-Hyper-V-Tools             Available
+            [ ] Hyper-V GUI Management Tools            Hyper-V-Tools                  Available
+            [ ] Hyper-V Module for Windows PowerShell   Hyper-V-PowerShell             Available
+```
+
 
 ### :pushpin: Installer les modules individuellement (Si non installé par la commande globale)
 
@@ -83,26 +100,22 @@ PS> Get-Command -Module Hyper-V
 - [ ] [How to Install the Hyper-V PowerShell Module (updated for Windows Server 2019)](https://www.altaro.com/hyper-v/install-hyper-v-powershell-module/)
 
 - [ ] [Microsoft wants to move Windows fully to the cloud](https://www.theverge.com/2023/6/27/23775117/microsoft-windows-11-cloud-consumer-strategy)
+- [ ] [RSAT - Remote Server Administration Tools](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/remotely-manage-hyper-v-hosts)
 
 - [ ] [Hyper-V](https://learn.microsoft.com/en-us/powershell/module/hyper-v/?view=windowsserver2022-ps)
 
-PS C:\Users\Administrator> Install-Module -Name Hyper-V -Force
-PackageManagement\Install-Package : No match was found for the specified search criteria and module name 'Hyper-V'.
-Try Get-PSRepository to see all available registered module repositories.
-At C:\Program Files\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\PSModule.psm1:1809 char:21
-+ ...          $null = PackageManagement\Install-Package @PSBoundParameters
-+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : ObjectNotFound: (Microsoft.Power....InstallPackage:InstallPackage) [Install-Package], Ex
-   ception
-    + FullyQualifiedErrorId : NoMatchFoundForCriteria,Microsoft.PowerShell.PackageManagement.Cmdlets.InstallPackage
+## Modules 
+
+- [ ] Server Manager
 
 ```powershell
-PS > Get-WindowsFeature *Hyper*
+Get-Module ServerManager
+```
+> Response :
+```python
 
-Display Name                                            Name                       Install State
-------------                                            ----                       -------------
-[ ] Hyper-V                                             Hyper-V                        Available
-        [ ] Hyper-V Management Tools                    RSAT-Hyper-V-Tools             Available
-            [ ] Hyper-V GUI Management Tools            Hyper-V-Tools                  Available
-            [ ] Hyper-V Module for Windows PowerShell   Hyper-V-PowerShell             Available
+ModuleType Version    Name                                ExportedCommands
+---------- -------    ----                                ----------------
+Script     2.0.0.0    ServerManager                       {Get-WindowsFeature, Install-WindowsFeature, Uninstall-Win...
+
 ```
