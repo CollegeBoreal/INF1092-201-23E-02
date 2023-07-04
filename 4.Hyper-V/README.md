@@ -87,22 +87,6 @@ Script     2.0.0.0    ServerManager                       {Get-WindowsFeature, I
 
 ```
 
-### :pushpin: Installer les modules individuellement (Si non installé par la commande globale)
-
-```
-PS> Install-WindowsFeature -Name Hyper-V-PowerShell
- 
-PS> # Install Hyper-V Manager and the PowerShell module (HVM only available on GUI systems)
-PS> Install-WindowsFeature -Name RSAT-Hyper-V-Tools
- 
-PS> # Install the Hyper-V hypervisor and all tools (method #1)
-PS> Install-WindowsFeature -Name Hyper-V -IncludeManagementTools
- 
-PS> # Install the Hyper-V hypervisor and all tools (method #2)
-PS> Install-WindowsFeature -Name Hyper-V, RSAT-Hyper-V-Tools
-```
-
-
 ```
 PS> Get-Module -ListAvailable *Hyper*
 
@@ -122,5 +106,22 @@ Binary     1.1        Hyper-V                             {Add-VMDvdDrive, Add-V
 ```
 PS> Get-Command -Module Hyper-V
 ```
+
+### :pushpin: Installer les Options individuellement (Si non installé par la commande globale)
+
+```
+PS> Install-WindowsFeature -Name Hyper-V-PowerShell
+ 
+PS> # Install Hyper-V Manager and the PowerShell module (HVM only available on GUI systems)
+PS> Install-WindowsFeature -Name RSAT-Hyper-V-Tools
+ 
+PS> # Install the Hyper-V hypervisor and all tools (method #1)
+PS> Install-WindowsFeature -Name Hyper-V -IncludeManagementTools
+ 
+PS> # Install the Hyper-V hypervisor and all tools (method #2)
+PS> Install-WindowsFeature -Name Hyper-V, RSAT-Hyper-V-Tools
+```
+
+
 
 
