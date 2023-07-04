@@ -1,3 +1,6 @@
+# :slot_machine: Machine Virtuelle
+
+## :a: Création de la VM 
 
 - [ ] Copy ISO File (être très patient) from [Download Windows 10 Disc Image (ISO File)](https://www.microsoft.com/en-us/software-download/windows10ISO)
 
@@ -35,7 +38,7 @@ Number                  :
 
 ```
 
-- [ ] Monter l'image dique en DVD
+- [ ] Monter l'image disque en DVD (pas utile)
 
 ```powershell
 Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
@@ -141,24 +144,6 @@ vmconnect $HostName VM-Brice
 
 
 ```powershell
-Stop-VM -Name VM-Brice -Force
-```
-
-```powershell
-Remove-VM -Name VM-Brice -Force
-```
-
-```powershell
-Remove-Item -Path "$ENV:USERPROFILE\Documents\VM-Brice.vhdx" -Force
-```
-
-
-```powershell
-Remove-Item -Path "$ENV:USERPROFILE\Documents\VM-Brice"  -Force 
-```
-
-
-```powershell
 Start-VM -Name VM-Brice
 ```
 
@@ -217,6 +202,24 @@ At line:1 char:1
     + FullyQualifiedErrorId : CreateRemoteRunspaceForVMFailed,Microsoft.PowerShell.Commands.EnterPSSessionCommand
 ```
 
+## :x: Détruire la machine 
+
+```powershell
+Stop-VM -Name VM-Brice -Force
+```
+
+```powershell
+Remove-VM -Name VM-Brice -Force
+```
+
+```powershell
+Remove-Item -Path "$ENV:USERPROFILE\Documents\VM-Brice.vhdx" -Force
+```
+
+
+```powershell
+Remove-Item -Path "$ENV:USERPROFILE\Documents\VM-Brice"  -Force 
+```
 
 # References
 
