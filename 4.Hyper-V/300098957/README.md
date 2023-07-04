@@ -63,12 +63,15 @@ Get-PSDrive -PSProvider FileSystem
 > Response:
 ```python
 
-Name           Used (GB)     Free (GB) Provider      Root                                                             CurrentLocation
-----           ---------     --------- --------      ----                                                             ---------------
-C                  26.90        245.89 FileSystem    C:\                                                             Windows\system32
+Name           Used (GB)     Free (GB) Provider      Root                                                           CurrentLocation
+----           ---------     --------- --------      ----                                                           ---------------
+C                  59.80        212.99 FileSystem    C:\                                                      Users\Brice\Documents
 D                                      FileSystem    D:\
-E              179336.02      59065.01 FileSystem    \\TSCLIENT\Downloads
-F                   0.56          0.00 FileSystem    F:\
+E              179496.88      58904.14 FileSystem    \\TSCLIENT\Downloads
+F                                      FileSystem    F:\
+G                   5.44          0.00 FileSystem    G:\
+H                   5.72          0.00 FileSystem    H:\
+
 ```
 
 - [ ] Créer la machine virtuelle
