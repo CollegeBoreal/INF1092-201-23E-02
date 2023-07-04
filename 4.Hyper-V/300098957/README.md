@@ -146,6 +146,8 @@ vmconnect $HostName VM-Brice
 
 ## :ab: Connexion à la VM
 
+- [ ] Récupérer les informations sur la VM
+
 ```powershell
 Get-VM
 ```
@@ -157,15 +159,7 @@ Name     State   CPUUsage(%) MemoryAssigned(M) Uptime           Status          
 VM-Brice Running 0           4096              00:00:08.5860000 Operating normally 10.0
 ```
 
-```powershell
-Get-VM
-```
-> Response:
-```python
-Name     State   CPUUsage(%) MemoryAssigned(M) Uptime           Status             Version
-----     -----   ----------- ----------------- ------           ------             -------
-VM-Brice Running 0           4096              00:00:10.2960000 Operating normally 9.0
-```
+- [ ] Collecter les informations d'identification (nom d'utilisateur et mot de passe) d'un utilisateur.
 
 ```powershell
 $cred = Get-Credential
@@ -178,6 +172,8 @@ Supply values for the following parameters:
 Credential
 ```
 
+- [ ] Établir une session interactive à distance avec la VM
+
 ```
 Enter-PSSession -VMName VM-Brice -Credential $cred
 ```
@@ -186,10 +182,8 @@ Enter-PSSession -VMName VM-Brice -Credential $cred
 [VM-Brice]: PS C:\Users\Brice\Documents>
 ```
 
-Or :x:
+Or Erreur :x:
 
-```
-Enter-PSSession -VMName VM-Brice -Credential $cred
 ```
 > Response :
 ```python
@@ -203,18 +197,25 @@ At line:1 char:1
 
 ## :x: Détruire la machine 
 
+- [ ] Arreter la VM
+
 ```powershell
 Stop-VM -Name VM-Brice -Force
 ```
+
+- [ ] Supprimer la VM
 
 ```powershell
 Remove-VM -Name VM-Brice -Force
 ```
 
+- [ ] Supprimer le disque
+
 ```powershell
 Remove-Item -Path "$ENV:USERPROFILE\Documents\VM-Brice.vhdx" -Force
 ```
 
+- [ ] Supprimer les informations de la VM
 
 ```powershell
 Remove-Item -Path "$ENV:USERPROFILE\Documents\VM-Brice"  -Force 
