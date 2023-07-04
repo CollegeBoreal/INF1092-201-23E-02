@@ -195,7 +195,7 @@ Credential
 ```
 
 ```
-PS > Enter-PSSession -VMName "VM-Brice" -Credential $cred
+Enter-PSSession -VMName VM-Brice -Credential $cred
 ```
 > Response :
 ```python
@@ -205,7 +205,7 @@ PS > Enter-PSSession -VMName "VM-Brice" -Credential $cred
 Or :x:
 
 ```
-PS > Enter-PSSession -VMName "VM-Brice" -Credential $cred
+Enter-PSSession -VMName VM-Brice -Credential $cred
 ```
 > Response :
 ```python
