@@ -132,6 +132,8 @@ VM-Brice IDE            1                0                  None
 Start-VM VM-Brice
 ```
 
+## :b: Installation de la VM
+
 - [ ] Installer la machine virtuelle avec [`vmconnect`](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/learn-more/hyper-v-virtual-machine-connect)
 
 ```powershell
@@ -142,10 +144,7 @@ $HostName = [System.Net.DNS]::GetHostByName($Null).HostName
 vmconnect $HostName VM-Brice
 ```
 
-
-```powershell
-Start-VM -Name VM-Brice
-```
+## :ab: Connexion à la VM
 
 ```powershell
 Get-VM
