@@ -22,6 +22,17 @@ Veuillez noter que la possibilité de partager des disques locaux avec l'ordinat
 
 ## Connection Manuelle sur le serveur
 
+```powershell
+Get-PSDrive -PSProvider FileSystem
+```
+> Response :
+```python
+
+Name           Used (GB)     Free (GB) Provider      Root                                               CurrentLocation
+----           ---------     --------- --------      ----                                               ---------------
+C                  58.12        214.67 FileSystem    C:\                                            Users\Administrator
+D                                      FileSystem    D:\
+```
 
 ```powershell
 net use
@@ -62,7 +73,7 @@ E              177874.43      60526.59 FileSystem    \\TSClIENT\Downloads
 
 
 ```powershell
-Copy-Item -Path "E:\en_machine_learning_server_9.4.7_for_windows_x64_e46c29f6.iso" -Destination "$ENV:USERPROFILE\Documents"
+Copy-Item -Path "E:\Win10_22H2_English_x64v1.iso" -Destination "$ENV:USERPROFILE\Documents"
 ```
 
 # References 
