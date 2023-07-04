@@ -123,13 +123,22 @@ VM-Brice IDE            1                0                  None
 
 ```
 
-```powershell
-Set-VMFirmware $VM.VMName -FirstBootDevice $DVD
-```
+- [ ] Démarrer la machine virtuelle
 
 ```powershell
 Start-VM VM-Brice
 ```
+
+- [ ] Installer la machine virtuelle avec `vmconnect`
+
+```powershell
+$HostName = [System.Net.DNS]::GetHostByName($Null).HostName; `
+```
+
+```powershell
+vmconnect $HostName VM-Brice
+```
+
 
 ```powershell
 Stop-VM -Name VM-Brice -Force
