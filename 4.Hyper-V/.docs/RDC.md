@@ -32,6 +32,7 @@ Name           Used (GB)     Free (GB) Provider      Root                       
 ----           ---------     --------- --------      ----                                               ---------------
 C                  58.12        214.67 FileSystem    C:\                                            Users\Administrator
 D                                      FileSystem    D:\
+F                                      FileSystem    F:\
 ```
 
 ```powershell
