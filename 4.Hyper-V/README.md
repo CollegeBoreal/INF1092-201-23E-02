@@ -69,7 +69,7 @@ Créer votre page permettant la documentation de la création de votre propre ma
 
 - [ ] Un exemple de page se trouve dans le lien ci-dessous:
 
-[:point_right: Example](300098957)
+[:point_right: Exemple](.docs/exemple)
 
 # References
 
