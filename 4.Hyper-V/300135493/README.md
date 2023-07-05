@@ -1,4 +1,4 @@
-# Hyper-v
+# 🅰️ Creation de la VM
 ```powershell
  New-VHD -Path "$ENV:USERPROFILE\Documents\VM-Lassine.vhdx" -SizeBytes 32GB -Dynamic
 ```
@@ -87,3 +87,24 @@ Add-VMDvdDrive -VMName $VM.VMName -Path "$ENV:USERPROFILE\Desktop\Win10_22H2_Eng
 ```powershell
 Get-VMDVDDrive -VMName $VM.VMName
 ```
+> Resulta
+```python
+VMName     ControllerType ControllerNumber ControllerLocation DvdMediaType Path
+------     -------------- ---------------- ------------------ ------------ ----
+VM-Lassine IDE            0                1                  ISO          C:\Users\Administrator\Desktop\Win10_22H2_English_x64v1.iso
+VM-Lassine IDE            1                0                  None
+```
+
+```powershell
+Start-VM VM-Lassine
+```
+# 🅱️ Installation de la VM
+
+```powershell
+$HostName = [System.Net.DNS]::GetHostByName($Null).HostName
+```
+```powershell
+vmconnect $HostName VM-Lassine
+```
+# 🆎 Connexion à la VM
+
