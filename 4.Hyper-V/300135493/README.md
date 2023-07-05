@@ -82,6 +82,8 @@ VM-Lassine IDE            1                0                  None
 ```
 
 ```powershell
-Add-VMDvdDrive -VMName $VM.VMName -Path "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
+Add-VMDvdDrive -VMName $VM.VMName -Path "$ENV:USERPROFILE\Desktop\Win10_22H2_English_x64v1.iso"
+```
+```powershell
 Get-VMDVDDrive -VMName $VM.VMName
 ```
