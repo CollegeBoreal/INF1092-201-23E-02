@@ -28,7 +28,25 @@ Number                  :
 ```
 
 ```powershell
+Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Desktop\Win10_22H2_English_x64v1.iso"
+```
+> Resultat
+```python
+Attached          : True
+BlockSize         : 0
+DevicePath        : \\.\CDROM1
+FileSize          : 6140975104
+ImagePath         : C:\Users\Administrator\Desktop\Win10_22H2_English_x64v1.iso
+LogicalSectorSize : 2048
+Number            : 1
+Size              : 6140975104
+StorageType       : 1
+PSComputerName    :
+```
+
+```powershell
  $VM = New-VM -Name VM-Lassine -Path "$ENV:USERPROFILE\Documents" `
                          -MemoryStartupBytes 4GB `
                          -VHDPath "$ENV:USERPROFILE\Documents\VM-Lassine.vhdx"
 ```
+
