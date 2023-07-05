@@ -43,6 +43,18 @@ Size              : 6140975104
 StorageType       : 1
 PSComputerName    :
 ```
+```powershell
+Get-PSDrive -PSProvider FileSystem
+```
+> Resultat
+```python
+Name           Used (GB)     Free (GB) Provider      Root                                                                                     CurrentLocation
+----           ---------     --------- --------      ----                                                                                     ---------------
+C                  19.19        253.68 FileSystem    C:\                                                                                  Users\Administrator
+D                   5.72          0.00 FileSystem    D:\
+F                                      FileSystem    F:\
+Z                  60.33        212.46 FileSystem    \\10.13.237.25\Users
+```
 
 ```powershell
  $VM = New-VM -Name VM-Lassine -Path "$ENV:USERPROFILE\Documents" `
