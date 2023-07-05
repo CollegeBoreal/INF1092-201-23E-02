@@ -9,3 +9,4 @@ wget -Uri $uri -OutFile "$env:USERPROFILE\Documents\ubuntu-23.04-desktop-amd64.i
 # References
 
 - [ ] [PowerShell wget](https://www.educba.com/powershell-wget)
+- [ ] [Download Ubuntu Desktop](https://ubuntu.com/download/desktop)
