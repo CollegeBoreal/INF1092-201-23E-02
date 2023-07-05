@@ -61,4 +61,27 @@ Z                  60.33        212.46 FileSystem    \\10.13.237.25\Users
                          -MemoryStartupBytes 4GB `
                          -VHDPath "$ENV:USERPROFILE\Documents\VM-Lassine.vhdx"
 ```
+```powershell
+Get-VM
+```
+> Resultat
+```python
+Name       State CPUUsage(%) MemoryAssigned(M) Uptime   Status             Version
+----       ----- ----------- ----------------- ------   ------             -------
+VM-Lassine Off   0           0                 00:00:00 Operating normally 9.0
+```
 
+```powershell
+Get-VMDVDDrive -VMName $VM.VMName
+```
+> Resulta
+```python
+VMName     ControllerType ControllerNumber ControllerLocation DvdMediaType Path
+------     -------------- ---------------- ------------------ ------------ ----
+VM-Lassine IDE            1                0                  None
+```
+
+```powershell
+Add-VMDvdDrive -VMName $VM.VMName -Path "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
+Get-VMDVDDrive -VMName $VM.VMName
+```
