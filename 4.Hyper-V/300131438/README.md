@@ -42,3 +42,65 @@ Size              : 6140975104
 StorageType       : 1
 PSComputerName    :
 ```
+# VERIFICATION
+```POWERSHELL
+Get-PSDrive -PSProvider FileSystem
+```
+
+>RESULTAT
+```PYTHON
+Name           Used (GB)     Free (GB) Provider      Root                                               CurrentLocation
+----           ---------     --------- --------      ----                                               ---------------
+C                  30.34        242.45 FileSystem    C:\                                            Users\Administrator
+D                   5.72          0.00 FileSystem    D:\
+Z                  60.34        212.45 FileSystem    \\10.13.237.25\Users
+```
+# CREATION DE LA MACHINE VIRTUELLE (DE 4GB DE MEMOIRE)
+```POWERSHELL
+$VM = New-VM -Name VM-ESTELLE -Path "$ENV:USERPROFILE\Documents" `
+                        -MemoryStartupBytes 4GB `
+                        -VHDPath "$ENV:USERPROFILE\Documents\VM-ESTELLE.vhdx"
+```
+# VERIFICATION 
+```POWERSHELL
+Get-VM
+```
+>RESULTAT
+```PYTHON
+Name       State   CPUUsage(%) MemoryAssigned(M) Uptime           Status             Version
+----       -----   ----------- ----------------- ------           ------             -------
+VM-ESTELLE Off     0           0                 00:00:00         Operating normally 10.0
+VM-MIRIAM  Running 0           4096              16:25:47.5640000 Operating normally 10.0
+```
+# AJOUTER LE DISQUE DE DEMARAGE POUR MA VM
+>CHECK DES DISQUES PRESENTS
+```POWERSHELL
+ Get-VMDVDDrive -VMName  VM-ESTELLE
+```
+>RESULTAT
+```PYTHON
+
+VMName     ControllerType ControllerNumber ControllerLocation DvdMediaType Path
+------     -------------- ---------------- ------------------ ------------ ----
+VM-ESTELLE IDE            1                0                  None
+```
+> AJOUT DU DISQUE POUR LA VM-ESTELLE
+```POWERSHELL
+Add-VMDvdDrive -VMName VM-ESTELLE -Path "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
+```
+>DEUXIEME CHECK DES DISQUES PRESENTS
+```POWERSHELL
+Get-VMDVDDrive -VMName VM-ESTELLE
+```
+>RESULTAT
+```PYTHON
+
+VMName     ControllerType ControllerNumber ControllerLocation DvdMediaType Path
+------     -------------- ---------------- ------------------ ------------ ----
+VM-ESTELLE IDE            0                1                  ISO          C:\Users\Administrator\Documents\Win10_22...
+VM-ESTELLE IDE            1                0                  None
+```
+# 🔦ACTIVER LA MACHINE virtuelle
+```powershell
+Start-VM VM-ESTELLE
+```
