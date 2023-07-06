@@ -104,3 +104,8 @@ VM-ESTELLE IDE            1                0                  None
 ```powershell
 Start-VM VM-ESTELLE
 ```
+# INSTALLATION DE LA VM AVEC (vmconnect)
+```powershell
+$HostName = [System.Net.DNS]::GetHostByName($Null).HostName
+vmconnect $HostName VM-ESTELLE
+```
