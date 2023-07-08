@@ -24,3 +24,20 @@ IsPMEMCompatible        : False
 AddressAbstractionType  : None
 Number                  :
 ```
+# MONTAGE DU DISQUE DUR
+```POWERSHELL
+ Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
+```
+RESULTATS
+```PYTHON
+Attached          : True
+BlockSize         : 0
+DevicePath        : \\.\CDROM0
+FileSize          : 6140975104
+ImagePath         : C:\Users\Administrator\Documents\Win10_22H2_English_x64v1.iso
+LogicalSectorSize : 2048
+Number            : 0
+Size              : 6140975104
+StorageType       : 1
+PSComputerName    :
+```
