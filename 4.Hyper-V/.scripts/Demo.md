@@ -14,7 +14,7 @@
 
 ## :a: Présence
 
-|:hash:| Boréal :id:                | README.md    | images |
+|:hash:| Boréal :id:                | Demo    | VM |
 |------|----------------------------|--------------|--------|
 | 0 | [300125413](../300125413/README.md) <image src='https://avatars0.githubusercontent.com/u/134551648?s=460&v=4' width=20 height=20></image> | :x: | :x: |
 | 1 | [300130487](../300130487/README.md) <image src='https://avatars0.githubusercontent.com/u/133054165?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: | :x: |
