@@ -1,1 +1,4 @@
-
+# CREATION DU DISQUE VIRTUEL POUR LA MACHINE VIRTUELLE 
+```POWERSHELL
+ New-VHD -Path "$ENV:USERPROFILE\Documents\VM-Archange.vhdx" -SizeBytes 32GB -Dynamic
+```
