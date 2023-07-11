@@ -91,4 +91,10 @@ VM-Massil IDE            1                0                  None
 ```POWERSHELL
 Start-VM VM-Massil
 ```
-#
+#installation de la VM avec vmconnect
+```POWERSHELL
+$HostName = [System.Net.DNS]::GetHostByName($Null).HostName
+vmconnect $HostName VM-Massil
+
+
+
