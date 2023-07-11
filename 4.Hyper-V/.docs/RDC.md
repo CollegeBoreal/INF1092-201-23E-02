@@ -12,7 +12,7 @@ Pour partager un disque en utilisant l'application Remote Desktop Connection, vo
 
 5. Partagez un disque local : Sous la section "Périphériques et ressources locaux", cliquez sur le bouton "Plus" pour afficher les ressources disponibles à partager. Cochez la case en regard du disque local que vous souhaitez partager avec l'ordinateur distant.
 
-<img src=../300098957/images/rdp-export-folder.png width='50%' height='50%' > </img>
+<img src=exemple/images/rdp-export-folder.png width='50%' height='50%' > </img>
 
 6. Connectez-vous à l'ordinateur distant : Cliquez sur le bouton "Se connecter" pour établir la connexion à l'ordinateur distant.
 
