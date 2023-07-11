@@ -2,6 +2,8 @@
 
 :tada: [Participation](.scripts/Participation.md)
 
+:basecamp: [Manuelle](.scripts/manuelle.md)
+
 # Vérification Prof
 
 Sous [@PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.3)
