@@ -1,6 +1,6 @@
 # creation du disque virtuel VM-Massil
 ```POWERSHELL
- New-VHD -Path "$ENV:USERPROFILE\Documents\VM-Brice.vhdx" -SizeBytes 32GB -Dynamic
+ New-VHD -Path "$ENV:USERPROFILE\Documents\VM-Massil.vhdx" -SizeBytes 32GB -Dynamic
 ```
 resultats :
 ```PYTHON
