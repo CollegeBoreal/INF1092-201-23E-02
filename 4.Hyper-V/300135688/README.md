@@ -53,3 +53,15 @@ D                   5,72          0,00 FileSystem    D:\
 E                                      FileSystem    E:\
 ```
 
+# creation de la machine virtuelle :
+```POWERSHELL
+$VM = New-VM -Name VM-Massil -Path "$ENV:USERPROFILE\Documents" `
+                        -MemoryStartupBytes 4GB `
+                        -VHDPath "$ENV:USERPROFILE\Documents\VM-Massil.vhdx"
+```
+RESULTAT :
+```PYTHON
+Name      State CPUUsage(%) MemoryAssigned(M) Uptime   Status                Version
+----      ----- ----------- ----------------- ------   ------                -------
+VM-Massil Off   0           0                 00:00:00 Fonctionnement normal 10.0
+```
