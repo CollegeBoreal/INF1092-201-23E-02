@@ -87,3 +87,8 @@ VMName    ControllerType ControllerNumber ControllerLocation DvdMediaType Path
 VM-Massil IDE            0                1                  ISO          C:\Users\Administrateur\Documents\Win10_22H2_English_x64v1.iso
 VM-Massil IDE            1                0                  None
 ```
+# demarrage de la machine virtuelle 
+```POWERSHELL
+Start-VM VM-Massil
+```
+#
