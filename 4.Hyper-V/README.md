@@ -2,7 +2,7 @@
 
 :tada: [Participation](.scripts/Participation.md)
 
-:tired_face: [Participation](.scripts/Demo.md)
+:tired_face: [Demo](.scripts/Demo.md)
 
 ## Qu'est-ce que Hyper V
 
