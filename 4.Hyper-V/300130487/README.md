@@ -25,3 +25,44 @@ IsPMEMCompatible        : False
 AddressAbstractionType  : None
 Number                  :
 ```
+# MONTAGE DU DISQUE EN DVD
+```POWERSHELL
+Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
+```
+Resultat 
+```PYTHON
+Attached          : True
+BlockSize         : 0
+DevicePath        : \\.\CDROM0
+FileSize          : 6140975104
+ImagePath         : C:\Users\Administrator\Documents\Win10_22H2_English_x64v1.iso
+LogicalSectorSize : 2048
+Number            : 0
+Size              : 6140975104
+StorageType       : 1
+PSComputerName    :
+```
+```POWERSHELL
+Get-PSDrive -PSProvider FileSystem
+```
+Resultat
+```PYTHON
+Name           Used (GB)     Free (GB) Provider      Root                                                                     CurrentLocation
+----           ---------     --------- --------      ----                                                                     ---------------
+C                  23,13        249,73 FileSystem    C:\                                                                  Users\Administrator
+D                   5,72          0,00 FileSystem    D:\
+Z                  60,96        211,83 FileSystem    \\10.13.237.25\Users
+```
+#  Créer la machine virtuelle
+```POWERSHELL
+$VM = New-VM -Name VM-Archange -Path "$ENV:USERPROFILE\Documents" `
+                        -MemoryStartupBytes 4GB `
+                        -VHDPath "$ENV:USERPROFILE\Documents\VM-Archange.vhdx"
+Get-VM
+```
+Resultat 
+```PYTHON
+Name        State CPUUsage(%) MemoryAssigned(M) Uptime   Status             Version
+----        ----- ----------- ----------------- ------   ------             -------
+VM-Archange Off   0           0                 00:00:00 Operating normally 9.0
+```
