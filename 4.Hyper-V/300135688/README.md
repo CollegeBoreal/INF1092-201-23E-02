@@ -66,4 +66,24 @@ Name      State CPUUsage(%) MemoryAssigned(M) Uptime   Status                Ver
 ----      ----- ----------- ----------------- ------   ------                -------
 VM-Massil Off   0           0                 00:00:00 Fonctionnement normal 10.0
 ```
-
+# Ajout du disque de demarrage :
+```POWERSHELL
+Get-VMDVDDrive -VMName VM-Massil
+```
+resultat :
+```PYTHON
+VMName    ControllerType ControllerNumber ControllerLocation DvdMediaType Path
+------    -------------- ---------------- ------------------ ------------ ----
+VM-Massil IDE            1                0                  None
+```
+```POWERSHELL
+Add-VMDvdDrive -VMName VM-Massil -Path "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
+Get-VMDVDDrive -VMName VM-Massil
+```
+resultats :
+```python
+VMName    ControllerType ControllerNumber ControllerLocation DvdMediaType Path
+------    -------------- ---------------- ------------------ ------------ ----
+VM-Massil IDE            0                1                  ISO          C:\Users\Administrateur\Documents\Win10_22H2_English_x64v1.iso
+VM-Massil IDE            1                0                  None
+```
