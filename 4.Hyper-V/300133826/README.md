@@ -160,7 +160,7 @@ Credential
 ```
 3️⃣ Établir une session interactive à distance avec la VM :
 ```powershell
-Enter-PSSession -VMName VM-Brice -Credential $cred
+Enter-PSSession -VMName VM-Othman -Credential $cred
 ```
 reponse:
 ```powershell
