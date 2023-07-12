@@ -65,7 +65,35 @@ Name     State CPUUsage(%) MemoryAssigned(M) Uptime   Status                Vers
 ----     ----- ----------- ----------------- ------   ------                -------
 VM-Hakim Off   0           0                 00:00:00 Fonctionnement normal 10.0
 ```
-
+# Ajouter le disque de démarrage
+```POWERSHELL
+Get-VMDVDDrive -VMName VM-Hakim
+```
+Resultat
+```Python
+VMName   ControllerType ControllerNumber ControllerLocation DvdMediaType Path
+------   -------------- ---------------- ------------------ ------------ ----
+VM-Hakim IDE            1                0                  None
+```
+```POWERSHELL
+Add-VMDvdDrive -VMName VM-Hakim -Path "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
+Get-VMDVDDrive -VMName VM-Hakim
+```
+Resultat
+```Python
+VMName   ControllerType ControllerNumber ControllerLocation DvdMediaType Path
+------   -------------- ---------------- ------------------ ------------ ----
+VM-Hakim IDE            0                1                  ISO          C:\Users\Administrateur\Documents\Win10_22H...
+VM-Hakim IDE            1                0                  None
+```
+# Démarrer la machine virtuelle
+```POWERSHELL
+Start-VM VM-Hakim
+```
+# Installer la machine virtuelle avec vmconnect
+```POWERSHELL
+$HostName = [System.Net.DNS]::GetHostByName($Null).HostName
+vmconnect $HostName VM-Hakim
 
 
 
