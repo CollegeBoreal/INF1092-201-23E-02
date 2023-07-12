@@ -93,6 +93,8 @@ Name     State CPUUsage(%) MemoryAssigned(M) Uptime   Status             Version
 ----     ----- ----------- ----------------- ------   ------             -------
 VM-Othman Off   0           0                 05:02:03 Operating normally 10.0
 ```
+<img src="images/WhatsApp Image 2023-07-12 at 3.19.31 PM.jpeg.jpeg" width="253" height="337" > </img>
+
 5️⃣ Ajouter le disque de démarrage:
 ```POWERSHELL
 Get-VMDVDDrive -VMName $VM.VMName
@@ -118,6 +120,9 @@ VMName   ControllerType ControllerNumber ControllerLocation DvdMediaType Path
 VM-Othman IDE            0                1                  ISO          C:\Users\Brice\Documents\Win10_22H2_English_x64v1.iso
 VM-Othman IDE            1                0                  None
 ```
+
+<img src="images/WhatsApp Image 2023-07-12 at 3.19.33 PM (1).jpeg" width="253" height="337" > </img>
+
 6️⃣ Démarrer la machine virtuelle:
 ```powershell
 Start-VM VM-Othman
