@@ -17,7 +17,7 @@ Install-WindowsFeature -Name Hyper-V -IncludeManagementTools -Restart
 New-VHD -Path "$ENV:USERPROFILE\Documents\VM-Brice.vhdx" -SizeBytes 32GB -Dynamic
 ```
 
-<img src="images/2WhatsApp Image 2023-07-12 at 3.19.29 PM.jpeg" width="253" height="337" > </img>
+
 
 Reponse:
 
@@ -61,6 +61,8 @@ AddressAbstractionType  : None
 Number                  :
 ```
 
+<img src="images/2WhatsApp Image 2023-07-12 at 3.19.29 PM.jpeg" width="253" height="337" > </img>
+
 3️⃣ Monter l'image disque en DVD :
 
 ```POWERSHELL
@@ -74,6 +76,8 @@ Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.
 Get-PSDrive -PSProvider FileSystem
 ```
 <img src="images/WhatsApp Image 2023-07-12 at 3.19.30 PM (1).jpeg" width="253" height="337" > </img>
+
+
 4️⃣ Créer la machine virtuelle :
 ```POWERSHELL
 $VM = New-VM -Name VM-Othman -Path "$ENV:USERPROFILE\Documents" `
