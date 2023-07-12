@@ -60,9 +60,30 @@ $VM = New-VM -Name VM-Archange -Path "$ENV:USERPROFILE\Documents" `
                         -VHDPath "$ENV:USERPROFILE\Documents\VM-Archange.vhdx"
 Get-VM
 ```
-Resultat 
-```PYTHON
-Name        State CPUUsage(%) MemoryAssigned(M) Uptime   Status             Version
-----        ----- ----------- ----------------- ------   ------             -------
-VM-Archange Off   0           0                 00:00:00 Operating normally 9.0
+# AJOUT DU DISQUE DE DEMARRAGE
+```POWERSHELL
+Get-VMDVDDrive -VMName VM-Archange
 ```
+RESULTAT
+```PYTHON
+VMName      ControllerType ControllerNumber ControllerLocation DvdMediaType Path
+------      -------------- ---------------- ------------------ ------------ ----
+VM-Archange IDE            1                0                  None
+```
+```POWERSHELL
+
+Add-VMDvdDrive -VMName VM-Archange -Path "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
+
+Get-VMDVDDrive -VMName VM-Archange
+```
+RESULTAT
+```PYTHON
+
+VMName      ControllerType ControllerNumber ControllerLocation DvdMediaType Path
+------      -------------- ---------------- ------------------ ------------ ----
+VM-Archange IDE            0                1                  ISO          C:\Users\Administrator\Documents\Win10_22H2_English_x64v1.iso
+VM-Archange IDE            1                0                  None
+```
+
+
+
