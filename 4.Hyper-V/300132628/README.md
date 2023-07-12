@@ -24,3 +24,48 @@ IsPMEMCompatible        : False
 AddressAbstractionType  : None
 Number                  :
 ```
+# Monter l'image disque en DVD (pas utile)
+```POWERSHELL
+Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
+```
+Resultat
+```Python
+Attached          : True
+BlockSize         : 0
+DevicePath        : \\.\CDROM0
+FileSize          : 6140975104
+ImagePath         : C:\Users\Administrateur\Documents\Win10_22H2_English_x64v1.iso
+LogicalSectorSize : 2048
+Number            : 0
+Size              : 6140975104
+StorageType       : 1
+PSComputerName    :
+```
+```POWERSHELL
+Get-PSDrive -PSProvider FileSystem
+```
+Resultat
+```python
+Name           Used (GB)     Free (GB) Provider      Root                                               CurrentLocation
+----           ---------     --------- --------      ----                                               ---------------
+C                  25,44        247,31 FileSystem    C:\                                           Users\Administrateur
+D                   5,72          0,00 FileSystem    D:\
+Z                  61,11        211,68 FileSystem    \\10.13.237.25\Users
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
