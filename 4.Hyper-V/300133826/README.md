@@ -22,24 +22,43 @@ New-VHD -Path "$ENV:USERPROFILE\Documents\VM-Brice.vhdx" -SizeBytes 32GB -Dynami
 Reponse:
 
 ComputerName            : WIN-TJQ7DKNAHHUSI
+
 Path                    : C:\Users\Administrators\Documents\VM-Brice.vhdx
+
 VhdFormat               : VHDX
+
 VhdType                 : Dynamic
+
 FileSize                : 4194304
+
 Size                    : 34359738368
+
 MinimumSize             :
+
 LogicalSectorSize       : 512
+
 PhysicalSectorSize      : 4096
+
 BlockSize               : 33554432
+
 ParentPath              :
+
 DiskIdentifier          : 7CD12920-A21F-4B93-8EBD-B93A4DD71DIUW
+
 FragmentationPercentage : 0
+
 Alignment               : 1
+
 Attached                : False
+
 DiskNumber              :
+
 IsPMEMCompatible        : False
+
 AddressAbstractionType  : None
+
 Number                  :
+
 
 :three: Monter l'image disque en DVD :
 
