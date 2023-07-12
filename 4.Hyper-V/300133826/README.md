@@ -114,7 +114,49 @@ VMName   ControllerType ControllerNumber ControllerLocation DvdMediaType Path
 VM-Othman IDE            0                1                  ISO          C:\Users\Brice\Documents\Win10_22H2_English_x64v1.iso
 VM-Othman IDE            1                0                  None
 ```
+6️⃣ Démarrer la machine virtuelle:
+```powershell
+Start-VM VM-Othman
+```
 
+# Installation de la VM
+
+1️⃣  Installer la machine virtuelle avec vmconnect :
+```powershell
+$HostName = [System.Net.DNS]::GetHostByName($Null).HostName
+```
+```powershell
+vmconnect $HostName VM-Brice
+```
+# Connexion à la VM 
+1️⃣ Récupérer les informations sur la VM :
+```powershell
+Get-VM
+```
+return:
+```powershell
+Name     State   CPUUsage(%) MemoryAssigned(M) Uptime           Status             Version
+----     -----   ----------- ----------------- ------           ------             -------
+VM-Othman Running 0           4096              00:00:08.5860000 Operating normally 10.0
+```
+2️⃣ Collecter les informations d'identification (nom d'utilisateur et mot de passe) d'un utilisateur :
+```powershell
+$cred = Get-Credential
+```
+reponse:
+```powershell
+cmdlet Get-Credential at command pipeline position 1
+Supply values for the following parameters:
+Credential
+```
+3️⃣ Établir une session interactive à distance avec la VM :
+```powershell
+Enter-PSSession -VMName VM-Brice -Credential $cred
+```
+reponse:
+```powershell
+[VM-Othman]: PS C:\Users\Administrators\Documents>
+```
 
 
 
