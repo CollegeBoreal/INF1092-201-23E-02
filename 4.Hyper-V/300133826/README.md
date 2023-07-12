@@ -21,6 +21,7 @@ New-VHD -Path "$ENV:USERPROFILE\Documents\VM-Brice.vhdx" -SizeBytes 32GB -Dynami
 
 Reponse:
 
+```PYTON
 ComputerName            : WIN-TJQ7DKNAHHUSI
 
 Path                    : C:\Users\Administrators\Documents\VM-Brice.vhdx
@@ -58,7 +59,7 @@ IsPMEMCompatible        : False
 AddressAbstractionType  : None
 
 Number                  :
-
+```
 
 :three: Monter l'image disque en DVD :
 
