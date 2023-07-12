@@ -70,6 +70,7 @@ VMName      ControllerType ControllerNumber ControllerLocation DvdMediaType Path
 ------      -------------- ---------------- ------------------ ------------ ----
 VM-Archange IDE            1                0                  None
 ```
+# COMMANDES
 ```POWERSHELL
 
 Add-VMDvdDrive -VMName VM-Archange -Path "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
