@@ -67,13 +67,13 @@ Number                  :
 Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
 ```
 
-<img src="images/WhatsApp Image 2023-07-12 at 3.19.30 PM (1).jpeg" width="253" height="337" > </img>
+
 
 
 ```POWERSHELL
 Get-PSDrive -PSProvider FileSystem
 ```
-
+<img src="images/WhatsApp Image 2023-07-12 at 3.19.30 PM (1).jpeg" width="253" height="337" > </img>
 4️⃣ Créer la machine virtuelle :
 ```POWERSHELL
 $VM = New-VM -Name VM-Othman -Path "$ENV:USERPROFILE\Documents" `
