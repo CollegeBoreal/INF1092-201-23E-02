@@ -61,13 +61,33 @@ AddressAbstractionType  : None
 Number                  :
 ```
 
-:three: Monter l'image disque en DVD :
+3️⃣ Monter l'image disque en DVD :
 
 ```POWERSHELL
 Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
 ```
 
 <img src="images/WhatsApp Image 2023-07-12 at 3.19.30 PM (1).jpeg" width="253" height="337" > </img>
+
+
+```POWERSHELL
+Get-PSDrive -PSProvider FileSystem
+```
+
+4️⃣ Créer la machine virtuelle :
+```POWERSHELL
+$VM = New-VM -Name VM-Othman -Path "$ENV:USERPROFILE\Documents" `
+                        -MemoryStartupBytes 4GB `
+                        -VHDPath "$ENV:USERPROFILE\Documents\VM-Brice.vhdx"
+```
+```POWERSHELL
+Get-VM
+```
+Response :
+```PYTHON
+Name     State CPUUsage(%) MemoryAssigned(M) Uptime   Status             Version
+----     ----- ----------- ----------------- ------   ------             -------
+VM-Othman Off   0           0                 05:02:03 Operating normally 10.0
 
 
 
