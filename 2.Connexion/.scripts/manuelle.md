@@ -16,5 +16,5 @@
 | 11 | [300135134](../300135134/README.md) <image src='https://avatars0.githubusercontent.com/u/133054332?s=460&v=4' width=20 height=20></image> | Brice@10.13.237.28 | :white_check_mark: | 2022 |
 | 12 | [300135175](../300135175/README.md) <image src='https://avatars0.githubusercontent.com/u/133053723?s=460&v=4' width=20 height=20></image> | Brice@10.13.237.40 | :white_check_mark: | 2022 |
 | 13 | [300135493](../300135493/README.md) <image src='https://avatars0.githubusercontent.com/u/131210227?s=460&v=4' width=20 height=20></image> | Brice@10.13.237.39 | :white_check_mark: | 2019 |
-| 14 | [300135538](../300135538/README.md) <image src='https://avatars0.githubusercontent.com/u/133056385?s=460&v=4' width=20 height=20></image> | :x: |
+| 14 | [300135538](../300135538/README.md) <image src='https://avatars0.githubusercontent.com/u/133056385?s=460&v=4' width=20 height=20></image> | :white_check_mark: | 2019 |
 | 15 | [300135688](../300135688/README.md) <image src='https://avatars0.githubusercontent.com/u/133053743?s=460&v=4' width=20 height=20></image> | Brice@10.13.237.30 | :white_check_mark: | 2022 |
