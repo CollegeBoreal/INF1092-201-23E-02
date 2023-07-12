@@ -88,6 +88,32 @@ Response :
 Name     State CPUUsage(%) MemoryAssigned(M) Uptime   Status             Version
 ----     ----- ----------- ----------------- ------   ------             -------
 VM-Othman Off   0           0                 05:02:03 Operating normally 10.0
+```
+5️⃣ Ajouter le disque de démarrage:
+```POWERSHELL
+Get-VMDVDDrive -VMName $VM.VMName
+```
+Reponse:
+```POWERSHELL
+VMName   ControllerType ControllerNumber ControllerLocation DvdMediaType Path
+------   -------------- ---------------- ------------------ ------------ ----
+VM-Othman IDE            1                0                  None
+```
+
+```POWERSHELL
+Add-VMDvdDrive -VMName $VM.VMName -Path "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
+```
+
+```POWERSHELL
+Get-VMDVDDrive -VMName $VM.VMName
+```
+Reponse:
+```POWERSHELL
+VMName   ControllerType ControllerNumber ControllerLocation DvdMediaType Path
+------   -------------- ---------------- ------------------ ------------ ----
+VM-Othman IDE            0                1                  ISO          C:\Users\Brice\Documents\Win10_22H2_English_x64v1.iso
+VM-Othman IDE            1                0                  None
+```
 
 
 
