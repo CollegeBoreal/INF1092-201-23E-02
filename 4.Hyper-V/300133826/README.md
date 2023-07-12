@@ -10,7 +10,7 @@ Install-WindowsFeature -Name Hyper-V -IncludeManagementTools -Restart
 <img src="images/WhatsApp Image 2023-07-12 at 3.19.2811 PM.jpeg" width="253" height="337" > </img>
 
 
-:2: Créer le disque virtuel pour la machine virtuelle
+🔢 Créer le disque virtuel pour la machine virtuelle
 
 
 
