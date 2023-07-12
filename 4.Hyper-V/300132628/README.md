@@ -52,7 +52,19 @@ C                  25,44        247,31 FileSystem    C:\                        
 D                   5,72          0,00 FileSystem    D:\
 Z                  61,11        211,68 FileSystem    \\10.13.237.25\Users
 ```
-
+# Créer la machine virtuelle
+```POWERSHELL
+$VM = New-VM -Name VM-Hakim -Path "$ENV:USERPROFILE\Documents" `
+                        -MemoryStartupBytes 4GB `
+                        -VHDPath "$ENV:USERPROFILE\Documents\VM-Hakim.vhdx"
+Get-VM
+```
+Resultat
+```Python
+Name     State CPUUsage(%) MemoryAssigned(M) Uptime   Status                Version
+----     ----- ----------- ----------------- ------   ------                -------
+VM-Hakim Off   0           0                 00:00:00 Fonctionnement normal 10.0
+```
 
 
 
