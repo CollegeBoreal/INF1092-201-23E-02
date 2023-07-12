@@ -93,7 +93,7 @@ Name     State CPUUsage(%) MemoryAssigned(M) Uptime   Status             Version
 ----     ----- ----------- ----------------- ------   ------             -------
 VM-Othman Off   0           0                 05:02:03 Operating normally 10.0
 ```
-<img src="images/WhatsApp Image 2023-07-12 at 3.19.31 PM.jpeg.jpeg" width="253" height="337" > </img>
+<img src="images/WhatsApp Image 2023-07-12 at 3.19.31 PM.jpeg" width="253" height="337" > </img>
 
 5️⃣ Ajouter le disque de démarrage:
 ```POWERSHELL
