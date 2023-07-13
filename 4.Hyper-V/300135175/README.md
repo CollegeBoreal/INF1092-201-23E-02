@@ -1,4 +1,4 @@
-# 📋 **Guide de création de machine virtuelle avec Hyper-V**
+# 📋 **Guide de création de la machine virtuelle avec Hyper-V** par riad che
 
 1. 📦 **New-VHD** - Cette commande crée un nouveau disque virtuel (VHD) avec une taille de 64GB et un format dynamique.
 2. 💿 **Mount-DiskImage** - Cette commande monte une image disque à partir d'un fichier ISO de Windows 10.
