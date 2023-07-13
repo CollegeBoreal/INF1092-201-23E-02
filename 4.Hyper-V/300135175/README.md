@@ -14,4 +14,4 @@
 12. 🔐 **$cred = Get-Credential** - Cette commande stocke les informations d'identification dans la variable $cred en utilisant la commande Get-Credential.
 13. 💻 **Enter-PSSession -VMName VM-RIAD -Credential $cred** - Cette commande établit une session PowerShell à distance avec la machine virtuelle "VM-RIAD" en utilisant les informations d'identification fournies dans la variable $cred.
 
-J'espère que cette explication en utilisant des emojis, des couleurs, des signes et un numérotage répond à votre demande pour une syntaxe Markdown pour la mise en forme des fichiers README sur GitHub !
+
