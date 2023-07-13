@@ -3,24 +3,25 @@ par Riad 👨‍💻
 
 
 1. ⚙️ **Commande 1 :** `New-VHD -Path "$ENV:USERPROFILE\Documents\VM-RIAD.vhdx" -SizeBytes 64GB -Dynamic`
+   Cette commande crée un nouveau disque virtuel (VHD) avec une taille de 64GB et un format dynamique. Elle prépare le disque virtuel sur lequel la machine virtuelle sera installée.+ Résultat ↓
 
-   Cette commande crée un nouveau disque virtuel (VHD) avec une taille de 64GB et un format dynamique. Elle prépare le disque virtuel sur lequel la machine virtuelle sera installée.
+
 
 2. 🖼️ **Commande 2 :** `Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"`
+   Cette commande monte une image disque à partir d'un fichier ISO de Windows 10. L'image disque ISO contient les fichiers d'installation de Windows 10.Résultat ↓
 
-   Cette commande monte une image disque à partir d'un fichier ISO de Windows 10. L'image disque ISO contient les fichiers d'installation de Windows 10.
 
 3. 💽 **Commande 3 :** `Get-PSDrive -PSProvider FileSystem`
+   Cette commande affiche les lecteurs de disque disponibles sur le système. Elle permet de vérifier les lecteurs de disque actuellement montés.Résultat ↓
 
-   Cette commande affiche les lecteurs de disque disponibles sur le système. Elle permet de vérifier les lecteurs de disque actuellement montés.
 
 4. 🖥️ **Commande 4 :** `$VM = New-VM -Name VM-RIAD -Path "$ENV:USERPROFILE\Documents" -MemoryStartupBytes 8GB -VHDPath "$ENV:USERPROFILE\Documents\VM-RIAD.vhdx"`
+   Cette commande crée une nouvelle machine virtuelle (VM) avec le nom "VM-RIAD". La VM est configurée avec 8GB de mémoire et le chemin du disque virtuel est spécifié.Résultat ↓
 
-   Cette commande crée une nouvelle machine virtuelle (VM) avec le nom "VM-RIAD". La VM est configurée avec 8GB de mémoire et le chemin du disque virtuel est spécifié.
 
 5. 💻 **Commande 5 :** `Get-VM`
+   Cette commande affiche les informations sur toutes les machines virtuelles présentes. Elle est utilisée pour vérifier si la machine virtuelle "VM-RIAD" a été créée avec succès.Résultat ↓
 
-   Cette commande affiche les informations sur toutes les machines virtuelles présentes. Elle est utilisée pour vérifier si la machine virtuelle "VM-RIAD" a été créée avec succès.
 
 6. 📀 **Commande 6 :** `Get-VMDVDDrive -VMName "VM-RIAD"`
 
