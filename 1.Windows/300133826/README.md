@@ -3,7 +3,7 @@
 Bienvenue dans le guide de configuration de votre serveur ! Nous allons vous guider à travers les étapes nécessaires pour configurer votre serveur de manière optimale. Suivez attentivement les instructions ci-dessous pour assurer une configuration correcte :
 
 
-🔌 Flashage des Disques Durs
+1️⃣🔌 Flashage des Disques Durs :
 
 <img src="images/WhatsApp Image 2023-05-27 at 7.26.23 PM.jpeg" width="253" height="337" > </img>
 
@@ -26,7 +26,7 @@ Bienvenue dans le guide de configuration de votre serveur ! Nous allons vous gui
 
 
 
-📥 Installation de Windows Server
+2️⃣ 📥 Installation de Windows Server :
 
 
 
@@ -40,7 +40,7 @@ Bienvenue dans le guide de configuration de votre serveur ! Nous allons vous gui
 
 <img src="images/WhatsApp Image 2023-05-27 at 7.26.28 PM.jpeg" width="253" height="337" > </img>
 
-🌐 Adressage IP
+3️⃣ 🌐 Adressage IP :
 
 <img src="images/WhatsApp Image 2023-05-27 at 7.23.03 PM.jpeg" width="253" height="337" > </img>
 
@@ -58,7 +58,7 @@ Bienvenue dans le guide de configuration de votre serveur ! Nous allons vous gui
 
 <img src="images/WhatsApp Image 2023-05-27 at 7.23.06 PM.jpeg" width="253" height="337" > </img>
 
-🖥️ Configuration de Remote Desktop
+4️⃣ 🖥️ Configuration de Remote Desktop :
 
 <img src="images/WhatsApp Image 2023-05-27 at 7.23.10 PM.jpeg" width="253" height="337" > </img>
 
