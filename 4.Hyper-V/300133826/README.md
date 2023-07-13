@@ -135,7 +135,7 @@ Start-VM VM-Othman
 $HostName = [System.Net.DNS]::GetHostByName($Null).HostName
 ```
 ```powershell
-vmconnect $HostName VM-Brice
+vmconnect $HostName VM-Othman
 ```
 # Connexion à la VM 
 1️⃣ Récupérer les informations sur la VM :
