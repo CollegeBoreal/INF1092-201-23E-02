@@ -5,7 +5,6 @@
 </body>
 </html>
 
-Bien sûr ! Voici une explication pour chaque commande que vous avez fournie, en utilisant une syntaxe HTML afin que vous puissiez l'ajouter à votre GitHub :
 
 1. New-VHD -Path "$ENV:USERPROFILE\Documents\VM-RIAD.vhdx" -SizeBytes 64GB -Dynamic :
    Cette commande crée un nouveau disque virtuel (VHD) avec un chemin spécifié, dans ce cas "$ENV:USERPROFILE\Documents\VM-RIAD.vhdx". Le disque virtuel sera d'une taille de 64 Go et sera configuré avec une allocation dynamique, ce qui signifie qu'il ne prendra que l'espace réellement utilisé par les fichiers stockés.
