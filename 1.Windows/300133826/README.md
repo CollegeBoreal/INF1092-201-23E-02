@@ -1,4 +1,4 @@
-                                                ## 🔧🖥️ Configuration complète de votre serveur
+                                                # 💻 Configuration complete du serveur
 
 Bienvenue dans le guide de configuration de votre serveur ! Nous allons vous guider à travers les étapes nécessaires pour configurer votre serveur de manière optimale. Suivez attentivement les instructions ci-dessous pour assurer une configuration correcte :
 
