@@ -3,7 +3,7 @@
 Bienvenue dans le guide de configuration de votre serveur ! Nous allons vous guider à travers les étapes nécessaires pour configurer votre serveur de manière optimale. Suivez attentivement les instructions ci-dessous pour assurer une configuration correcte :
 
 
-1️⃣🔌 Flashage des Disques Durs :
+1️⃣🔌 # Flashage des Disques Durs :
 
 <img src="images/WhatsApp Image 2023-05-27 at 7.26.23 PM.jpeg" width="253" height="337" > </img>
 
