@@ -4,12 +4,12 @@
 ```powershell
  New-VHD -Path "$ENV:USERPROFILE\Documents\VM-Fousseyni.vhdx" -SizeBytes 32GB -Dynamic
 ```
-> Resultat:
+> Response:
 ```python
 # Monter l'image disque en DVD
 ```powershell
 
 ```
-> Resultat:
+> Response:
 ```python
 
