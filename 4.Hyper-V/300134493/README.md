@@ -8,7 +8,7 @@
 ```python
 # Monter l'image disque en DVD
 ```powershell
-
+Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
 ```
 > Response:
 ```python
