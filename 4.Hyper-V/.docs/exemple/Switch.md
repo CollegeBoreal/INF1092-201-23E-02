@@ -48,6 +48,21 @@ Loopback Pseudo-Interface 1          1 IPv4    {}
 Loopback Pseudo-Interface 1          1 IPv6    {}
 ```
 
+```powershell
+Test-NetConnection -ComputerName "google.com"
+```
+> Response:
+```powershell
+
+
+ComputerName           : google.com
+RemoteAddress          : 142.251.32.78
+InterfaceAlias         : Ethernet
+SourceAddress          : 10.13.237.125
+PingSucceeded          : True
+PingReplyDetails (RTT) : 15 ms
+```
+
 # References
 
 - [ ] [Create a Virtual Switch with PowerShell](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/connect-to-network#create-a-virtual-switch-with-powershell)
