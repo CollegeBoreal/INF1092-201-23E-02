@@ -1,6 +1,7 @@
 ```poershell
  New-VHD -Path "$ENV:USERPROFILE\Documents\VM-Therra.vhdx" -SizeBytes 32GB -Dynamic
 ```
+> Resultat
 
 
 # Hyper-V
