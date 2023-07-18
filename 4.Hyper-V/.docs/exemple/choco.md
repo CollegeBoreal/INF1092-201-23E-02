@@ -12,3 +12,5 @@ Set-ExecutionPolicy Bypass -Scope Process -Force;
 ```
 choco install musescore -y
 ```
+
+<img src=../../images/hyper-v_musescore.png width=50% height=50% > </img>
