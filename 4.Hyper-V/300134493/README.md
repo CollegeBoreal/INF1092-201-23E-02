@@ -55,6 +55,19 @@ C                  35.31        237.48 FileSystem    C:\                        
 D                   5.72          0.00 FileSystem    D:\
 F                                      FileSystem    F:\
 ```
+Créer la machine virtuelle 
+```powershell
+$VM = New-VM -Name VM-Thera -Path "$ENV:USERPROFILE\Documents" `
+                        -MemoryStartupBytes 4GB `
+                        -VHDPath "$ENV:USERPROFILE\Documents\VM-Thera.vhdx"
+> Resultat
+```Python
+
+Name         State   CPUUsage(%) MemoryAssigned(M) Uptime             Status             Version
+----         -----   ----------- ----------------- ------             ------             -------
+VM-Fousseyni Running 0           4096              2.10:22:31.6760000 Operating normally 10.0
+VM-Thera     Off     0           0                 00:00:00           Operating normally 10.0
+
 
 
 
