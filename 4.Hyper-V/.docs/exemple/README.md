@@ -184,9 +184,8 @@ Enter-PSSession -VMName VM-Brice -Credential $cred
 [VM-Brice]: PS C:\Users\Brice\Documents>
 ```
 
-Or Erreur :x:
+Ou Erreur :x:
 
-```
 > Response :
 ```python
 Enter-PSSession : An error has occurred which Windows PowerShell cannot handle. A remote session might have ended.
