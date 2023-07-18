@@ -200,7 +200,7 @@ At line:1 char:1
 :bulb: Note: `PSSession` permet uniquement la connection en mode CLI (Command Level Interface) pour entrer les commandes `PowerShell` sur la machine virtuelle
 
 
-## :link: Connexion avec l'Internet :globe_with_meridians:
+## :o: Connexion à l'Internet :globe_with_meridians:
 
 En étant connecté à la machine virtuelle par la session `PSSession`, connecter la à l'aide des instructions de connexion suivantes
 
