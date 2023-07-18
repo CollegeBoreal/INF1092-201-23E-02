@@ -195,6 +195,94 @@ At line:1 char:1
     + FullyQualifiedErrorId : CreateRemoteRunspaceForVMFailed,Microsoft.PowerShell.Commands.EnterPSSessionCommand
 ```
 
+## :link: Connexion avec l'Internet :globe_with_meridians:
+
+#### :round_pushpin: Création du commutateur (Switch) virtuel externe
+
+- [ ] Déterminer les adaptateurs réseaux (Cartes Ethernets)
+
+```powershell
+ Get-NetAdapter
+```
+> Response:
+```powershell
+Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
+----                      --------------------                    ------- ------       ----------             ---------
+Ethernet                  QLogic BCM5709C Gigabit Ethernet ...#47      18 Up           78-E7-D1-65-6A-EC         1 Gbps
+Ethernet 2                QLogic BCM5709C Gigabit Ethernet ...#48      11 Disconnected 78-E7-D1-65-6A-EE          0 bps
+```
+
+- [ ] Choisir la carte qui a son état à `Up` (Disponible), prendre le nom de la carte et l'assigner à une variable `$net`
+
+```powershell
+ $net = Get-NetAdapter -Name 'Ethernet'
+```
+
+
+
+```powershell
+New-VMSwitch -Name "External VM Switch" -AllowManagementOS $True -NetAdapterName $net.Name
+```
+> Response:
+```powershell
+Name               SwitchType NetAdapterInterfaceDescription
+----               ---------- ------------------------------
+External VM Switch External   QLogic BCM5709C Gigabit Ethernet (NDIS VBD Client)
+```
+
+```powershell
+Get-DnsClientServerAddress
+```
+> Response:
+```powershell
+
+InterfaceAlias               Interface Address ServerAddresses
+                             Index     Family
+--------------               --------- ------- ---------------
+Ethernet                            11 IPv4    {}
+Ethernet                            11 IPv6    {fec0:0:0:ffff::1, fec0:0:0:ffff::2, fec...
+Loopback Pseudo-Interface 1          1 IPv4    {}
+Loopback Pseudo-Interface 1          1 IPv6    {}
+```
+
+```powershell
+Set-DNSClientServerAddress "Ethernet" -ServerAddresses ("1.1.1.1","8.8.8.8")
+```
+
+```powershell
+Get-DnsClientServerAddress
+```
+> Response:
+```powershell
+
+InterfaceAlias               Interface Address ServerAddresses
+                             Index     Family
+--------------               --------- ------- ---------------
+Ethernet                            11 IPv4    {1.1.1.1, 8.8.8.8}
+Ethernet                            11 IPv6    {}
+Loopback Pseudo-Interface 1          1 IPv4    {}
+Loopback Pseudo-Interface 1          1 IPv6    {}
+```
+
+```powershell
+Test-NetConnection -ComputerName "google.com"
+```
+> Response:
+```powershell
+
+
+ComputerName           : google.com
+RemoteAddress          : 142.251.32.78
+InterfaceAlias         : Ethernet
+SourceAddress          : 10.13.237.125
+PingSucceeded          : True
+PingReplyDetails (RTT) : 15 ms
+```
+
+# References
+
+- [ ] [Create a Virtual Switch with PowerShell](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/connect-to-network#create-a-virtual-switch-with-powershell)
+
 ## :x: Détruire la machine 
 
 - [ ] Arreter la VM
