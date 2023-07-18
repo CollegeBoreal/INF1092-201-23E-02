@@ -12,7 +12,7 @@ Copy-Item -Path "E:\Win10_22H2_English_x64v1.iso" -Destination "$ENV:USERPROFILE
  New-VHD -Path "$ENV:USERPROFILE\Documents\VM-Reda.vhdx" -SizeBytes 32GB -Dynamic 
 ```
 > Reponse :
-
+```powershell
 ComputerName            : WIN-AR36REID
 Path                    : C:\Users\Brice\Documents\VM-Reda.vhdx
 VhdFormat               : VHDX
@@ -32,7 +32,10 @@ DiskNumber              :
 IsPMEMCompatible        : False
 AddressAbstractionType  : None
 Number                  :
+```
+
  Monter l'image disque en DVD (pas utile)
+ 
 Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
 Response:
 
