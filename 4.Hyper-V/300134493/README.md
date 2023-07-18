@@ -67,6 +67,37 @@ Name         State   CPUUsage(%) MemoryAssigned(M) Uptime             Status    
 ----         -----   ----------- ----------------- ------             ------             -------
 VM-Fousseyni Running 0           4096              2.10:22:31.6760000 Operating normally 10.0
 VM-Thera     Off     0           0                 00:00:00           Operating normally 10.0
+```
+
+Ajoutez le disque de démarrage
+```powershell
+Get-VMDVDDrive -VMName $VM.VMName
+>Resultat
+```python
+
+VMName   ControllerType ControllerNumber ControllerLocation DvdMediaType Path
+------   -------------- ---------------- ------------------ ------------ ----
+VM-Thera IDE            1                0                  None
+```
+```powershell
+Add-VMDvdDrive -VMName $VM.VMName -Path "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
+```
+```powershell
+Get-VMDVDDrive -VMName $VM.VMName
+```
+> Resultat
+``` Python
+
+VMName   ControllerType ControllerNumber ControllerLocation DvdMediaType Path
+------   -------------- ---------------- ------------------ ------------ ----
+VM-Thera IDE            0                1                  ISO          C:\Users\Administrator\Documents\Win10_22H2...
+VM-Thera IDE            1                0                  None
+```
+-[] Démarrer la machine virtuelle 
+```powershell
+Start-VM VM-Thera
+```
+
 
 
 
