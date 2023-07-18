@@ -225,7 +225,7 @@ Ethernet 2                QLogic BCM5709C Gigabit Ethernet ...#48      11 Discon
  $net = Get-NetAdapter -Name 'Ethernet'
 ```
 
-
+- [ ] Créer la `Switch Virtuelle` (le commutateur virtuel) grâce à la variable `$net` récupérée ci-dessus
 
 ```powershell
 New-VMSwitch -Name "External VM Switch" -AllowManagementOS $True -NetAdapterName $net.Name
@@ -236,6 +236,18 @@ Name               SwitchType NetAdapterInterfaceDescription
 ----               ---------- ------------------------------
 External VM Switch External   QLogic BCM5709C Gigabit Ethernet (NDIS VBD Client)
 ```
+
+#### :round_pushpin: Assigner une adresse à la machine virtuelle
+
+Grâce à la création du commutateur virtuel externe, on peut maintenant donner une adresse IP à la machine virtuelle
+
+```powershell
+New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.13.237.XXX" -PrefixLength 24 -DefaultGateway "10.13.237.1"
+```
+
+:bulb: Note: `XXX` à <remplacer avec votre adresse IP> et y rajouter un `1` par exemple si mon adresse IP se termine par `25` (10.13.237.25), il faut rajouter `1` avant `25` soit `10.23.237.125`
+
+#### :round_pushpin: 
 
 ```powershell
 Get-DnsClientServerAddress
