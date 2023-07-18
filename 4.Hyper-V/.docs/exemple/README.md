@@ -237,6 +237,22 @@ Name               SwitchType NetAdapterInterfaceDescription
 External VM Switch External   QLogic BCM5709C Gigabit Ethernet (NDIS VBD Client)
 ```
 
+- [ ] Vérifier que la `Switch Virtuelle` (le commutateur virtuel) à bien été crée
+
+```powershell
+get-netadapter
+```
+> Response:
+```powershell
+
+Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
+----                      --------------------                    ------- ------       ----------             ---------
+Ethernet                  QLogic BCM5709C Gigabit Ethernet ...#47      18 Up           78-E7-D1-65-6A-EC         1 Gbps
+vEthernet (External VM... Hyper-V Virtual Ethernet Adapter             21 Up           78-E7-D1-65-6A-EC         1 Gbps
+Ethernet 2                QLogic BCM5709C Gigabit Ethernet ...#48      11 Disconnected 78-E7-D1-65-6A-EE          0 bps
+
+```
+
 #### :round_pushpin: Assigner une adresse à la machine virtuelle
 
 Grâce à la création du commutateur virtuel externe, on peut maintenant donner une adresse IP à la machine virtuelle
