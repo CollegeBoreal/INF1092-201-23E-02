@@ -135,4 +135,4 @@ $HostName = [System.Net.DNS]::GetHostByName($Null).HostName
 vmconnect $HostName VM-Lassine
 ```
 # 🆎 Connexion à la VM
-<img src=300135493/images/IMG_20230705_165846.jpg width='' height='' > </img>
+<img src=images/300135493/images/IMG_20230705_165846.jpg width='' height='' > </img>
