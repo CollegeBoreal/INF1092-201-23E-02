@@ -9,7 +9,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force;
 
 - [ ] Installer un application de votre choix
 
-```
+```powershell
 choco install musescore -y
 ```
 
