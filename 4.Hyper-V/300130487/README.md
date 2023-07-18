@@ -100,6 +100,32 @@ Name     State   CPUUsage(%) MemoryAssigned(M) Uptime           Status          
 ----     -----   ----------- ----------------- ------           ------             -------
 VM-Archange Running 0           4096              00:00:08.5860000 Operating normally 9.0
 ```
+# 🎌Collecter les informations d'identification (nom d'utilisateur et mot de passe) d'un utilisateur.
+```POWERSHELL
+$cred = Get-Credential
+```
+RESULTAT
+```PYTHON
+cmdlet Get-Credential at command pipeline position 1
+Supply values for the following parameters:
+Credential
+```
+# 😎  Établir une session interactive à distance avec la VM
+```POWERSHELL
+Enter-PSSession -VMName VM-Archange -Credential $cred
+```
+RESULTAT
+```PYTHON
+[VM-Archange]: PS C:\Users\Archange\Documents>
+OU ERREUR ❎
+Enter-PSSession : The credential is invalid.
+At line:1 char:1
++ Enter-PSSession -VMName VM-Archange -Credential $cred
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Enter-PSSession], PSDirectException
+    + FullyQualifiedErrorId : CreateRemoteRunspaceForVMFailed,Microsoft.PowerShell.Commands.EnterPSSessionCommand
+```
+
 
 
 
