@@ -144,7 +144,7 @@ $HostName = [System.Net.DNS]::GetHostByName($Null).HostName
 vmconnect $HostName VM-Brice
 ```
 
-:bulb: Note: `vmconnect` permet uniquement la connection en mode interactive (GUI)
+:bulb: Note: `vmconnect` permet uniquement la connection en mode interactive (GUI - Graphical User Interface - Interface Homme Machine)
 
 ## :ab: Connexion à la VM
 
