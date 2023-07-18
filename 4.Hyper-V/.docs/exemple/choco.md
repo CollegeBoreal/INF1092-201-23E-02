@@ -1,5 +1,5 @@
 
-- [ ] Installer Choco
+- [ ] Installer [Choco](https://chocolatey.org/)
 
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force; 
