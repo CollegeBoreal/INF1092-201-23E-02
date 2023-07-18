@@ -242,10 +242,10 @@ External VM Switch External   QLogic BCM5709C Gigabit Ethernet (NDIS VBD Client)
 Grâce à la création du commutateur virtuel externe, on peut maintenant donner une adresse IP à la machine virtuelle
 
 ```powershell
-New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.13.237.XXX" -PrefixLength 24 -DefaultGateway "10.13.237.1"
+New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.13.237.1XX" -PrefixLength 24 -DefaultGateway "10.13.237.1"
 ```
 
-:bulb: Note: `XXX` à <remplacer avec votre adresse IP> et y rajouter un `1` par exemple si mon adresse IP se termine par `25` (10.13.237.25), il faut rajouter `1` avant `25` soit `10.23.237.125`
+:bulb: Note: `XX` à remplacer avec votre adresse IP et y ajouter un `1` par exemple si mon adresse IP se termine par `25` (10.13.237.25), il faut rajouter `1` avant `25` soit `10.23.237.125`
 
 #### :round_pushpin: 
 
