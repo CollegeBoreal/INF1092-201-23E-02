@@ -85,6 +85,21 @@ VMName      ControllerType ControllerNumber ControllerLocation DvdMediaType Path
 VM-Archange IDE            0                1                  ISO          C:\Users\Administrator\Documents\Win10_22H2_English_x64v1.iso
 VM-Archange IDE            1                0                  None
 ```
+# 🎈 DEMARRER LA MACHINE VIRTUELLE 
+```POWERSHELL
+Start-VM VM-Archange
+```
+# 🥇CONNEXION A LA VM
+```POWERSHELL
+Get-VM
+```
+RESULTAT
+```PYTHON
+
+Name     State   CPUUsage(%) MemoryAssigned(M) Uptime           Status             Version
+----     -----   ----------- ----------------- ------           ------             -------
+VM-Archange Running 0           4096              00:00:08.5860000 Operating normally 10.0
+```
 
 
 
