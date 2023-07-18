@@ -56,8 +56,7 @@ Une fois que la commande DISM est terminée, vous aurez une image WIM de votre m
 
 # References
 
-https://www.ubackup.com/windows-server/windows-server-backup-powershell.html
-
-https://www.microsoft.com/en-us/software-download/windows10ISO
-
-https://learn.microsoft.com/en-us/windows/deployment/deploy-windows-cm/add-a-windows-10-operating-system-image-using-configuration-manager
+- [ ] [How to Take Windows Server Backup Using PowerShell](https://www.ubackup.com/windows-server/windows-server-backup-powershell.html)
+- [ ] [Download Windows 10 Disc Image (ISO File)](https://www.microsoft.com/en-us/software-download/windows10ISO)
+- [ ] [Add a Windows 10 operating system image using Configuration Manager](https://learn.microsoft.com/en-us/windows/deployment/deploy-windows-cm/add-a-windows-10-operating-system-image-using-configuration-manager)
+- [ ] [Configure Windows Deployment Services Using PowerShell](https://mcpmag.com/articles/2018/12/13/configure-wds-using-powershell.aspx)
