@@ -44,7 +44,7 @@ Response:
 
 Name           Used (GB)     Free (GB) Provider      Root                                                           CurrentLocation
 ----           ---------     --------- --------      ----                                                           ---------------
-C                  59.80        212.99 FileSystem    C:\                                                      Users\Brice\Documents
+C                  59.80        212.99 FileSystem    C:\                                                      Users\Reda\Documents
 D                                      FileSystem    D:\
 E              179496.88      58904.14 FileSystem    \\TSCLIENT\Downloads
 F                                      FileSystem    F:\
@@ -76,7 +76,7 @@ VMName   ControllerType ControllerNumber ControllerLocation DvdMediaType Path
 VM-Reda IDE            0                1                  ISO          C:\Users\Reda\Documents\Win10_22H2_English_x64v1.iso
 VM-Reda IDE            1                0                  None
  Démarrer la machine virtuelle
-Start-VM VM-Brice
+Start-VM VM-Reda
 🚦 Installation de la VM
 💡 Note: vmconnect permet uniquement la connection en mode interactive (GUI - Graphical User Interface - Interface Homme Machine)
 
@@ -104,7 +104,7 @@ Credential
 Enter-PSSession -VMName VM-Reda -Credential $cred
 Response :
 
-[VM-Reda]: PS C:\Users\Brice\Documents>
+[VM-Reda]: PS C:\Users\Reda\Documents>
 Ou Erreur⛔️
 
 Response :
