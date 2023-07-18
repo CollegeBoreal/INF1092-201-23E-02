@@ -27,3 +27,5 @@ DISM /Capture-Image `
      /Description:"Image de la VM de Brice" `
      /Compress:Maximum
 ```
+
+Start 1:46pm
