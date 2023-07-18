@@ -1,7 +1,5 @@
 # :slot_machine: Machine Virtuelle
 
-En étant connecté à la machine virtuelle par la session `PSSession`, connecter la machine virtuelle à l'aide des instructions de connexion suivantes
-
 ## :a: Création de la VM 
 
 - [ ] Copy ISO File (être très patient) from [Download Windows 10 Disc Image (ISO File)](https://www.microsoft.com/en-us/software-download/windows10ISO)
@@ -198,6 +196,8 @@ At line:1 char:1
 ```
 
 ## :link: Connexion avec l'Internet :globe_with_meridians:
+
+En étant connecté à la machine virtuelle par la session `PSSession`, connecter la machine virtuelle à l'aide des instructions de connexion suivantes
 
 #### :round_pushpin: Création du commutateur (Switch) virtuel externe
 
