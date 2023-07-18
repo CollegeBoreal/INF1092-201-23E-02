@@ -1,6 +1,6 @@
 # Backup
 
-:cat:GPT Comment créer une image windows?
+:cat:GPT: Comment créer une image windows?
 
 Pour créer une image Windows à partir de zéro, vous pouvez utiliser le déploiement automatisé de Windows (Windows Automated Installation Kit - AIK) ou Windows Assessment and Deployment Kit (Windows ADK) pour Windows 10. Voici les étapes générales :
 
