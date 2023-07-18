@@ -8,11 +8,11 @@ Copy-Item -Path "E:\Win10_22H2_English_x64v1.iso" -Destination "$ENV:USERPROFILE
 
  Créer le disque virtuel pour la machine virtuelle
 
- ```
+ ```powershell
  New-VHD -Path "$ENV:USERPROFILE\Documents\VM-Reda.vhdx" -SizeBytes 32GB -Dynamic 
 ```
 > Reponse :
-```powershell
+```PYTHON
 ComputerName            : WIN-AR36REID
 Path                    : C:\Users\Brice\Documents\VM-Reda.vhdx
 VhdFormat               : VHDX
@@ -35,9 +35,12 @@ Number                  :
 ```
 
  Monter l'image disque en DVD (pas utile)
- 
+
+ ```
 Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
-Response:
+```
+> Response:
+```powershell
 
 Attached          : True
 BlockSize         : 0
@@ -48,7 +51,7 @@ LogicalSectorSize : 2048
 Number            : 3
 Size              : 6140975104
 StorageType       : 1
-PSComputerName    :
+PSComputerName    : 
 Get-PSDrive -PSProvider FileSystem
 Response:
 
