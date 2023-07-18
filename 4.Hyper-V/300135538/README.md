@@ -36,11 +36,12 @@ Number                  :
 
  Monter l'image disque en DVD (pas utile)
 
- ```
+ ```powershell
 Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
 ```
 > Response:
-```powershell
+
+```PYTHON
 
 Attached          : True
 BlockSize         : 0
@@ -51,9 +52,12 @@ LogicalSectorSize : 2048
 Number            : 3
 Size              : 6140975104
 StorageType       : 1
-PSComputerName    : 
+PSComputerName    :
+```
 Get-PSDrive -PSProvider FileSystem
 Response:
+
+
 
 Name           Used (GB)     Free (GB) Provider      Root                                                           CurrentLocation
 ----           ---------     --------- --------      ----                                                           ---------------
