@@ -98,7 +98,7 @@ RESULTAT
 
 Name     State   CPUUsage(%) MemoryAssigned(M) Uptime           Status             Version
 ----     -----   ----------- ----------------- ------           ------             -------
-VM-Archange Running 0           4096              00:00:08.5860000 Operating normally 10.0
+VM-Archange Running 0           4096              00:00:08.5860000 Operating normally 9.0
 ```
 
 
