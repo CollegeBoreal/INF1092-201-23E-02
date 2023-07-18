@@ -1,7 +1,11 @@
 🚩Machine Virtuelle
 🚦 Création de la VM
  Copy ISO File (être très patient) from Download Windows 10 Disc Image (ISO File)
+
+```
 Copy-Item -Path "E:\Win10_22H2_English_x64v1.iso" -Destination "$ENV:USERPROFILE\Documents"
+```
+
  Créer le disque virtuel pour la machine virtuelle
  New-VHD -Path "$ENV:USERPROFILE\Documents\VM-Reda.vhdx" -SizeBytes 32GB -Dynamic 
 Reponse :
