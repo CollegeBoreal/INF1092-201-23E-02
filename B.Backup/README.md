@@ -6,9 +6,6 @@ Pour créer une image Windows à partir de zéro, vous pouvez utiliser le déplo
 
 1. Téléchargez et installez Windows ADK : Rendez-vous sur le site Web de Microsoft pour télécharger et installer la version appropriée de Windows ADK. Assurez-vous de sélectionner les composants nécessaires pour la création d'images, tels que Windows PE, Deployment Tools, etc.
 
-```bash
-choco install windows-adk
-```
 
 2. Préparez les fichiers sources de Windows : Vous aurez besoin des fichiers sources de Windows pour créer l'image. Cela peut être l'ISO d'installation de Windows ou les fichiers extraits à partir de l'ISO.
 
@@ -94,3 +91,9 @@ Une fois la commande DISM terminée, vous aurez l'image WIM de la machine virtue
 - [ ] [Download Windows 10 Disc Image (ISO File)](https://www.microsoft.com/en-us/software-download/windows10ISO)
 - [ ] [Add a Windows 10 operating system image using Configuration Manager](https://learn.microsoft.com/en-us/windows/deployment/deploy-windows-cm/add-a-windows-10-operating-system-image-using-configuration-manager)
 - [ ] [Configure Windows Deployment Services Using PowerShell](https://mcpmag.com/articles/2018/12/13/configure-wds-using-powershell.aspx)
+- [ ] [Chocolatey: Windows Assessment and Deployment Kit 10.1.22621.1](https://community.chocolatey.org/packages/windows-adk)
+
+```bash
+choco install windows-adk
+```
+
