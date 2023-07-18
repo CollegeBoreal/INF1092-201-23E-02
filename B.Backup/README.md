@@ -31,6 +31,29 @@ choco install windows-adk
 Ces étapes vous permettront de créer une image Windows à partir de zéro à l'aide des outils disponibles dans Windows ADK. Il est important de noter que les détails spécifiques peuvent varier en fonction de la version de Windows et de l'outil que vous utilisez. Assurez-vous de consulter la documentation de Microsoft et de suivre les instructions appropriées pour votre environnement spécifique.
 
 
+:cat:GPT: Comment exporter une VM en image WIM ?
+
+Pour exporter une machine virtuelle (VM) en tant qu'image WIM, vous pouvez utiliser l'outil de gestion de déploiement de Windows (Windows Deployment Image Servicing and Management - DISM). Voici les étapes générales pour effectuer cette opération :
+
+1. Arrêtez la machine virtuelle : Assurez-vous que la machine virtuelle que vous souhaitez exporter est arrêtée avant de commencer le processus.
+
+2. Ouvrez une invite de commandes en tant qu'administrateur : Cela vous permettra d'exécuter les commandes DISM avec les privilèges appropriés.
+
+3. Identifiez le chemin de destination pour l'image WIM : Choisissez un emplacement sur votre système de fichiers où vous souhaitez enregistrer l'image WIM résultante.
+
+4. Utilisez DISM pour exporter la VM en tant qu'image WIM : Utilisez la commande suivante pour exporter la VM en tant qu'image WIM :
+
+```powershell
+   DISM /Capture-Image /ImageFile:"Chemin\vers\image.wim" /CaptureDir:"Chemin\vers\machinevirtuelle" /Name:"Nom de l'image" /Description:"Description de l'image" /Compress:Maximum
+```
+
+   Assurez-vous de remplacer "Chemin\vers\image.wim" par le chemin de destination de l'image WIM et "Chemin\vers\machinevirtuelle" par le chemin vers le dossier racine de la machine virtuelle que vous souhaitez exporter. Indiquez également un nom et une description appropriés pour l'image.
+
+5. Le processus de capture peut prendre un certain temps en fonction de la taille de la machine virtuelle.
+
+Une fois que la commande DISM est terminée, vous aurez une image WIM de votre machine virtuelle exportée dans le chemin spécifié. Vous pouvez ensuite utiliser cette image pour déployer la machine virtuelle sur d'autres systèmes utilisant des outils de déploiement tels que Windows Deployment Services (WDS) ou Microsoft Deployment Toolkit (MDT).
+
+
 # References
 
 https://www.ubackup.com/windows-server/windows-server-backup-powershell.html
