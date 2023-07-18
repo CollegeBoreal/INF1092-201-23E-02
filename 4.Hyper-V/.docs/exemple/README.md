@@ -263,7 +263,9 @@ New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.13.237.1XX" -PrefixLe
 
 :bulb: Note: `XX` à remplacer avec votre adresse IP et y ajouter un `1` par exemple si mon adresse IP se termine par `25` (10.13.237.25), il faut rajouter `1` avant `25` soit `10.23.237.125`
 
-#### :round_pushpin: 
+#### :round_pushpin: Configurer les adresses DNS
+
+- [ ] Visualiser la configuration présente
 
 ```powershell
 Get-DnsClientServerAddress
@@ -280,9 +282,13 @@ Loopback Pseudo-Interface 1          1 IPv4    {}
 Loopback Pseudo-Interface 1          1 IPv6    {}
 ```
 
+- [ ] Assigner des adresses IP à la configuration DNS `1.1.1.1` étant le DNS de `CloudFare`, `8.8.8.8` étant le DN de Google 
+
 ```powershell
 Set-DNSClientServerAddress "Ethernet" -ServerAddresses ("1.1.1.1","8.8.8.8")
 ```
+
+- [ ] Visualiser la nouvelle configuration
 
 ```powershell
 Get-DnsClientServerAddress
@@ -299,6 +305,8 @@ Loopback Pseudo-Interface 1          1 IPv4    {}
 Loopback Pseudo-Interface 1          1 IPv6    {}
 ```
 
+- [ ] Tester la connection externe (ping)
+
 ```powershell
 Test-NetConnection -ComputerName "google.com"
 ```
@@ -314,11 +322,7 @@ PingSucceeded          : True
 PingReplyDetails (RTT) : 15 ms
 ```
 
-# References
-
-- [ ] [Create a Virtual Switch with PowerShell](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/connect-to-network#create-a-virtual-switch-with-powershell)
-
-## :x: Détruire la machine 
+## :x: Détruire la machine :skull_and_crossbones:
 
 - [ ] Arreter la VM
 
@@ -351,3 +355,5 @@ Remove-Item -Path "$ENV:USERPROFILE\Documents\VM-Brice"  -Force
 - [ ] [How to map network drive using PowerShell on Windows 10](https://pureinfotech.com/map-network-drive-powershell-windows-10/)
 - [ ] [PowerShell Hyper-V VM creation and boot](https://stackoverflow.com/questions/61144238/powershell-hyper-v-vm-creation-and-boot)
 - [ ] [How To Easily Create a Hyper-V VM Using Powershell](https://www.danielengberg.com/create-hyper-v-vm-powershell/)
+- [ ] [Create a Virtual Switch with PowerShell](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/connect-to-network#create-a-virtual-switch-with-powershell)
+
