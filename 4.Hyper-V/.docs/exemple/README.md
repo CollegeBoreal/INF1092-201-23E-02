@@ -197,7 +197,7 @@ At line:1 char:1
 
 ## :link: Connexion avec l'Internet :globe_with_meridians:
 
-En étant connecté à la machine virtuelle par la session `PSSession`, connecter la machine virtuelle à l'aide des instructions de connexion suivantes
+En étant connecté à la machine virtuelle par la session `PSSession`, connecter la à l'aide des instructions de connexion suivantes
 
 #### :round_pushpin: Création du commutateur (Switch) virtuel externe
 
