@@ -134,6 +134,8 @@ Start-VM VM-Brice
 
 ## :b: Installation de la VM
 
+:bulb: Note: `vmconnect` permet uniquement la connection en mode interactive (GUI - Graphical User Interface - Interface Homme Machine)
+
 - [ ] Installer la machine virtuelle avec [`vmconnect`](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/learn-more/hyper-v-virtual-machine-connect)
 
 ```powershell
@@ -144,9 +146,9 @@ $HostName = [System.Net.DNS]::GetHostByName($Null).HostName
 vmconnect $HostName VM-Brice
 ```
 
-:bulb: Note: `vmconnect` permet uniquement la connection en mode interactive (GUI - Graphical User Interface - Interface Homme Machine)
-
 ## :ab: Connexion à la VM
+
+:bulb: Note: `PSSession` permet uniquement la connection en mode CLI (Command Level Interface) pour entrer les commandes `PowerShell` sur la machine virtuelle
 
 - [ ] Récupérer les informations sur la VM
 
@@ -196,7 +198,6 @@ At line:1 char:1
     + FullyQualifiedErrorId : CreateRemoteRunspaceForVMFailed,Microsoft.PowerShell.Commands.EnterPSSessionCommand
 ```
 
-:bulb: Note: `PSSession` permet uniquement la connection en mode CLI (Command Level Interface) pour entrer les commandes `PowerShell` sur la machine virtuelle
 
 
 ## :o2: Connexion à l'Internet :globe_with_meridians:
