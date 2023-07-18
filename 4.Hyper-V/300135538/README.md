@@ -54,8 +54,12 @@ Size              : 6140975104
 StorageType       : 1
 PSComputerName    :
 ```
+```powershell
 Get-PSDrive -PSProvider FileSystem
-Response:
+```
+> Response:
+
+```PYTHON
 
 
 
@@ -67,52 +71,93 @@ E              179496.88      58904.14 FileSystem    \\TSCLIENT\Downloads
 F                                      FileSystem    F:\
 G                   5.44          0.00 FileSystem    G:\
 H                   5.72          0.00 FileSystem    H:\
- Créer la machine virtuelle
+```
+ 🚩Créer la machine virtuelle
+ 
+ ```powershell
 $VM = New-VM -Name VM-Reda -Path "$ENV:USERPROFILE\Documents" `
                         -MemoryStartupBytes 4GB `
                         -VHDPath "$ENV:USERPROFILE\Documents\VM-Reda.vhdx"
 Get-VM
-Response :
+
+```
+
+> Response :
+
+```PYTHON
 
 Name     State CPUUsage(%) MemoryAssigned(M) Uptime   Status             Version
 ----     ----- ----------- ----------------- ------   ------             -------
 VM-Reda Off   0           0                 00:00:00 Operating normally 10.0
+
+```
  Ajouter le disque de démarrage
+ 
+ ```powershell
+
 Get-VMDVDDrive -VMName $VM.VMName
-Response :
+
+```
+> Response :
+
+```PYTHON
 
 VMName   ControllerType ControllerNumber ControllerLocation DvdMediaType Path
 ------   -------------- ---------------- ------------------ ------------ ----
 VM-Reda IDE            1                0                  None
 Add-VMDvdDrive -VMName $VM.VMName -Path "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
 Get-VMDVDDrive -VMName $VM.VMName
-Response :
 
+```
+
+> Response :
+
+```PYTHON 
 VMName   ControllerType ControllerNumber ControllerLocation DvdMediaType Path
 ------   -------------- ---------------- ------------------ ------------ ----
 VM-Reda IDE            0                1                  ISO          C:\Users\Reda\Documents\Win10_22H2_English_x64v1.iso
 VM-Reda IDE            1                0                  None
  Démarrer la machine virtuelle
 Start-VM VM-Reda
+
+```
 🚦 Installation de la VM
 💡 Note: vmconnect permet uniquement la connection en mode interactive (GUI - Graphical User Interface - Interface Homme Machine)
 
  🚩Installer la machine virtuelle avec vmconnect
+
+ ```powershell
+
 $HostName = [System.Net.DNS]::GetHostByName($Null).HostName
 vmconnect $HostName VM-Reda
+
+```
 🚦 Connexion à la VM
 💡 Note: PSSession permet uniquement la connection en mode CLI (Command Level Interface) pour entrer les commandes PowerShell sur la machine virtuelle
 
  Récupérer les informations sur la VM
+ ```powershell
+
 Get-VM
-Response:
+
+```
+> Response:
+
+```PYTHON
 
 Name     State   CPUUsage(%) MemoryAssigned(M) Uptime           Status             Version
 ----     -----   ----------- ----------------- ------           ------             -------
 VM-Reda Running 0           4096              00:00:08.5860000 Operating normally 10.0
+
+```
  Collecter les informations d'identification (nom d'utilisateur et mot de passe) d'un utilisateur.
+
+```powershell
+
 $cred = Get-Credential
-Response:
+
+```
+>Response:
 
 cmdlet Get-Credential at command pipeline position 1
 Supply values for the following parameters:
