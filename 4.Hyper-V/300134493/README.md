@@ -97,6 +97,13 @@ VM-Thera IDE            1                0                  None
 ```powershell
 Start-VM VM-Thera
 ```
+## :b: installation de la machine VM
+```powershell
+$HostName = [System.Net.DNS]::GetHostByName($Null).HostName
+```
+```powershell
+vmconnect $HostName VM-Thera
+```
 
 
 
