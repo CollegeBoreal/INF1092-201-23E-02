@@ -54,6 +54,40 @@ Pour exporter une machine virtuelle (VM) en tant qu'image WIM, vous pouvez utili
 Une fois que la commande DISM est terminée, vous aurez une image WIM de votre machine virtuelle exportée dans le chemin spécifié. Vous pouvez ensuite utiliser cette image pour déployer la machine virtuelle sur d'autres systèmes utilisant des outils de déploiement tels que Windows Deployment Services (WDS) ou Microsoft Deployment Toolkit (MDT).
 
 
+:cat:GPT: Comment également capturer le disque utiliser par la VM?
+
+Pour capturer le disque utilisé par une machine virtuelle (VM) en plus de l'image WIM, vous pouvez utiliser l'outil de gestion de déploiement de Windows (Windows Deployment Image Servicing and Management - DISM) en combinaison avec l'outil de gestion de disque (Disk Management).
+
+Voici les étapes pour capturer le disque utilisé par une VM :
+
+1. Arrêtez la machine virtuelle : Assurez-vous que la machine virtuelle est arrêtée avant de commencer le processus de capture.
+
+2. Ouvrez une invite de commandes en tant qu'administrateur : Cela vous permettra d'exécuter les commandes `DISM` et `Diskpart` avec les privilèges appropriés.
+
+3. Identifiez la lettre du lecteur de la machine virtuelle : Utilisez l'outil Disk Management pour identifier la lettre du lecteur utilisé par la machine virtuelle que vous souhaitez capturer.
+
+4. Montez le disque de la machine virtuelle : Utilisez la commande Diskpart pour monter le disque de la machine virtuelle à une lettre de lecteur disponible. Par exemple :
+
+```powershell
+diskpart
+select vdisk file="Chemin\vers\disque.vhdx"
+attach vdisk
+```
+
+   Assurez-vous de remplacer "Chemin\vers\disque.vhdx" par le chemin du fichier de disque virtuel utilisé par la machine virtuelle.
+
+5. Utilisez DISM pour capturer l'image WIM : Utilisez la commande DISM pour capturer l'image WIM de la machine virtuelle, en incluant le disque monté. Par exemple :
+
+```powershell
+DISM /Capture-Image /ImageFile:"Chemin\vers\image.wim" /CaptureDir:"LettreDisqueMonte:\" /Name:"Nom de l'image" /Description:"Description de l'image" /Compress:Maximum
+```
+
+   Assurez-vous de remplacer "Chemin\vers\image.wim" par le chemin de destination de l'image WIM, "LettreDisqueMonte:\" par la lettre du lecteur monté de la machine virtuelle, et spécifiez un nom et une description appropriés pour l'image.
+
+6. Le processus de capture peut prendre un certain temps en fonction de la taille du disque virtuel.
+
+Une fois la commande DISM terminée, vous aurez l'image WIM de la machine virtuelle, incluant le disque capturé, dans le chemin spécifié. Vous pouvez ensuite utiliser cette image pour déployer la machine virtuelle avec son disque sur d'autres systèmes utilisant des outils de déploiement tels que Windows Deployment Services (WDS) ou Microsoft Deployment Toolkit (MDT).
+
 # References
 
 - [ ] [How to Take Windows Server Backup Using PowerShell](https://www.ubackup.com/windows-server/windows-server-backup-powershell.html)
