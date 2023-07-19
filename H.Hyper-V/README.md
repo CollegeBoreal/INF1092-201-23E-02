@@ -26,7 +26,7 @@ La virtualisation est largement utilisée dans les centres de données, les envi
 
 En résumé, la virtualisation est une technologie qui permet de créer des environnements virtuels isolés pour exécuter plusieurs systèmes ou applications sur une seule machine physique, offrant ainsi une meilleure utilisation des ressources, une gestion simplifiée, une sécurité améliorée et une flexibilité accrue.
 
-:cat:GPT Qu'est-ce que Hyper V?
+### :cat:GPT Qu'est-ce que Hyper V?
 
 Hyper-V est une technologie de virtualisation de Microsoft intégrée aux systèmes d'exploitation Windows, tels que Windows 10 Pro, Enterprise et Education, ainsi que Windows Server. Il permet de créer et de gérer des machines virtuelles sur un seul ordinateur physique.
 
@@ -56,7 +56,7 @@ Veuillez noter que l'installation du rôle Hyper-V peut nécessiter des privilè
 
 N'hésitez pas à adapter ces instructions en fonction de votre environnement spécifique.
 
-:cat:GPT Qu'est-ce que PowerShell?
+### :cat:GPT Qu'est-ce que PowerShell?
 
 PowerShell est un environnement de ligne de commande et un langage de script développé par Microsoft. Il a été conçu pour l'automatisation des tâches administratives et la gestion des systèmes d'exploitation Windows. PowerShell offre une interface puissante permettant aux administrateurs système et aux développeurs de gérer et d'automatiser divers aspects du système d'exploitation Windows.
 
