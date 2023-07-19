@@ -1,3 +1,9 @@
+🏁 ETAPE DE CREATION ET D'INSTALLATION DE WINDOWS SERVER 2022 SUR UN SERVEUR 🏁
+
+Fait par: Reda Elyoussoufi❣️
+
+INSTALLATION DE WINDOWS SERVER 2019 SUR UN SERVEUR✅
+
 <img src="images/8e5f7e6e-5587-4242-9219-14d5df3dc068.jpg" width="253" height="337" > </img>
 
 
