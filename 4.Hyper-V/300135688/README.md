@@ -95,6 +95,36 @@ Start-VM VM-Massil
 ```POWERSHELL
 $HostName = [System.Net.DNS]::GetHostByName($Null).HostName
 vmconnect $HostName VM-Massil
+```
+#creation du switch
+```powershell
+ Get-NetAdapter
+```
+resultat:
+```python
 
-
+Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
+----                      --------------------                    ------- ------       ----------             ---------
+Ethernet                  QLogic BCM5709C Gigabit Ethernet ...#47      18 Up           78-E7-D1-65-6A-EC         1 Gbps
+Ethernet 2                QLogic BCM5709C Gigabit Ethernet ...#48      11 Disconnected 78-E7-D1-65-6A-EE          0 bps
+```
+ ```powershell
+ $net = Get-NetAdapter -Name 'Ethernet'
+New-VMSwitch -Name "External VM Switch" -AllowManagementOS $True -NetAdapterName "Ethernet"
+ ```
+resultat
+ ```python
+Name               SwitchType NetAdapterInterfaceDescription
+----               ---------- ------------------------------
+External VM Switch External   QLogic BCM5709C Gigabit Ethernet (NDIS VBD Client)
+```
+#Établir une session interactive à distance avec la VM
+```powershell
+Enter-PSSession -VMName VM-Massil -Credential $cred
+```
+resultat 
+```python
+[VM-Massil] : PS C:\Users\Massil\Documents>
+```
+#attribution de l'addresse ip a la VM-Massil
 
