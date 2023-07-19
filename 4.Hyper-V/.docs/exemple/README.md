@@ -202,9 +202,7 @@ At line:1 char:1
 
 ## :o2: Connexion à l'Internet :globe_with_meridians:
 
-En étant connecté à la machine virtuelle par la session `PSSession`, connecter la à l'aide des instructions de connexion suivantes
-
-#### :round_pushpin: Création du commutateur (Switch) virtuel externe
+#### :round_pushpin: Création du commutateur (Switch) virtuel externe sur le serveur
 
 - [ ] Déterminer les adaptateurs réseaux (Cartes Ethernets)
 
@@ -256,6 +254,8 @@ Ethernet 2                QLogic BCM5709C Gigabit Ethernet ...#48      11 Discon
 #### :round_pushpin: Assigner une adresse à la machine virtuelle
 
 Grâce à la création du commutateur virtuel externe, on peut maintenant donner une adresse IP à la machine virtuelle
+
+Se connecter à la machine virtuelle par la session `PSSession` et utiliser les instructions de connexion suivantes:
 
 ```powershell
 New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.13.237.1XX" -PrefixLength 24 -DefaultGateway "10.13.237.1"
