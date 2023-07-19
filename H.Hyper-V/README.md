@@ -32,8 +32,25 @@ Hyper-V offre également des fonctionnalités avancées telles que la prise en c
 
 En résumé, Hyper-V est une technologie de virtualisation puissante qui permet aux utilisateurs de créer et de gérer des environnements de machines virtuelles sur leurs ordinateurs Windows, ce qui facilite le déploiement et la gestion d'applications et de systèmes d'exploitation isolés.
 
+:cat:GPT Comment installer Hyper-V sur windows server en utilisant powershell?
 
+Pour installer le rôle Hyper-V sur Windows Server à l'aide de PowerShell, vous pouvez suivre les étapes suivantes :
 
+1. Ouvrez une session PowerShell en tant qu'administrateur.
+
+2. Exécutez la commande suivante pour installer le rôle Hyper-V :
+```powershell
+Install-WindowsFeature -Name Hyper-V -IncludeManagementTools -Restart
+```
+Cette commande installe le rôle Hyper-V ainsi que les outils de gestion associés. L'option `-Restart` redémarre le serveur automatiquement si nécessaire.
+
+3. Attendez que l'installation soit terminée et que le serveur redémarre si nécessaire.
+
+Après le redémarrage, le rôle Hyper-V sera installé sur votre serveur Windows et vous pourrez commencer à utiliser Hyper-V pour créer et gérer des machines virtuelles.
+
+Veuillez noter que l'installation du rôle Hyper-V peut nécessiter des privilèges d'administration et que le redémarrage du serveur peut entraîner une interruption temporaire des services en cours d'exécution. Assurez-vous d'effectuer cette opération pendant une période appropriée où une interruption de service est acceptable.
+
+N'hésitez pas à adapter ces instructions en fonction de votre environnement spécifique.
 
 
 
