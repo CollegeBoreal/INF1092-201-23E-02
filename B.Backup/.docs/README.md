@@ -17,15 +17,24 @@ DISKPART> attach vdisk
 DISKPART> exit
 ```
 
-
-
 ```powershell
 DISM /Capture-Image `
-     /ImageFile:"C:\Users\Brice\Documents\export\VM-Brice.wim" `
+     /ImageFile:"$env:USERPROFILE\Documents\export\VM-Brice.wim" `
      /CaptureDir:"F:" `
      /Name:"VM-Brice" `
      /Description:"Image de la VM de Brice" `
      /Compress:Maximum
 ```
 
-Start 1:46pm
+```powershell
+Get-Item $env:USERPROFILE\Documents\export\VM-Brice.wim
+```
+> Response:
+```powershell
+    Directory: C:\Users\Brice\Documents\export
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/18/2023  11:32 AM     7593479385 VM-Brice.wim
+```
