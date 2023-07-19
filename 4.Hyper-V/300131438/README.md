@@ -109,3 +109,40 @@ Start-VM VM-ESTELLE
 $HostName = [System.Net.DNS]::GetHostByName($Null).HostName
 vmconnect $HostName VM-ESTELLE
 ```
+# CREATION DU SWITCH VIRTUEL SWICHT-ESTELLE
+```powershell
+ $net = Get-NetAdapter -Name 'Ethernet 2'
+New-VMSwitch -Name "External VM Switch" -AllowManagementOS $True -NetAdapterName "Ethernet 2"
+```
+>RESULTAT
+```PYTHON
+Name               SwitchType NetAdapterInterfaceDescription
+----               ---------- ------------------------------
+External VM Switch External   QLogic BCM5709C Gigabit Ethernet (NDIS VBD Client) #2
+```
+# VERIFICATION 
+```powershell
+get-netadapter
+```
+>RESULTAT
+```python
+
+Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
+----                      --------------------                    ------- ------       ----------             ---------
+vEthernet (External VM... Hyper-V Virtual Ethernet Adapter              9 Up           3C-4A-92-E4-57-F8         1 Gbps
+Ethernet                  QLogic BCM5709C Gigabit Ethernet ...#48       6 Disconnected 3C-4A-92-E4-57-FA          0 bps
+Ethernet 2                QLogic BCM5709C Gigabit Ethernet ...#47       4 Up           3C-4A-92-E4-57-F8         1 Gbps
+```
+# CONNECTION A LA VM VM-ESTELLE AVEC PSSESSION
+```powershell
+Enter-PSSession -VMName VM-ESTELLE -Credential $cred
+```
+>RESULTAT
+```python
+[VM-ESTELLE]: PS C:\Users\ESTELLE\Documents>
+```
+# ASSIGNATION D'UNE ADRESSE IP A LA VM VM-ESTELLE
+```powershell
+New-NetIPAddress -InterfaceAlias "Ethernet 2" -IPAddress "10.13.237.134" -PrefixLength 24 -DefaultGateway "10.13.237.1"
+
+
