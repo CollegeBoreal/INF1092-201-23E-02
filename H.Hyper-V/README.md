@@ -1,6 +1,10 @@
 # Hyper-V
 
-:cat:GPT Qu'est ce que la virtualisation?
+| TOC |
+|-----|
+| |
+
+### :cat:GPT Qu'est ce que la virtualisation?
 
 La virtualisation est une technologie qui permet de créer des versions virtuelles d'un matériel informatique, d'un système d'exploitation, d'une application ou d'une ressource, afin de les utiliser de manière isolée et indépendante de l'environnement physique sous-jacent.
 
