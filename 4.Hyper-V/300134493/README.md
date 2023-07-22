@@ -105,6 +105,18 @@ $HostName = [System.Net.DNS]::GetHostByName($Null).HostName
 vmconnect $HostName VM-Thera
 ```
 
+## 🆎 connexion a la machine virtuelle
+-[] Récuperer sur les informations de la machine virtuelle 
+``powershell```
+Get-VM
+```
+> Resultat
+```python
+----         -----   ----------- ----------------- ------             ------             -------
+VM-Fousseyni Off     0           0                 00:00:00           Operating normally 10.0
+VM-Thera     Running 3           4096              3.21:46:19.8630000 Operating normally 10.0
+```
+
 
 
 
