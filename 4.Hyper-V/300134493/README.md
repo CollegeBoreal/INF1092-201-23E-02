@@ -29,7 +29,8 @@ Number                  :
 -[] Monter l'image disque en DVD
 ```powershell
 Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
-> Resultat:
+```
+> Resultat :
 ```Python
 
 Attached          : True
@@ -46,6 +47,7 @@ PSComputerName    :
 
 ```powershell
 Get-PSDrive -PSProvider FileSystem
+```
 > Resultat :
 ```Python
 
@@ -60,6 +62,7 @@ Créer la machine virtuelle
 $VM = New-VM -Name VM-Thera -Path "$ENV:USERPROFILE\Documents" `
                         -MemoryStartupBytes 4GB `
                         -VHDPath "$ENV:USERPROFILE\Documents\VM-Thera.vhdx"
+```
 > Resultat :
 ```Python
 
@@ -72,7 +75,8 @@ VM-Thera     Off     0           0                 00:00:00           Operating 
 Ajoutez le disque de démarrage
 ```powershell
 Get-VMDVDDrive -VMName $VM.VMName
->Resultat :
+```
+> Resultat :
 ```python
 
 VMName   ControllerType ControllerNumber ControllerLocation DvdMediaType Path
@@ -107,7 +111,7 @@ vmconnect $HostName VM-Thera
 
 ## 🆎 connexion a la machine virtuelle
 -[] Récuperer sur les informations de la machine virtuelle 
-``powershell```
+```powershell
 Get-VM
 ```
 > Resultat :
