@@ -132,6 +132,14 @@ VM-Thera     Running 3           4096              3.21:46:19.8630000 Operating 
 Supply values for the following parameters:
 Credential
 ```
+- [] Etablir une connexion interactive avec la machine virtuelle
+```powershell
+Enter-PSSession -VMName VM-Thera -Credential $cred
+```
+> Resultat :
+```Python
+[VM-Thera]: PS C:\Users\Thera\Documents>
+```
 
   
 
