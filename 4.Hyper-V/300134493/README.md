@@ -121,7 +121,19 @@ Get-VM
 VM-Fousseyni Off     0           0                 00:00:00           Operating normally 10.0
 VM-Thera     Running 3           4096              3.21:46:19.8630000 Operating normally 10.0
 ```
+- [] Collecter les informations d'identification ( nom d'utilisateur et mot de passe) d'un utilisateur
 
+  ```powershell
+  $cred = Get-Credential
+  ```
+  > Resultat :
+  ```Python
+
+cmdlet Get-Credential at command pipeline position 1
+Supply values for the following parameters:
+Credential
+```
+  
 
 
 
