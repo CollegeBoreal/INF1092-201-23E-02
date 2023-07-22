@@ -126,9 +126,9 @@ VM-Thera     Running 3           4096              3.21:46:19.8630000 Operating 
   ```powershell
   $cred = Get-Credential
   ```
-  > Resultat :
-  ```Python
-  cmdlet Get-Credential at command pipeline position 1
+ > Resultat :
+ ```Python
+ cmdlet Get-Credential at command pipeline position 1
 Supply values for the following parameters:
 Credential
 ```
