@@ -32,6 +32,8 @@ Number                  :
 ```powershell
 Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
 ```
+Cette commande monte une image disque à partir d'un fichier ISO de Windows 10. L'image disque ISO contient les fichiers d'installation de Windows 10
+
 > Resultat :
 ```Python
 
