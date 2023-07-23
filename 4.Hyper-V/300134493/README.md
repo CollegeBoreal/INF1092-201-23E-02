@@ -161,7 +161,13 @@ Ethernet                  Microsoft Hyper-V Network Adapter             5 Discon
 ```powershell
 New-VMSwitch -Name "External VM Switch" -AllowManagementOS $True -NetAdapterName $net.Name
 ```
+> Reponse :
+```Python
+Name               SwitchType NetAdapterInterfaceDescription
+----               ---------- ------------------------------
+External VM Switch External   QLogic BCM5709C Gigabit Ethernet (NDIS VBD Client)
 
+```
 
 
 
