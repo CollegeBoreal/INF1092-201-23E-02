@@ -155,7 +155,7 @@ Ethernet                  Microsoft Hyper-V Network Adapter             5 Discon
 ```
 - [ ] Choisir la carte qui a son état up (disponible), prendre le nom de la carte et l'assigner à une variable $net
 ```powershell
- $net = Get-NetAdapter -Name 'Ethernet'
+  $net = Get-NetAdapter -Name 'Ethernet'
 ```
 
 
