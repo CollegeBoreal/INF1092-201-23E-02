@@ -89,7 +89,7 @@ VM-Thera     Off     0           0                 00:00:00           Operating 
 ```powershell
 Get-VMDVDDrive -VMName $VM.VMName
 ```
- Cette commande ajoute un lecteur DVD à la machine virtuelle "VM-Thera" en utilisant le chemin du fichier ISO spécifié. Elle permet d'attacher un lecteur DVD virtuel contenant l'image disque ISO de Windows 10 à la machine virtuelle.
+Cette commande ajoute un lecteur DVD à la machine virtuelle "VM-Thera" en utilisant le chemin du fichier ISO spécifié. Elle permet d'attacher un lecteur DVD virtuel contenant l'image disque ISO de Windows 10 à la machine virtuelle.
  
 > Resultat :
 ```python
