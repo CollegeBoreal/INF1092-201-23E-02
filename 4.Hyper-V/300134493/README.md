@@ -150,7 +150,9 @@ Enter-PSSession -VMName VM-Thera -Credential $cred
 ```
 > Resultat :
 ```python
-
+---                      --------------------                    ------- ------       ----------             ---------
+Ethernet                  Microsoft Hyper-V Network Adapter             5 Disconnected 00-15-5D-ED-1A-02        10 Gbps
+```
 
 
 
