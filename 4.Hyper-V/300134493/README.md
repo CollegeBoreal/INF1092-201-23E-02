@@ -162,9 +162,6 @@ New-VMSwitch -Name "External VM Switch" -AllowManagementOS $True -NetAdapterName
 ```
 > Reponse :
 ```Python
-Name               SwitchType NetAdapterInterfaceDescription
-----               ---------- ------------------------------
-External VM Switch External   QLogic BCM5709C Gigabit Ethernet (NDIS VBD Client)
 
 ```
 - [ ] Vérifier que la `Switch Virtuelle` a été bien crée
