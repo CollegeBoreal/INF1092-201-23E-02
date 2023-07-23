@@ -26,7 +26,7 @@ IsPMEMCompatible        : False
 AddressAbstractionType  : None
 Number                  :
 ```
--[] Monter l'image disque en DVD
+- [ ] Monter l'image disque en DVD
 ```powershell
 Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
 ```
@@ -150,8 +150,10 @@ Enter-PSSession -VMName VM-Thera -Credential $cred
 ```
 > Resultat :
 ```python
----                      --------------------                    ------- ------       ----------             ---------
-Ethernet                  Microsoft Hyper-V Network Adapter             5 Disconnected 00-15-5D-ED-1A-02        10 Gbps
+Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
+----                      --------------------                    ------- ------       ----------             ---------
+Ethernet                  QLogic BCM5709C Gigabit Ethernet ...#47      18 Up           78-E7-D1-65-6A-EC         1 Gbps
+Ethernet 2                QLogic BCM5709C Gigabit Ethernet ...#48      11 Disconnected 78-E7-D1-65-6A-EE          0 bps
 ```
 - [ ] Choisir la carte qui a son état up (disponible), prendre le nom de la carte et l'assigner à une variable $net
 ```powershell
