@@ -69,6 +69,7 @@ $VM = New-VM -Name VM-Thera -Path "$ENV:USERPROFILE\Documents" `
                         -MemoryStartupBytes 4GB `
                         -VHDPath "$ENV:USERPROFILE\Documents\VM-Thera.vhdx"
 ```
+ Cette commande crée une nouvelle machine virtuelle (VM) avec le nom `VM-Thera`. La VM est configurée avec 4GB de mémoire et le chemin du disque virtuel est spécifié.
 > Resultat :
 ```Python
 
