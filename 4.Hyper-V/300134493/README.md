@@ -63,7 +63,7 @@ C                  35.31        237.48 FileSystem    C:\                        
 D                   5.72          0.00 FileSystem    D:\
 F                                      FileSystem    F:\
 ```
-Créer la machine virtuelle 
+# Créer la machine virtuelle 
 ```powershell
 $VM = New-VM -Name VM-Thera -Path "$ENV:USERPROFILE\Documents" `
                         -MemoryStartupBytes 4GB `
@@ -85,10 +85,12 @@ VM-Fousseyni Running 0           4096              2.10:22:31.6760000 Operating 
 VM-Thera     Off     0           0                 00:00:00           Operating normally 10.0
 ```
 
-Ajoutez le disque de démarrage
+# Ajoutez le disque de démarrage
 ```powershell
 Get-VMDVDDrive -VMName $VM.VMName
 ```
+ Cette commande ajoute un lecteur DVD à la machine virtuelle "VM-Thera" en utilisant le chemin du fichier ISO spécifié. Elle permet d'attacher un lecteur DVD virtuel contenant l'image disque ISO de Windows 10 à la machine virtuelle.
+ 
 > Resultat :
 ```python
 
