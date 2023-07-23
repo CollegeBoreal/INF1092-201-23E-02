@@ -140,8 +140,17 @@ Enter-PSSession -VMName VM-Thera -Credential $cred
 ```Python
 [VM-Thera]: PS C:\Users\Thera\Documents>
 ```
+## 🅾️ Connexion à l'internet : globe_with_meridians
+ 
+### : round_pushpin: Création du commutateur (switch) virtuel externe sur le serveur
 
-  
+-[ ] Determiner les adaptateurs réseaux (cartes Ethernets)
+```powershell
+ Get-NetAdapter
+```
+> Resultat :
+```python
+
 
 
 
