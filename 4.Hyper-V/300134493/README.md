@@ -97,7 +97,7 @@ VMName   ControllerType ControllerNumber ControllerLocation DvdMediaType Path
 VM-Thera IDE            0                1                  ISO          C:\Users\Administrator\Documents\Win10_22H2...
 VM-Thera IDE            1                0                  None
 ```
--[] Démarrer la machine virtuelle 
+- [ ] Démarrer la machine virtuelle 
 ```powershell
 Start-VM VM-Thera
 ```
@@ -110,7 +110,7 @@ vmconnect $HostName VM-Thera
 ```
 
 ## 🆎 connexion a la machine virtuelle
--[] Récuperer sur les informations de la machine virtuelle 
+- [ ] Récuperer sur les informations de la machine virtuelle 
 ```powershell
 Get-VM
 ```
@@ -121,7 +121,7 @@ Get-VM
 VM-Fousseyni Off     0           0                 00:00:00           Operating normally 10.0
 VM-Thera     Running 3           4096              3.21:46:19.8630000 Operating normally 10.0
 ```
-- [] Collecter les informations d'identification ( nom d'utilisateur et mot de passe) d'un utilisateur
+- [ ] Collecter les informations d'identification ( nom d'utilisateur et mot de passe) d'un utilisateur
 
   ```powershell
   $cred = Get-Credential
@@ -132,7 +132,7 @@ VM-Thera     Running 3           4096              3.21:46:19.8630000 Operating 
 Supply values for the following parameters:
 Credential
 ```
-- [] Etablir une connexion interactive avec la machine virtuelle
+- [ ] Etablir une connexion interactive avec la machine virtuelle
 ```powershell
 Enter-PSSession -VMName VM-Thera -Credential $cred
 ```
@@ -144,7 +144,7 @@ Enter-PSSession -VMName VM-Thera -Credential $cred
  
 ### : round_pushpin: Création du commutateur (switch) virtuel externe sur le serveur
 
--[ ] Determiner les adaptateurs réseaux (cartes Ethernets)
+- [ ]  Determiner les adaptateurs réseaux (cartes Ethernets)
 ```powershell
  Get-NetAdapter
 ```
