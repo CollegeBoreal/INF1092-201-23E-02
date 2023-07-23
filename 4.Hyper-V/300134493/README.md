@@ -52,6 +52,8 @@ PSComputerName    :
 ```powershell
 Get-PSDrive -PSProvider FileSystem
 ```
+Cette commande affiche les lecteurs de disque disponibles sur le système. Elle permet de vérifier les lecteurs de disque actuellement montés
+
 > Resultat :
 ```Python
 
