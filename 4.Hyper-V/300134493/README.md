@@ -157,8 +157,10 @@ Ethernet                  Microsoft Hyper-V Network Adapter             5 Discon
 ```powershell
   $net = Get-NetAdapter -Name 'Ethernet'
 ```
-
-
+- [ ] Créer la `switch virtuelle` ( le commande virtuel) grâce à la variable `$net` recupérée ci-dessus 
+```powershell
+New-VMSwitch -Name "External VM Switch" -AllowManagementOS $True -NetAdapterName $net.Name
+```
 
 
 
