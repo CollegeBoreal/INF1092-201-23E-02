@@ -153,7 +153,10 @@ Enter-PSSession -VMName VM-Thera -Credential $cred
 ---                      --------------------                    ------- ------       ----------             ---------
 Ethernet                  Microsoft Hyper-V Network Adapter             5 Disconnected 00-15-5D-ED-1A-02        10 Gbps
 ```
-
+- [ ] Choisir la carte qui a son état up (disponible), prendre le nom de la carte et l'assigner à une variable $net
+```powershell
+ $net = Get-NetAdapter -Name 'Ethernet'
+```
 
 
 
