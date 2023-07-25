@@ -2,8 +2,9 @@
 
 | TOC |
 |-----|
-| [Qu'est ce que la Virtualisation?](README.md#catgpt-quest-ce-que-la-Virtualisation) |
-| [qu'estce que Hyper V?](README.md#catgpt-quest-ce-que-hyper-v) |
+| [Qu'est ce que la Virtualisation?](#catgpt-quest-ce-que-la-Virtualisation) |
+| [qu'estce que Hyper V?](#catgpt-quest-ce-que-hyper-v) |
+| [Comment installer Hyper-V sur windows server en utilisant powershell?](#catgpt-comment-installer-hyper-v-sur-windows-server-en-utilisant-powershell) |
 
 ### :cat:GPT Qu'est ce que la Virtualisation?
 
