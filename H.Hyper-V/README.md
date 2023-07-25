@@ -87,4 +87,30 @@ Veuillez noter que l'installation du rôle Hyper-V peut nécessiter des privilè
 
 N'hésitez pas à adapter ces instructions en fonction de votre environnement spécifique.
 
+##### :cat:GPT Comment se connecter a une VM sous WindowsServer en utilisant PowerShell ?
 
+Pour vous connecter à une machine virtuelle (VM) sous Windows Server en utilisant PowerShell, vous pouvez utiliser la commande `Enter-PSSession` (pour les machines virtuelles Windows) ou `ssh` (pour les machines virtuelles Linux). Voici comment procéder :
+
+1. Assurez-vous que la machine virtuelle est en cours d'exécution et que vous avez les droits d'accès appropriés pour vous y connecter.
+
+2. Ouvrez PowerShell en tant qu'administrateur sur votre machine locale.
+
+3. Pour vous connecter à une VM Windows, utilisez la commande `Enter-PSSession` avec l'adresse IP de la VM et les informations d'identification appropriées :
+
+   ```powershell
+   Enter-PSSession -VMName NomDeLaVM -Credential (Get-Credential)
+   ```
+
+   Remplacez "NomDeLaVM" par le nom de votre machine virtuelle et entrez les informations d'identification de connexion lorsque vous y êtes invité.
+
+4. Pour vous connecter à une VM Linux, utilisez la commande `ssh` avec l'adresse IP de la VM et les informations d'identification appropriées :
+
+   ```powershell
+   ssh Utilisateur@AdresseIPDeLaVM
+   ```
+
+   Remplacez "Utilisateur" par votre nom d'utilisateur sur la VM et "AdresseIPDeLaVM" par l'adresse IP de votre machine virtuelle.
+
+5. Une fois la connexion établie, vous serez dans une session distante sur la machine virtuelle, et vous pouvez exécuter des commandes et des scripts directement sur la VM à partir de votre PowerShell local.
+
+N'oubliez pas de fermer la session distante lorsque vous avez terminé en utilisant la commande `Exit-PSSession` (pour les machines virtuelles Windows) ou simplement en fermant la fenêtre PowerShell (pour les machines virtuelles Linux).
