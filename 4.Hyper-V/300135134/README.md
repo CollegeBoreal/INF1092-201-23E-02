@@ -103,7 +103,7 @@ Start-VM VM-lionel
 $HostName = [System.Net.DNS]::GetHostByName($Null).HostName
 vmconnect $HostName VM-lionel
 ```
-# creation du switch virtuel
+# CREATION DU SWITCH VIRTUEL "EXTERNAL VM SWITCH"
 selection du netadapter "up"
 ```POWERSHELL
  $net = Get-NetAdapter -Name 'Ethernet'
@@ -142,7 +142,3 @@ RESULTAT
 
 # ATTRIBUTION DE L'ADRESSE IP A LA MACHINE VIRTUELLE VM-lionel
 
-
-
-# CONNECXION A LA VM 
-```POWERSHELL
