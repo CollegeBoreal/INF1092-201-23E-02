@@ -1,10 +1,11 @@
 # Revisions
 
 - [ ] Virtualisation
-- [ ] Hyper-V
-  - [ ] Windows Features
 
 <img src=images/Hyper-V.png width='' height='' > </img>
+
+- [ ] Hyper-V
+  - [ ] Windows Features
 
 - [ ] Powershell
   - [ ] PowerShell Hyper-V Module 
