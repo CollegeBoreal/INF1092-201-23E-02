@@ -34,9 +34,6 @@ En résumé, la virtualisation est une technologie qui permet de créer des envi
 
 - [ ] Hyper-V
   - [ ] Windows Features
-- [ ] Powershell
-  - [ ] PowerShell Hyper-V Module 
-- [ ] Services
 
 <img src=images/revision-1.png width=75% height=75% > </img>
 
@@ -48,7 +45,11 @@ Hyper-V offre également des fonctionnalités avancées telles que la prise en c
 
 En résumé, Hyper-V est une technologie de virtualisation puissante qui permet aux utilisateurs de créer et de gérer des environnements de machines virtuelles sur leurs ordinateurs Windows, ce qui facilite le déploiement et la gestion d'applications et de systèmes d'exploitation isolés.
 
-### :cat:GPT Qu'est-ce que PowerShell?
+##### :cat:GPT Qu'est-ce que PowerShell?
+
+- [ ] Powershell
+  - [ ] PowerShell Hyper-V Module 
+- [ ] Services
 
 PowerShell est un environnement de ligne de commande et un langage de script développé par Microsoft. Il a été conçu pour l'automatisation des tâches administratives et la gestion des systèmes d'exploitation Windows. PowerShell offre une interface puissante permettant aux administrateurs système et aux développeurs de gérer et d'automatiser divers aspects du système d'exploitation Windows.
 
@@ -66,7 +67,7 @@ Voici quelques caractéristiques clés de PowerShell :
 
 PowerShell est devenu un outil essentiel pour les administrateurs système et les développeurs Windows, car il permet d'automatiser des tâches courantes, de gérer les configurations système, de diagnostiquer et de résoudre des problèmes, et d'effectuer des opérations de gestion des systèmes à grande échelle.
 
-### :cat:GPT Comment installer Hyper-V sur windows server en utilisant powershell?
+##### :cat:GPT Comment installer Hyper-V sur windows server en utilisant powershell?
 
 Pour installer le rôle Hyper-V sur Windows Server à l'aide de PowerShell, vous pouvez suivre les étapes suivantes :
 
