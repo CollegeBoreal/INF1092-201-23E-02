@@ -5,6 +5,7 @@
 | [Qu'est ce que la Virtualisation?](#catgpt-quest-ce-que-la-Virtualisation) |
 | [qu'estce que Hyper V?](#catgpt-quest-ce-que-hyper-v) |
 | [Comment installer Hyper-V sur windows server en utilisant powershell?](#catgpt-comment-installer-hyper-v-sur-windows-server-en-utilisant-powershell) |
+| [Qu'est-ce que PowerShell?](#catgpt-quest-ce-que-powershell) |
 
 ### :cat:GPT Qu'est ce que la Virtualisation?
 
