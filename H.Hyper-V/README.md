@@ -7,6 +7,9 @@
 
 ### :cat:GPT Qu'est ce que la Virtualisation?
 
+<img src=images/Hyper-V.png width='' height='' > </img>
+
+
 La virtualisation est une technologie qui permet de créer des versions virtuelles d'un matériel informatique, d'un système d'exploitation, d'une application ou d'une ressource, afin de les utiliser de manière isolée et indépendante de l'environnement physique sous-jacent.
 
 La virtualisation permet de maximiser l'utilisation des ressources matérielles en exécutant plusieurs systèmes ou applications sur une seule machine physique, appelée hôte. Chaque système ou application s'exécute dans son propre environnement virtuel, appelé machine virtuelle, qui est isolé des autres machines virtuelles et de l'hôte.
