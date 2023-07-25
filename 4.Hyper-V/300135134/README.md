@@ -103,5 +103,46 @@ Start-VM VM-lionel
 $HostName = [System.Net.DNS]::GetHostByName($Null).HostName
 vmconnect $HostName VM-lionel
 ```
-# CONNECXION A LA VM
+# creation du switch virtuel
+selection du netadapter "up"
+```POWERSHELL
+ $net = Get-NetAdapter -Name 'Ethernet'
+```
+creation du swith virtuelle grace a la variable "net" recupere
+```POWERSHELL
+New-VMSwitch -Name "External VM Switch" -AllowManagementOS $True -NetAdapterName $net.Name
+```
+```PYTHON
+Name               SwitchType NetAdapterInterfaceDescription
+----               ---------- ------------------------------
+External VM Switch External   QLogic BCM5709C Gigabit Ethernet (NDIS VBD Client)
+```
+# VERIFICATION QUE LE SWITCH VIRTUEL A BIEN ETE CREE
+```POWERSHELL
+get-netadapter
+```
+RESULTAT
+```PYTHON
+
+Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
+----                      --------------------                    ------- ------       ----------             ---------
+Ethernet                  QLogic BCM5709C Gigabit Ethernet ...#48       7 Disconnected 00-23-7D-E9-FD-12          0 bps
+Ethernet 2                QLogic BCM5709C Gigabit Ethernet ...#47       6 Up           00-23-7D-E9-FD-10         1 Gbps
+vEthernet (External VM... Hyper-V Virtual Ethernet Adapter             11 Up           00-23-7D-E9-FD-12        10 Gbps
+```
+# CONNECTION A LA VM-lionel AVEC PSSESION
+ETABLISSEMENT DE LA CONNECTION A DISTANCE
+```POWERSHELL
+Enter-PSSession -VMName VM-lionel -Credential $cred
+```
+RESULTAT
+```PYTHON
+[VM-lionel]: PS C:\Users\dave lionel\Documents>
+```
+
+# ATTRIBUTION DE L'ADRESSE IP A LA MACHINE VIRTUELLE VM-lionel
+
+
+
+# CONNECXION A LA VM 
 ```POWERSHELL
