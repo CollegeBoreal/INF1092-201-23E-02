@@ -122,3 +122,42 @@ Pour vous connecter à une machine virtuelle (VM) sous Windows Server en utilisa
 5. Une fois la connexion établie, vous serez dans une session distante sur la machine virtuelle, et vous pouvez exécuter des commandes et des scripts directement sur la VM à partir de votre PowerShell local.
 
 N'oubliez pas de fermer la session distante lorsque vous avez terminé en utilisant la commande `Exit-PSSession` (pour les machines virtuelles Windows) ou simplement en fermant la fenêtre PowerShell (pour les machines virtuelles Linux).
+
+##### :cat:GPT Est-ce que la creation d'une VM  Switch est nescessaire?
+
+Oui, la création d'une VM Switch est nécessaire si vous souhaitez permettre à vos machines virtuelles d'accéder au réseau externe ou de communiquer entre elles. Un Virtual Switch (communément appelé VM Switch) agit comme un pont entre les interfaces réseau virtuelles des machines virtuelles et l'adaptateur réseau physique de l'hôte (serveur) ou d'autres machines virtuelles.
+
+Lorsque vous créez une machine virtuelle, vous avez la possibilité de choisir une VM Switch existante ou d'en créer une nouvelle. Voici quelques cas où la création d'une VM Switch est nécessaire :
+
+1. Accès au réseau externe : Si vous souhaitez que votre machine virtuelle accède au réseau externe (Internet, réseau local, etc.), vous devez associer la VM à une VM Switch qui est liée à un adaptateur réseau physique connecté à votre réseau.
+
+2. Communication entre machines virtuelles : Si vous avez plusieurs machines virtuelles sur un même hôte et que vous voulez qu'elles puissent communiquer entre elles, vous pouvez utiliser une VM Switch interne ou privée. Une VM Switch interne permet aux machines virtuelles de communiquer entre elles et avec l'hôte, mais elles n'ont pas d'accès au réseau externe. Une VM Switch privée ne permet que la communication entre les machines virtuelles sans accès au réseau externe ou à l'hôte.
+
+3. Isolation des machines virtuelles : Vous pouvez utiliser une VM Switch privée pour isoler les machines virtuelles les unes des autres et de l'hôte, afin de créer un environnement de test ou de développement sécurisé.
+
+En résumé, la création d'une VM Switch est nécessaire pour configurer la connectivité réseau de vos machines virtuelles et déterminer comment elles communiquent avec le réseau externe et entre elles. Vous pouvez créer différentes VM Switch en fonction des besoins spécifiques de votre environnement virtuel.
+
+Pour créer une VM Switch à l'aide de PowerShell, vous pouvez utiliser la commande suivante : New-VMSwitch
+
+Voici la syntaxe générale de la commande New-VMSwitch :
+
+```powershell
+New-VMSwitch -Name <NomSwitch> -SwitchType <TypeSwitch> -NetAdapterName <NomAdaptateur> [-AllowManagementOS <$true | $false>] [-Notes <Description>] [-MinimumBandwidthMode <Weight | Absolute>] [-MinimumBandwidthWeight <Valeur>] [-MinimumBandwidthAbsolute <Valeur>] [-CimSession <CimSession[]>] [-ThrottleLimit <Int32>] [-AsJob] [-WhatIf] [-Confirm]
+```
+
+Explications des principaux paramètres :
+
+- `<NomSwitch>` : Le nom que vous souhaitez donner à votre VM Switch.
+- `<TypeSwitch>` : Le type de VM Switch que vous voulez créer (External, Internal, Private).
+- `<NomAdaptateur>` : Le nom de l'adaptateur réseau physique auquel vous souhaitez associer la VM Switch. Vous pouvez obtenir la liste des adaptateurs réseau disponibles en utilisant la commande `Get-NetAdapter`.
+- `-AllowManagementOS` : Spécifiez `$true` si vous souhaitez que l'hôte ait également accès à la VM Switch, ou `$false` pour limiter l'accès uniquement aux machines virtuelles.
+- `-Notes` : Une description ou des notes optionnelles pour la VM Switch.
+- `-MinimumBandwidthMode`, `-MinimumBandwidthWeight`, `-MinimumBandwidthAbsolute` : Ces paramètres sont utilisés pour configurer la bande passante minimale pour la VM Switch, ils sont optionnels.
+
+Voici un exemple de commande pour créer une VM Switch de type "External" liée à l'adaptateur réseau physique nommé "Ethernet" et permettant à l'hôte d'y accéder :
+
+```powershell
+New-VMSwitch -Name "MonSwitch" -SwitchType External -NetAdapterName "Ethernet" -AllowManagementOS $true
+```
+
+N'oubliez pas de lancer PowerShell en tant qu'administrateur pour exécuter cette commande, car la création d'une VM Switch nécessite des privilèges administratifs.
