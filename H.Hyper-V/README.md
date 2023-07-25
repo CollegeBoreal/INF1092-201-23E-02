@@ -6,6 +6,7 @@
 | [qu'estce que Hyper V?](#catgpt-quest-ce-que-hyper-v) |
 | [Comment installer Hyper-V sur windows server en utilisant powershell?](#catgpt-comment-installer-hyper-v-sur-windows-server-en-utilisant-powershell) |
 | [Qu'est-ce que PowerShell?](#catgpt-quest-ce-que-powershell) |
+| [Comment se connecter a une VM sous WindowsServer en utilisant PowerShell ?](#catgpt-comment-se-connecter-a-une-vm-sous-windowsserver-en-utilisant-powershell-)
 
 ### :cat:GPT Qu'est ce que la Virtualisation?
 
