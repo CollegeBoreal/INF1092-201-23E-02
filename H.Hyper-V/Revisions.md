@@ -7,6 +7,5 @@
 - [ ] Virtualisation
 - [ ] Hyper-V
   - [ ] Windows Features
-  - [ ] Module
 - [ ] Powershell
-- [ ] 
+  - [ ] PowerShell Hyper-V Module 
