@@ -33,10 +33,6 @@ En résumé, la virtualisation est une technologie qui permet de créer des envi
 
 ### :cat:GPT Qu'est-ce que Hyper V?
 
-- [ ] Hyper-V
-  - [ ] Windows Features
-
-<img src=images/revision-1.png width=75% height=75% > </img>
 
 Hyper-V est une technologie de virtualisation de Microsoft intégrée aux systèmes d'exploitation Windows, tels que Windows 10 Pro, Enterprise et Education, ainsi que Windows Server. Il permet de créer et de gérer des machines virtuelles sur un seul ordinateur physique.
 
@@ -48,9 +44,14 @@ En résumé, Hyper-V est une technologie de virtualisation puissante qui permet 
 
 ##### :cat:GPT Comment installer Hyper-V sur windows server en utilisant powershell?
 
+- [ ] Hyper-V
+  - [ ] Windows Features
 - [ ] Powershell
   - [ ] PowerShell Hyper-V Module 
 - [ ] Services
+
+<img src=images/revision-1.png width=75% height=75% > </img>
+
 
 Pour installer le rôle Hyper-V sur Windows Server à l'aide de PowerShell, vous pouvez suivre les étapes suivantes :
 
