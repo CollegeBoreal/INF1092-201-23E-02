@@ -48,6 +48,10 @@ En résumé, Hyper-V est une technologie de virtualisation puissante qui permet 
 
 ##### :cat:GPT Comment installer Hyper-V sur windows server en utilisant powershell?
 
+- [ ] Powershell
+  - [ ] PowerShell Hyper-V Module 
+- [ ] Services
+
 Pour installer le rôle Hyper-V sur Windows Server à l'aide de PowerShell, vous pouvez suivre les étapes suivantes :
 
 1. Ouvrez une session PowerShell en tant qu'administrateur.
@@ -68,9 +72,6 @@ N'hésitez pas à adapter ces instructions en fonction de votre environnement sp
 
 ##### :cat:GPT Qu'est-ce que PowerShell?
 
-- [ ] Services
-
-<img src=images/revision-2.png width=75% height=75% > </img>
 
 PowerShell est un environnement de ligne de commande et un langage de script développé par Microsoft. Il a été conçu pour l'automatisation des tâches administratives et la gestion des systèmes d'exploitation Windows. PowerShell offre une interface puissante permettant aux administrateurs système et aux développeurs de gérer et d'automatiser divers aspects du système d'exploitation Windows.
 
@@ -91,8 +92,9 @@ PowerShell est devenu un outil essentiel pour les administrateurs système et le
 
 ##### :cat:GPT Comment se connecter a une VM sous WindowsServer en utilisant PowerShell ?
 
-- [ ] Powershell
-  - [ ] PowerShell Hyper-V Module 
+
+<img src=images/revision-2.png width=75% height=75% > </img>
+
 
 Pour vous connecter à une machine virtuelle (VM) sous Windows Server en utilisant PowerShell, vous pouvez utiliser la commande `Enter-PSSession` (pour les machines virtuelles Windows) ou `ssh` (pour les machines virtuelles Linux). Voici comment procéder :
 
