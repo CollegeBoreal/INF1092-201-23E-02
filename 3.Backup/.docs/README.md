@@ -1,3 +1,5 @@
+# Capturer le disque utilisé par une machine virtuelle (VM) en plus de l'image WIM
+
 
 ## :a: capturer le disque utilisé par une VM :
 
