@@ -1,6 +1,8 @@
 # Backup
 
-:cat:GPT: Comment créer une image windows?
+:tada: [Participation](.scripts/Participation.md)
+
+### :cat:GPT: Comment créer une image windows?
 
 Pour créer une image Windows à partir de zéro, vous pouvez utiliser le déploiement automatisé de Windows (Windows Automated Installation Kit - AIK) ou Windows Assessment and Deployment Kit (Windows ADK) pour Windows 10. Voici les étapes générales :
 
@@ -28,7 +30,7 @@ Pour créer une image Windows à partir de zéro, vous pouvez utiliser le déplo
 Ces étapes vous permettront de créer une image Windows à partir de zéro à l'aide des outils disponibles dans Windows ADK. Il est important de noter que les détails spécifiques peuvent varier en fonction de la version de Windows et de l'outil que vous utilisez. Assurez-vous de consulter la documentation de Microsoft et de suivre les instructions appropriées pour votre environnement spécifique.
 
 
-:cat:GPT: Comment exporter une VM en image WIM ?
+#### :cat:GPT: Comment exporter une VM en image WIM ?
 
 Pour exporter une machine virtuelle (VM) en tant qu'image WIM, vous pouvez utiliser l'outil de gestion de déploiement de Windows (Windows Deployment Image Servicing and Management - DISM). Voici les étapes générales pour effectuer cette opération :
 
@@ -51,7 +53,7 @@ Pour exporter une machine virtuelle (VM) en tant qu'image WIM, vous pouvez utili
 Une fois que la commande DISM est terminée, vous aurez une image WIM de votre machine virtuelle exportée dans le chemin spécifié. Vous pouvez ensuite utiliser cette image pour déployer la machine virtuelle sur d'autres systèmes utilisant des outils de déploiement tels que Windows Deployment Services (WDS) ou Microsoft Deployment Toolkit (MDT).
 
 
-:cat:GPT: Comment également capturer le disque utiliser par la VM?
+#### :cat:GPT: Comment également capturer le disque utiliser par la VM?
 
 Pour capturer le disque utilisé par une machine virtuelle (VM) en plus de l'image WIM, vous pouvez utiliser l'outil de gestion de déploiement de Windows (Windows Deployment Image Servicing and Management - DISM) en combinaison avec l'outil de gestion de disque (Disk Management).
 
