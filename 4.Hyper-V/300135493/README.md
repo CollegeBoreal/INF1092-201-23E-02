@@ -135,6 +135,7 @@ $HostName = [System.Net.DNS]::GetHostByName($Null).HostName
 vmconnect $HostName VM-Lassine
 ```
 # 🆎 Connexion à la VM
+Installation de Windows sur la VM
 <img src=images/IMG_20230705_165846.jpg width='' height='' > </img>
 <img src=images/IMG_20230705_170004.jpg width='' height='' > </img>
 <img src=images/IMG_20230705_170020.jpg width='' height='' > </img>
@@ -142,4 +143,4 @@ vmconnect $HostName VM-Lassine
 <img src=images/IMG_20230705_170133.jpg width='' height='' > </img>
 <img src=images/IMG_20230705_180701.jpg width='' height='' > </img>
 <img src=images/IMG_20230705_181347.jpg width='' height='' > </img>
-# - [X] Configuration du Réseaux de la VM
+# - [] Configuration du Réseaux de la VM
