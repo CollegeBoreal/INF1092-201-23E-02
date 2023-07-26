@@ -46,3 +46,27 @@ Number                  :
 ComputerName            : WIN-KT672KKKI3O
 Path                    : C:\Users\Administrator\Documents\VM-Lassine.vhdx
 VhdFormat               : VHDX
+VhdType                 : Dynamic
+FileSize                : 4194304
+Size                    : 34359738368
+MinimumSize             :
+LogicalSectorSize       : 512
+PhysicalSectorSize      : 4096
+BlockSize               : 33554432
+ParentPath              :
+DiskIdentifier          : A24742E2-49A8-414A-BB7D-9518ADB2BBAB
+FragmentationPercentage : 0
+Alignment               : 1
+Attached                : False
+DiskNumber              :
+IsPMEMCompatible        : False
+AddressAbstractionType  : None
+Number                  :
+```
+- [ ] Monter l'image disque en DVD
+```powershell
+Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
+```
+Cette commande monte une image disque à partir d'un fichier ISO de Windows 10. L'image disque ISO contient les fichiers d'installation de Windows 10
+
+> Resultat :
