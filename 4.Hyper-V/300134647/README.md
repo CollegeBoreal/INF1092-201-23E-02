@@ -37,7 +37,7 @@ Number                  :
 
 # 🅰️ Creation de la VM
 ```powershell
- New-VHD -Path "$ENV:USERPROFILE\Documents\VM-Lassine.vhdx" -SizeBytes 32GB -Dynamic
+ New-VHD -Path "$ENV:USERPROFILE\Documents\VM-Valentin.vhdx" -SizeBytes 32GB -Dynamic
 ```
 > Réponse:
 ```python
@@ -125,14 +125,14 @@ VM-Thera     Off     0           0                 00:00:00           Operating 
 ```powershell
 Get-VMDVDDrive -VMName $VM.VMName
 ```
-Cette commande ajoute un lecteur DVD à la machine virtuelle "VM-Thera" en utilisant le chemin du fichier ISO spécifié. Elle permet d'attacher un lecteur DVD virtuel contenant l'image disque ISO de Windows 10 à la machine virtuelle.
+Cette commande ajoute un lecteur DVD à la machine virtuelle "VM-Valentin" en utilisant le chemin du fichier ISO spécifié. Elle permet d'attacher un lecteur DVD virtuel contenant l'image disque ISO de Windows 10 à la machine virtuelle.
  
 > Resultat :
 ```python
 
 VMName   ControllerType ControllerNumber ControllerLocation DvdMediaType Path
 ------   -------------- ---------------- ------------------ ------------ ----
-VM-Thera IDE            1                0                  None
+VM-Valentin IDE            1                0                  None
 ```
 ```powershell
 Add-VMDvdDrive -VMName $VM.VMName -Path "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
@@ -144,19 +144,19 @@ Get-VMDVDDrive -VMName $VM.VMName
 ``` Python
 VMName   ControllerType ControllerNumber ControllerLocation DvdMediaType Path
 ------   -------------- ---------------- ------------------ ------------ ----
-VM-Thera IDE            0                1                  ISO          C:\Users\Administrator\Documents\Win10_22H2...
-VM-Thera IDE            1                0                  None
+VM-Valentin IDE            0                1                  ISO          C:\Users\Administrator\Documents\Win10_22H2...
+VM-Valentin IDE            1                0                  None
 ```
 - [ ] Démarrer la machine virtuelle 
 ```powershell
-Start-VM VM-Thera
+Start-VM VM-Valentin
 ```
 ## :b: installation de la machine VM
 ```powershell
 $HostName = [System.Net.DNS]::GetHostByName($Null).HostName
 ```
 ```powershell
-vmconnect $HostName VM-Thera
+vmconnect $HostName VM-Valentin
 ```
 
 ## 🆎 connexion a la machine virtuelle
@@ -167,8 +167,8 @@ Get-VM
 > Resultat :
 ```python
 ----         -----   ----------- ----------------- ------             ------             -------
-VM-Fousseyni Off     0           0                 00:00:00           Operating normally 10.0
-VM-Thera     Running 3           4096              3.21:46:19.8630000 Operating normally 10.0
+VM-Valentin Off     0           0                 00:00:00           Operating normally 10.0
+VM-Valentin    Running 3           4096              3.21:46:19.8630000 Operating normally 10.0
 ```
 - [ ] Collecter les informations d'identification ( nom d'utilisateur et mot de passe) d'un utilisateur
 
@@ -187,7 +187,7 @@ Enter-PSSession -VMName VM-Thera -Credential $cred
 ```
 > Resultat :
 ```Python
-[VM-Thera]: PS C:\Users\Thera\Documents>
+[VM-Valentin]: PS C:\Users\Thera\Documents>
 ```
 ## 🅾️ Connexion à l'internet : globe_with_meridians
  
@@ -212,6 +212,9 @@ New-VMSwitch -Name "External VM Switch" -AllowManagementOS $True -NetAdapterName
 ```
 > Reponse :
 ```Python
+----                      --------------------                    ------- ------       ----------             ---------
+Ethernet                  Microsoft Hyper-V Network Adapter             5 Disconnected 00-15-5D-ED-1A-02        10 Gbps
+```
 
 ```
 - [ ] Vérifier que la `Switch Virtuelle` a été bien crée
