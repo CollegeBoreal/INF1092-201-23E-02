@@ -1,3 +1,8 @@
+
+## :a: capturer le disque utilisé par une VM :
+
+ - [ ] Lancer la commande `diskpart`
+
 ```powershell
 diskpart
 ```
