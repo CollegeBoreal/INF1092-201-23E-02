@@ -136,3 +136,9 @@ vmconnect $HostName VM-Lassine
 ```
 # 🆎 Connexion à la VM
 <img src=images/IMG_20230705_165846.jpg width='' height='' > </img>
+<img src=images/IMG_20230705_170004.jpg width='' height='' > </img>
+<img src=images/IMG_20230705_170020.jpg width='' height='' > </img>
+<img src=images/IMG_20230705_170103.jpg width='' height='' > </img>
+<img src=images/IMG_20230705_170133.jpg.jpg width='' height='' > </img>
+<img src=images/IMG_20230705_180701.jpg width='' height='' > </img>
+<img src=images/IMG_20230705_181347.jpg width='' height='' > </img>
