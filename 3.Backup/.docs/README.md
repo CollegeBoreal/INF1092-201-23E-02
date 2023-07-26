@@ -3,7 +3,7 @@
 
 ## :a: capturer le disque utilisé par une VM :
 
- - [ ] Lancer la commande `diskpart`
+ - [ ] Lancer la commande `DISKPART`
 
 ```powershell
 diskpart
@@ -18,11 +18,21 @@ On computer: WIN-77KAV1BUA4O
 DISKPART>
 ```
 
+- [ ] Dans l'utilitaire `DISKPART` selectionner et attacher le disque virtuel à sauvegarder
+
 ```
 DISKPART> select vdisk file="C:\Users\Brice\Documents\VM-Brice.vhdx"
 DISKPART> attach vdisk
 DISKPART> exit
 ```
+
+## :b: Créer une image windows?
+
+- [ ] Utiliser la commande `DSIM` pour capturer l'image Windows
+
+:warning: Attention, l'opération peut prendre plus de 30 minutes. 
+
+:bulb: Pour ne pas attendre, vous pouvez fermer votre session `RDP` et revenir plus tard
 
 ```powershell
 DISM /Capture-Image `
@@ -32,6 +42,8 @@ DISM /Capture-Image `
      /Description:"Image de la VM de Brice" `
      /Compress:Maximum
 ```
+
+- [ ] Lister l'image sauvegardée
 
 ```powershell
 Get-Item $env:USERPROFILE\Documents\export\VM-Brice.wim
