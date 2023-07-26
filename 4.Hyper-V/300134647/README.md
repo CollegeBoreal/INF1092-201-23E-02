@@ -91,4 +91,29 @@ Cette commande affiche les lecteurs de disque disponibles sur le système. Elle 
 
 > Resultat :
 ```Python
+```Python
+
+Name           Used (GB)     Free (GB) Provider      Root                                               CurrentLocation
+----           ---------     --------- --------      ----                                               ---------------
+C                  35.31        237.48 FileSystem    C:\                                            Users\Administrator
+D                   5.72          0.00 FileSystem    D:\
+F                                      FileSystem    F:\
+```
+# Créer la machine virtuelle 
+```powershell
+$VM = New-VM -Name VM-Thera -Path "$ENV:USERPROFILE\Documents" `
+                        -MemoryStartupBytes 4GB `
+                        -VHDPath "$ENV:USERPROFILE\Documents\VM-Thera.vhdx"
+```
+ Cette commande crée une nouvelle machine virtuelle (VM) avec le nom `VM-Thera`. La VM est configurée avec 4GB de mémoire et le chemin du disque virtuel est spécifié.
+ 
+```powershell
+Get-VM
+```
+Cette commande affiche les informations sur toutes les machines virtuelles présentes. Elle est utilisée pour vérifier si la machine virtuelle "VM-Thera" a été créée avec succès
+
+> Resultat :
+```Python
+
+Name         State   CPUUsage(%) MemoryAssigned(M) Uptime             Status             Version
 
