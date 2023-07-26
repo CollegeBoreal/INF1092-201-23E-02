@@ -142,4 +142,28 @@ Get-VMDVDDrive -VMName $VM.VMName
 ```
 > Resultat :
 ``` Python
+VMName   ControllerType ControllerNumber ControllerLocation DvdMediaType Path
+------   -------------- ---------------- ------------------ ------------ ----
+VM-Thera IDE            0                1                  ISO          C:\Users\Administrator\Documents\Win10_22H2...
+VM-Thera IDE            1                0                  None
+```
+- [ ] Démarrer la machine virtuelle 
+```powershell
+Start-VM VM-Thera
+```
+## :b: installation de la machine VM
+```powershell
+$HostName = [System.Net.DNS]::GetHostByName($Null).HostName
+```
+```powershell
+vmconnect $HostName VM-Thera
+```
+
+## 🆎 connexion a la machine virtuelle
+- [ ] Récuperer sur les informations de la machine virtuelle 
+```powershell
+Get-VM
+```
+> Resultat :
+```python
 
