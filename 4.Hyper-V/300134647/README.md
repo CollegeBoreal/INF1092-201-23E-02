@@ -194,3 +194,29 @@ Enter-PSSession -VMName VM-Thera -Credential $cred
 ### : round_pushpin: Création du commutateur (switch) virtuel externe sur le serveur
 
 - [ ]  Determiner les adaptateurs réseaux (cartes Ethernets)
+- [ ]  Determiner les adaptateurs réseaux (cartes Ethernets)
+```powershell
+ Get-NetAdapter
+```
+> Resultat :
+```python
+Ethernet                  Microsoft Hyper-V Network Adapter             5 Disconnected 00-15-5D-ED-1A-02        10 Gbps
+```
+- [ ] Choisir la carte qui a son état up (disponible), prendre le nom de la carte et l'assigner à une variable $net
+```powershell
+  $net = Get-NetAdapter -Name 'Ethernet'
+```
+- [ ] Créer la `switch virtuelle` ( le commande virtuel) grâce à la variable `$net` recupérée ci-dessus 
+```powershell
+New-VMSwitch -Name "External VM Switch" -AllowManagementOS $True -NetAdapterName $net.Name
+```
+> Reponse :
+```Python
+
+```
+- [ ] Vérifier que la `Switch Virtuelle` a été bien crée
+```powershell
+get-netadapter
+```
+> Resultat :
+```Python
