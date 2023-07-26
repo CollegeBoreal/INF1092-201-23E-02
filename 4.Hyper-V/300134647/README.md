@@ -166,4 +166,31 @@ Get-VM
 ```
 > Resultat :
 ```python
+----         -----   ----------- ----------------- ------             ------             -------
+VM-Fousseyni Off     0           0                 00:00:00           Operating normally 10.0
+VM-Thera     Running 3           4096              3.21:46:19.8630000 Operating normally 10.0
+```
+- [ ] Collecter les informations d'identification ( nom d'utilisateur et mot de passe) d'un utilisateur
 
+  ```powershell
+  $cred = Get-Credential
+  ```
+ > Resultat :
+ ```Python
+ cmdlet Get-Credential at command pipeline position 1
+Supply values for the following parameters:
+Credential
+```
+- [ ] Etablir une connexion interactive avec la machine virtuelle
+```powershell
+Enter-PSSession -VMName VM-Thera -Credential $cred
+```
+> Resultat :
+```Python
+[VM-Thera]: PS C:\Users\Thera\Documents>
+```
+## 🅾️ Connexion à l'internet : globe_with_meridians
+ 
+### : round_pushpin: Création du commutateur (switch) virtuel externe sur le serveur
+
+- [ ]  Determiner les adaptateurs réseaux (cartes Ethernets)
