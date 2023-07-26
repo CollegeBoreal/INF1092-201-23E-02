@@ -6,7 +6,7 @@
 - [ ] Créer le disque virtuel pour la machine virtuelle
 
 ```PowerShell
- New-VHD -Path "$ENV:USERPROFILE\Documents\VM-Brice.vhdx" -SizeBytes 32GB -Dynamic 
+ New-VHD -Path "$ENV:USERPROFILE\Documents\VM-Valentin.vhdx" -SizeBytes 32GB -Dynamic 
 ```
 > Reponse :
 ```python
