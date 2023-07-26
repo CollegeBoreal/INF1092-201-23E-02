@@ -8,6 +8,7 @@
 ```PowerShell
  New-VHD -Path "$ENV:USERPROFILE\Documents\VM-Valentin.vhdx" -SizeBytes 32GB -Dynamic 
 ```
+Cette commande crée un nouveau disque virtuel (VHD) avec une taille de 32GB et un format dynamique. Elle prépare le disque virtuel sur lequel la machine virtuelle sera installée.
 > Reponse :
 ```python
 
