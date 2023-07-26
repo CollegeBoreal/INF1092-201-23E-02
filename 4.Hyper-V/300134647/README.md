@@ -70,3 +70,25 @@ Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.
 Cette commande monte une image disque à partir d'un fichier ISO de Windows 10. L'image disque ISO contient les fichiers d'installation de Windows 10
 
 > Resultat :
+```Python
+
+Attached          : True
+BlockSize         : 0
+DevicePath        : \\.\CDROM1
+FileSize          : 6140975104
+ImagePath         : C:\Users\Administrator\Documents\Win10_22H2_English_x64v1.iso
+LogicalSectorSize : 2048
+Number            : 1
+Size              : 6140975104
+StorageType       : 1
+PSComputerName    :
+```
+
+```powershell
+Get-PSDrive -PSProvider FileSystem
+```
+Cette commande affiche les lecteurs de disque disponibles sur le système. Elle permet de vérifier les lecteurs de disque actuellement montés
+
+> Resultat :
+```Python
+
