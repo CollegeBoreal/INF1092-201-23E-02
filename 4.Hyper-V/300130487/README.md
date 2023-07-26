@@ -110,6 +110,34 @@ cmdlet Get-Credential at command pipeline position 1
 Supply values for the following parameters:
 Credential
 ```
+# 🥉CREATION DU SWITCH VIRTUEL 
+selction de l'interface up (disponible)
+```POWERSHELL
+ $net = Get-NetAdapter -Name 'Ethernet'
+```
+Création du switch virtuel
+```POWERSHELL
+New-VMSwitch -Name "External VM Switch" -AllowManagementOS $True -NetAdapterName $net.Name
+```
+resultat
+```PYTHON
+Name               SwitchType NetAdapterInterfaceDescription
+----               ---------- ------------------------------
+External VM Switch External   QLogic BCM5709C Gigabit Ethernet (NDIS VBD Client)
+```
+ Vérifier que la Switch Virtuelle (le commutateur virtuel) à bien été crée
+ ```POWERSHELL
+get-netadapter
+```
+RESULTAT
+```PYTHON
+
+Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
+----                      --------------------                    ------- ------       ----------             ---------
+Ethernet                  QLogic BCM5709C Gigabit Ethernet ...#47      18 Up           78-E7-D1-65-6A-EC         1 Gbps
+vEthernet (External VM... Hyper-V Virtual Ethernet Adapter             21 Up           78-E7-D1-65-6A-EC         1 Gbps
+Ethernet 2                QLogic BCM5709C Gigabit Ethernet ...#48      11 Disconnected 78-E7-D1-65-6A-EE          0 bps
+```
 # 😎  Établir une session interactive à distance avec la VM
 ```POWERSHELL
 Enter-PSSession -VMName VM-Archange -Credential $cred
@@ -125,6 +153,79 @@ At line:1 char:1
     + CategoryInfo          : InvalidArgument: (:) [Enter-PSSession], PSDirectException
     + FullyQualifiedErrorId : CreateRemoteRunspaceForVMFailed,Microsoft.PowerShell.Commands.EnterPSSessionCommand
 ```
+# ASSINGATION D'UNE ADDRESSE IP À LA MACHINE
+```POWERSHELL
+New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.13.237.138" -PrefixLength 24 -DefaultGateway "10.13.237.1"
+```
+CONFIGURER LES ADDRESSES DNS
+```POWERSHELL
+Get-DnsClientServerAddress
+```
+RESULTAT
+```PYTHON
+
+InterfaceAlias               Interface Address ServerAddresses
+                             Index     Family
+--------------               --------- ------- ---------------
+Ethernet                            11 IPv4    {}
+Ethernet                            11 IPv6    {fec0:0:0:ffff::1, fec0:0:0:ffff::2, fec...
+Loopback Pseudo-Interface 1          1 IPv4    {}
+Loopback Pseudo-Interface 1          1 IPv6    {}
+```
+# 🔤 Assigner des adresses IP à la configuration DNS 1.1.1.1 étant le DNS de CloudFare, 8.8.8.8 étant le DN de Google
+```POWERSHELL
+Set-DNSClientServerAddress "Ethernet" -ServerAddresses ("1.1.1.1","8.8.8.8")
+```
+Visualiser la configuration
+```POWERSHELL
+Get-DnsClientServerAddress
+```
+RESULTAT
+```PYTHON
+
+InterfaceAlias               Interface Address ServerAddresses
+                             Index     Family
+--------------               --------- ------- ---------------
+Ethernet                            11 IPv4    {1.1.1.1, 8.8.8.8}
+Ethernet                            11 IPv6    {}
+Loopback Pseudo-Interface 1          1 IPv4    {}
+Loopback Pseudo-Interface 1          1 IPv6    {}
+```
+Tester la connection
+```POWERSHELL
+Test-NetConnection -ComputerName "google.com"
+```
+RESULTAT
+```PYTHON
+
+
+ComputerName           : google.com
+RemoteAddress          : 142.251.32.78
+InterfaceAlias         : Ethernet
+SourceAddress          : 10.13.237.125
+PingSucceeded          : True
+PingReplyDetails (RTT) : 15 ms
+```
+# ⚠️ DÉTRUIRE LA MACHINE 👽
+```POWERSHELL
+Stop-VM -Name VM-Archange -Force
+```
+Supprimer la VM
+```POWERSHELL
+Remove-VM -Name VM-Archange -Force
+```
+Supprimer le disque
+```POWERSHELL
+Remove-Item -Path "$ENV:USERPROFILE\Documents\VM-Archange.vhdx" -Force
+```
+SUPPRIMER LES INFORMATIONS DE LA VM
+```POWERSHELL
+Remove-Item -Path "$ENV:USERPROFILE\Documents\VM-Archange"  -Force
+``` 
+
+
+
+
 
 
 
