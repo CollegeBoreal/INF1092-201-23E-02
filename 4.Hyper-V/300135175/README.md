@@ -47,7 +47,7 @@ note : le numerotage des commandes n'est pas exacte parceque il ya des commande 
 Cette commande établit une session PowerShell à distance avec la machine virtuelle "VM-RIAD" en utilisant les informations d'identification fournies dans la variable $cred.Résultat ↓
 <img src=images/9999.jpg width='' height=''>
 
-D'accord, pour mettre en évidence chaque étape, nous pourrions les formater de cette façon pour GitHub. Je vais également ajouter des émojis pour égayer les étapes :
+
 
 ```markdown
 ## Configuration d'une Machine Virtuelle avec Hyper-V et PowerShell :desktop_computer: :wrench:
