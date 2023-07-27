@@ -83,8 +83,10 @@ PS C:\Users\Administrator> Connect-VMNetworkAdapter -VMNetworkAdapter $networkAd
 PS C:\Users\Administrator> Enter-PSSession -VMName VM-RIAD -Credential $cred
 [VM-RIAD]: PS C:\Users\Othman\Documents> Get-NetAdapter
 ```
+
 <img src=images/avant tt.jpg width='' height=''>
 <img src=images/apres.jpg width='' height=''>
+
 ### Étape 5: Configurez l'adresse IP dans la VM :globe_with_meridians:
 
 Enfin, configurez une adresse IP statique pour l'interface réseau "ethernet 2" dans la machine virtuelle. Définissez l'adresse IP comme "10.13.237.140", le masque de sous-réseau comme "255.255.255.0" (représenté par `-PrefixLength 24`), et la passerelle par défaut comme "10.13.237.1".
