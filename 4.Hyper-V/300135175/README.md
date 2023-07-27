@@ -45,4 +45,59 @@ note : le numerotage des commandes n'est pas exacte parceque il ya des commande 
 <img src=images/8888.jpg width='' height='' >
 13. 💻 **Commande 13 :** `Enter-PSSession -VMName VM-RIAD -Credential $cred`
 Cette commande établit une session PowerShell à distance avec la machine virtuelle "VM-RIAD" en utilisant les informations d'identification fournies dans la variable $cred.Résultat ↓
-<img src=images/9999.jpg width='' height='' >
+<img src=images/9999.jpg width='' height=''>
+
+D'accord, pour mettre en évidence chaque étape, nous pourrions les formater de cette façon pour GitHub. Je vais également ajouter des émojis pour égayer les étapes :
+
+```markdown
+## Configuration d'une Machine Virtuelle avec Hyper-V et PowerShell :desktop_computer: :wrench:
+
+Suivez ces étapes pour configurer une machine virtuelle (VM) sur Hyper-V en utilisant PowerShell.
+
+### Étape 1: Obtenez la VM :mag:
+
+Obtenez la VM que vous voulez configurer et stockez l'objet de cette VM dans une variable appelée `$vm`.
+
+```bash
+PS C:\Users\Administrator> $vm = Get-VM -Name "vm-riad"
+```
+
+### Étape 2: Obtenez l'adaptateur réseau de la VM :satellite:
+
+Obtenez l'adaptateur réseau de la VM que vous avez stockée dans la variable `$vm` et stockez cet adaptateur réseau dans une variable appelée `$networkAdapter`.
+
+```bash
+PS C:\Users\Administrator> $networkAdapter = Get-VMNetworkAdapter -VM $vm
+```
+
+### Étape 3: Connectez l'adaptateur réseau au vSwitch :electric_plug:
+
+Connectez l'adaptateur réseau que vous avez stocké dans la variable `$networkAdapter` à un vSwitch nommé "external vm switch".
+
+```bash
+PS C:\Users\Administrator> Connect-VMNetworkAdapter -VMNetworkAdapter $networkAdapter -SwitchName "external vm switch"
+```
+
+### Étape 4: Vérifiez l'adaptateur réseau dans la VM :eyes:
+
+À cette étape, vous êtes connecté à votre machine virtuelle. Exécutez la commande `Get-NetAdapter` pour afficher la liste des adaptateurs réseau disponibles dans la machine virtuelle. Cela vous aidera à vérifier si l'adaptateur réseau est correctement connecté au vSwitch.
+
+```bash
+[VM-RIAD]: PS C:\Users\Othman\Documents> Get-NetAdapter
+```
+
+### Étape 5: Configurez l'adresse IP dans la VM :globe_with_meridians:
+
+Enfin, configurez une adresse IP statique pour l'interface réseau "ethernet 2" dans la machine virtuelle. Définissez l'adresse IP comme "10.13.237.140", le masque de sous-réseau comme "255.255.255.0" (représenté par `-PrefixLength 24`), et la passerelle par défaut comme "10.13.237.1".
+
+```bash
+[VM-RIAD]: PS C:\Users\Othman\Documents> New-NetIPAddress -InterfaceAlias "ethernet 2" -IPAddress 10.13.237.140 -AddressFamily IPv4 -DefaultGateway 10.13.237.1 -PrefixLength 24
+```
+
+Et voilà ! Vous avez maintenant configuré votre machine virtuelle avec un vSwitch et une adresse IP statique. :tada:
+```
+
+Pour les émojis, j'ai utilisé des codes courts GitHub-flavored markdown qui devraient se transformer en émojis lorsque vous publiez ceci sur GitHub. Si vous ne voulez pas d'émojis, vous pouvez simplement supprimer ces codes courts.
+
+
+
