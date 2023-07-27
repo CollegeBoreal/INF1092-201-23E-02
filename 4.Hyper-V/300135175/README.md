@@ -61,6 +61,7 @@ Obtenez la VM que vous voulez configurer et stockez l'objet de cette VM dans une
 ```bash
 PS C:\Users\Administrator> $vm = Get-VM -Name "vm-riad"
 ```
+<img src= width='' height=''>
 
 ### Étape 2: Obtenez l'adaptateur réseau de la VM :satellite:
 
@@ -69,7 +70,7 @@ Obtenez l'adaptateur réseau de la VM que vous avez stockée dans la variable `$
 ```bash
 PS C:\Users\Administrator> $networkAdapter = Get-VMNetworkAdapter -VM $vm
 ```
-
+<img src= width='' height=''>
 ### Étape 3: Connectez l'adaptateur réseau au vSwitch :electric_plug:
 
 Connectez l'adaptateur réseau que vous avez stocké dans la variable `$networkAdapter` à un vSwitch nommé "external vm switch".
@@ -77,7 +78,7 @@ Connectez l'adaptateur réseau que vous avez stocké dans la variable `$networkA
 ```bash
 PS C:\Users\Administrator> Connect-VMNetworkAdapter -VMNetworkAdapter $networkAdapter -SwitchName "external vm switch"
 ```
-
+<img src= width='' height=''>
 ### Étape 4: Vérifiez l'adaptateur réseau dans la VM :eyes:
 
 À cette étape, vous êtes connecté à votre machine virtuelle. Exécutez la commande `Get-NetAdapter` pour afficher la liste des adaptateurs réseau disponibles dans la machine virtuelle. Cela vous aidera à vérifier si l'adaptateur réseau est correctement connecté au vSwitch.
@@ -85,7 +86,7 @@ PS C:\Users\Administrator> Connect-VMNetworkAdapter -VMNetworkAdapter $networkAd
 ```bash
 [VM-RIAD]: PS C:\Users\Othman\Documents> Get-NetAdapter
 ```
-
+<img src= width='' height=''>
 ### Étape 5: Configurez l'adresse IP dans la VM :globe_with_meridians:
 
 Enfin, configurez une adresse IP statique pour l'interface réseau "ethernet 2" dans la machine virtuelle. Définissez l'adresse IP comme "10.13.237.140", le masque de sous-réseau comme "255.255.255.0" (représenté par `-PrefixLength 24`), et la passerelle par défaut comme "10.13.237.1".
@@ -93,11 +94,10 @@ Enfin, configurez une adresse IP statique pour l'interface réseau "ethernet 2" 
 ```bash
 [VM-RIAD]: PS C:\Users\Othman\Documents> New-NetIPAddress -InterfaceAlias "ethernet 2" -IPAddress 10.13.237.140 -AddressFamily IPv4 -DefaultGateway 10.13.237.1 -PrefixLength 24
 ```
-
+<img src= width='' height=''>
 Et voilà ! Vous avez maintenant configuré votre machine virtuelle avec un vSwitch et une adresse IP statique. :tada:
 ```
 
-Pour les émojis, j'ai utilisé des codes courts GitHub-flavored markdown qui devraient se transformer en émojis lorsque vous publiez ceci sur GitHub. Si vous ne voulez pas d'émojis, vous pouvez simplement supprimer ces codes courts.
 
 
 
