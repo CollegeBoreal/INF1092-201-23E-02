@@ -49,7 +49,7 @@ Cette commande établit une session PowerShell à distance avec la machine virtu
 
 
 
-```markdown
+
 ## Configuration d'une Machine Virtuelle avec Hyper-V et PowerShell :desktop_computer: :wrench:
 
 Suivez ces étapes pour configurer une machine virtuelle (VM) sur Hyper-V en utilisant PowerShell.
