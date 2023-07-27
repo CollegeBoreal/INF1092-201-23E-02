@@ -1,7 +1,8 @@
 # 📋 **Guide de création de machine virtuelle avec Hyper-V** 💡💻
 par Riad 👨‍💻
 
-note : le numerotage des commandes n'est pas exacte parceque il ya des commande pour just afficher et dautre pour exucuter
+note 1: le numerotage des commandes n'est pas exacte parceque il ya des commande pour just afficher et dautre pour exucuter
+note 2 : Pour ce projet, j'ai utilisé une machine virtuelle importée que mon collègue Othman m'a fournie 🔄👨‍💻. Nous avons partagé des fichiers via Samba 📂🔄, un protocole de partage de fichiers en réseau. Pour les commandes PowerShell, j'ai utilisé PowerShell ISE (Integrated Scripting Environment) 💻🔧, un environnement de développement graphique pour écrire et tester les scripts PowerShell. Vous pourriez penser que c'est tricher un peu 🙈😜, mais en réalité, c'est un outil super utile qui propose des commandes en fonction de ce que vous tapez 📝⌨️, rendant la rédaction de scripts plus rapide et plus facile. Et oui, il offre la possibilité d'exécuter des scripts directement dans l'éditeur 🖱️💡, ce qui est un véritable sauveur de vie pour le débogage! Personnellement, il m'a aidé à mieux comprendre les commandes et j'ai découvert d'autres commandes en cours de route. Par exemple, la cmdlet Get-Process, qui vous donne des informations sur les processus en cours d'exécution sur votre système 🖥️🔍. Alors, est-ce vraiment de la triche, ou juste une utilisation intelligente des outils à notre disposition? 😉🧠🎓
 
 1. ⚙️ **Commande 1 :** `New-VHD -Path "$ENV:USERPROFILE\Documents\VM-RIAD.vhdx" -SizeBytes 32GB -Dynamic`
    Cette commande crée un nouveau disque virtuel (VHD) avec une taille de 64GB et un format dynamique. Elle prépare le disque virtuel sur lequel la machine virtuelle sera installée. Résultat ↓
@@ -95,7 +96,7 @@ Enfin, configurez une adresse IP statique pour l'interface réseau "ethernet 2" 
 [VM-RIAD]: PS C:\Users\Othman\Documents> New-NetIPAddress -InterfaceAlias "ethernet 2" -IPAddress 10.13.237.140 -AddressFamily IPv4 -DefaultGateway 10.13.237.1 -PrefixLength 24
 ```
 <img src=images/55555.jpg width='' height=''>
-Et voilà ! Vous avez maintenant configuré votre machine virtuelle avec un vSwitch et une adresse IP statique. :tada:
+Et voilà ! j ai maintenant configuré ma machine virtuelle avec un vSwitch et une adresse IP statique. :tada:
 ```
 
 
