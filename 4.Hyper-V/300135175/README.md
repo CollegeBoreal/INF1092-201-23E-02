@@ -84,7 +84,7 @@ PS C:\Users\Administrator> Enter-PSSession -VMName VM-RIAD -Credential $cred
 [VM-RIAD]: PS C:\Users\Othman\Documents> Get-NetAdapter
 ```
 
-<img src=images/avant tt.jpg width='' height=''>
+<img src=images/avant.jpg width='' height=''>
 <img src=images/apres.jpg width='' height=''>
 
 ### Étape 5: Configurez l'adresse IP dans la VM :globe_with_meridians:
