@@ -51,7 +51,6 @@ Cette commande établit une session PowerShell à distance avec la machine virtu
 
 
 ## Configuration d'une Machine Virtuelle avec Hyper-V et PowerShell :desktop_computer: :wrench:
-
 Suivez ces étapes pour configurer une machine virtuelle (VM) sur Hyper-V en utilisant PowerShell.
 
 ### Étape 1: Obtenez la VM :mag:
@@ -61,8 +60,6 @@ Obtenez la VM que vous voulez configurer et stockez l'objet de cette VM dans une
 ```bash
 PS C:\Users\Administrator> $vm = Get-VM -Name "vm-riad"
 ```
-<img src= width='' height=''>
-
 ### Étape 2: Obtenez l'adaptateur réseau de la VM :satellite:
 
 Obtenez l'adaptateur réseau de la VM que vous avez stockée dans la variable `$vm` et stockez cet adaptateur réseau dans une variable appelée `$networkAdapter`.
@@ -72,18 +69,18 @@ PS C:\Users\Administrator> $networkAdapter = Get-VMNetworkAdapter -VM $vm
 ```
 <img src= width='' height=''>
 ### Étape 3: Connectez l'adaptateur réseau au vSwitch :electric_plug:
-
 Connectez l'adaptateur réseau que vous avez stocké dans la variable `$networkAdapter` à un vSwitch nommé "external vm switch".
 
 ```bash
 PS C:\Users\Administrator> Connect-VMNetworkAdapter -VMNetworkAdapter $networkAdapter -SwitchName "external vm switch"
 ```
-<img src= width='' height=''>
+<img src=<img src=images/111111111.jpg width='' height=''> 
 ### Étape 4: Vérifiez l'adaptateur réseau dans la VM :eyes:
 
 À cette étape, vous êtes connecté à votre machine virtuelle. Exécutez la commande `Get-NetAdapter` pour afficher la liste des adaptateurs réseau disponibles dans la machine virtuelle. Cela vous aidera à vérifier si l'adaptateur réseau est correctement connecté au vSwitch.
 
 ```bash
+PS C:\Users\Administrator> Enter-PSSession -VMName VM-RIAD -Credential $cred
 [VM-RIAD]: PS C:\Users\Othman\Documents> Get-NetAdapter
 ```
 <img src= width='' height=''>
@@ -94,7 +91,7 @@ Enfin, configurez une adresse IP statique pour l'interface réseau "ethernet 2" 
 ```bash
 [VM-RIAD]: PS C:\Users\Othman\Documents> New-NetIPAddress -InterfaceAlias "ethernet 2" -IPAddress 10.13.237.140 -AddressFamily IPv4 -DefaultGateway 10.13.237.1 -PrefixLength 24
 ```
-<img src= width='' height=''>
+<img src=images/55555.jpg width='' height=''>
 Et voilà ! Vous avez maintenant configuré votre machine virtuelle avec un vSwitch et une adresse IP statique. :tada:
 ```
 
