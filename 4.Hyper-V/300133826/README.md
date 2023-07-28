@@ -289,7 +289,6 @@ Set-ExecutionPolicy Bypass -Scope Process -Force;
 ```powershell
 choco install musescore -y
 ```
-
 <img src="images/image3 (2).jpeg" width="253" height="337" > </img>
 
 
