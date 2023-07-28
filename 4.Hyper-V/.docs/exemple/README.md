@@ -202,7 +202,7 @@ At line:1 char:1
 
 ## :o2: Connexion à l'Internet :globe_with_meridians:
 
-:one: Sur le serveur Windows :desktop:
+:one: Sur le serveur Windows :desktop_computer:
 
 #### :round_pushpin: Création du commutateur (Switch) virtuel externe sur le serveur
 
@@ -300,11 +300,13 @@ Network Adapter False          VM-Brice External VM Switch 00155D50F10D {Ok}   {
 
 ```
 
+:two: Sur la machine virtuelle :computer:
+
 #### :round_pushpin: Assigner une adresse à la machine virtuelle
 
 Grâce à la création du commutateur virtuel externe, on peut maintenant donner une adresse IP à la machine virtuelle
 
-Se connecter à la machine virtuelle par la session `PSSession` et utiliser les instructions de connexion suivantes:
+:warning: Se connecter à la machine virtuelle par la session `PSSession` et utiliser les instructions de connexion suivantes:
 
 ```powershell
 New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.13.237.1XX" -PrefixLength 24 -DefaultGateway "10.13.237.1"
