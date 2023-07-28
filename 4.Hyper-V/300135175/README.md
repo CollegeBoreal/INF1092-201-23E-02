@@ -52,7 +52,7 @@ Cette commande établit une session PowerShell à distance avec la machine virtu
 
 ## Configuration d'une Machine Virtuelle avec Hyper-V et PowerShell :desktop_computer: :wrench:
 Suivez ces étapes pour configurer une machine virtuelle (VM) sur Hyper-V en utilisant PowerShell.
-###ajouter le switch new-vmswitch -name "external vm switch
+### ajouter le switch new-vmswitch -name "external vm switch
 
 ### Étape 1(sur le serveur): Obtenez la VM :mag:
 
