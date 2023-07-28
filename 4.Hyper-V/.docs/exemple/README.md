@@ -312,7 +312,10 @@ Grâce à la création du commutateur virtuel externe, on peut maintenant donner
 New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.13.237.1XX" -PrefixLength 24 -DefaultGateway "10.13.237.1"
 ```
 
-:bulb: Note: `XX` à remplacer avec votre adresse IP et y ajouter un `1` par exemple si mon adresse IP se termine par `25` (10.13.237.25), il faut rajouter `1` avant `25` soit `10.23.237.125`
+:bulb: Notes: 
+
+* `XX` à remplacer avec votre adresse IP et y ajouter un `1` par exemple si mon adresse IP se termine par `25` (10.13.237.25), il faut rajouter `1` avant `25` soit `10.23.237.125`
+* Vérifier également que l'`InterfaceAlias` ou l'alias de l'interface réseau se nomme bien `Ethernet` sinon utiliser `Get-NetAdapter` pour récupérer le nom de l'interface
 
 #### :round_pushpin: Configurer les adresses DNS
 
