@@ -177,8 +177,10 @@ Response:
 ```powershell
 Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
 ----                      --------------------                    ------- ------       ----------             ---------
-Ethernet                  QLogic BCM5709C Gigabit Ethernet ...#47      18 Up           78-E7-D1-65-6A-EC         1 Gbps
+Ethernet                  Microsoft Hyper-v adapter network       4 Up           00-15-5D-ED-20-0A         100 Gbps
 ```
+<img src="images/image1 (2).jpeg" width="253" height="337" > </img>
+
 2️⃣ Choisir la carte qui a son état à Up (Disponible), prendre le nom de la carte et l'assigner à une variable $net
 ```powershell
 $net = Get-NetAdapter -Name 'Ethernet'
@@ -201,8 +203,8 @@ Reponse:
 ```powershell
 Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
 ----                      --------------------                    ------- ------       ----------             ---------
-Ethernet                  QLogic BCM5709C Gigabit Ethernet ...#47      18 Up           78-E7-D1-65-6A-EC         1 Gbps
-vEthernet (External VM... Hyper-V Virtual Ethernet Adapter             21 Up           78-E7-D1-65-6A-EC         1 Gbp
+Ethernet                  QLogic BCM5709C Gigabit Ethernet ...#47      18 Up           00-15-5D-ED-20-0A         100 Gbps
+vEthernet (External VM... Hyper-V Virtual Ethernet Adapter             21 Up           00-15-5D-ED-20-0A         100 Gbp
 ```
 
 # Assigner une carte réseau virtuelle à la machine virtuelle
@@ -238,6 +240,7 @@ Name            IsManagementOs VMName   SwitchName         MacAddress   Status I
 ----            -------------- ------   ----------         ----------   ------ -----------
 Network Adapter False          Bistarine External VM Switch 00155D50F10D {Ok}   {169.254.143.210}
 ```
+
 # Assigner une adresse à la machine virtuelle
 1️⃣  Se connecter à la machine virtuelle par la session PSSession et utiliser les instructions de connexion suivantes:
 ```powershell
@@ -287,7 +290,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force;
 choco install musescore -y
 ```
 
-
+<img src="images/image3 (2).jpeg" width="253" height="337" > </img>
 
 
 
