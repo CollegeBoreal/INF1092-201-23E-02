@@ -276,7 +276,16 @@ Ethernet                            11 IPv6    {}
 Loopback Pseudo-Interface 1          1 IPv4    {}
 Loopback Pseudo-Interface 1          1 IPv6    {}
 ```
-
+# Installer Choco
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force; 
+     [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; 
+     iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+```
+# Installer muscore :
+```powershell
+choco install musescore -y
+```
 
 
 
