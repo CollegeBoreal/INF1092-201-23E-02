@@ -202,6 +202,8 @@ At line:1 char:1
 
 ## :o2: Connexion à l'Internet :globe_with_meridians:
 
+:one: Sur le serveur Windows :desktop:
+
 #### :round_pushpin: Création du commutateur (Switch) virtuel externe sur le serveur
 
 - [ ] Déterminer les adaptateurs réseaux (Cartes Ethernets)
