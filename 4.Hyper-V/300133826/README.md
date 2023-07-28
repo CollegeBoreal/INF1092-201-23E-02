@@ -1,4 +1,4 @@
-# CREATION DE LA MACHINE VIRTUELLE VM-OTHMAN
+# CREATION DE LA MACHINE VIRTUELLE VM-Othman
 
 1️⃣ Installer le role Hyper V sur Windows Server
 
