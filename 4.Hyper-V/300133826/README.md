@@ -167,6 +167,117 @@ reponse:
 [VM-Othman]: PS C:\Users\Administrators\Documents>
 ```
 
+# Connexion a internet
+📍 Création du commutateur (Switch) virtuel externe sur le serveur
+1️⃣ Déterminer les adaptateurs réseaux (Cartes Ethernets):
+```powershell
+Get-NetAdapter
+```
+Response:
+```powershell
+Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
+----                      --------------------                    ------- ------       ----------             ---------
+Ethernet                  QLogic BCM5709C Gigabit Ethernet ...#47      18 Up           78-E7-D1-65-6A-EC         1 Gbps
+```
+2️⃣ Choisir la carte qui a son état à Up (Disponible), prendre le nom de la carte et l'assigner à une variable $net
+```powershell
+$net = Get-NetAdapter -Name 'Ethernet'
+```
+3️⃣ Créer la Switch Virtuelle (le commutateur virtuel) grâce à la variable $net récupérée ci-dessus
+```powershell
+New-VMSwitch -Name "External VM Switch" -AllowManagementOS $True -NetAdapterName $net.Name
+```
+Reponse:
+```powershell
+Name               SwitchType NetAdapterInterfaceDescription
+----               ---------- ------------------------------
+External VM Switch External   QLogic BCM5709C Gigabit Ethernet (NDIS VBD Client)
+```
+4️⃣ Vérifier que la Switch Virtuelle (le commutateur virtuel) à bien été crée
+```powershell
+get-netadapter
+```
+Reponse:
+```powershell
+Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
+----                      --------------------                    ------- ------       ----------             ---------
+Ethernet                  QLogic BCM5709C Gigabit Ethernet ...#47      18 Up           78-E7-D1-65-6A-EC         1 Gbps
+vEthernet (External VM... Hyper-V Virtual Ethernet Adapter             21 Up           78-E7-D1-65-6A-EC         1 Gbp
+```
+
+# Assigner une carte réseau virtuelle à la machine virtuelle
+1️⃣ Récupérer les paramètres de la VM :
+```powershell
+$vm = Get-VM "Bistarine"
+```
+2️⃣ Assigner les valeurs de la carte réseau de la machine à la variable $networkAdapter
+```powershell
+$networkAdapter = Get-VMNetworkAdapter -VM $vm
+```
+3️⃣ Vérifier que la variable $networkAdapter à bien la bonne information
+```powershell
+$networkAdapter
+```
+Response:
+```powershell
+Name            IsManagementOs VMName   SwitchName MacAddress   Status IPAddresses
+----            -------------- ------   ---------- ----------   ------ -----------
+Network Adapter False          VM-Brice            00155D50F10D {Ok}   {169.254.143.210}
+```
+4️⃣ connecter la carte réseau de la VM à la switch virtuelle
+```powershell
+Connect-VMNetworkAdapter -VMNetworkAdapter $networkAdapter -SwitchName "External VM Switch"
+```
+5️⃣ Vérifier l'assignation en regardant le nom de la colonne SwitchName
+```powershell
+Get-VMNetworkAdapter -VM $vm
+```
+Response:
+```powershell
+Name            IsManagementOs VMName   SwitchName         MacAddress   Status IPAddresses
+----            -------------- ------   ----------         ----------   ------ -----------
+Network Adapter False          VM-Brice External VM Switch 00155D50F10D {Ok}   {169.254.143.210}
+```
+# Assigner une adresse à la machine virtuelle
+1️⃣  Se connecter à la machine virtuelle par la session PSSession et utiliser les instructions de connexion suivantes:
+```powershell
+New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.13.237.132" -PrefixLength 24 -DefaultGateway "10.13.237.1"
+```
+# Configurer les adresses DNS
+1️⃣ Visualiser la configuration présente
+```powershell
+Get-DnsClientServerAddress
+```
+Response:
+```powershell
+nterfaceAlias               Interface Address ServerAddresses
+                             Index     Family
+--------------               --------- ------- ---------------
+Ethernet                            11 IPv4    {}
+Ethernet                            11 IPv6    {fec0:0:0:ffff::1, fec0:0:0:ffff::2, fec...
+Loopback Pseudo-Interface 1          1 IPv4    {}
+Loopback Pseudo-Interface 1          1 IPv6    {}
+```
+2️⃣ Assigner des adresses IP à la configuration DNS 1.1.1.1 étant le DNS de CloudFare, 8.8.8.8 étant le DN de Google
+```powershell
+Set-DNSClientServerAddress "Ethernet" -ServerAddresses ("1.1.1.1","8.8.8.8")
+```
+3️⃣ Visualiser la nouvelle configuration
+```powershell
+Get-DnsClientServerAddress
+```
+Reponse:
+```powershell
+InterfaceAlias               Interface Address ServerAddresses
+                             Index     Family
+--------------               --------- ------- ---------------
+Ethernet                            11 IPv4    {1.1.1.1, 8.8.8.8}
+Ethernet                            11 IPv6    {}
+Loopback Pseudo-Interface 1          1 IPv4    {}
+Loopback Pseudo-Interface 1          1 IPv6    {}
+```
+
+
 
 
 
