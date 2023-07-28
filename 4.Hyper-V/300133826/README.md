@@ -222,7 +222,7 @@ Response:
 ```powershell
 Name            IsManagementOs VMName   SwitchName MacAddress   Status IPAddresses
 ----            -------------- ------   ---------- ----------   ------ -----------
-Network Adapter False          VM-Brice            00155D50F10D {Ok}   {169.254.143.210}
+Network Adapter False          Bistarine            00155D50F10D {Ok}   {169.254.143.210}
 ```
 4️⃣ connecter la carte réseau de la VM à la switch virtuelle
 ```powershell
@@ -236,7 +236,7 @@ Response:
 ```powershell
 Name            IsManagementOs VMName   SwitchName         MacAddress   Status IPAddresses
 ----            -------------- ------   ----------         ----------   ------ -----------
-Network Adapter False          VM-Brice External VM Switch 00155D50F10D {Ok}   {169.254.143.210}
+Network Adapter False          Bistarine External VM Switch 00155D50F10D {Ok}   {169.254.143.210}
 ```
 # Assigner une adresse à la machine virtuelle
 1️⃣  Se connecter à la machine virtuelle par la session PSSession et utiliser les instructions de connexion suivantes:
