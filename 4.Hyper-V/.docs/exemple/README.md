@@ -251,6 +251,53 @@ Ethernet 2                QLogic BCM5709C Gigabit Ethernet ...#48      11 Discon
 
 ```
 
+#### :round_pushpin: Assigner une carte réseau virtuelle à la machine virtuelle
+
+- [ ] Récupérer les paramètres de la VM
+
+```
+$vm = Get-VM "VM-Brice"
+```
+
+- [ ] Assigner les valeurs de la carte réseau de la machine à la variable `$networkAdapter` 
+
+```
+$networkAdapter = Get-VMNetworkAdapter -VM $vm
+```
+
+- [ ] Vérifier que la variable `$networkAdapter` à bien la bonne information
+
+```
+$networkAdapter
+```
+> Response:
+```python
+
+Name            IsManagementOs VMName   SwitchName MacAddress   Status IPAddresses
+----            -------------- ------   ---------- ----------   ------ -----------
+Network Adapter False          VM-Brice            00155D50F10D {Ok}   {169.254.143.210}
+
+```
+
+- [ ] connecter la carte réseau de la VM à la `switch` virtuelle
+
+```
+Connect-VMNetworkAdapter -VMNetworkAdapter $networkAdapter -SwitchName "External VM Switch"
+```
+
+- [ ] Vérifier l'assignation en regardant le nom de la colonne `SwitchName`
+
+```
+Get-VMNetworkAdapter -VM $vm
+```
+> Response:
+```python
+Name            IsManagementOs VMName   SwitchName         MacAddress   Status IPAddresses
+----            -------------- ------   ----------         ----------   ------ -----------
+Network Adapter False          VM-Brice External VM Switch 00155D50F10D {Ok}   {169.254.143.210}
+
+```
+
 #### :round_pushpin: Assigner une adresse à la machine virtuelle
 
 Grâce à la création du commutateur virtuel externe, on peut maintenant donner une adresse IP à la machine virtuelle
@@ -356,4 +403,9 @@ Remove-Item -Path "$ENV:USERPROFILE\Documents\VM-Brice"  -Force
 - [ ] [PowerShell Hyper-V VM creation and boot](https://stackoverflow.com/questions/61144238/powershell-hyper-v-vm-creation-and-boot)
 - [ ] [How To Easily Create a Hyper-V VM Using Powershell](https://www.danielengberg.com/create-hyper-v-vm-powershell/)
 - [ ] [Create a Virtual Switch with PowerShell](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/connect-to-network#create-a-virtual-switch-with-powershell)
+- [ ] Pour Déconnecter une VM Switch
+
+```
+Disconnect-VMNetworkAdapter -VMNetworkAdapter $networkAdapter
+```
 
