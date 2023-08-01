@@ -49,7 +49,7 @@ Display Name                                            Name                    
 ```
 
 
-## :ab: Implémentation de sa machine virtuelle
+## :a: Implémentation de sa machine virtuelle
 
 :pushpin: Créer la machine virtuelle en suivant le modèle suivant
 
@@ -63,7 +63,7 @@ Display Name                                            Name                    
 
 [:point_right: Paramètres de sa machine virtuelle](.docs/IP.md)
 
-## :cl: Créer votre propre page
+## :b: Créer votre propre page
 
 - [ ] Page :id:/`README.md`
 
@@ -72,6 +72,10 @@ Créer votre page permettant la documentation de la création de votre propre ma
 - [ ] Un exemple de page se trouve dans le lien ci-dessous:
 
 [:point_right: Exemple](.docs/exemple)
+
+## :ab: Barème
+
+<img src=images/hyper-V-bareme.png width='' height='' > </img>
 
 # References
 
