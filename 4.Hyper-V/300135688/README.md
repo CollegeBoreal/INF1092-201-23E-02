@@ -222,7 +222,7 @@ Approximate round trip times in milli-seconds:
 ```powershell
 New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.13.237.130" -PrefixLength 24 -DefaultGateway "10.13.237.1"
 ```
-#ceci va afficher un msg d'erreur :
+#ceci va afficher un msg d'erreur :🔧❌❌❌🔧
 ```powershell
 New-NetIPAddress : Instance MSFT_NetIPAddress already exists
     + CategoryInfo          : InvalidArgument: (MSFT_NetIPAddress:ROOT/StandardCimv2/MSFT_NetIPAddress) [New-NetIPAddress], CimException
