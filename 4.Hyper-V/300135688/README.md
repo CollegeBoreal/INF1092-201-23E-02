@@ -130,7 +130,6 @@ resultat
 ```powershell
 New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.13.237.130" -PrefixLength 24 -DefaultGateway "10.13.237.1"
 ```
-results
 
 ##exit
 #Vérifier que la Switch Virtuelle (le commutateur virtuel) à bien été crée
@@ -152,7 +151,7 @@ VM-Massil Running 0           4096              16.10:55:57.9870000 Fonctionneme
 ```PowerShell
 $vm = Get-VM "VM-Massil"
 ```
-#resultat  par la commande :
+#confirmationque ca marche  par la commande :
 ```PowerShell
 $vm
 ```
@@ -162,4 +161,66 @@ Name      State   CPUUsage(%) MemoryAssigned(M) Uptime              Status      
 ----      -----   ----------- ----------------- ------              ------                -------
 VM-Massil Running 0           4096              16.10:55:57.9870000 Fonctionnement normal 10.0
 ```
+#Assigner les valeurs de la carte réseau de la machine à la variable $networkAdapter
+```PowerShell
+$networkAdapter = Get-VMNetworkAdapter -VM $vm
+```
+#Vérifier que la variable $networkAdapter à bien la bonne information:
+```PowerShell
+$networkAdapter
+```
+#resultat :
+```Python
+Name         IsManagementOs VMName    SwitchName MacAddress   Status IPAddresses
+----         -------------- ------    ---------- ----------   ------ -----------
+Carte réseau False          VM-Massil            00155DED1E01 {Ok}   {169.254.121.20, 10.13.237.130, fe80::6be4:2bf6:8cf4:8601}
+```
+#ici, ov va cnnecter la carte réseau de la VM à la switch virtuelle :
+```PowerShell
+ Connect-VMNetworkAdapter -VMNetworkAdapter $networkAdapter -SwitchName "External VM Switch"
+```
+#Vérifier l'assignation en regardant le nom de la colonne SwitchName :
+```PowerShell
+Get-VMNetworkAdapter -VM $vm
+```
+#resultat :
+```Python
+Name         IsManagementOs VMName    SwitchName         MacAddress   Status IPAddresses
+----         -------------- ------    ----------         ----------   ------ -----------
+Carte réseau False          VM-Massil External VM Switch 00155DED1E01 {Ok}   {10.13.237.130, fe80::6be4:2bf6:8cf4:8601}
+```
+#a present on va rentrer dans la machine virtuelle créer :
+```PowerShell
+ Enter-PSSession -VMName VM-Massil -Credential $cred
+```
+#par la commande 
+```PowerShell
+ Get-NetAdapter
+```
+#résultat :
+```Python
+
+Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
+----                      --------------------                    ------- ------       ----------             ---------
+Ethernet                  Microsoft Hyper-V Network Adapter             8 Up           00-15-5D-ED-1E-01         1 Gbps
+```
+#On va pinger google pour tester :
+```PowerShell
+ping google.com
+```
+#résultat :
+```Python
+
+Pinging google.com [142.251.32.78] with 32 bytes of data:
+Reply from 142.251.32.78: bytes=32 time=15ms TTL=109
+Reply from 142.251.32.78: bytes=32 time=15ms TTL=109
+Reply from 142.251.32.78: bytes=32 time=23ms TTL=109
+Reply from 142.251.32.78: bytes=32 time=15ms TTL=109
+
+Ping statistics for 142.251.32.78:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 15ms, Maximum = 23ms, Average = 17ms
+```
+
 
