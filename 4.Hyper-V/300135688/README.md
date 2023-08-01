@@ -228,12 +228,8 @@ New-NetIPAddress : Instance MSFT_NetIPAddress already exists
     + CategoryInfo          : InvalidArgument: (MSFT_NetIPAddress:ROOT/StandardCimv2/MSFT_NetIPAddress) [New-NetIPAddress], CimException
     + FullyQualifiedErrorId : Windows System Error 87,New-NetIPAddress
 ```
-#disant que l'adresse ip que j'ai donné est deja existante, car je l'ai deja crée graphiquement au paravant, donc a présent je vais la 
-supprimer graphiquement aussi , en image ci dessous avant avoir supprimer toute ces données entrer :
+#disant que l'adresse ip que j'ai donné est deja existante, car je l'ai deja crée graphiquement au paravant, tout ce qui me reste a faire c'est de la supprimer graphiquement comme on le vois sur l'image
 
-```powershell
-WhatsApp Image 2023-08-01 at 18.38.38.jpg
-```
 <img src="images/WhatsApp Image 2023-08-01 at 18.38.38.jpg" width="500" height="400" > </img>
 
 
@@ -271,6 +267,5 @@ PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
 SkipAsSource      : False
 PolicyStore       : PersistentStore
 ```
-
-
+#j'ai finis
 
