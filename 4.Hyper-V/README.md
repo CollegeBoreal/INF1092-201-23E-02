@@ -77,6 +77,8 @@ Créer votre page permettant la documentation de la création de votre propre ma
 
 <img src=images/hyper-V-bareme.png width='' height='' > </img>
 
+:bulb: Pour l'accès à la VM :two: avec GUI, fournir l'image de l'instance Windows suffira
+
 # References
 
 - [ ] [How to Install the Hyper-V PowerShell Module (updated for Windows Server 2019)](https://www.altaro.com/hyper-v/install-hyper-v-powershell-module/)
