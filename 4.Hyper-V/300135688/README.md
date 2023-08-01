@@ -237,4 +237,40 @@ WhatsApp Image 2023-08-01 at 18.38.38.jpg
 <img src="images/WhatsApp Image 2023-08-01 at 18.38.38.jpg" width="500" height="400" > </img>
 
 
+# et voila maintentant que j'ai tout supprimer, je vais attribué l'addresse ip a la VM-Massil avec la commande ci dessous :
+```powershell
+New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.13.237.130" -PrefixLength 24 -DefaultGateway "10.13.237.1"
+```
+#on va avoir le résultat suivant :
+```Python
+IPAddress         : 10.13.237.130
+InterfaceIndex    : 8
+InterfaceAlias    : Ethernet
+AddressFamily     : IPv4
+Type              : Unicast
+PrefixLength      : 24
+PrefixOrigin      : Manual
+SuffixOrigin      : Manual
+AddressState      : Tentative
+ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+SkipAsSource      : False
+PolicyStore       : ActiveStore
+
+IPAddress         : 10.13.237.130
+InterfaceIndex    : 8
+InterfaceAlias    : Ethernet
+AddressFamily     : IPv4
+Type              : Unicast
+PrefixLength      : 24
+PrefixOrigin      : Manual
+SuffixOrigin      : Manual
+AddressState      : Invalid
+ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+SkipAsSource      : False
+PolicyStore       : PersistentStore
+```
+
+
 
