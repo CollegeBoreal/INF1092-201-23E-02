@@ -126,10 +126,6 @@ resultat
 ```python
 [VM-Massil] : PS C:\Users\Massil\Documents>
 ```
-#attribution de l'addresse ip a la VM-Massil
-```powershell
-New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.13.237.130" -PrefixLength 24 -DefaultGateway "10.13.237.1"
-```
 
 ##exit
 #Vérifier que la Switch Virtuelle (le commutateur virtuel) à bien été crée
@@ -222,5 +218,21 @@ Ping statistics for 142.251.32.78:
 Approximate round trip times in milli-seconds:
     Minimum = 15ms, Maximum = 23ms, Average = 17ms
 ```
+#attribution de l'addresse ip a la VM-Massil
+```powershell
+New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.13.237.130" -PrefixLength 24 -DefaultGateway "10.13.237.1"
+```
+#ceci va afficher un msg d'erreur :
+```powershell
+New-NetIPAddress : Instance MSFT_NetIPAddress already exists
+    + CategoryInfo          : InvalidArgument: (MSFT_NetIPAddress:ROOT/StandardCimv2/MSFT_NetIPAddress) [New-NetIPAddress], CimException
+    + FullyQualifiedErrorId : Windows System Error 87,New-NetIPAddress
+```
+#disant que l'adresse ip que j'ai donné est deja existante, car je l'ai deja crée graphiquement au paravant, donc a présent je vais la 
+supprimer graphiquement aussi , en image ci dessous avant avoir supprimer toute ces données entrer :
+
+```powershell
+```
+
 
 
