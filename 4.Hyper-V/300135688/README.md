@@ -234,7 +234,7 @@ supprimer graphiquement aussi , en image ci dessous avant avoir supprimer toute 
 ```powershell
 WhatsApp Image 2023-08-01 at 18.38.38.jpg
 ```
-<img src="images/WhatsApp Image 2023-08-01 at 18.38.38.jpg" width="600" height="500" > </img>
+<img src="images/WhatsApp Image 2023-08-01 at 18.38.38.jpg" width="500" height="400" > </img>
 
 
 
