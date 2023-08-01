@@ -185,8 +185,12 @@ get-netadapter
 ```
 > Resultat :
 ```Python
+
+Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
 ----                      --------------------                    ------- ------       ----------             ---------
-Ethernet                  Microsoft Hyper-V Network Adapter             5 Disconnected 00-15-5D-ED-1A-02        10 Gbps
+vEthernet (External VM... Hyper-V Virtual Ethernet Adapter             11 Up           D8-D3-85-E0-AC-7C         1 Gbps
+Ethernet 2                QLogic BCM5709C Gigabit Ethernet ...#48       7 Disconnected D8-D3-85-E0-AC-7E          0 bps
+Ethernet                  QLogic BCM5709C Gigabit Ethernet ...#47       5 Up           D8-D3-85-E0-AC-7C         1 Gbps
 ```
 
 
