@@ -185,7 +185,7 @@ Name         IsManagementOs VMName    SwitchName         MacAddress   Status IPA
 ----         -------------- ------    ----------         ----------   ------ -----------
 Carte réseau False          VM-Massil External VM Switch 00155DED1E01 {Ok}   {10.13.237.130, fe80::6be4:2bf6:8cf4:8601}
 ```
-# a present on va rentrer dans la machine virtuelle créer :
+# a present on va rentrer dans la machine virtuelle créer :👀   >>> ici on va exécutez la commande Get-NetAdapter pour afficher la liste des adaptateurs réseau disponibles dans la machine virtuelle. Cela va aider  à vérifier si l'adaptateur réseau est correctement connecté au vSwitch.
 ```PowerShell
  Enter-PSSession -VMName VM-Massil -Credential $cred
 ```
@@ -231,7 +231,6 @@ New-NetIPAddress : Instance MSFT_NetIPAddress already exists
 #disant que l'adresse ip que j'ai donné est deja existante, car je l'ai deja crée graphiquement au paravant, tout ce qui me reste a faire c'est de la supprimer graphiquement comme on le vois sur l'image
 
 <img src="images/WhatsApp Image 2023-08-01 at 18.38.38.jpg" width="500" height="400" > </img>
-
 
 #et voila maintentant que j'ai tout supprimer, je vais attribué l'addresse ip a la VM-Massil avec la commande ci dessous :
 ```powershell
