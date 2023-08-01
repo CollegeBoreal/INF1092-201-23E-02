@@ -232,7 +232,9 @@ New-NetIPAddress : Instance MSFT_NetIPAddress already exists
 supprimer graphiquement aussi , en image ci dessous avant avoir supprimer toute ces données entrer :
 
 ```powershell
+WhatsApp Image 2023-08-01 at 18.38.38.jpg
 ```
-
+WhatsApp Image 2023-08-01 at 18.38.38.jpg
+#WhatsApp Image 2023-08-01 at 18.38.38.jpg
 
 
