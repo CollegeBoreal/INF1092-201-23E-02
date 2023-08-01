@@ -14,6 +14,19 @@
 
 <img src="images/c2a9a628-279e-4258-8b27-9090d4be509d.jpg" width="253" height="337" > </img>
 
+<img src="images/WhatsApp Image 2023-08-01 at 17.59.45.jpeg" width="253" height="337" > </img>
+
+<img src="images/WhatsApp Image 2023-08-01 at 17.59.46 (1).jpeg" width="253" height="337" > </img>
+
+<img src="images/WhatsApp Image 2023-08-01 at 17.59.46 (2).jpeg" width="253" height="337" > </img>
+
+
+<img src="images/WhatsApp Image 2023-08-01 at 17.59.46.jpeg" width="253" height="337" > </img>
+
+<img src="images/WhatsApp Image 2023-08-01 at 17.59.47.jpeg" width="253" height="337" > </img>
+
+
+
 🎰En conclusion, l'installation du système d'exploitation Windows Server sur un serveur constitue une étape essentielle pour mettre en place une infrastructure informatique robuste et performante. Tout au long de ce processus, nous avons pu constater l'importance de suivre les étapes avec précision et de se préparer adéquatement afin de garantir un déploiement réussi.
 
 En choisissant Windows Server comme système d'exploitation, vous bénéficiez d'une plateforme fiable, sécurisée et évolutive, adaptée aux besoins des entreprises de toutes tailles. Cette solution offre une gamme complète de fonctionnalités, notamment la gestion des utilisateurs, le partage de fichiers, la virtualisation, la sécurité renforcée et bien plus encore.
