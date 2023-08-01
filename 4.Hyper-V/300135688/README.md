@@ -127,4 +127,39 @@ resultat
 [VM-Massil] : PS C:\Users\Massil\Documents>
 ```
 #attribution de l'addresse ip a la VM-Massil
+```powershell
+New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.13.237.130" -PrefixLength 24 -DefaultGateway "10.13.237.1"
+```
+results
+
+##exit
+#Vérifier que la Switch Virtuelle (le commutateur virtuel) à bien été crée
+```powershell
+get-netadapter
+```
+#verification par la commande :
+```PowerShell
+$vm
+```
+#resultat:
+```Python
+
+Name      State   CPUUsage(%) MemoryAssigned(M) Uptime              Status                Version
+----      -----   ----------- ----------------- ------              ------                -------
+VM-Massil Running 0           4096              16.10:55:57.9870000 Fonctionnement normal 10.0
+```
+#📍 Assigner une carte réseau virtuelle à la machine virtuelle
+```PowerShell
+$vm = Get-VM "VM-Massil"
+```
+#resultat  par la commande :
+```PowerShell
+$vm
+```
+#resultat :
+```Python
+Name      State   CPUUsage(%) MemoryAssigned(M) Uptime              Status                Version
+----      -----   ----------- ----------------- ------              ------                -------
+VM-Massil Running 0           4096              16.10:55:57.9870000 Fonctionnement normal 10.0
+```
 
