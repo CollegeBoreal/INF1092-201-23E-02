@@ -185,7 +185,6 @@ get-netadapter
 ```
 > Resultat :
 ```Python
-
 Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
 ----                      --------------------                    ------- ------       ----------             ---------
 vEthernet (External VM... Hyper-V Virtual Ethernet Adapter             11 Up           D8-D3-85-E0-AC-7C         1 Gbps
