@@ -14,7 +14,7 @@
 4. 🖥️ **Commande 4 :** `$VM = New-VM -Name VM-Valentin -Path "$ENV:USERPROFILE\Documents" -MemoryStartupBytes 8GB -VHDPath "$ENV:USERPROFILE\Documents\VM-Valentin.vhdx"`
    Cette commande crée une nouvelle machine virtuelle (VM) avec le nom "VM-Valentin". La VM est configurée avec 8GB de mémoire et le chemin du disque virtuel est spécifié.Résultat ↓
 
-<img src=images/ width='' height='' >
+<img src=i width='' height='' >
 5. 💻 **Commande 5 :** `Get-VM`
    Cette commande affiche les informations sur toutes les machines virtuelles présentes. Elle est utilisée pour vérifier si la machine virtuelle "VM-RIAD" a été créée avec succès.Résultat ↓
 <img src=images/IMG-4.jpg width='' height='' >
@@ -23,23 +23,23 @@
    Cette commande récupère les informations sur le lecteur DVD de la machine virtuelle "VM-RIAD". Elle permet de vérifier si un lecteur DVD virtuel est attaché à la machine virtuelle.Résultat ↓
 <img src=images/IMG-5.jpg width='' height='' >
 7. ➕ **Commande 7 :** `Add-VMDvdDrive -VMName "VM-Valentin" -Path "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"`
-   Cette commande ajoute un lecteur DVD à la machine virtuelle "VM-Valentin" en utilisant le chemin du fichier ISO spécifié. Elle permet d'attacher un lecteur DVD virtuel contenant l'image disque ISO de Windows 10 à la machine virtuelle.Résultat ↓
-<img src=images/width='' height='' >
+   Cette commande ajoute un lecteur DVD à la machine virtuelle "VM-Valentin" en utilisant le chemin du fichier ISO spécifié. Elle permet d'attacher un lecteur DVD virtuel contenant l'image disque ISO de Windows 10 à la machine virtuelle.
+
 8. 📀 **Commande 8 :** `Get-VMDVDDrive -VMName "VM-Valentin"`
    Cette commande vérifie les informations sur le lecteur DVD de la machine virtuelle "VM-RIAD" pour confirmer qu'il a été ajouté avec succès.Résultat ↓
-<img src=images/ width='' height='' >
+
 9. ▶️ **Commande 9 :** `Start-VM VM-Valentin`
-   Cette commande démarre la machine virtuelle "VM-Valentin".Résultat ↓
-<img src= width='' height='' >
+   Cette commande démarre la machine virtuelle "VM-Valentin".
+
 10. 🌐 **Commande 10 :** `$HostName = [System.Net.DNS]::GetHostByName($Null).HostName`
-   Cette ligne de code récupère le nom d'hôte de la machine virtuelle.Résultat ↓
-<img src=images/width='' height='' >
+   Cette ligne de code récupère le nom d'hôte de la machine virtuelle.
+   
 11. 🔌 **Commande 11 :** `vmconnect $HostName VM-Valentin`
-   Cette commande ouvre une connexion à distance avec la machine virtuelle "VM-Valentin" en utilisant le nom d'hôte récupéré précédemment.Résultat ↓
-<img src=images/width='' height='' >
+   Cette commande ouvre une connexion à distance avec la machine virtuelle "VM-Valentin" en utilisant le nom d'hôte récupéré précédemment.
+   
 12. 🔒 **Commande 12 :** `$cred = Get-Credential`
    Cette commande stocke les informations d'identification dans la variable $cred en utilisant la commande Get-Credential.Résultat ↓
-<img src=images/ width='' height='' >
+<img src= width='' height='' >
 13. 💻 **Commande 13 :** `Enter-PSSession -VMName VM-Valentin -Credential $cred`
 Cette commande établit une session PowerShell à distance avec la machine virtuelle "VM-Valentin" en utilisant les informations d'identification fournies dans la variable $cred.Résultat ↓
 <img src=images/IMG-6.jpg  width='' height=''>
@@ -66,6 +66,7 @@ Obtenez l'adaptateur réseau de la VM que vous avez stockée dans la variable `$
 PS C:\Users\Administrator> $networkAdapter = Get-VMNetworkAdapter -VM $vm
 ```
 <img src=images/IMG-10.jpg width='' height=''>
+
 ### Étape 3(sur le serveur): Connectez l'adaptateur réseau au vSwitch :electric_plug:
 Connectez l'adaptateur réseau que vous avez stocké dans la variable `$networkAdapter` à un vSwitch nommé "external vm switch".
 
@@ -73,6 +74,7 @@ Connectez l'adaptateur réseau que vous avez stocké dans la variable `$networkA
 PS C:\Users\Administrator> Connect-VMNetworkAdapter -VMNetworkAdapter $networkAdapter -SwitchName "external vm switch"
 ```
 <img src=<img src=images/IMG-11.jpg width='' height=''> 
+
 ### Étape 4: Vérifiez l'adaptateur réseau dans la VM :
 
 À cette étape, vous êtes connecté à votre machine virtuelle. Exécutez la commande `Get-NetAdapter` pour afficher la liste des adaptateurs réseau disponibles dans la machine virtuelle. Cela vous aidera à vérifier si l'adaptateur réseau est correctement connecté au vSwitch.
@@ -81,9 +83,6 @@ PS C:\Users\Administrator> Connect-VMNetworkAdapter -VMNetworkAdapter $networkAd
 PS C:\Users\Administrator> Enter-PSSession -VMName VM-Valentin -Credential $cred
 [VM-Valentin]: PS C:\Users\Othman\Documents> Get-NetAdapter
 ```
-
-<img src=images/ width='' height=''>
-<img src=images/ width='' height=''>
 
 ### Étape 5: Configurez l'adresse IP dans la VM :globe_with_meridians:
 
