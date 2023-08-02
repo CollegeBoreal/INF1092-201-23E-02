@@ -145,4 +145,26 @@ Enter-PSSession -VMName VM-ESTELLE -Credential $cred
 ```powershell
 New-NetIPAddress -InterfaceAlias "Ethernet 2" -IPAddress "10.13.237.134" -PrefixLength 24 -DefaultGateway "10.13.237.1"
 
+InterfaceAlias               Interface Address ServerAddresses
+                             Index     Family
+--------------               --------- ------- ---------------
+Ethernet                             7 IPv4    {1.1.1.1, 8.8.8.8}
+Ethernet                             7 IPv6    {}
+Loopback Pseudo-Interface 1          1 IPv4    {}
+Loopback Pseudo-Interface 1          1 IPv6    {fec0:0:0:ffff::1, fec0:0:0:ffff::2, fec0:0:0:ffff::3}
+
+
+
+ComputerName           : google.com
+RemoteAddress          : 142.251.33.174
+InterfaceAlias         : Ethernet
+SourceAddress          : 10.13.237.134
+PingSucceeded          : True
+PingReplyDetails (RTT) : 15 ms
+
+Name            IsManagementOs VMName     SwitchName         MacAddress   Status IPAddresses
+----            -------------- ------     ----------         ----------   ------ -----------
+Network Adapter False          VM-ESTELLE External VM Switch 00155DED2201        {}
+
+
 
