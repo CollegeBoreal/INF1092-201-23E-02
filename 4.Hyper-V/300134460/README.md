@@ -146,3 +146,87 @@ vEthernet (External VM... Hyper-V Virtual Ethernet Adapter             12 Up    
 Ethernet 2                QLogic BCM5709C Gigabit Ethernet ...#49       7 Up           3C-4A-92-F3-3F-74         1 Gbps
 Ethernet 4                QLogic BCM5709C Gigabit Ethernet ...#50       6 Disconnected 3C-4A-92-F3-3F-76          0 bps
 Ethernet 3                QLogic BCM5709C Gigabit Ethernet ...#52       2 Disconnected 3C-4A-92-F3-3F-72          0 bps
+🎈 Assigner une carte reseau virtuelle a la machine 
+[ ] Recuperer les parametres de la VM
+''' powershell
+$vm = Get-VM "VM-abdramane"
+[ ]  Assigner les valeurs de la carte réseau de la machine à la variable 
+''' powershell
+$networkAdapter = Get-VMNetworkAdapter -VM $vm
+[ ]  Vérifier que la variable $networkAdapter à bien la bonne information
+''' powershell 
+$networkAdapter
+< resultat >
+Name            IsManagementOs VMName       SwitchName MacAddress   Status IPAddresses
+----            -------------- ------       ---------- ----------   ------ -----------
+Network Adapter False          VM-abdramane            00155DED1F01 {Ok}   {169.254.155.125, fe80::4826:31e6:486c:c083}
+[ ] connecter la carte réseau de la VM à la switch virtuelle
+''' powershell
+Connect-VMNetworkAdapter -VMNetworkAdapter $networkAdapter -SwitchName "External VM Switch"
+[ ]  Vérifier l'assignation en regardant le nom de la colonne SwitchName
+''' powershell 
+Get-VMNetworkAdapter -VM $vm
+< resultat >
+Name            IsManagementOs VMName       SwitchName         MacAddress   Status IPAddresses
+----            -------------- ------       ----------         ----------   ------ -----------
+Network Adapter False          VM-abdramane External VM Switch 00155DED1F01 {Ok}   {169.254.155.125, fe80::4826:31e6...
+🔢 sur la machine virtuelle 😱
+🎈 Assigner une adresse a la machine virtuelle
+''' powershell 
+New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.13.237.1XX" -PrefixLength 24 -DefaultGateway "10.13.237.1"
+< resultat > 
+New-NetIPAddress : Instance MSFT_NetIPAddress already exists
+At line:1 char:1
++ New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.13.237.131 ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (MSFT_NetIPAddress:ROOT/StandardCimv2/MSFT_NetIPAddress) [New-NetIPAddr
+   ess], CimException
+    + FullyQualifiedErrorId : Windows System Error 87,New-NetIPAddress
+  🎈 Configurer les addresses DNS
+  [ ] Visualiser la configuration présente
+  ''' powershell
+  Get-DnsClientServerAddress
+  < resultat >
+  InterfaceAlias               Interface Address ServerAddresses
+                             Index     Family
+--------------               --------- ------- ---------------
+Ethernet                             9 IPv4    {1.1.1.1, 8.8.8.8}
+Ethernet                             9 IPv6    {}
+Ethernet 3                           2 IPv4    {}
+Ethernet 3                           2 IPv6    {fec0:0:0:ffff::1, fec0:0:0:ffff::2, fec0:0:0:ffff::3}
+Ethernet 4                           6 IPv4    {}
+Ethernet 4                           6 IPv6    {fec0:0:0:ffff::1, fec0:0:0:ffff::2, fec0:0:0:ffff::3}
+vEthernet (External VM Sw...        12 IPv4    {8.8.8.8, 1.1.1.1}
+vEthernet (External VM Sw...        12 IPv6    {}
+Loopback Pseudo-Interface 1          1 IPv4    {}
+Loopback Pseudo-Interface 1          1 IPv6    {fec0:0:0:ffff::1, fec0:0:0:ffff::2, fec0:0:0:ffff::3}
+[ ] Assigner des adresses IP à la configuration DNS 1.1.1.1 étant le DNS de CloudFare, 8.8.8.8 étant le DN de Google
+''' powershell
+Set-DNSClientServerAddress "Ethernet" -ServerAddresses ("1.1.1.1","8.8.8.8")
+[ ] Visualiser la nouvelle configuration
+''' powershell
+Get-DnsClientServerAddress
+< resultat >
+InterfaceAlias               Interface Address ServerAddresses
+                             Index     Family
+--------------               --------- ------- ---------------
+Ethernet                             9 IPv4    {1.1.1.1, 8.8.8.8}
+Ethernet                             9 IPv6    {}
+Ethernet 3                           2 IPv4    {}
+Ethernet 3                           2 IPv6    {fec0:0:0:ffff::1, fec0:0:0:ffff::2, fec0:0:0:ffff::3}
+Ethernet 4                           6 IPv4    {}
+Ethernet 4                           6 IPv6    {fec0:0:0:ffff::1, fec0:0:0:ffff::2, fec0:0:0:ffff::3}
+vEthernet (External VM Sw...        12 IPv4    {8.8.8.8, 1.1.1.1}
+vEthernet (External VM Sw...        12 IPv6    {}
+Loopback Pseudo-Interface 1          1 IPv4    {}
+Loopback Pseudo-Interface 1          1 IPv6    {fec0:0:0:ffff::1, fec0:0:0:ffff::2, fec0:0:0:ffff::3}
+[ ] Tester la connection externe (ping)
+''' powershell
+Test-NetConnection -ComputerName "google.com"
+< resultat> 
+ComputerName   : google.com
+RemoteAddress  :
+InterfaceAlias :
+SourceAddress  :
+PingSucceeded  : False
+  
