@@ -45,27 +45,27 @@ Cette commande établit une session PowerShell à distance avec la machine virtu
 <img src=images/IMG-6.jpg  width='' height=''>
 
 
-
+# 🅰️  Configuration de la VM
 
 ## Configuration d'une Machine Virtuelle avec Hyper-V et PowerShell :desktop_computer: :wrench:
 Suivez ces étapes pour configurer une machine virtuelle (VM) sur Hyper-V en utilisant PowerShell.
 ### ajouter le switch new-vswitch -name "external vm switch
 
-### Étape 1(sur le serveur): Obtenez la VM :mag:
+### Étape 1(sur le serveur): Obtenez la VM 
 
 Obtenez la VM que vous voulez configurer et stockez l'objet de cette VM dans une variable appelée `$vm`.
 
 ```bash
-PS C:\Users\Administrator> $vm = Get-VM -Name "vm-riad"
+PS C:\Users\Administrator> $vm = Get-VM -Name "vm-Valentin"
 ```
-### Étape 2(sur le serveur): Obtenez l'adaptateur réseau de la VM :satellite:
+### Étape 2(sur le serveur): Obtenez l'adaptateur réseau de la VM 
 
 Obtenez l'adaptateur réseau de la VM que vous avez stockée dans la variable `$vm` et stockez cet adaptateur réseau dans une variable appelée `$networkAdapter`.
 
 ```bash
 PS C:\Users\Administrator> $networkAdapter = Get-VMNetworkAdapter -VM $vm
 ```
-<img src= width='' height=''>
+<img src=images/IMG-10.jpg width='' height=''>
 ### Étape 3(sur le serveur): Connectez l'adaptateur réseau au vSwitch :electric_plug:
 Connectez l'adaptateur réseau que vous avez stocké dans la variable `$networkAdapter` à un vSwitch nommé "external vm switch".
 
