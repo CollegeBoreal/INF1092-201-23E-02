@@ -80,7 +80,7 @@ PS> $HostName = [System.Net.DNS]::GetHostByName($Null).HostName
 ```bash
 PS> $cred = Get-Credential
 ```
-Cette commande stocke les informations d'identification dans la variable $cred en utilisant la commande Get-Credential.Résultat ↓
+Cette commande stocke les informations d'identification dans la variable $cred en utilisant la commande Get-Credential.
 
 💻 **Commande 13 :** 
 ```bash
