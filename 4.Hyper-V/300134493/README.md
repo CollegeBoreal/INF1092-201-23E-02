@@ -195,6 +195,7 @@ Ethernet                  QLogic BCM5709C Gigabit Ethernet ...#47       5 Up    
 ```
 ## Assigner une carte reseau a la machine virtuelle
 - [ ] Récuperer les paramètres de la VM
+
 ```powershell
 $vm = Get-VM "VM-Thera"
 ```
