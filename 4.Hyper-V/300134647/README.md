@@ -17,11 +17,11 @@
 <img src=images/444.jpg width='' height='' >
 5. 💻 **Commande 5 :** `Get-VM`
    Cette commande affiche les informations sur toutes les machines virtuelles présentes. Elle est utilisée pour vérifier si la machine virtuelle "VM-RIAD" a été créée avec succès.Résultat ↓
-<img src=images/444.jpg width='' height='' >
+<img src=images/IMG-4.jpg width='' height='' >
 
 6. 📀 **Commande 6 :** `Get-VMDVDDrive -VMName "VM-RIAD"`
    Cette commande récupère les informations sur le lecteur DVD de la machine virtuelle "VM-RIAD". Elle permet de vérifier si un lecteur DVD virtuel est attaché à la machine virtuelle.Résultat ↓
-<img src=images/5555.jpg width='' height='' >
+<img src=images/IMG-5.jpg width='' height='' >
 7. ➕ **Commande 7 :** `Add-VMDvdDrive -VMName "VM-RIAD" -Path "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"`
    Cette commande ajoute un lecteur DVD à la machine virtuelle "VM-RIAD" en utilisant le chemin du fichier ISO spécifié. Elle permet d'attacher un lecteur DVD virtuel contenant l'image disque ISO de Windows 10 à la machine virtuelle.Résultat ↓
 <img src=images/1111111.jpg width='' height='' >
