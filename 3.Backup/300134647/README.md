@@ -21,7 +21,7 @@ On computer: WIN-KDJ5GSJ8GAD
  Dans l'utilitaire `DISKPART` selectionner et attacher le disque virtuel à sauvegarder
 
 ```
-DISKPART> select vdisk file="C:\Users\Wend\Documents\VM-Valentin.vhdx"
+DISKPART> select vdisk file="C:\Users\Administrator\Documents\VM-Valentin.vhdx"
 DISKPART> attach vdisk
 DISKPART> exit
 ```
