@@ -1,8 +1,8 @@
 # 🅰️  Creation de la VM
 
- ⚙️ **Com 1 :**
+ ⚙️ **Commande 1 :**
  ```bash
- New-VHD -Path "$ENV:USERPROFILE\Documents\VM-Valentin.vhdx" -SizeBytes 32GB -Dynamic
+ PS> New-VHD -Path "$ENV:USERPROFILE\Documents\VM-Valentin.vhdx" -SizeBytes 32GB -Dynamic
  ```
 Cette commande crée un nouveau disque virtuel (VHD) avec une taille de 64GB et un format dynamique. Elle prépare le disque virtuel sur lequel la machine virtuelle sera installée. 
 
@@ -10,45 +10,78 @@ Cette commande crée un nouveau disque virtuel (VHD) avec une taille de 64GB et 
 
  🖼️ **Commande 2 :**
  ```bash
- Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
+ PS> Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
 ```
-   Cette commande monte une image disque à partir d'un fichier ISO de Windows 10. L'image disque ISO contient les fichiers d'installation de Windows 10.Résultat ↓
+ Cette commande monte une image disque à partir d'un fichier ISO de Windows 10. L'image disque ISO contient les fichiers d'installation de Windows 10.
+
 <img src=images/IMG-2.jpg  width='' height='' >
-8. 💽 **Commande 3 :** `Get-PSDrive -PSProvider FileSystem`
-   Cette commande affiche les lecteurs de disque disponibles sur le système. Elle permet de vérifier les lecteurs de disque actuellement montés.Résultat ↓
+
+ 💽 **Commande 3 :** 
+ ```bash
+ PS> Get-PSDrive -PSProvider FileSystem
+```
+   Cette commande affiche les lecteurs de disque disponibles sur le système. Elle permet de vérifier les lecteurs de disque actuellement montés.
 
 <img src=images/IMG-3.jpg  width='' height='' >
-4. 🖥️ **Commande 4 :** `$VM = New-VM -Name VM-Valentin -Path "$ENV:USERPROFILE\Documents" -MemoryStartupBytes 8GB -VHDPath "$ENV:USERPROFILE\Documents\VM-Valentin.vhdx"`
-   Cette commande crée une nouvelle machine virtuelle (VM) avec le nom "VM-Valentin". La VM est configurée avec 8GB de mémoire et le chemin du disque virtuel est spécifié.Résultat ↓
 
-<img src=i width='' height='' >
-5. 💻 **Commande 5 :** `Get-VM`
-   Cette commande affiche les informations sur toutes les machines virtuelles présentes. Elle est utilisée pour vérifier si la machine virtuelle "VM-RIAD" a été créée avec succès.Résultat ↓
+🖥️ **Commande 4 :** 
+```bash
+PS> $VM = New-VM -Name VM-Valentin -Path "$ENV:USERPROFILE\Documents" -MemoryStartupBytes 8GB -VHDPath "$ENV:USERPROFILE\Documents\VM-Valentin.vhdx"
+```
+   Cette commande crée une nouvelle machine virtuelle (VM) avec le nom "VM-Valentin". La VM est configurée avec 8GB de mémoire et le chemin du disque virtuel est spécifié.
+ 
+ 💻 **Commande 5 :** 
+ ```bash
+ PS> Get-VM
+```
+Cette commande affiche les informations sur toutes les machines virtuelles présentes. Elle est utilisée pour vérifier si la machine virtuelle "VM-RIAD" a été créée avec succès.
+
 <img src=images/IMG-4.jpg width='' height='' >
 
-6. 📀 **Commande 6 :** `Get-VMDVDDrive -VMName "VM-RIAD"`
-   Cette commande récupère les informations sur le lecteur DVD de la machine virtuelle "VM-RIAD". Elle permet de vérifier si un lecteur DVD virtuel est attaché à la machine virtuelle.Résultat ↓
+ 📀 **Commande 6 :** ```bash
+ PS> Get-VMDVDDrive -VMName "VM-RIAD"
+ ```
+Cette commande récupère les informations sur le lecteur DVD de la machine virtuelle "VM-RIAD". Elle permet de vérifier si un lecteur DVD virtuel est attaché à la machine virtuelle.
+
 <img src=images/IMG-5.jpg width='' height='' >
-7. ➕ **Commande 7 :** `Add-VMDvdDrive -VMName "VM-Valentin" -Path "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"`
-   Cette commande ajoute un lecteur DVD à la machine virtuelle "VM-Valentin" en utilisant le chemin du fichier ISO spécifié. Elle permet d'attacher un lecteur DVD virtuel contenant l'image disque ISO de Windows 10 à la machine virtuelle.
 
-8. 📀 **Commande 8 :** `Get-VMDVDDrive -VMName "VM-Valentin"`
-   Cette commande vérifie les informations sur le lecteur DVD de la machine virtuelle "VM-RIAD" pour confirmer qu'il a été ajouté avec succès.Résultat ↓
+ ➕ **Commande 7 :** ```bash
+PS> Add-VMDvdDrive -VMName "VM-Valentin" -Path "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
+```
+Cette commande ajoute un lecteur DVD à la machine virtuelle "VM-Valentin" en utilisant le chemin du fichier ISO spécifié. Elle permet d'attacher un lecteur DVD virtuel contenant l'image disque ISO de Windows 10 à la machine virtuelle.
 
-9. ▶️ **Commande 9 :** `Start-VM VM-Valentin`
-   Cette commande démarre la machine virtuelle "VM-Valentin".
+📀 **Commande 8 :** ```bash
+PS> Get-VMDVDDrive -VMName "VM-Valentin"
+```
+Cette commande vérifie les informations sur le lecteur DVD de la machine virtuelle "VM-RIAD" pour confirmer qu'il a été ajouté avec succès.Résultat ↓
 
-10. 🌐 **Commande 10 :** `$HostName = [System.Net.DNS]::GetHostByName($Null).HostName`
-   Cette ligne de code récupère le nom d'hôte de la machine virtuelle.
+▶️ **Commande 9 :**
+```bash
+PS> Start-VM VM-Valentin
+```
+ Cette commande démarre la machine virtuelle "VM-Valentin".
+
+🌐 **Commande 10 :**
+```bash
+PS> $HostName = [System.Net.DNS]::GetHostByName($Null).HostName
+```
+ Cette ligne de code récupère le nom d'hôte de la machine virtuelle.
    
-11. 🔌 **Commande 11 :** `vmconnect $HostName VM-Valentin`
-   Cette commande ouvre une connexion à distance avec la machine virtuelle "VM-Valentin" en utilisant le nom d'hôte récupéré précédemment.
+ 🔌 **Commande 11 :** ```bash
+ PS> vmconnect $HostName VM-Valentin
+ ```
+ Cette commande ouvre une connexion à distance avec la machine virtuelle "VM-Valentin" en utilisant le nom d'hôte récupéré précédemment.
    
-12. 🔒 **Commande 12 :** `$cred = Get-Credential`
-   Cette commande stocke les informations d'identification dans la variable $cred en utilisant la commande Get-Credential.Résultat ↓
-<img src= width='' height='' >
-13. 💻 **Commande 13 :** `Enter-PSSession -VMName VM-Valentin -Credential $cred`
-Cette commande établit une session PowerShell à distance avec la machine virtuelle "VM-Valentin" en utilisant les informations d'identification fournies dans la variable $cred.Résultat ↓
+ 🔒 **Commande 12 :**
+```bash
+PS> $cred = Get-Credential
+```
+Cette commande stocke les informations d'identification dans la variable $cred en utilisant la commande Get-Credential.Résultat ↓
+
+💻 **Commande 13 :** ```bash
+PS> Enter-PSSession -VMName VM-Valentin -Credential $cred
+```
+Cette commande établit une session PowerShell à distance avec la machine virtuelle "VM-Valentin" en utilisant les informations d'identification fournies dans la variable $cred.
 <img src=images/IMG-6.jpg  width='' height=''>
 
 
