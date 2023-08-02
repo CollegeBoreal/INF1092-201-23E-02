@@ -6,7 +6,7 @@
 
 3. 🖼️ **Commande 2 :** `Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"`
    Cette commande monte une image disque à partir d'un fichier ISO de Windows 10. L'image disque ISO contient les fichiers d'installation de Windows 10.Résultat ↓
-<img src=images/IMG-1.jpg  width='' height='' >
+<img src=images/IMG-2.jpg  width='' height='' >
 4. 💽 **Commande 3 :** `Get-PSDrive -PSProvider FileSystem`
    Cette commande affiche les lecteurs de disque disponibles sur le système. Elle permet de vérifier les lecteurs de disque actuellement montés.Résultat ↓
 
