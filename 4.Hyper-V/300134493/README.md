@@ -214,4 +214,5 @@ $networkAdapter
 Name            IsManagementOs VMName   SwitchName MacAddress   Status IPAddresses
 ----            -------------- ------   ---------- ----------   ------ -----------
 Network Adapter False          VM-Thera            00155DED1A02 {Ok}   {169.254.41.227, 10.13.237.126, fe80::b1a5:1205:a984:568b}
+
 ```
