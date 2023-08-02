@@ -1,9 +1,9 @@
 # 🅰️  Creation de la VM
 
 1. ⚙️ **Com 1 :**
-2. ```bash
-3. New-VHD -Path "$ENV:USERPROFILE\Documents\VM-Valentin.vhdx" -SizeBytes 32GB -Dynamic
-4. ```
+ ```bash
+ New-VHD -Path "$ENV:USERPROFILE\Documents\VM-Valentin.vhdx" -SizeBytes 32GB -Dynamic
+ ```
    Cette commande crée un nouveau disque virtuel (VHD) avec une taille de 64GB et un format dynamique. Elle prépare le disque virtuel sur lequel la machine virtuelle sera installée. Résultat ↓
    <img src=<img src=images/IMG-1.jpg width='' height=''> 
 
