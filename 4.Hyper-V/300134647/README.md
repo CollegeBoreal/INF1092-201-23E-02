@@ -1,16 +1,20 @@
 # 🅰️  Creation de la VM
 
-1. ⚙️ **Com 1 :**
+ ⚙️ **Com 1 :**
  ```bash
  New-VHD -Path "$ENV:USERPROFILE\Documents\VM-Valentin.vhdx" -SizeBytes 32GB -Dynamic
  ```
-   Cette commande crée un nouveau disque virtuel (VHD) avec une taille de 64GB et un format dynamique. Elle prépare le disque virtuel sur lequel la machine virtuelle sera installée. Résultat ↓
-   <img src=<img src=images/IMG-1.jpg width='' height=''> 
+Cette commande crée un nouveau disque virtuel (VHD) avec une taille de 64GB et un format dynamique. Elle prépare le disque virtuel sur lequel la machine virtuelle sera installée. 
 
-5. 🖼️ **Commande 2 :** `Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"`
+<img src=<img src=images/IMG-1.jpg width='' height=''> 
+
+ 🖼️ **Commande 2 :**
+ ```bash
+ Mount-DiskImage -ImagePath "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
+```
    Cette commande monte une image disque à partir d'un fichier ISO de Windows 10. L'image disque ISO contient les fichiers d'installation de Windows 10.Résultat ↓
 <img src=images/IMG-2.jpg  width='' height='' >
-6. 💽 **Commande 3 :** `Get-PSDrive -PSProvider FileSystem`
+8. 💽 **Commande 3 :** `Get-PSDrive -PSProvider FileSystem`
    Cette commande affiche les lecteurs de disque disponibles sur le système. Elle permet de vérifier les lecteurs de disque actuellement montés.Résultat ↓
 
 <img src=images/IMG-3.jpg  width='' height='' >
