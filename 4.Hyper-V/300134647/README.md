@@ -10,7 +10,7 @@
 4. 💽 **Commande 3 :** `Get-PSDrive -PSProvider FileSystem`
    Cette commande affiche les lecteurs de disque disponibles sur le système. Elle permet de vérifier les lecteurs de disque actuellement montés.Résultat ↓
 
-<img src=images/IMG-3.jpg .jpg width='' height='' >
+<img src=images/IMG-3.jpg  width='' height='' >
 4. 🖥️ **Commande 4 :** `$VM = New-VM -Name VM-RIAD -Path "$ENV:USERPROFILE\Documents" -MemoryStartupBytes 8GB -VHDPath "$ENV:USERPROFILE\Documents\VM-RIAD.vhdx"`
    Cette commande crée une nouvelle machine virtuelle (VM) avec le nom "VM-RIAD". La VM est configurée avec 8GB de mémoire et le chemin du disque virtuel est spécifié.Résultat ↓
 
