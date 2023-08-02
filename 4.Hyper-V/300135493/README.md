@@ -143,4 +143,137 @@ Installation de Windows sur la VM
 <img src=images/IMG_20230705_170133.jpg width='' height='' > </img>
 <img src=images/IMG_20230705_180701.jpg width='' height='' > </img>
 <img src=images/IMG_20230705_181347.jpg width='' height='' > </img>
-# - [] Configuration du Réseaux de la VM
+# - [X] Configuration du Réseaux de la VM
+:1: Switch virtuelle
+```powershell
+ Get-NetAdapter
+```
+> Resultat
+```python
+
+```
+```powershell
+ $net = Get-NetAdapter -Name 'Ethernet'
+```
+```powershell
+New-VMSwitch -Name "External VM Switch" -AllowManagementOS $True -NetAdapterName $net.Name
+```
+```powershell
+get-netadapter
+```
+> Resulatt
+```python
+Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
+----                      --------------------                    ------- ------       ----------             ---------
+Ethernet 2                QLogic BCM5709C Gigabit Ethernet ...#47       8 Disconnected 98-4B-E1-66-E7-14          0 bps
+vEthernet (External VM... Hyper-V Virtual Ethernet Adapter             19 Up           98-4B-E1-66-E7-16         1 Gbps
+Ethernet                  QLogic BCM5709C Gigabit Ethernet ...#48       2 Up           98-4B-E1-66-E7-16         1 Gbps
+```
+:2: Conexion carte resseaux >> Carte virtuelle
+```powershell
+$vm = Get-VM "VM-Lassine"
+```
+```powershell
+$networkAdapter = Get-VMNetworkAdapter -VM $vm
+```
+```powershell
+$networkAdapter
+```
+```python
+Name            IsManagementOs VMName     SwitchName MacAddress   Status IPAddresses
+----            -------------- ------     ---------- ----------   ------ -----------
+Network Adapter False          VM-Lassine            00155DED2700 {Ok}   {169.254.76.58, fe80::f866:f17d:9c5d:14df}
+```
+```powershell
+Connect-VMNetworkAdapter -VMNetworkAdapter $networkAdapter -SwitchName "External VM Switch"
+```
+```powershell
+Get-VMNetworkAdapter -VM $vm
+```
+```python
+Name            IsManagementOs VMName     SwitchName         MacAddress   Status IPAddresses
+----            -------------- ------     ----------         ----------   ------ -----------
+Network Adapter False          VM-Lassine External VM Switch 00155DED2700 {Ok}   {10.13.237.139, fe80::f866:f17d:9c5d:14df}
+```
+### Entrez dans la machine virtuelle
+```powershell
+Enter-PSSession -VMName VM-Lassine -Credential $cred
+```
+> Resultat
+```python
+[VM-Lassine]: PS C:\Users\Lassine\Documents>
+```
+```powershell
+New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.13.237.139" -PrefixLength 24 -DefaultGateway "10.13.237.1"
+```
+> Resultat
+```python
+
+IPAddress         : 10.13.237.139
+InterfaceIndex    : 13
+InterfaceAlias    : Ethernet
+AddressFamily     : IPv4
+Type              : Unicast
+PrefixLength      : 24
+PrefixOrigin      : Manual
+SuffixOrigin      : Manual
+AddressState      : Tentative
+ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+SkipAsSource      : False
+PolicyStore       : ActiveStore
+
+IPAddress         : 10.13.237.139
+InterfaceIndex    : 13
+InterfaceAlias    : Ethernet
+AddressFamily     : IPv4
+Type              : Unicast
+PrefixLength      : 24
+PrefixOrigin      : Manual
+SuffixOrigin      : Manual
+AddressState      : Invalid
+ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+SkipAsSource      : False
+PolicyStore       : PersistentStore
+```
+```powershell
+Get-DnsClientServerAddress
+```
+> Resultat
+```python
+InterfaceAlias               Interface Address ServerAddresses
+                             Index     Family
+--------------               --------- ------- ---------------
+Ethernet                            13 IPv4    {}
+Ethernet                            13 IPv6    {fec0:0:0:ffff::1, fec0:0:0:ffff::2, fec0:0:0:ffff::3}
+Loopback Pseudo-Interface 1          1 IPv4    {}
+Loopback Pseudo-Interface 1          1 IPv6    {fec0:0:0:ffff::1, fec0:0:0:ffff::2, fec0:0:0:ffff::3}
+```
+```powershell
+[VM-Lassine]: PS C:\Users\Lassine\Documents> Set-DNSClientServerAddress "Ethernet" -ServerAddresses ("1.1.1.1","8.8.8.8")
+[VM-Lassine]: PS C:\Users\Lassine\Documents> Get-DnsClientServerAddress
+```
+> Resultat
+```python
+
+InterfaceAlias               Interface Address ServerAddresses
+                             Index     Family
+--------------               --------- ------- ---------------
+Ethernet                            13 IPv4    {1.1.1.1, 8.8.8.8}
+Ethernet                            13 IPv6    {}
+Loopback Pseudo-Interface 1          1 IPv4    {}
+Loopback Pseudo-Interface 1          1 IPv6    {fec0:0:0:ffff::1, fec0:0:0:ffff::2, fec0:0:0:ffff::3}
+```
+```powershell
+[VM-Lassine]: PS C:\Users\Lassine\Documents> Test-NetConnection -ComputerName "google.com"
+```
+> Resultat
+```python
+ComputerName           : google.com
+RemoteAddress          : 142.251.41.78
+InterfaceAlias         : Ethernet
+SourceAddress          : 10.13.237.139
+PingSucceeded          : True
+PingReplyDetails (RTT) : 18 ms
+```
