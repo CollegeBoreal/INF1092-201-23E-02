@@ -166,5 +166,11 @@ Name            IsManagementOs VMName     SwitchName         MacAddress   Status
 ----            -------------- ------     ----------         ----------   ------ -----------
 Network Adapter False          VM-ESTELLE External VM Switch 00155DED2201        {}
 
+Name            IsManagementOs VMName     SwitchName         MacAddress   Status IPAddresses
+----            -------------- ------     ----------         ----------   ------ -----------
+Network Adapter False          VM-ESTELLE External VM Switch 00155DED2201 {Ok}   {10.13.237.134, fe80::1924:e294:bd8...
+
+
+
 
 
