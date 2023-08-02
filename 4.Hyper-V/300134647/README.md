@@ -38,19 +38,22 @@ Cette commande affiche les informations sur toutes les machines virtuelles prés
 
 <img src=images/IMG-4.jpg width='' height='' >
 
- 📀 **Commande 6 :** ```bash
- PS> Get-VMDVDDrive -VMName "VM-RIAD"
+ 📀 **Commande 6 :** 
+ ```bash
+ PS> Get-VMDVDDrive -VMName "VM-Valentin"
  ```
 Cette commande récupère les informations sur le lecteur DVD de la machine virtuelle "VM-RIAD". Elle permet de vérifier si un lecteur DVD virtuel est attaché à la machine virtuelle.
 
 <img src=images/IMG-5.jpg width='' height='' >
 
- ➕ **Commande 7 :** ```bash
+ ➕ **Commande 7 :**
+ ```bash
 PS> Add-VMDvdDrive -VMName "VM-Valentin" -Path "$ENV:USERPROFILE\Documents\Win10_22H2_English_x64v1.iso"
 ```
 Cette commande ajoute un lecteur DVD à la machine virtuelle "VM-Valentin" en utilisant le chemin du fichier ISO spécifié. Elle permet d'attacher un lecteur DVD virtuel contenant l'image disque ISO de Windows 10 à la machine virtuelle.
 
-📀 **Commande 8 :** ```bash
+📀 **Commande 8 :** 
+```bash
 PS> Get-VMDVDDrive -VMName "VM-Valentin"
 ```
 Cette commande vérifie les informations sur le lecteur DVD de la machine virtuelle "VM-RIAD" pour confirmer qu'il a été ajouté avec succès.Résultat ↓
@@ -67,7 +70,8 @@ PS> $HostName = [System.Net.DNS]::GetHostByName($Null).HostName
 ```
  Cette ligne de code récupère le nom d'hôte de la machine virtuelle.
    
- 🔌 **Commande 11 :** ```bash
+ 🔌 **Commande 11 :** 
+ ```bash
  PS> vmconnect $HostName VM-Valentin
  ```
  Cette commande ouvre une connexion à distance avec la machine virtuelle "VM-Valentin" en utilisant le nom d'hôte récupéré précédemment.
@@ -78,7 +82,8 @@ PS> $cred = Get-Credential
 ```
 Cette commande stocke les informations d'identification dans la variable $cred en utilisant la commande Get-Credential.Résultat ↓
 
-💻 **Commande 13 :** ```bash
+💻 **Commande 13 :** 
+```bash
 PS> Enter-PSSession -VMName VM-Valentin -Credential $cred
 ```
 Cette commande établit une session PowerShell à distance avec la machine virtuelle "VM-Valentin" en utilisant les informations d'identification fournies dans la variable $cred.
