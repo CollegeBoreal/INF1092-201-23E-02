@@ -199,5 +199,9 @@ Ethernet                  QLogic BCM5709C Gigabit Ethernet ...#47       5 Up    
 ```powershell
 $vm = Get-VM "VM-Thera"
 ```
+- [ ] Assigner les valeurs de la carte réseau de la machine à la variable `networkAdapter`
 
+```powershell
+$networkAdapter = Get-VMNetworkAdapter -VM $vm
+```
 
