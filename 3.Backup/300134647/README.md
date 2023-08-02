@@ -8,7 +8,7 @@ Capturerons le disque utilisé par une machine virtuelle (VM) en plus de l'image
 ```powershell
 diskpart
 ```
-> Response:
+ Response:
 ```
 Microsoft DiskPart version 10.0.20348.1
 
@@ -16,13 +16,16 @@ Copyright (C) Microsoft Corporation.
 On computer: WIN-KDJ5GSJ8GAD
 
 ```
+<img src=<img src=images/IMG-17.jpg width='' height=''> 
+
  Dans l'utilitaire `DISKPART` selectionner et attacher le disque virtuel à sauvegarder
 
 ```
-DISKPART> select vdisk file="C:\Users\Brice\Documents\VM-Brice.vhdx"
+DISKPART> select vdisk file="C:\Users\Wend\Documents\VM-Valentin.vhdx"
 DISKPART> attach vdisk
 DISKPART> exit
 ```
+<img src=<img src=images/IMG-18.jpg width='' height=''> 
 
 ## Créons une image windows
 
@@ -30,10 +33,10 @@ DISKPART> exit
 
 ```powershell
 DISM /Capture-Image `
-     /ImageFile:"$env:USERPROFILE\Documents\export\VM-Brice.wim" `
+     /ImageFile:"$env:USERPROFILE\Documents\export\VM-Valentin.wim" `
      /CaptureDir:"F:" `
-     /Name:"VM-Brice" `
-     /Description:"Image de la VM de Brice" `
+     /Name:"VM-Valentin" `
+     /Description:"Image de la VM de Valentin" `
      /Compress:Maximum
 ```
-
+<img src=<img src=images/IMG-19.jpg width='' height=''> 
