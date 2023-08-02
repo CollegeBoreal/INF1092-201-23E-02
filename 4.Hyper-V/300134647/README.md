@@ -126,7 +126,7 @@ PS C:\Users\Administrator> Connect-VMNetworkAdapter -VMNetworkAdapter $networkAd
 
 ```bash
 PS C:\Users\Administrator> Enter-PSSession -VMName VM-Valentin -Credential $cred
-[VM-Valentin]: PS C:\Users\Othman\Documents> Get-NetAdapter
+[VM-Valentin]: PS C:\Users\Wend\Documents> Get-NetAdapter
 ```
 
 ### Étape 5: Configurez l'adresse IP dans la VM :globe_with_meridians:
@@ -134,7 +134,7 @@ PS C:\Users\Administrator> Enter-PSSession -VMName VM-Valentin -Credential $cred
 Enfin, configurez une adresse IP statique pour l'interface réseau "ethernet 2" dans la machine virtuelle. Définissez l'adresse IP comme "10.13.237.156", le masque de sous-réseau comme "255.255.255.0" (représenté par `-PrefixLength 24`), et la passerelle par défaut comme "10.13.237.1".
 
 ```bash
-[VM-Valentin]: PS C:\User\VM-Valentin\Documents> New-NetIPAddress -InterfaceAlias "ethernet 2" -IPAddress 10.13.237.156 -AddressFamily IPv4 -DefaultGateway 10.13.237.1 -PrefixLength 24
+[VM-Valentin]: PS C:\User\Wend\Documents> New-NetIPAddress -InterfaceAlias "ethernet 2" -IPAddress 10.13.237.156 -AddressFamily IPv4 -DefaultGateway 10.13.237.1 -PrefixLength 24
 ```
 Verifier l'adresse IP
 <img src=images/IMG-12.jpg width='' height=''>
@@ -201,3 +201,7 @@ PingSucceeded          : True
 PingReplyDetails (RTT) : 27 ms
 ```
 <img src=images/IMG-16.jpg width='' height=''>
+
+
+# 🅰️  Finition du travail avec perseverance
+# 🅰️  Au revoir
