@@ -5,8 +5,8 @@
 # 💽 Étape 1: Formatage du Serveur et des Disques Durs
 
 Avant de commencer l'installation de Windows Server 2022, il est nécessaire de formater le serveur et les disques durs pour s'assurer que vous commencez avec un environnement propre.
-<img src=images/3.jpg width='' height='' >
-<img src=/images/5.jpg width='' height='' >
+<img src=/images/3.jpg width='' height='' >
+<img src=images/5.jpg width='' height='' >
 <img src= width='' height='' >
 <img src= width='' height='' >
 <img src= width='' height='' >
@@ -14,9 +14,9 @@ Avant de commencer l'installation de Windows Server 2022, il est nécessaire de 
 
 Téléchargez l'image ISO de Windows Server 2022 à partir du site de Microsoft. Utilisez Rufus, un utilitaire gratuit, pour transformer l'image ISO en une clé USB bootable compatible avec le BIOS. 
 <img src=images/1.jpg width='' height='' >
-<img src=/images/6.jpg width='' height='' >
-<img src=/images/7.jpg width='' height='' >
-<img src=/images/8.jpg width='' height='' >
+<img src=images/6.jpg width='' height='' >
+<img src=images/7.jpg width='' height='' >
+<img src=images/8.jpg width='' height='' >
 # 📥 Étape 3: Branchement du Média d'Installation sur le Serveur
 
 Insérez la clé USB contenant l'installation de Windows Server 2022 dans le serveur.
@@ -34,11 +34,9 @@ Redémarrez le serveur et assurez-vous qu'il est configuré pour démarrer à pa
 # 💿 Étape 5: Installation de Windows Server 2022
 
 Commencez l'installation de Windows Server 2022 en acceptant les termes et conditions. 
-<img src=/images/12.jpg width='' height='' >
-<img src=/images/13.jpgwidth='' height='' >
-<img src=/images
-/14.jpg
- width='' height='' >
+<img src=images/12.jpg width='' height='' >
+<img src=images/13.jpgwidth='' height='' >
+<img src=images/14.jpg width='' height='' >
 
 # 📈 Étape 6: Choix de l'Édition 
 
