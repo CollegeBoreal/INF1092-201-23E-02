@@ -56,7 +56,7 @@ Pour pouvoir accéder à distance à votre serveur, n'oubliez pas d'activer le m
 <img src=images/20230803_151944.jpg width='' height='' >
 <img src=images/20230803_151949.jpg width='' height='' >
 
-# 🎉 Étape 9: Finalisation de l'Installation 
-<img src= width='' height='' >
+# 🎉 Étape 9: Finalisation de l'Installation ajouter brice comme administrateur
+<img src=images/20230803_163543.jpg width='' height='' >
 
 N'oubliez pas que cette liste de contrôle suppose une installation standard. Si vous avez des exigences spécifiques, vous devrez peut-être ajouter ou modifier des étapes.
