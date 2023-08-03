@@ -55,7 +55,7 @@ Créez un mot de passe pour le compte Administrateur. Assurez-vous que votre mot
 # 🌐 Étape 8: Activation du Mode RDP
 
 Pour pouvoir accéder à distance à votre serveur, n'oubliez pas d'activer le mode Remote Desktop Protocol (RDP). 
-<img src= width='' height='' >
+<img src=images/20230803_151949.jpg width='' height='' >
 <img src= width='' height='' >
 <img src= width='' height='' >
 
