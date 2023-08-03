@@ -1,5 +1,5 @@
 # 💻🔧📀 Installation de Windows Server 2022 par wiaam 🚀🎯🔒
-
+adresse ip 10.13.237.45
 
 
 # 💽 Étape 1: Formatage du Serveur et des Disques Durs
