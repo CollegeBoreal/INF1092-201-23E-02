@@ -133,6 +133,40 @@ vEthernet (External VM... Hyper-V Virtual Ethernet Adapter              9 Up    
 Ethernet                  QLogic BCM5709C Gigabit Ethernet ...#48       6 Disconnected 3C-4A-92-E4-57-FA          0 bps
 Ethernet 2                QLogic BCM5709C Gigabit Ethernet ...#47       4 Up           3C-4A-92-E4-57-F8         1 Gbps
 ```
+# ASSIGNATION D'UNE CARTE RESEAU A LA VM VM-ESTELLE
+
+RECUPERATION DES PARAMETRES DE NOTRE VM 
+```POWERSHELL
+$vm = Get-VM "VM-ESTELLE"
+```
+ASSIGNATION DE LA VALEUR DE LA CARTE RESEAU DE MA MACHINE VIRTUELLE A LA VARIABLE $networkAdapter
+```POWERSHELL
+$networkAdapter = Get-VMNetworkAdapter -VM $vm
+```
+VERIFICATION QUE NOTRE VARIABLE $networkAdapter A LA BONNE INFORMATION
+```POWERSHELL
+$networkAdapter
+```
+>RESULTAT
+```python
+Name            IsManagementOs VMName     SwitchName         MacAddress   Status IPAddresses
+----            -------------- ------     ----------         ----------   ------ -----------
+Network Adapter False          VM-ESTELLE External VM Switch 00155DED2201 {Ok}   {10.13.237.134, fe80::1924:e294:bd8...
+```
+CONNECTION DE LA CARTE RESEAU A LA MACHINE VIRTUELLE
+```POWERSHELL
+Connect-VMNetworkAdapter -VMNetworkAdapter $networkAdapter -SwitchName "External VM Switch"
+```
+VERIFICATION DE L'ASSIGNATION EN REGARDANT LA VALEUR "SwitchName"
+```POWERSHELL
+Get-VMNetworkAdapter -VM $vm
+```
+>RESULTAT
+```python
+Name            IsManagementOs VMName     SwitchName         MacAddress   Status IPAddresses
+----            -------------- ------     ----------         ----------   ------ -----------
+Network Adapter False          VM-ESTELLE External VM Switch 00155DED2201 {Ok}   {10.13.237.134, fe80::1924:e294:bd8...
+```
 # CONNECTION A LA VM VM-ESTELLE AVEC PSSESSION
 ```powershell
 Enter-PSSession -VMName VM-ESTELLE -Credential $cred
@@ -144,7 +178,17 @@ Enter-PSSession -VMName VM-ESTELLE -Credential $cred
 # ASSIGNATION D'UNE ADRESSE IP A LA VM VM-ESTELLE
 ```powershell
 New-NetIPAddress -InterfaceAlias "Ethernet 2" -IPAddress "10.13.237.134" -PrefixLength 24 -DefaultGateway "10.13.237.1"
-
+```
+# CONFIGURATION DE L'IP DU DNS-SERVER
+```POWERSHELL
+Set-DNSClientServerAddress "Ethernet 2" -ServerAddresses ("1.1.1.1","8.8.8.8")
+```
+VISUALISATION DE LA CONFIGURATION DNS
+```POWERSHELL
+Get-DnsClientServerAddress
+```
+> RESULTAT
+```python
 InterfaceAlias               Interface Address ServerAddresses
                              Index     Family
 --------------               --------- ------- ---------------
@@ -152,8 +196,13 @@ Ethernet                             7 IPv4    {1.1.1.1, 8.8.8.8}
 Ethernet                             7 IPv6    {}
 Loopback Pseudo-Interface 1          1 IPv4    {}
 Loopback Pseudo-Interface 1          1 IPv6    {fec0:0:0:ffff::1, fec0:0:0:ffff::2, fec0:0:0:ffff::3}
-
-
+```
+# TEST DE LA CONNECTION EXTERNE (PING DE GOOGLE.COM)
+```POWERSHELL
+Test-NetConnection -ComputerName "google.com"
+```
+>RESULTAT
+```python
 
 ComputerName           : google.com
 RemoteAddress          : 142.251.33.174
@@ -161,14 +210,8 @@ InterfaceAlias         : Ethernet
 SourceAddress          : 10.13.237.134
 PingSucceeded          : True
 PingReplyDetails (RTT) : 15 ms
+```
 
-Name            IsManagementOs VMName     SwitchName         MacAddress   Status IPAddresses
-----            -------------- ------     ----------         ----------   ------ -----------
-Network Adapter False          VM-ESTELLE External VM Switch 00155DED2201        {}
-
-Name            IsManagementOs VMName     SwitchName         MacAddress   Status IPAddresses
-----            -------------- ------     ----------         ----------   ------ -----------
-Network Adapter False          VM-ESTELLE External VM Switch 00155DED2201 {Ok}   {10.13.237.134, fe80::1924:e294:bd8...
 
 
 
