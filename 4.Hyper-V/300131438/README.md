@@ -211,6 +211,47 @@ SourceAddress          : 10.13.237.134
 PingSucceeded          : True
 PingReplyDetails (RTT) : 15 ms
 ```
+# CAPTURE DU DISQUE DE LA VM VM-ESTELLE
+ARRET DE LA VM VM-ESTELLE
+```POWERSHELL
+Stop-VM -Name VM-ESTELLE -Force
+```
+LANCEMENT DE LA COMMANDE DISKPART
+```POWERSHELL
+diskpart
+```
+>RESULTAT
+```python
+Microsoft DiskPart version 10.0.20348.1
+
+Copyright (C) Microsoft Corporation.
+On computer: WIN-A49Q5MI8IPQ
+
+DISKPART>
+```
+# SELECTION DU CHEMIN POUR ATTEINDRE L'IMAGE DE LA MACHINE VIRTUELLE VM-ESTELLE
+```POWERSHELL
+ select vdisk file="C:\Users\Administrator\Documents\VM-ESTELLE.vhdx"
+```
+>RESULTAT
+```python
+DiskPart successfully selected the virtual disk file.
+
+DISKPART> attach  vdisk
+
+  100 percent completed
+
+DiskPart successfully attached the virtual disk file.
+```
+# SORTIE DE LA SESSION DISKPART APRES AVOIR REUSSI A ATTACHER L'IMAGE DE LA VM VM-ESTELLE
+```POWERSHELL
+DISKPART> exit
+```
+>RESULTAT
+```python
+Leaving DiskPart...
+```
+# CAPTURE DE L'IMAGE DE WINDOWS AVEC LA COMMANDE DISM
 
 
 
