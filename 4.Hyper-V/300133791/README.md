@@ -12,7 +12,7 @@
 - [ ] Bonne réponse😉
 <img src="WhatsApp Image 2023-08-03 at 23.37.23.jpg" width='40%' height='40%' > </img>
 ## Server Manager - Local Servr
-:scroll: Visualisation
+- [ ]  Visualisation
 
 <img src="WhatsApp Image 2023-08-03 at 23.37.25.jpg" width='40%' height='40%' > </img>
 
