@@ -305,6 +305,8 @@ Stop-VM -Name VM-Thera -Force
 
 - [ ] Supprimer la VM
 
+cette commande est utilisée pour supprimer rapidement et de force une machine virtuelle dans un environnement Hyper-V. Assurez-vous d'avoir une sauvegarde de la machine virtuelle ou de comprendre que son contenu sera perdu irrémédiablement avant d'utiliser cette commande.
+
 ```powershell
 Remove-VM -Name VM-Thera -Force
 ```
