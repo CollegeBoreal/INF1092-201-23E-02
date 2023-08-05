@@ -229,7 +229,6 @@ Get-VMNetworkAdapter -VM $vm
 ```
 > Resultat
 ```Python
-
 Name            IsManagementOs VMName   SwitchName         MacAddress   Status IPAddresses
 ----            -------------- ------   ----------         ----------   ------ -----------
 Network Adapter False          VM-Thera External VM Switch 00155DED1A02 {Ok}   {10.13.237.126, fe80::b1a5:1205:a984:...
