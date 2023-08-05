@@ -125,6 +125,36 @@ vmconnect $HostName VM-Thera
 ```
 
 ## 🆎 connexion a la machine virtuelle
+
+Installation de windows sur la machine virtuelle
+
+</img> <img src=images/IMG_2786.jpeg width='237' height='237' > </img>
+
+</img> <img src=images/IMG_2788.jpeg width='237' height='237' > </img>
+
+</img> <img src=images/IMG_2789.jpeg width='237' height='237' > </img>
+
+</img> <img src=images/IMG_2790.jpeg width='237' height='237' > </img>
+
+</img> <img src=images/IMG_2791.jpeg width='237' height='237' > </img>
+
+</img> <img src=images/IMG_2792.jpeg width='237' height='237' > </img>
+
+</img> <img src=images/IMG_2793.jpeg width='237' height='237' > </img>
+
+</img> <img src=images/IMG_2794.jpeg width='237' height='237' > </img>
+
+</img> <img src=images/IMG_2795.jpeg width='237' height='237' > </img>
+
+</img> <img src=images/IMG_2796.jpeg width='237' height='237' > </img>
+
+</img> <img src=images/IMG_2800.jpeg width='237' height='237' > </img>
+
+</img> <img src=images/IMG_2801.jpeg width='237' height='237' > </img>
+
+</img> <img src=images/IMG_2802.jpeg width='237' height='237' > </img>
+
+
 - [ ] Récuperer sur les informations de la machine virtuelle 
 ```powershell
 Get-VM
