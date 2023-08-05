@@ -321,6 +321,8 @@ Remove-Item -Path "$ENV:USERPROFILE\Documents\VM-Thera.vhdx" -Force
 
 - [ ] Supprimer les informations de la VM
 
+
+
 ```powershell
 Remove-Item -Path "$ENV:USERPROFILE\Documents\VM-Thera"  -Force 
 ```
