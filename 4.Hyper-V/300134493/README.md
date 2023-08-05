@@ -323,6 +323,7 @@ SourceAddress          : 10.13.237.126
 PingSucceeded          : True
 PingReplyDetails (RTT) : 17 ms
 ```
+</img> <img src=images/IMG_3075.jpeg width='237' height='237' > </img>
 
 ## :x: Détruire la machine :skull_and_crossbones:
 
