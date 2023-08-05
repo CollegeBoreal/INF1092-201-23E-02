@@ -149,6 +149,19 @@ vmconnect $HostName VM-Thera
 
 </img> <img src=images/IMG_2801.jpeg width='237' height='237' > </img>
 
+</img> <img src=images/IMG_2810.jpeg width='237' height='237' > </img>
+
+</img> <img src=images/IMG_2811.jpeg width='237' height='237' > </img>
+
+</img> <img src=images/IMG_2812.jpeg width='237' height='237' > </img>
+
+</img> <img src=images/IMG_2813.jpeg width='237' height='237' > </img>
+
+</img> <img src=images/IMG_2814.jpeg width='237' height='237' > </img>
+
+</img> <img src=images/IMG_2815.jpeg width='237' height='237' > </img>
+
+</img> <img src=images/IMG_2816.jpeg width='237' height='237' > </img>
 
 
 - [ ] Récuperer sur les informations de la machine virtuelle 
