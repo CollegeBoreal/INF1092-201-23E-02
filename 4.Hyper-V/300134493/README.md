@@ -234,4 +234,9 @@ Name            IsManagementOs VMName   SwitchName         MacAddress   Status I
 Network Adapter False          VM-Thera External VM Switch 00155DED1A02 {Ok}   {10.13.237.126, fe80::b1a5:1205:a984:...
 
 ```
+2️⃣ # Sur la machine virtuelle 💻
 
+Grâce a la création du commutateur virtuelexterne, on peut maintenant donner une addresse IP à la machine virtuelle
+```powershell
+New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.13.237.126" -PrefixLength 24 -DefaultGateway "10.13.237.1"
+```
