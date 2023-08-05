@@ -276,7 +276,7 @@ Ethernet                             5 IPv6    {}
 Loopback Pseudo-Interface 1          1 IPv4    {}                                                                                                        
 Loopback Pseudo-Interface 1          1 IPv6    {fec0:0:0:ffff::1, fec0:0:0:ffff::2, fec0:0:0:ffff::3}                                                    
 ```
-- [] Tester la connection Externe (ping)
+- [ ] Tester la connection Externe (ping)
 
 ```powershell
 Test-NetConnection -ComputerName "google.com"
