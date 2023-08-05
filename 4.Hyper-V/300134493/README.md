@@ -220,6 +220,8 @@ Ethernet 2                QLogic BCM5709C Gigabit Ethernet ...#48       7 Discon
 Ethernet                  QLogic BCM5709C Gigabit Ethernet ...#47       5 Up           D8-D3-85-E0-AC-7C         1 Gbps
 ```
 
+</img> <img src=images/IMG_3070.jpeg width='237' height='237' > </img>
+
 ## Assigner une carte reseau a la machine virtuelle
 - [ ] Récuperer les paramètres de la VM
 
