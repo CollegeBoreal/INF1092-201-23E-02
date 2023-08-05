@@ -126,7 +126,7 @@ vmconnect $HostName VM-Thera
 
 ## 🆎 connexion a la machine virtuelle
 
-Installation de windows sur la machine virtuelle
+- [ ] Installation de windows sur la machine virtuelle
 
 </img> <img src=images/IMG_2786.jpeg width='237' height='237' > </img>
 
