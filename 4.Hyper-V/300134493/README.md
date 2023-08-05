@@ -124,7 +124,7 @@ $HostName = [System.Net.DNS]::GetHostByName($Null).HostName
 vmconnect $HostName VM-Thera
 ```
 
-## 🆎 connexion a la machine virtuelle
+## 🆎 connexion à la machine virtuelle
 
 - [ ] Installation de windows sur la machine virtuelle
 
