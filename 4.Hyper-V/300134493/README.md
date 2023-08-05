@@ -281,7 +281,6 @@ Loopback Pseudo-Interface 1          1 IPv6    {fec0:0:0:ffff::1, fec0:0:0:ffff:
 ```powershell
 Test-NetConnection -ComputerName "google.com"
 ```
-
 > Resultat
 ```Python
 
