@@ -313,6 +313,8 @@ Remove-VM -Name VM-Thera -Force
 
 - [ ] Supprimer le disque
 
+cette commande est utilisée pour supprimer le fichier "VM-Thera.vhdx" du répertoire "Documents" de votre profil utilisateur. Assurez-vous d'utiliser cette commande avec précaution, car elle supprimera définitivement le fichier et son contenu, sans possibilité de récupération. Assurez-vous également que vous avez sauvegardé les données importantes avant d'exécuter cette commande.
+
 ```powershell
 Remove-Item -Path "$ENV:USERPROFILE\Documents\VM-Thera.vhdx" -Force
 ```
