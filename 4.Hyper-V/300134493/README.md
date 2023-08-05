@@ -342,15 +342,9 @@ PingReplyDetails (RTT) : 17 ms
 ```
 </img> <img src=images/IMG_3075.jpeg width='237' height='237' > </img>
 
-# Connexion à distance à Windows
-
-:tada: [Participation](.scripts/Participation.md)
-
-:basecamp: [Manuelle](.scripts/manuelle.md)
-
 # Vérification Prof
 
-Sous [@PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.3)
+sous VM
 
 #### :one: Entrer la commande ci-dessous, 
 
