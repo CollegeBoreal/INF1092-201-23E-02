@@ -290,6 +290,7 @@ New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.13.237.126" -PrefixLe
 Get-DnsClientServerAddress
 ```
 Cette commande peut être utile pour vérifier les paramètres de résolution DNS sur une machine, diagnostiquer des problèmes de connectivité Internet ou de réseau, ou simplement pour obtenir des informations sur la configuration DNS.
+
 > Resultat
 ```Python
 
