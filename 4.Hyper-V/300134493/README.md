@@ -240,3 +240,22 @@ Grâce a la création du commutateur virtuelexterne, on peut maintenant donner u
 ```powershell
 New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.13.237.126" -PrefixLength 24 -DefaultGateway "10.13.237.1"
 ```
+📍 # configurer les addresses DNS
+
+- [ ] Visualisation de la configuration présente
+```powershell
+Get-DnsClientServerAddress
+```
+> Resultat
+```Python
+
+InterfaceAlias               Interface Address ServerAddresses
+                             Index     Family
+--------------               --------- ------- ---------------
+Ethernet                             5 IPv4    {}
+Ethernet                             5 IPv6    {fec0:0:0:ffff::1, fec0:0:0:ffff::2, fec0:0:0:ffff::3}
+Loopback Pseudo-Interface 1          1 IPv4    {}
+Loopback Pseudo-Interface 1          1 IPv6    {fec0:0:0:ffff::1, fec0:0:0:ffff::2, fec0:0:0:ffff::3}
+```
+
+
