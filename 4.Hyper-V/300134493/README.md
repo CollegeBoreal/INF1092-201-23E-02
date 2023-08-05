@@ -342,6 +342,65 @@ PingReplyDetails (RTT) : 17 ms
 ```
 </img> <img src=images/IMG_3075.jpeg width='237' height='237' > </img>
 
+# Connexion à distance à Windows
+
+:tada: [Participation](.scripts/Participation.md)
+
+:basecamp: [Manuelle](.scripts/manuelle.md)
+
+# Vérification Prof
+
+Sous [@PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.3)
+
+#### :one: Entrer la commande ci-dessous, 
+
+* Taper Enter et Donner `B0r34l$` comme mot de passe
+
+```powershell
+$Password = Read-Host -AsSecureString 
+```
+
+#### :two: Créer l'utilisateur
+
+```powershell
+New-LocalUser "Brice" -Password $Password -FullName "Brice" -Description "Prof. "
+```
+
+
+#### :three: Donner les droits administrateurs à l'utilisateur
+
+```powershell
+Add-LocalGroupMember -Group "Administrators" -Member "Brice"
+```
+
+#### :four: Ne jamais faire expirer le mot de passe
+
+```powershell
+Set-LocalUser "Brice" -AccountNeverExpires
+```
+
+#### :x: Donner un autre mot de passe
+
+```powershell
+Set-LocalUser "Brice" -Password (ConvertTo-SecureString -AsPlainText "B0r34l$" -Force)
+```
+
+#### :o: Verification
+
+
+```powershell
+Get-LocalGroupMember -Group "Administrators"
+```
+> Retourne :
+```yaml
+
+ObjectClass Name                          PrincipalSource
+----------- ----                          ---------------
+User        DESKTOP-20LP6AF\Administrator Local
+User        DESKTOP-20LP6AF\Brice         Local
+User        DESKTOP-20LP6AF\Thera         Local
+```
+
 ## :x: Détruire la machine :skull_and_crossbones:
 
 - [ ] Arreter la VM
