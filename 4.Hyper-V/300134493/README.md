@@ -293,4 +293,31 @@ PingSucceeded          : True
 PingReplyDetails (RTT) : 17 ms
 ```
 
+## :x: Détruire la machine :skull_and_crossbones:
+
+- [ ] Arreter la VM
+
+```powershell
+Stop-VM -Name VM-Thera -Force
+```
+
+- [ ] Supprimer la VM
+
+```powershell
+Remove-VM -Name VM-Thera -Force
+```
+
+- [ ] Supprimer le disque
+
+```powershell
+Remove-Item -Path "$ENV:USERPROFILE\Documents\VM-Thera.vhdx" -Force
+```
+
+- [ ] Supprimer les informations de la VM
+
+```powershell
+Remove-Item -Path "$ENV:USERPROFILE\Documents\VM-Thera"  -Force 
+```
+
+
 
