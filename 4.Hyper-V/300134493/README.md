@@ -296,7 +296,6 @@ PingReplyDetails (RTT) : 17 ms
 ## :x: Détruire la machine :skull_and_crossbones:
 
 - [ ] Arreter la VM
-
 cette commande est utilisée pour arrêter rapidement et de force une machine virtuelle dans un environnement Hyper-V. Assurez-vous de comprendre les implications de l'arrêt forcé avant d'utiliser cette commande et de l'appliquer uniquement lorsque c'est nécessaire.
 
 ```powershell
