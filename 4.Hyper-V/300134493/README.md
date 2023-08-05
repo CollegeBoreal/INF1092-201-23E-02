@@ -240,7 +240,7 @@ Grâce a la création du commutateur virtuelexterne, on peut maintenant donner u
 ```powershell
 New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.13.237.126" -PrefixLength 24 -DefaultGateway "10.13.237.1"
 ```
-📍##configurer les addresses DNS
+📍Configurer les addresses DNS
 
 - [ ] Visualisation de la configuration présente
 ```powershell
