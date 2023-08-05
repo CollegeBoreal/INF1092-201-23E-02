@@ -219,7 +219,6 @@ vEthernet (External VM... Hyper-V Virtual Ethernet Adapter             11 Up    
 Ethernet 2                QLogic BCM5709C Gigabit Ethernet ...#48       7 Disconnected D8-D3-85-E0-AC-7E          0 bps
 Ethernet                  QLogic BCM5709C Gigabit Ethernet ...#47       5 Up           D8-D3-85-E0-AC-7C         1 Gbps
 ```
-</img> <img src=images/IMG_2480.jpeg width='237' height='237' > </img>
 
 ## Assigner une carte reseau a la machine virtuelle
 - [ ] Récuperer les paramètres de la VM
