@@ -278,6 +278,8 @@ Network Adapter False          VM-Thera External VM Switch 00155DED1A02 {Ok}   {
 2️⃣ # Sur la machine virtuelle 💻
 
 Grâce a la création du commutateur virtuelexterne, on peut maintenant donner une addresse IP à la machine virtuelle
+ cette commande configure une adresse IP (10.13.237.126) avec un masque de sous-réseau de 24 bits (255.255.255.0) sur l'interface réseau nommée "Ethernet" et défini la passerelle par défaut sur l'adresse IP 10.13.237.1
+
 ```powershell
 New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.13.237.126" -PrefixLength 24 -DefaultGateway "10.13.237.1"
 ```
