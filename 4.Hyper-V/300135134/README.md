@@ -126,12 +126,35 @@ RESULTAT
 
 Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
 ----                      --------------------                    ------- ------       ----------             ---------
-Ethernet                  QLogic BCM5709C Gigabit Ethernet ...#48       7 Disconnected 00-23-7D-E9-FD-12          0 bps
+Ethernet                  QLogic CM5709C Gigabit Ethernet ...#48       7 Disconnected 00-23-7D-E9-FD-12          0 bps
 Ethernet 2                QLogic BCM5709C Gigabit Ethernet ...#47       6 Up           00-23-7D-E9-FD-10         1 Gbps
 vEthernet (External VM... Hyper-V Virtual Ethernet Adapter             11 Up           00-23-7D-E9-FD-12        10 Gbps
 ```
+# ASSIGNER LA CARTE RESEAU A LA VM VM-lionel
+BRECUPERER LES PARAMETRES DE LA VM DANS LA VARIABLE $vm
+```POWERSHELL
+$vm = Get-VM "VM-"lionel"
+```
+ASSIGNER LA VALEUR DE LA CARTE RESEAU A LA VARIABLE $networkAdapter
+```POWERSHELL
+$networkAdapter = Get-VMNetworkAdapter -VM $vm
+```
+VERIFIER DE LA VARIABLE $networkAdapter A LA BONNE VALEUR
+```POWERSHELL
+$networkAdapter
+```
+RESULTAT
+```python
+Name            IsManagementOs VMName    SwitchName           MacAddress   Status IPAddresses
+----            -------------- ------    ----------           ----------   ------ -----------
+Network Adapter False          VM-lionel External VM Switch 2 00155DED1C01 {Ok}   {10.13.237.128, fe80::2a56:3f99:92...
+```
+CONNECTION DE LA CARTE RESEAU A LA MACHINE VIRTUELLE
+```POWERSHELL
+Connect-VMNetworkAdapter -VMNetworkAdapter $networkAdapter -SwitchName "External VM Switch 2"
+```
 # CONNECTION A LA VM-lionel AVEC PSSESION
-ETABLISSEMENT DE LA CONNECTION A DISTANCE
+ETABLISSEMENT DE LA CONNECTION A DISTANCE SUR POWERSHELL
 ```POWERSHELL
 Enter-PSSession -VMName VM-lionel -Credential $cred
 ```
@@ -139,6 +162,69 @@ RESULTAT
 ```PYTHON
 [VM-lionel]: PS C:\Users\dave lionel\Documents>
 ```
-
 # ATTRIBUTION DE L'ADRESSE IP A LA MACHINE VIRTUELLE VM-lionel
+AU MOMENT DE LA CREATION DE MON SERVEUR JE ME SUIS TROMPE ET JE L'AI DONNE COMME ADRESSE IP 10.10.237.128 DU COUP MA MACHINE VIRTUELLE AURA COMME ADRESSE IP 
+10.13.237.28
+```POWERSHELL
+New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.13.237.28" -PrefixLength 24 -DefaultGateway "10.13.237.1"
+```
+# CONFIGURATION DU DNS-SERVEUR
+```POWERSHELL
+Set-DNSClientServerAddress "Ethernet" -ServerAddresses ("1.1.1.1","8.8.8.8")
+```
+VISUALISATION DE LA CONFIGURATION DNS
+```POWERSHELL
+Get-DnsClientServerAddress
+```
+```python
+InterfaceAlias               Interface Address ServerAddresses                                                                                       Index     Family                                                                           --------------               --------- ------- ---------------                                                          Ethernet                            14 IPv4    {1.1.1.1, 8.8.8.8}                                                       Ethernet                            14 IPv6    {}                                                                       Loopback Pseudo-Interface 1          1 IPv4    {}                                                                       Loopback Pseudo-Interface 1          1 IPv6    {fec0:0:0:ffff::1, fec0:0:0:ffff::2, fec0:0:0:ffff::3}
+```
+# TEST DE LA CONNECTION EN EFFECTUANT UN PING DE GOOGLE
+```POWERSHELL
+Test-NetConnection -ComputerName "google.com"
+```
+RESULTAT
+```python
+ComputerName           : google.com
+RemoteAddress          : 142.251.33.174
+InterfaceAlias         : Ethernet
+SourceAddress          : 10.13.237.28
+PingSucceeded          : True
+PingReplyDetails (RTT) : 19 ms
+```
+# CAPTURE DU DISQUE DE MA VM POUR EN FAIRE UNE COPIE
+ARRET DE MA VM VM-lionel
+```POWERSHELL
+Stop-VM -Name VM-lionel -Force
+```
+UTILISATION DE LA COMMANDE DISKPART
+```POWERSHELL
+diskpart
+```
+SELECTION DU DISQUE POUR ATTEINDRE LA MACHINE VIRTUELLE VM-lionel
+```POWERSHELL
+ select vdisk file="C:\Users\Administrator\Documents\VM-lionel.vhdx"
+```
+RESULTAT
+```python
+DiskPart successfully selected the virtual disk file.
+```
+JOINDRE LE DISQUE DE LA MACHINE VIRTUELLE
+```POWERSHELL
+DISKPART> attach  vdisk
+```
+RESULTAT
+```python
+ 100 percent completed
 
+DiskPart successfully attached the virtual disk file.
+```
+# EXIT DE LA SESSION DISKPART
+```POWERSHELL
+DISKPART> exit
+```
+RESULTAT
+```python
+Leaving DiskPart...
+```
+# CAPTURE DE L'IMAGE DU DISQUE AVEC LA COMMANDE DISM
