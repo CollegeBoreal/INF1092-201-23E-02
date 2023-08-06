@@ -168,6 +168,37 @@ AU MOMENT DE LA CREATION DE MON SERVEUR JE ME SUIS TROMPE ET JE L'AI DONNE COMME
 ```POWERSHELL
 New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.13.237.28" -PrefixLength 24 -DefaultGateway "10.13.237.1"
 ```
+RESULTAT
+```python
+IPAddress         : 10.13.237.28                                                                                        InterfaceIndex    : 14
+InterfaceAlias    : Ethernet
+AddressFamily     : IPv4
+Type              : Unicast
+PrefixLength      : 24
+PrefixOrigin      : Manual
+SuffixOrigin      : Manual
+AddressState      : Tentative
+ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+SkipAsSource      : False
+PolicyStore       : ActiveStore
+
+IPAddress         : 10.13.237.28
+InterfaceIndex    : 14
+InterfaceAlias    : Ethernet
+AddressFamily     : IPv4
+Type              : Unicast
+PrefixLength      : 24
+PrefixOrigin      : Manual
+SuffixOrigin      : Manual
+AddressState      : Invalid
+ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+SkipAsSource      : False
+PolicyStore       : PersistentStore
+
+```
+
 # CONFIGURATION DU DNS-SERVEUR
 ```POWERSHELL
 Set-DNSClientServerAddress "Ethernet" -ServerAddresses ("1.1.1.1","8.8.8.8")
@@ -227,4 +258,13 @@ RESULTAT
 ```python
 Leaving DiskPart...
 ```
+# 😚 PROCEDURE A SUIVRE AU CAS OU VOUS VOULEZ ANNULER L'ATTACHEMENT DE VOTTRE VM 
+```POWERSHELL
+DISKPART> detach vdisk
+```
+RESULTAT
+```python
+DiskPart successfully detached the virtual disk file.
+```
+
 # CAPTURE DE L'IMAGE DU DISQUE AVEC LA COMMANDE DISM
