@@ -56,7 +56,7 @@ Cette commande ajoute un lecteur DVD à la machine virtuelle "VM-Valentin" en ut
 ```bash
 PS> Get-VMDVDDrive -VMName "VM-Valentin"
 ```
-Cette commande vérifie les informations sur le lecteur DVD de la machine virtuelle "VM-RIAD" pour confirmer qu'il a été ajouté avec succès.Résultat ↓
+Cette commande vérifie les informations sur le lecteur DVD de la machine virtuelle "VM-Valentin" pour confirmer qu'il a été ajouté avec succès.Résultat ↓
 
 ▶️ **Commande 9 :**
 ```bash
@@ -116,7 +116,7 @@ PS C:\Users\Administrator> $networkAdapter = Get-VMNetworkAdapter -VM $vm
 Connectez l'adaptateur réseau que vous avez stocké dans la variable `$networkAdapter` à un vSwitch nommé "external vm switch".
 
 ```bash
-PS C:\Users\Administrator> Connect-VMNetworkAdapter -VMNetworkAdapter $networkAdapter -SwitchName "external vm switch"
+PS C:\Users\Administrator> Connect-VMNetworkAdapter -VMNetworkAdapter $networkAdapter -SwitchName "valentin-switch"
 ```
 <img src=<img src=images/IMG-11.jpg width='' height=''> 
 
