@@ -179,6 +179,28 @@ Enter-PSSession -VMName VM-ESTELLE -Credential $cred
 ```powershell
 New-NetIPAddress -InterfaceAlias "Ethernet 2" -IPAddress "10.13.237.134" -PrefixLength 24 -DefaultGateway "10.13.237.1"
 ```
+>RESULTAT
+```python
+ComputerName            : WIN-B435EULM6RL
+Path                    : C:\Users\Administrator\Documents\VM-lionel.vhdx
+VhdFormat               : VHDX
+VhdType                 : Dynamic
+FileSize                : 4194304
+Size                    : 34359738368
+MinimumSize             :
+LogicalSectorSize       : 512
+PhysicalSectorSize      : 4096
+BlockSize               : 33554432
+ParentPath              :
+DiskIdentifier          : CAD5A105-610F-47AC-9C8C-3617F852936D
+FragmentationPercentage : 0
+Alignment               : 1
+Attached                : False
+DiskNumber              :
+IsPMEMCompatible        : False
+AddressAbstractionType  : None
+Number                  :
+```
 # 💻 CONFIGURATION DE L'IP DU DNS-SERVER
 ```POWERSHELL
 Set-DNSClientServerAddress "Ethernet 2" -ServerAddresses ("1.1.1.1","8.8.8.8")
