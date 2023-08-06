@@ -104,7 +104,7 @@ VM-ESTELLE IDE            1                0                  None
 ```powershell
 Start-VM VM-ESTELLE
 ```
-# INSTALLATION DE LA VM AVEC (vmconnect)
+# 🉐 INSTALLATION DE LA VM AVEC (vmconnect)
 ```powershell
 $HostName = [System.Net.DNS]::GetHostByName($Null).HostName
 vmconnect $HostName VM-ESTELLE
@@ -120,7 +120,7 @@ Name               SwitchType NetAdapterInterfaceDescription
 ----               ---------- ------------------------------
 External VM Switch External   QLogic BCM5709C Gigabit Ethernet (NDIS VBD Client) #2
 ```
-# VERIFICATION 
+# 👀👀 VERIFICATION 
 ```powershell
 get-netadapter
 ```
@@ -133,9 +133,9 @@ vEthernet (External VM... Hyper-V Virtual Ethernet Adapter              9 Up    
 Ethernet                  QLogic BCM5709C Gigabit Ethernet ...#48       6 Disconnected 3C-4A-92-E4-57-FA          0 bps
 Ethernet 2                QLogic BCM5709C Gigabit Ethernet ...#47       4 Up           3C-4A-92-E4-57-F8         1 Gbps
 ```
-# ASSIGNATION D'UNE CARTE RESEAU A LA VM VM-ESTELLE
+# 🆔 ASSIGNATION D'UNE CARTE RESEAU A LA VM VM-ESTELLE AFIN QUE CELLE SI PUISSE AVOIR UNE ADRESSE IP DOC SE CONNECTER A INTERNET
 
-RECUPERATION DES PARAMETRES DE NOTRE VM 
+RECUPERATION DES PARAMETRES DE NOTRE mM DANS LA VARIABLE $vn
 ```POWERSHELL
 $vm = Get-VM "VM-ESTELLE"
 ```
@@ -153,7 +153,7 @@ Name            IsManagementOs VMName     SwitchName         MacAddress   Status
 ----            -------------- ------     ----------         ----------   ------ -----------
 Network Adapter False          VM-ESTELLE External VM Switch 00155DED2201 {Ok}   {10.13.237.134, fe80::1924:e294:bd8...
 ```
-CONNECTION DE LA CARTE RESEAU A LA MACHINE VIRTUELLE
+CONNECTION DE LA CARTE RESEAU A LA MACHINE VIRTUELLE AFIN QUE CELLE CI PUISSE AVOIR UNE ADRESSE IP
 ```POWERSHELL
 Connect-VMNetworkAdapter -VMNetworkAdapter $networkAdapter -SwitchName "External VM Switch"
 ```
@@ -167,7 +167,7 @@ Name            IsManagementOs VMName     SwitchName         MacAddress   Status
 ----            -------------- ------     ----------         ----------   ------ -----------
 Network Adapter False          VM-ESTELLE External VM Switch 00155DED2201 {Ok}   {10.13.237.134, fe80::1924:e294:bd8...
 ```
-# CONNECTION A LA VM VM-ESTELLE AVEC PSSESSION
+# 🤙CONNECTION A LA VM VM-ESTELLE AVEC PSSESSION( POUR AVOIR ACCES AU POWERSHELL DE LA MACHINE VIRTUELLE) 
 ```powershell
 Enter-PSSession -VMName VM-ESTELLE -Credential $cred
 ```
@@ -175,11 +175,11 @@ Enter-PSSession -VMName VM-ESTELLE -Credential $cred
 ```python
 [VM-ESTELLE]: PS C:\Users\ESTELLE\Documents>
 ```
-# ASSIGNATION D'UNE ADRESSE IP A LA VM VM-ESTELLE
+# 💻 ASSIGNATION D'UNE ADRESSE IP A LA VM VM-ESTELLE
 ```powershell
 New-NetIPAddress -InterfaceAlias "Ethernet 2" -IPAddress "10.13.237.134" -PrefixLength 24 -DefaultGateway "10.13.237.1"
 ```
-# CONFIGURATION DE L'IP DU DNS-SERVER
+# 💻 CONFIGURATION DE L'IP DU DNS-SERVER
 ```POWERSHELL
 Set-DNSClientServerAddress "Ethernet 2" -ServerAddresses ("1.1.1.1","8.8.8.8")
 ```
@@ -197,7 +197,7 @@ Ethernet                             7 IPv6    {}
 Loopback Pseudo-Interface 1          1 IPv4    {}
 Loopback Pseudo-Interface 1          1 IPv6    {fec0:0:0:ffff::1, fec0:0:0:ffff::2, fec0:0:0:ffff::3}
 ```
-# TEST DE LA CONNECTION EXTERNE (PING DE GOOGLE.COM)
+# 🧪 TEST DE LA CONNECTION EXTERNE (PING DE GOOGLE.COM)
 ```POWERSHELL
 Test-NetConnection -ComputerName "google.com"
 ```
@@ -211,7 +211,7 @@ SourceAddress          : 10.13.237.134
 PingSucceeded          : True
 PingReplyDetails (RTT) : 15 ms
 ```
-# CAPTURE DU DISQUE DE LA VM VM-ESTELLE
+# 😄  PTURE DU DISQUE DE LA VM VM-ESTELLE AFIN D'EN FAIRE UNE COPIE
 ARRET DE LA VM VM-ESTELLE
 ```POWERSHELL
 Stop-VM -Name VM-ESTELLE -Force
