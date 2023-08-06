@@ -103,19 +103,19 @@ Start-VM VM-lionel
 $HostName = [System.Net.DNS]::GetHostByName($Null).HostName
 vmconnect $HostName VM-lionel
 ```
-# CREATION DU SWITCH VIRTUEL "EXTERNAL VM SWITCH"
+# CREATION DU SWITCH VIRTUEL "EXTERNAL VM SWITCH 2"
 selection du netadapter "up"
 ```POWERSHELL
  $net = Get-NetAdapter -Name 'Ethernet'
 ```
 creation du swith virtuelle grace a la variable "net" recupere
 ```POWERSHELL
-New-VMSwitch -Name "External VM Switch" -AllowManagementOS $True -NetAdapterName $net.Name
+New-VMSwitch -Name "External VM Switch 2" -AllowManagementOS $True -NetAdapterName $net.Name
 ```
 ```PYTHON
 Name               SwitchType NetAdapterInterfaceDescription
 ----               ---------- ------------------------------
-External VM Switch External   QLogic BCM5709C Gigabit Ethernet (NDIS VBD Client)
+External VM Switch 2 External   QLogic BCM5709C Gigabit Ethernet (NDIS VBD Client)
 ```
 # VERIFICATION QUE LE SWITCH VIRTUEL A BIEN ETE CREE
 ```POWERSHELL
