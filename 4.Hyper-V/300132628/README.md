@@ -145,10 +145,32 @@ Enter-PSSession -VMName VM-Hakim -Credential $cred
 Resultat
 ```Python
 ```
+# ASSINGATION D'UNE ADDRESSE IP À LA MACHINE
+```POWERSHELL
+New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.13.237.129" -PrefixLength 24 -DefaultGateway "10.13.237.1"
+```
+Resultat
+```Python
+```
+# CONFIGURER LES ADDRESSES DNS
+```POWERSHELL
+Get-DnsClientServerAddress
+```
+Resultat
+```Python
+```
 
-
-
-
+# Assigner le DNS 1.1.1.1 étant le DNS de CloudFare, 8.8.8.8 étant le DN de Google
+```POWERSHELL
+Set-DNSClientServerAddress "Ethernet" -ServerAddresses ("1.1.1.1","8.8.8.8")
+```
+# Visualiser la configuration
+```POWERSHELL
+Get-DnsClientServerAddress
+```
+Resultat
+```Python
+```
 
 
 
