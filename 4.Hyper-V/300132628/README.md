@@ -95,12 +95,48 @@ Start-VM VM-Hakim
 $HostName = [System.Net.DNS]::GetHostByName($Null).HostName
 vmconnect $HostName VM-Hakim
 ```
-#
-
-
-
-
-
+# CONNEXION A LA MACHINE VIRTUELLE
+```POWERSHELL
+GET-VM 
+```
+Resultat
+```Python
+Name     State   CPUUsage(%) MemoryAssigned(M) Uptime              Status                Version
+----     -----   ----------- ----------------- ------              ------                -------
+VM-Hakim Running 4           4096              21.09:48:55.8980000 Fonctionnement normal 10.0
+```
+# Collecter les informations d'identification (nom d'utilisateur et mot de passe) d'un utilisateur.
+```POWERSHELL
+$cred = Get-Credential
+```
+Resultat
+```Python
+applet de commande Get-Credential à la position 1 du pipeline de la commande
+Fournissez des valeurs pour les paramètres suivants :
+Credential
+```
+# CREATION DU SWITCH VIRTUEL
+```POWERSHELL
+$net = Get-NetAdapter -Name 'Ethernet'
+New-VMSwitch -Name "Hakim VM Switch" -AllowManagementOS $True -NetAdapterName $net.Name
+```
+Resultat
+```Python
+Name            SwitchType NetAdapterInterfaceDescription
+----            ---------- ------------------------------
+Hakim VM Switch External   QLogic BCM5709C Gigabit Ethernet (NDIS VBD Client)
+```
+# Vérifier que la Switch Virtuelle (le commutateur virtuel) à bien été crée
+```POWERSHELL
+get-netadapter
+```
+Resultat
+```Python
+Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
+----                      --------------------                    ------- ------       ----------             ---------
+Ethernet 2                QLogic BCM5709C Gigabit Ethernet ...#48      15 Disconnected 18-A9-05-3B-DD-BE          0 bps
+vEthernet (Hakim VM Sw... Hyper-V Virtual Ethernet Adapter             19 Up           18-A9-05-3B-DD-BC         1 Gbps
+Ethernet                  QLogic BCM5709C Gigabit Ethernet ...#47       5 Up           18-A9-05-3B-DD-BC         1 Gbps
 
 
 
