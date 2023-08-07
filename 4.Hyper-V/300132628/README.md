@@ -94,6 +94,8 @@ Start-VM VM-Hakim
 ```POWERSHELL
 $HostName = [System.Net.DNS]::GetHostByName($Null).HostName
 vmconnect $HostName VM-Hakim
+```
+#
 
 
 
