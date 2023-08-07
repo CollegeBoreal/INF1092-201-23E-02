@@ -137,6 +137,14 @@ Name                      InterfaceDescription                    ifIndex Status
 Ethernet 2                QLogic BCM5709C Gigabit Ethernet ...#48      15 Disconnected 18-A9-05-3B-DD-BE          0 bps
 vEthernet (Hakim VM Sw... Hyper-V Virtual Ethernet Adapter             19 Up           18-A9-05-3B-DD-BC         1 Gbps
 Ethernet                  QLogic BCM5709C Gigabit Ethernet ...#47       5 Up           18-A9-05-3B-DD-BC         1 Gbps
+```
+# Etablir une session interactive à distance avec la VM
+ ```POWERSHELL
+Enter-PSSession -VMName VM-Hakim -Credential $cred
+```
+Resultat
+```Python
+```
 
 
 
