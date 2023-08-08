@@ -151,6 +151,33 @@ New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.13.237.129" -PrefixLe
 ```
 Resultat
 ```Python
+IPAddress         : 10.13.237.29
+InterfaceIndex    : 6
+InterfaceAlias    : Ethernet
+AddressFamily     : IPv4
+Type              : Unicast
+PrefixLength      : 24
+PrefixOrigin      : Manual
+SuffixOrigin      : Manual
+AddressState      : Tentative
+ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+SkipAsSource      : False
+PolicyStore       : ActiveStore
+
+IPAddress         : 10.13.237.29
+InterfaceIndex    : 6
+InterfaceAlias    : Ethernet
+AddressFamily     : IPv4
+Type              : Unicast
+PrefixLength      : 24
+PrefixOrigin      : Manual
+SuffixOrigin      : Manual
+AddressState      : Invalid
+ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+SkipAsSource      : False
+PolicyStore       : PersistentStore
 ```
 # CONFIGURER LES ADDRESSES DNS
 ```POWERSHELL
