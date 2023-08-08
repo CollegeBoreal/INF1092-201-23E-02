@@ -58,7 +58,7 @@ AVATARS=(
 )
 
 SERVERS=(
-NONE
+Brice@10.13.237.45
 Brice@10.13.237.38
 Brice@10.13.237.34
 Brice@10.13.237.29
