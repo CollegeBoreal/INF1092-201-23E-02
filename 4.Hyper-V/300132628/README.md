@@ -179,6 +179,9 @@ PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
 SkipAsSource      : False
 PolicyStore       : PersistentStore
 ```
+```
+J'AI ETE OBLIGÉ D'UTILISER 29 PARCE QUE 129 NE MARCHAIT PAS
+```
 # CONFIGURER LES ADDRESSES DNS
 ```POWERSHELL
 Get-DnsClientServerAddress
