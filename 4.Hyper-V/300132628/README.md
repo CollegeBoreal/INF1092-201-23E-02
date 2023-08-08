@@ -158,6 +158,13 @@ Get-DnsClientServerAddress
 ```
 Resultat
 ```Python
+InterfaceAlias               Interface Address ServerAddresses
+                             Index     Family
+--------------               --------- ------- ---------------
+Ethernet                             6 IPv4    {}
+Ethernet                             6 IPv6    {fec0:0:0:ffff::1, fec0:0:0:ffff::2, fec0:0:0:ffff::3}
+Loopback Pseudo-Interface 1          1 IPv4    {}
+Loopback Pseudo-Interface 1          1 IPv6    {fec0:0:0:ffff::1, fec0:0:0:ffff::2, fec0:0:0:ffff::3}
 ```
 
 # Assigner le DNS 1.1.1.1 étant le DNS de CloudFare, 8.8.8.8 étant le DN de Google
@@ -170,6 +177,13 @@ Get-DnsClientServerAddress
 ```
 Resultat
 ```Python
+InterfaceAlias               Interface Address ServerAddresses
+                             Index     Family
+--------------               --------- ------- ---------------
+Ethernet                             6 IPv4    {1.1.1.1, 8.8.8.8}
+Ethernet                             6 IPv6    {}
+Loopback Pseudo-Interface 1          1 IPv4    {}
+Loopback Pseudo-Interface 1          1 IPv6    {fec0:0:0:ffff::1, fec0:0:0:ffff::2, fec0:0:0:ffff::3}
 ```
 
 
